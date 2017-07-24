@@ -9,7 +9,7 @@ website is at [openscience.adaptcentre.ie](https://openscience.adaptcentre.ie/).
 
 1. [GDPR (En) text with HTML id for each item/article](https://openscience.adaptcentre.ie/resources/GDPRtEXT/gdpr.html)
 2. [GDPR (En) text as JSON](https://openscience.adaptcentre.ie/resources/GDPRtEXT/gdpr.json)
-3. [GDPR (En) as RDF dataset](https://openscience.adaptcentre.ie/resources/GDPRtEXT/gdpr.rdf)
+3. [GDPR (En) as RDF dataset](https://openscience.adaptcentre.ie/resources/GDPRtEXT/gdpr.owl)
 4. [GDPR (En) text with HTML id + RDFa](https://openscience.adaptcentre.ie/resources/GDPRtEXT/gdpr_rdfa.html)
 
 ## Project Goals
