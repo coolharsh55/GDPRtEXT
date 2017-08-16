@@ -41,7 +41,9 @@ TITLE = ELI.title
 NOS = ELI.number
 TITLE_ALT = ELI.title_alternative
 PART_OF = ELI.is_part_of
-# graph.add((PART_OF, RDF.type, OWL.TransitiveProperty))
+graph.add((PART_OF, RDF.type, OWL.TransitiveProperty))
+HAS_PART = ELI.has_part
+graph.add((HAS_PART, RDF.type, OWL.TransitiveProperty))
 DESC = ELI.description
 
 # declare chapters, etc. as subclasses of LRS
@@ -147,5 +149,72 @@ graph.add((property_partof_point, RDFS.label, Literal(
 graph.add((property_partof_point, RDFS.comment, Literal(
     'represents a legal resource subdivision to be part of a point',
     datatype=XSD.string)))
+
+property_has_chapter = GDPRtEXT['hasChapter']
+graph.add((property_has_chapter, RDF.type, OWL.ObjectProperty))
+graph.add((property_has_chapter, RDF.type, OWL.FunctionalProperty))
+graph.add((property_has_chapter, RDFS.subPropertyOf, HAS_PART))
+graph.add((property_has_chapter, RDFS.domain, ELI.LegalResource))
+graph.add((property_has_chapter, RDFS.range, class_Chapter))
+graph.add((property_has_chapter, RDFS.label, Literal(
+    'has Chapter', datatype=XSD.string)))
+graph.add((property_has_chapter, RDFS.comment, Literal(
+    'indicates the legal resource has the Chapter', datatype=XSD.string)))
+
+property_has_section = GDPRtEXT['hasSection']
+graph.add((property_has_section, RDF.type, OWL.ObjectProperty))
+graph.add((property_has_section, RDF.type, OWL.FunctionalProperty))
+graph.add((property_has_section, RDFS.subPropertyOf, HAS_PART))
+graph.add((property_has_section, RDFS.domain, LRS))
+graph.add((property_has_section, RDFS.range, class_Section))
+graph.add((property_has_section, RDFS.label, Literal(
+    'has Section', datatype=XSD.string)))
+graph.add((property_has_section, RDFS.comment, Literal(
+    'indicates the legal resource has the Section', datatype=XSD.string)))
+
+property_has_article = GDPRtEXT['hasArticle']
+graph.add((property_has_article, RDF.type, OWL.ObjectProperty))
+graph.add((property_has_article, RDF.type, OWL.FunctionalProperty))
+graph.add((property_has_article, RDFS.subPropertyOf, HAS_PART))
+graph.add((property_has_article, RDFS.domain, LRS))
+graph.add((property_has_article, RDFS.range, class_Article))
+graph.add((property_has_article, RDFS.label, Literal(
+    'has Article', datatype=XSD.string)))
+graph.add((property_has_article, RDFS.comment, Literal(
+    'indicates the legal resource has the Article', datatype=XSD.string)))
+
+property_has_point = GDPRtEXT['hasPoint']
+graph.add((property_has_point, RDF.type, OWL.ObjectProperty))
+graph.add((property_has_point, RDF.type, OWL.FunctionalProperty))
+graph.add((property_has_point, RDFS.subPropertyOf, HAS_PART))
+graph.add((property_has_point, RDFS.domain, LRS))
+graph.add((property_has_point, RDFS.range, class_Point))
+graph.add((property_has_point, RDFS.label, Literal(
+    'has Point', datatype=XSD.string)))
+graph.add((property_has_point, RDFS.comment, Literal(
+    'indicates the legal resource has the Point', datatype=XSD.string)))
+
+property_has_subpoint = GDPRtEXT['hasSubPoint']
+graph.add((property_has_subpoint, RDF.type, OWL.ObjectProperty))
+graph.add((property_has_subpoint, RDF.type, OWL.FunctionalProperty))
+graph.add((property_has_subpoint, RDFS.subPropertyOf, HAS_PART))
+graph.add((property_has_subpoint, RDFS.domain, LRS))
+graph.add((property_has_subpoint, RDFS.range, class_SubPoint))
+graph.add((property_has_subpoint, RDFS.label, Literal(
+    'has SubPoint', datatype=XSD.string)))
+graph.add((property_has_subpoint, RDFS.comment, Literal(
+    'indicates the legal resource has the SubPoint', datatype=XSD.string)))
+
+property_has_recital = GDPRtEXT['hasRecital']
+graph.add((property_has_recital, RDF.type, OWL.ObjectProperty))
+graph.add((property_has_recital, RDF.type, OWL.FunctionalProperty))
+graph.add((property_has_recital, RDFS.subPropertyOf, HAS_PART))
+graph.add((property_has_recital, RDFS.domain, LRS))
+graph.add((property_has_recital, RDFS.range, class_Recital))
+graph.add((property_has_recital, RDFS.label, Literal(
+    'has Recital', datatype=XSD.string)))
+graph.add((property_has_recital, RDFS.comment, Literal(
+    'indicates the legal resource has the Recital', datatype=XSD.string)))
+
 
 graph.serialize(destination='../deliverables/gdpr.owl', format='xml')

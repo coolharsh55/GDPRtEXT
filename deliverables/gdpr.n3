@@ -9553,6 +9553,12 @@ gdpr:article99-2 a eli:LegalResourceSubdivision,
     GDPRtext:isPartOfArticle gdpr:article99 ;
     GDPRtext:isPartOfChapter gdpr:chapterXI .
 
+gdpr:description a eli:LRS ;
+    eli:cites gdpr:citation1,
+        gdpr:citation2,
+        gdpr:citation3 ;
+    dcterms:description "THE EUROPEAN PARLIAMENT AND THE COUNCIL OF THE EUROPEAN UNION, Having regard to the Treaty on the Functioning of the European Union, and in particular Article 16 thereof, Having regard to the proposal from the European Commission, After transmission of the draft legislative act to the national parliaments, Having regard to the opinion of the European Economic and Social Committee, Having regard to the opinion of the Committee of the Regions, Acting in accordance with the ordinary legislative procedure,"^^xsd:string .
+
 gdpr:recital1 a eli:LegalResourceSubdivision,
         GDPRtext:Recital ;
     eli:description "The protection of natural persons in relation to the processing of personal data is a fundamental right. Article 8(1) of the Charter of Fundamental Rights of the European Union (the ‘Charter’) and Article 16(1) of the Treaty on the Functioning of the European Union (TFEU) provide that everyone has the right to the protection of personal data concerning him or her."^^xsd:string ;
@@ -10606,6 +10612,12 @@ gdpr:recital99 a eli:LegalResourceSubdivision,
     eli:is_part_of gdpr:GDPR ;
     eli:number "99"^^xsd:string .
 
+gdpr:citation1 a eli:LegalResourceSubdivision,
+        GDPRtext:Citation ;
+    eli:description "OJ C 229, 31.7.2012, p. 90."^^xsd:string ;
+    eli:is_part_of gdpr:GDPR ;
+    eli:number "1"^^xsd:string .
+
 gdpr:citation10 a eli:LegalResourceSubdivision,
         GDPRtext:Citation ;
     eli:description "Council Directive 93/13/EEC of 5 April 1993 on unfair terms in consumer contracts (OJ L 95, 21.4.1993, p. 29)."^^xsd:string ;
@@ -10666,6 +10678,12 @@ gdpr:citation19 a eli:LegalResourceSubdivision,
     eli:is_part_of gdpr:GDPR ;
     eli:number "19"^^xsd:string .
 
+gdpr:citation2 a eli:LegalResourceSubdivision,
+        GDPRtext:Citation ;
+    eli:description "OJ C 391, 18.12.2012, p. 127."^^xsd:string ;
+    eli:is_part_of gdpr:GDPR ;
+    eli:number "2"^^xsd:string .
+
 gdpr:citation20 a eli:LegalResourceSubdivision,
         GDPRtext:Citation ;
     eli:description "Regulation (EC) No 765/2008 of the European Parliament and of the Council of 9 July 2008 setting out the requirements for accreditation and market surveillance relating to the marketing of products and repealing Regulation (EEC) No 339/93 (OJ L 218, 13.8.2008, p. 30)."^^xsd:string ;
@@ -10677,6 +10695,12 @@ gdpr:citation21 a eli:LegalResourceSubdivision,
     eli:description "Regulation (EC) No 1049/2001 of the European Parliament and of the Council of 30 May 2001 regarding public access to European Parliament, Council and Commission documents (OJ L 145, 31.5.2001, p. 43)."^^xsd:string ;
     eli:is_part_of gdpr:GDPR ;
     eli:number "21"^^xsd:string .
+
+gdpr:citation3 a eli:LegalResourceSubdivision,
+        GDPRtext:Citation ;
+    eli:description "Position of the European Parliament of 12 March 2014 (not yet published in the Official Journal) and position of the Council at first reading of 8 April 2016 (not yet published in the Official Journal). Position of the European Parliament of 14 April 2016."^^xsd:string ;
+    eli:is_part_of gdpr:GDPR ;
+    eli:number "3"^^xsd:string .
 
 gdpr:citation4 a eli:LegalResourceSubdivision,
         GDPRtext:Citation ;
@@ -10720,47 +10744,8 @@ gdpr:article10 a eli:LegalResourceSubdivision,
         gdpr:chapterII ;
     eli:number "10"^^xsd:string ;
     eli:title_alternative "Article 10"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article10-1 ;
     GDPRtext:isPartOfChapter gdpr:chapterII .
-
-gdpr:article16 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterIII,
-        gdpr:chapterIII-3 ;
-    eli:number "16"^^xsd:string ;
-    eli:title_alternative "Article 16"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterIII ;
-    GDPRtext:isPartOfSection gdpr:chapterIII-3 .
-
-gdpr:article19 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterIII,
-        gdpr:chapterIII-3 ;
-    eli:number "19"^^xsd:string ;
-    eli:title_alternative "Article 19"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterIII ;
-    GDPRtext:isPartOfSection gdpr:chapterIII-3 .
-
-gdpr:article29 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterIV,
-        gdpr:chapterIV-1 ;
-    eli:number "29"^^xsd:string ;
-    eli:title_alternative "Article 29"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterIV ;
-    GDPRtext:isPartOfSection gdpr:chapterIV-1 .
-
-gdpr:article31 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterIV,
-        gdpr:chapterIV-1 ;
-    eli:number "31"^^xsd:string ;
-    eli:title_alternative "Article 31"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterIV ;
-    GDPRtext:isPartOfSection gdpr:chapterIV-1 .
 
 gdpr:article44 a eli:LegalResourceSubdivision,
         GDPRtext:Article ;
@@ -10768,6 +10753,7 @@ gdpr:article44 a eli:LegalResourceSubdivision,
         gdpr:chapterV ;
     eli:number "44"^^xsd:string ;
     eli:title_alternative "Article 44"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article44-1 ;
     GDPRtext:isPartOfChapter gdpr:chapterV .
 
 gdpr:article48 a eli:LegalResourceSubdivision,
@@ -10776,27 +10762,8 @@ gdpr:article48 a eli:LegalResourceSubdivision,
         gdpr:chapterV ;
     eli:number "48"^^xsd:string ;
     eli:title_alternative "Article 48"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article48-1 ;
     GDPRtext:isPartOfChapter gdpr:chapterV .
-
-gdpr:article59 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterVI,
-        gdpr:chapterVI-2 ;
-    eli:number "59"^^xsd:string ;
-    eli:title_alternative "Article 59"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterVI ;
-    GDPRtext:isPartOfSection gdpr:chapterVI-2 .
-
-gdpr:article63 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterVII,
-        gdpr:chapterVII-2 ;
-    eli:number "63"^^xsd:string ;
-    eli:title_alternative "Article 63"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterVII ;
-    GDPRtext:isPartOfSection gdpr:chapterVII-2 .
 
 gdpr:article86 a eli:LegalResourceSubdivision,
         GDPRtext:Article ;
@@ -10804,6 +10771,7 @@ gdpr:article86 a eli:LegalResourceSubdivision,
         gdpr:chapterIX ;
     eli:number "86"^^xsd:string ;
     eli:title_alternative "Article 86"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article86-1 ;
     GDPRtext:isPartOfChapter gdpr:chapterIX .
 
 gdpr:article87 a eli:LegalResourceSubdivision,
@@ -10812,6 +10780,7 @@ gdpr:article87 a eli:LegalResourceSubdivision,
         gdpr:chapterIX ;
     eli:number "87"^^xsd:string ;
     eli:title_alternative "Article 87"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article87-1 ;
     GDPRtext:isPartOfChapter gdpr:chapterIX .
 
 gdpr:article95 a eli:LegalResourceSubdivision,
@@ -10820,6 +10789,7 @@ gdpr:article95 a eli:LegalResourceSubdivision,
         gdpr:chapterXI ;
     eli:number "95"^^xsd:string ;
     eli:title_alternative "Article 95"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article95-1 ;
     GDPRtext:isPartOfChapter gdpr:chapterXI .
 
 gdpr:article96 a eli:LegalResourceSubdivision,
@@ -10828,6 +10798,7 @@ gdpr:article96 a eli:LegalResourceSubdivision,
         gdpr:chapterXI ;
     eli:number "96"^^xsd:string ;
     eli:title_alternative "Article 96"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article96-1 ;
     GDPRtext:isPartOfChapter gdpr:chapterXI .
 
 gdpr:article98 a eli:LegalResourceSubdivision,
@@ -10836,33 +10807,8 @@ gdpr:article98 a eli:LegalResourceSubdivision,
         gdpr:chapterXI ;
     eli:number "98"^^xsd:string ;
     eli:title_alternative "Article 98"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article98-1 ;
     GDPRtext:isPartOfChapter gdpr:chapterXI .
-
-gdpr:citation1 a eli:LegalResourceSubdivision,
-        GDPRtext:Citation ;
-    eli:description "OJ C 229, 31.7.2012, p. 90."^^xsd:string ;
-    eli:is_part_of gdpr:GDPR ;
-    eli:number "1"^^xsd:string .
-
-gdpr:citation2 a eli:LegalResourceSubdivision,
-        GDPRtext:Citation ;
-    eli:description "OJ C 391, 18.12.2012, p. 127."^^xsd:string ;
-    eli:is_part_of gdpr:GDPR ;
-    eli:number "2"^^xsd:string .
-
-gdpr:citation3 a eli:LegalResourceSubdivision,
-        GDPRtext:Citation ;
-    eli:description "Position of the European Parliament of 12 March 2014 (not yet published in the Official Journal) and position of the Council at first reading of 8 April 2016 (not yet published in the Official Journal). Position of the European Parliament of 14 April 2016."^^xsd:string ;
-    eli:is_part_of gdpr:GDPR ;
-    eli:number "3"^^xsd:string .
-
-gdpr:article11 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterII ;
-    eli:number "11"^^xsd:string ;
-    eli:title_alternative "Article 11"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterII .
 
 gdpr:article12-5 a eli:LegalResourceSubdivision,
         GDPRtext:Point ;
@@ -10873,9 +10819,33 @@ gdpr:article12-5 a eli:LegalResourceSubdivision,
         gdpr:chapterIII-1 ;
     eli:number "5"^^xsd:string ;
     eli:title_alternative "Article12(5)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article12-5-1,
+        gdpr:article12-5-2 ;
     GDPRtext:isPartOfArticle gdpr:article12 ;
     GDPRtext:isPartOfChapter gdpr:chapterIII ;
     GDPRtext:isPartOfSection gdpr:chapterIII-1 .
+
+gdpr:article16 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterIII,
+        gdpr:chapterIII-3 ;
+    eli:number "16"^^xsd:string ;
+    eli:title_alternative "Article 16"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article16-1 ;
+    GDPRtext:isPartOfChapter gdpr:chapterIII ;
+    GDPRtext:isPartOfSection gdpr:chapterIII-3 .
+
+gdpr:article19 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterIII,
+        gdpr:chapterIII-3 ;
+    eli:number "19"^^xsd:string ;
+    eli:title_alternative "Article 19"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article19-1 ;
+    GDPRtext:isPartOfChapter gdpr:chapterIII ;
+    GDPRtext:isPartOfSection gdpr:chapterIII-3 .
 
 gdpr:article20-1 a eli:LegalResourceSubdivision,
         GDPRtext:Point ;
@@ -10886,6 +10856,8 @@ gdpr:article20-1 a eli:LegalResourceSubdivision,
         gdpr:chapterIII-3 ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article20(1)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article20-1-1,
+        gdpr:article20-1-2 ;
     GDPRtext:isPartOfArticle gdpr:article20 ;
     GDPRtext:isPartOfChapter gdpr:chapterIII ;
     GDPRtext:isPartOfSection gdpr:chapterIII-3 .
@@ -10899,7 +10871,20 @@ gdpr:article27-2 a eli:LegalResourceSubdivision,
         gdpr:chapterIV-1 ;
     eli:number "2"^^xsd:string ;
     eli:title_alternative "Article27(2)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article27-2-1,
+        gdpr:article27-2-2 ;
     GDPRtext:isPartOfArticle gdpr:article27 ;
+    GDPRtext:isPartOfChapter gdpr:chapterIV ;
+    GDPRtext:isPartOfSection gdpr:chapterIV-1 .
+
+gdpr:article29 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterIV,
+        gdpr:chapterIV-1 ;
+    eli:number "29"^^xsd:string ;
+    eli:title_alternative "Article 29"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article29-1 ;
     GDPRtext:isPartOfChapter gdpr:chapterIV ;
     GDPRtext:isPartOfSection gdpr:chapterIV-1 .
 
@@ -10911,8 +10896,21 @@ gdpr:article3-2 a eli:LegalResourceSubdivision,
         gdpr:chapterI ;
     eli:number "2"^^xsd:string ;
     eli:title_alternative "Article3(2)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article3-2-1,
+        gdpr:article3-2-2 ;
     GDPRtext:isPartOfArticle gdpr:article3 ;
     GDPRtext:isPartOfChapter gdpr:chapterI .
+
+gdpr:article31 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterIV,
+        gdpr:chapterIV-1 ;
+    eli:number "31"^^xsd:string ;
+    eli:title_alternative "Article 31"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article31-1 ;
+    GDPRtext:isPartOfChapter gdpr:chapterIV ;
+    GDPRtext:isPartOfSection gdpr:chapterIV-1 .
 
 gdpr:article4-16 a eli:LegalResourceSubdivision,
         GDPRtext:Point ;
@@ -10922,6 +10920,8 @@ gdpr:article4-16 a eli:LegalResourceSubdivision,
         gdpr:chapterI ;
     eli:number "16"^^xsd:string ;
     eli:title_alternative "Article4(16)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article4-16-a,
+        gdpr:article4-16-b ;
     GDPRtext:isPartOfArticle gdpr:article4 ;
     GDPRtext:isPartOfChapter gdpr:chapterI .
 
@@ -10933,6 +10933,8 @@ gdpr:article4-23 a eli:LegalResourceSubdivision,
         gdpr:chapterI ;
     eli:number "23"^^xsd:string ;
     eli:title_alternative "Article4(23)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article4-23-a,
+        gdpr:article4-23-b ;
     GDPRtext:isPartOfArticle gdpr:article4 ;
     GDPRtext:isPartOfChapter gdpr:chapterI .
 
@@ -10945,6 +10947,8 @@ gdpr:article43-1 a eli:LegalResourceSubdivision,
         gdpr:chapterIV-5 ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article43(1)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article43-1-1,
+        gdpr:article43-1-2 ;
     GDPRtext:isPartOfArticle gdpr:article43 ;
     GDPRtext:isPartOfChapter gdpr:chapterIV ;
     GDPRtext:isPartOfSection gdpr:chapterIV-5 .
@@ -10957,8 +10961,21 @@ gdpr:article46-3 a eli:LegalResourceSubdivision,
         gdpr:chapterV ;
     eli:number "3"^^xsd:string ;
     eli:title_alternative "Article46(3)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article46-3-1,
+        gdpr:article46-3-2 ;
     GDPRtext:isPartOfArticle gdpr:article46 ;
     GDPRtext:isPartOfChapter gdpr:chapterV .
+
+gdpr:article59 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterVI,
+        gdpr:chapterVI-2 ;
+    eli:number "59"^^xsd:string ;
+    eli:title_alternative "Article 59"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article59-1 ;
+    GDPRtext:isPartOfChapter gdpr:chapterVI ;
+    GDPRtext:isPartOfSection gdpr:chapterVI-2 .
 
 gdpr:article6-3 a eli:LegalResourceSubdivision,
         GDPRtext:Point ;
@@ -10968,6 +10985,8 @@ gdpr:article6-3 a eli:LegalResourceSubdivision,
         gdpr:chapterII ;
     eli:number "3"^^xsd:string ;
     eli:title_alternative "Article6(3)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article6-3-1,
+        gdpr:article6-3-2 ;
     GDPRtext:isPartOfArticle gdpr:article6 ;
     GDPRtext:isPartOfChapter gdpr:chapterII .
 
@@ -10980,9 +10999,22 @@ gdpr:article61-4 a eli:LegalResourceSubdivision,
         gdpr:chapterVII-1 ;
     eli:number "4"^^xsd:string ;
     eli:title_alternative "Article61(4)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article61-4-1,
+        gdpr:article61-4-2 ;
     GDPRtext:isPartOfArticle gdpr:article61 ;
     GDPRtext:isPartOfChapter gdpr:chapterVII ;
     GDPRtext:isPartOfSection gdpr:chapterVII-1 .
+
+gdpr:article63 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterVII,
+        gdpr:chapterVII-2 ;
+    eli:number "63"^^xsd:string ;
+    eli:title_alternative "Article 63"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article63-1 ;
+    GDPRtext:isPartOfChapter gdpr:chapterVII ;
+    GDPRtext:isPartOfSection gdpr:chapterVII-2 .
 
 gdpr:article64-5 a eli:LegalResourceSubdivision,
         GDPRtext:Point ;
@@ -10993,125 +11025,11 @@ gdpr:article64-5 a eli:LegalResourceSubdivision,
         gdpr:chapterVII-2 ;
     eli:number "5"^^xsd:string ;
     eli:title_alternative "Article64(5)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article64-5-1,
+        gdpr:article64-5-2 ;
     GDPRtext:isPartOfArticle gdpr:article64 ;
     GDPRtext:isPartOfChapter gdpr:chapterVII ;
     GDPRtext:isPartOfSection gdpr:chapterVII-2 .
-
-gdpr:article67 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterVII,
-        gdpr:chapterVII-2 ;
-    eli:number "67"^^xsd:string ;
-    eli:title_alternative "Article 67"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterVII ;
-    GDPRtext:isPartOfSection gdpr:chapterVII-2 .
-
-gdpr:article69 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterVII,
-        gdpr:chapterVII-3 ;
-    eli:number "69"^^xsd:string ;
-    eli:title_alternative "Article 69"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterVII ;
-    GDPRtext:isPartOfSection gdpr:chapterVII-3 .
-
-gdpr:article71 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterVII,
-        gdpr:chapterVII-3 ;
-    eli:number "71"^^xsd:string ;
-    eli:title_alternative "Article 71"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterVII ;
-    GDPRtext:isPartOfSection gdpr:chapterVII-3 .
-
-gdpr:article72 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterVII,
-        gdpr:chapterVII-3 ;
-    eli:number "72"^^xsd:string ;
-    eli:title_alternative "Article 72"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterVII ;
-    GDPRtext:isPartOfSection gdpr:chapterVII-3 .
-
-gdpr:article73 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterVII,
-        gdpr:chapterVII-3 ;
-    eli:number "73"^^xsd:string ;
-    eli:title_alternative "Article 73"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterVII ;
-    GDPRtext:isPartOfSection gdpr:chapterVII-3 .
-
-gdpr:article76 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterVII,
-        gdpr:chapterVII-3 ;
-    eli:number "76"^^xsd:string ;
-    eli:title_alternative "Article 76"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterVII ;
-    GDPRtext:isPartOfSection gdpr:chapterVII-3 .
-
-gdpr:article77 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterVIII ;
-    eli:number "77"^^xsd:string ;
-    eli:title_alternative "Article 77"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterVIII .
-
-gdpr:article79 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterVIII ;
-    eli:number "79"^^xsd:string ;
-    eli:title_alternative "Article 79"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterVIII .
-
-gdpr:article80 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterVIII ;
-    eli:number "80"^^xsd:string ;
-    eli:title_alternative "Article 80"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterVIII .
-
-gdpr:article84 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterVIII ;
-    eli:number "84"^^xsd:string ;
-    eli:title_alternative "Article 84"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterVIII .
-
-gdpr:article90 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterIX ;
-    eli:number "90"^^xsd:string ;
-    eli:title_alternative "Article 90"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterIX .
-
-gdpr:article91 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterIX ;
-    eli:number "91"^^xsd:string ;
-    eli:title_alternative "Article 91"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterIX .
-
-gdpr:article94 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterXI ;
-    eli:number "94"^^xsd:string ;
-    eli:title_alternative "Article 94"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterXI .
 
 gdpr:article97-2 a eli:LegalResourceSubdivision,
         GDPRtext:Point ;
@@ -11121,7 +11039,89 @@ gdpr:article97-2 a eli:LegalResourceSubdivision,
         gdpr:chapterXI ;
     eli:number "2"^^xsd:string ;
     eli:title_alternative "Article97(2)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article97-2-1,
+        gdpr:article97-2-2 ;
     GDPRtext:isPartOfArticle gdpr:article97 ;
+    GDPRtext:isPartOfChapter gdpr:chapterXI .
+
+gdpr:article11 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterII ;
+    eli:number "11"^^xsd:string ;
+    eli:title_alternative "Article 11"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article11-1,
+        gdpr:article11-2 ;
+    GDPRtext:isPartOfChapter gdpr:chapterII .
+
+gdpr:article77 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterVIII ;
+    eli:number "77"^^xsd:string ;
+    eli:title_alternative "Article 77"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article77-1,
+        gdpr:article77-2 ;
+    GDPRtext:isPartOfChapter gdpr:chapterVIII .
+
+gdpr:article79 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterVIII ;
+    eli:number "79"^^xsd:string ;
+    eli:title_alternative "Article 79"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article79-1,
+        gdpr:article79-2 ;
+    GDPRtext:isPartOfChapter gdpr:chapterVIII .
+
+gdpr:article80 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterVIII ;
+    eli:number "80"^^xsd:string ;
+    eli:title_alternative "Article 80"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article80-1,
+        gdpr:article80-2 ;
+    GDPRtext:isPartOfChapter gdpr:chapterVIII .
+
+gdpr:article84 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterVIII ;
+    eli:number "84"^^xsd:string ;
+    eli:title_alternative "Article 84"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article84-1,
+        gdpr:article84-2 ;
+    GDPRtext:isPartOfChapter gdpr:chapterVIII .
+
+gdpr:article90 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterIX ;
+    eli:number "90"^^xsd:string ;
+    eli:title_alternative "Article 90"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article90-1,
+        gdpr:article90-2 ;
+    GDPRtext:isPartOfChapter gdpr:chapterIX .
+
+gdpr:article91 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterIX ;
+    eli:number "91"^^xsd:string ;
+    eli:title_alternative "Article 91"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article91-1,
+        gdpr:article91-2 ;
+    GDPRtext:isPartOfChapter gdpr:chapterIX .
+
+gdpr:article94 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterXI ;
+    eli:number "94"^^xsd:string ;
+    eli:title_alternative "Article 94"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article94-1,
+        gdpr:article94-2 ;
     GDPRtext:isPartOfChapter gdpr:chapterXI .
 
 gdpr:article99 a eli:LegalResourceSubdivision,
@@ -11130,15 +11130,9 @@ gdpr:article99 a eli:LegalResourceSubdivision,
         gdpr:chapterXI ;
     eli:number "99"^^xsd:string ;
     eli:title_alternative "Article 99"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article99-1,
+        gdpr:article99-2 ;
     GDPRtext:isPartOfChapter gdpr:chapterXI .
-
-gdpr:article1 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterI ;
-    eli:number "1"^^xsd:string ;
-    eli:title_alternative "Article 1"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterI .
 
 gdpr:article14-3 a eli:LegalResourceSubdivision,
         GDPRtext:Point ;
@@ -11149,6 +11143,9 @@ gdpr:article14-3 a eli:LegalResourceSubdivision,
         gdpr:chapterIII-2 ;
     eli:number "3"^^xsd:string ;
     eli:title_alternative "Article14(3)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article14-3-1,
+        gdpr:article14-3-2,
+        gdpr:article14-3-3 ;
     GDPRtext:isPartOfArticle gdpr:article14 ;
     GDPRtext:isPartOfChapter gdpr:chapterIII ;
     GDPRtext:isPartOfSection gdpr:chapterIII-2 .
@@ -11162,39 +11159,12 @@ gdpr:article22-2 a eli:LegalResourceSubdivision,
         gdpr:chapterIII-4 ;
     eli:number "2"^^xsd:string ;
     eli:title_alternative "Article22(2)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article22-2-1,
+        gdpr:article22-2-2,
+        gdpr:article22-2-3 ;
     GDPRtext:isPartOfArticle gdpr:article22 ;
     GDPRtext:isPartOfChapter gdpr:chapterIII ;
     GDPRtext:isPartOfSection gdpr:chapterIII-4 .
-
-gdpr:article24 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterIV,
-        gdpr:chapterIV-1 ;
-    eli:number "24"^^xsd:string ;
-    eli:title_alternative "Article 24"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterIV ;
-    GDPRtext:isPartOfSection gdpr:chapterIV-1 .
-
-gdpr:article25 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterIV,
-        gdpr:chapterIV-1 ;
-    eli:number "25"^^xsd:string ;
-    eli:title_alternative "Article 25"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterIV ;
-    GDPRtext:isPartOfSection gdpr:chapterIV-1 .
-
-gdpr:article26 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterIV,
-        gdpr:chapterIV-1 ;
-    eli:number "26"^^xsd:string ;
-    eli:title_alternative "Article 26"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterIV ;
-    GDPRtext:isPartOfSection gdpr:chapterIV-1 .
 
 gdpr:article34-3 a eli:LegalResourceSubdivision,
         GDPRtext:Point ;
@@ -11205,6 +11175,9 @@ gdpr:article34-3 a eli:LegalResourceSubdivision,
         gdpr:chapterIV-2 ;
     eli:number "3"^^xsd:string ;
     eli:title_alternative "Article34(3)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article34-3-1,
+        gdpr:article34-3-2,
+        gdpr:article34-3-3 ;
     GDPRtext:isPartOfArticle gdpr:article34 ;
     GDPRtext:isPartOfChapter gdpr:chapterIV ;
     GDPRtext:isPartOfSection gdpr:chapterIV-2 .
@@ -11218,6 +11191,9 @@ gdpr:article35-3 a eli:LegalResourceSubdivision,
         gdpr:chapterIV-3 ;
     eli:number "3"^^xsd:string ;
     eli:title_alternative "Article35(3)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article35-3-1,
+        gdpr:article35-3-2,
+        gdpr:article35-3-3 ;
     GDPRtext:isPartOfArticle gdpr:article35 ;
     GDPRtext:isPartOfChapter gdpr:chapterIV ;
     GDPRtext:isPartOfSection gdpr:chapterIV-3 .
@@ -11231,6 +11207,9 @@ gdpr:article37-1 a eli:LegalResourceSubdivision,
         gdpr:chapterIV-4 ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article37(1)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article37-1-1,
+        gdpr:article37-1-2,
+        gdpr:article37-1-3 ;
     GDPRtext:isPartOfArticle gdpr:article37 ;
     GDPRtext:isPartOfChapter gdpr:chapterIV ;
     GDPRtext:isPartOfSection gdpr:chapterIV-4 .
@@ -11243,6 +11222,9 @@ gdpr:article4-22 a eli:LegalResourceSubdivision,
         gdpr:chapterI ;
     eli:number "22"^^xsd:string ;
     eli:title_alternative "Article4(22)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article4-22-a,
+        gdpr:article4-22-b,
+        gdpr:article4-22-c ;
     GDPRtext:isPartOfArticle gdpr:article4 ;
     GDPRtext:isPartOfChapter gdpr:chapterI .
 
@@ -11254,6 +11236,9 @@ gdpr:article45-2 a eli:LegalResourceSubdivision,
         gdpr:chapterV ;
     eli:number "2"^^xsd:string ;
     eli:title_alternative "Article45(2)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article45-2-1,
+        gdpr:article45-2-2,
+        gdpr:article45-2-3 ;
     GDPRtext:isPartOfArticle gdpr:article45 ;
     GDPRtext:isPartOfChapter gdpr:chapterV .
 
@@ -11265,18 +11250,11 @@ gdpr:article47-1 a eli:LegalResourceSubdivision,
         gdpr:chapterV ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article47(1)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article47-1-1,
+        gdpr:article47-1-2,
+        gdpr:article47-1-3 ;
     GDPRtext:isPartOfArticle gdpr:article47 ;
     GDPRtext:isPartOfChapter gdpr:chapterV .
-
-gdpr:article55 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterVI,
-        gdpr:chapterVI-2 ;
-    eli:number "55"^^xsd:string ;
-    eli:title_alternative "Article 55"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterVI ;
-    GDPRtext:isPartOfSection gdpr:chapterVI-2 .
 
 gdpr:article65-1 a eli:LegalResourceSubdivision,
         GDPRtext:Point ;
@@ -11287,9 +11265,72 @@ gdpr:article65-1 a eli:LegalResourceSubdivision,
         gdpr:chapterVII-2 ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article65(1)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article65-1-1,
+        gdpr:article65-1-2,
+        gdpr:article65-1-3 ;
     GDPRtext:isPartOfArticle gdpr:article65 ;
     GDPRtext:isPartOfChapter gdpr:chapterVII ;
     GDPRtext:isPartOfSection gdpr:chapterVII-2 .
+
+gdpr:article67 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterVII,
+        gdpr:chapterVII-2 ;
+    eli:number "67"^^xsd:string ;
+    eli:title_alternative "Article 67"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article67-1,
+        gdpr:article67-2 ;
+    GDPRtext:isPartOfChapter gdpr:chapterVII ;
+    GDPRtext:isPartOfSection gdpr:chapterVII-2 .
+
+gdpr:article69 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterVII,
+        gdpr:chapterVII-3 ;
+    eli:number "69"^^xsd:string ;
+    eli:title_alternative "Article 69"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article69-1,
+        gdpr:article69-2 ;
+    GDPRtext:isPartOfChapter gdpr:chapterVII ;
+    GDPRtext:isPartOfSection gdpr:chapterVII-3 .
+
+gdpr:article71 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterVII,
+        gdpr:chapterVII-3 ;
+    eli:number "71"^^xsd:string ;
+    eli:title_alternative "Article 71"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article71-1,
+        gdpr:article71-2 ;
+    GDPRtext:isPartOfChapter gdpr:chapterVII ;
+    GDPRtext:isPartOfSection gdpr:chapterVII-3 .
+
+gdpr:article72 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterVII,
+        gdpr:chapterVII-3 ;
+    eli:number "72"^^xsd:string ;
+    eli:title_alternative "Article 72"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article72-1,
+        gdpr:article72-2 ;
+    GDPRtext:isPartOfChapter gdpr:chapterVII ;
+    GDPRtext:isPartOfSection gdpr:chapterVII-3 .
+
+gdpr:article73 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterVII,
+        gdpr:chapterVII-3 ;
+    eli:number "73"^^xsd:string ;
+    eli:title_alternative "Article 73"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article73-1,
+        gdpr:article73-2 ;
+    GDPRtext:isPartOfChapter gdpr:chapterVII ;
+    GDPRtext:isPartOfSection gdpr:chapterVII-3 .
 
 gdpr:article74-1 a eli:LegalResourceSubdivision,
         GDPRtext:Point ;
@@ -11300,25 +11341,24 @@ gdpr:article74-1 a eli:LegalResourceSubdivision,
         gdpr:chapterVII-3 ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article74(1)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article74-1-1,
+        gdpr:article74-1-2,
+        gdpr:article74-1-3 ;
     GDPRtext:isPartOfArticle gdpr:article74 ;
     GDPRtext:isPartOfChapter gdpr:chapterVII ;
     GDPRtext:isPartOfSection gdpr:chapterVII-3 .
 
-gdpr:article8 a eli:LegalResourceSubdivision,
+gdpr:article76 a eli:LegalResourceSubdivision,
         GDPRtext:Article ;
     eli:is_part_of gdpr:GDPR,
-        gdpr:chapterII ;
-    eli:number "8"^^xsd:string ;
-    eli:title_alternative "Article 8"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterII .
-
-gdpr:article81 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterVIII ;
-    eli:number "81"^^xsd:string ;
-    eli:title_alternative "Article 81"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterVIII .
+        gdpr:chapterVII,
+        gdpr:chapterVII-3 ;
+    eli:number "76"^^xsd:string ;
+    eli:title_alternative "Article 76"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article76-1,
+        gdpr:article76-2 ;
+    GDPRtext:isPartOfChapter gdpr:chapterVII ;
+    GDPRtext:isPartOfSection gdpr:chapterVII-3 .
 
 gdpr:article83-4 a eli:LegalResourceSubdivision,
         GDPRtext:Point ;
@@ -11328,7 +11368,43 @@ gdpr:article83-4 a eli:LegalResourceSubdivision,
         gdpr:chapterVIII ;
     eli:number "4"^^xsd:string ;
     eli:title_alternative "Article83(4)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article83-4-1,
+        gdpr:article83-4-2,
+        gdpr:article83-4-3 ;
     GDPRtext:isPartOfArticle gdpr:article83 ;
+    GDPRtext:isPartOfChapter gdpr:chapterVIII .
+
+gdpr:article1 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterI ;
+    eli:number "1"^^xsd:string ;
+    eli:title_alternative "Article 1"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article1-1,
+        gdpr:article1-2,
+        gdpr:article1-3 ;
+    GDPRtext:isPartOfChapter gdpr:chapterI .
+
+gdpr:article8 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterII ;
+    eli:number "8"^^xsd:string ;
+    eli:title_alternative "Article 8"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article8-1,
+        gdpr:article8-2,
+        gdpr:article8-3 ;
+    GDPRtext:isPartOfChapter gdpr:chapterII .
+
+gdpr:article81 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterVIII ;
+    eli:number "81"^^xsd:string ;
+    eli:title_alternative "Article 81"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article81-1,
+        gdpr:article81-2,
+        gdpr:article81-3 ;
     GDPRtext:isPartOfChapter gdpr:chapterVIII .
 
 gdpr:article85 a eli:LegalResourceSubdivision,
@@ -11337,6 +11413,9 @@ gdpr:article85 a eli:LegalResourceSubdivision,
         gdpr:chapterIX ;
     eli:number "85"^^xsd:string ;
     eli:title_alternative "Article 85"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article85-1,
+        gdpr:article85-2,
+        gdpr:article85-3 ;
     GDPRtext:isPartOfChapter gdpr:chapterIX .
 
 gdpr:article88 a eli:LegalResourceSubdivision,
@@ -11345,6 +11424,9 @@ gdpr:article88 a eli:LegalResourceSubdivision,
         gdpr:chapterIX ;
     eli:number "88"^^xsd:string ;
     eli:title_alternative "Article 88"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article88-1,
+        gdpr:article88-2,
+        gdpr:article88-3 ;
     GDPRtext:isPartOfChapter gdpr:chapterIX .
 
 gdpr:article93 a eli:LegalResourceSubdivision,
@@ -11353,6 +11435,9 @@ gdpr:article93 a eli:LegalResourceSubdivision,
         gdpr:chapterX ;
     eli:number "93"^^xsd:string ;
     eli:title_alternative "Article 93"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article93-1,
+        gdpr:article93-2,
+        gdpr:article93-3 ;
     GDPRtext:isPartOfChapter gdpr:chapterX .
 
 gdpr:article14-5 a eli:LegalResourceSubdivision,
@@ -11364,6 +11449,10 @@ gdpr:article14-5 a eli:LegalResourceSubdivision,
         gdpr:chapterIII-2 ;
     eli:number "5"^^xsd:string ;
     eli:title_alternative "Article14(5)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article14-5-1,
+        gdpr:article14-5-2,
+        gdpr:article14-5-3,
+        gdpr:article14-5-4 ;
     GDPRtext:isPartOfArticle gdpr:article14 ;
     GDPRtext:isPartOfChapter gdpr:chapterIII ;
     GDPRtext:isPartOfSection gdpr:chapterIII-2 .
@@ -11377,6 +11466,10 @@ gdpr:article18-1 a eli:LegalResourceSubdivision,
         gdpr:chapterIII-3 ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article18(1)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article18-1-1,
+        gdpr:article18-1-2,
+        gdpr:article18-1-3,
+        gdpr:article18-1-4 ;
     GDPRtext:isPartOfArticle gdpr:article18 ;
     GDPRtext:isPartOfChapter gdpr:chapterIII ;
     GDPRtext:isPartOfSection gdpr:chapterIII-3 .
@@ -11389,8 +11482,51 @@ gdpr:article2-2 a eli:LegalResourceSubdivision,
         gdpr:chapterI ;
     eli:number "2"^^xsd:string ;
     eli:title_alternative "Article2(2)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article2-2-1,
+        gdpr:article2-2-2,
+        gdpr:article2-2-3,
+        gdpr:article2-2-4 ;
     GDPRtext:isPartOfArticle gdpr:article2 ;
     GDPRtext:isPartOfChapter gdpr:chapterI .
+
+gdpr:article24 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterIV,
+        gdpr:chapterIV-1 ;
+    eli:number "24"^^xsd:string ;
+    eli:title_alternative "Article 24"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article24-1,
+        gdpr:article24-2,
+        gdpr:article24-3 ;
+    GDPRtext:isPartOfChapter gdpr:chapterIV ;
+    GDPRtext:isPartOfSection gdpr:chapterIV-1 .
+
+gdpr:article25 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterIV,
+        gdpr:chapterIV-1 ;
+    eli:number "25"^^xsd:string ;
+    eli:title_alternative "Article 25"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article25-1,
+        gdpr:article25-2,
+        gdpr:article25-3 ;
+    GDPRtext:isPartOfChapter gdpr:chapterIV ;
+    GDPRtext:isPartOfSection gdpr:chapterIV-1 .
+
+gdpr:article26 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterIV,
+        gdpr:chapterIV-1 ;
+    eli:number "26"^^xsd:string ;
+    eli:title_alternative "Article 26"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article26-1,
+        gdpr:article26-2,
+        gdpr:article26-3 ;
+    GDPRtext:isPartOfChapter gdpr:chapterIV ;
+    GDPRtext:isPartOfSection gdpr:chapterIV-1 .
 
 gdpr:article30-2 a eli:LegalResourceSubdivision,
         GDPRtext:Point ;
@@ -11401,6 +11537,10 @@ gdpr:article30-2 a eli:LegalResourceSubdivision,
         gdpr:chapterIV-1 ;
     eli:number "2"^^xsd:string ;
     eli:title_alternative "Article30(2)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article30-2-1,
+        gdpr:article30-2-2,
+        gdpr:article30-2-3,
+        gdpr:article30-2-4 ;
     GDPRtext:isPartOfArticle gdpr:article30 ;
     GDPRtext:isPartOfChapter gdpr:chapterIV ;
     GDPRtext:isPartOfSection gdpr:chapterIV-1 .
@@ -11414,6 +11554,10 @@ gdpr:article32-1 a eli:LegalResourceSubdivision,
         gdpr:chapterIV-2 ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article32(1)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article32-1-1,
+        gdpr:article32-1-2,
+        gdpr:article32-1-3,
+        gdpr:article32-1-4 ;
     GDPRtext:isPartOfArticle gdpr:article32 ;
     GDPRtext:isPartOfChapter gdpr:chapterIV ;
     GDPRtext:isPartOfSection gdpr:chapterIV-2 .
@@ -11427,6 +11571,10 @@ gdpr:article33-3 a eli:LegalResourceSubdivision,
         gdpr:chapterIV-2 ;
     eli:number "3"^^xsd:string ;
     eli:title_alternative "Article33(3)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article33-3-1,
+        gdpr:article33-3-2,
+        gdpr:article33-3-3,
+        gdpr:article33-3-4 ;
     GDPRtext:isPartOfArticle gdpr:article33 ;
     GDPRtext:isPartOfChapter gdpr:chapterIV ;
     GDPRtext:isPartOfSection gdpr:chapterIV-2 .
@@ -11440,6 +11588,10 @@ gdpr:article35-7 a eli:LegalResourceSubdivision,
         gdpr:chapterIV-3 ;
     eli:number "7"^^xsd:string ;
     eli:title_alternative "Article35(7)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article35-7-1,
+        gdpr:article35-7-2,
+        gdpr:article35-7-3,
+        gdpr:article35-7-4 ;
     GDPRtext:isPartOfArticle gdpr:article35 ;
     GDPRtext:isPartOfChapter gdpr:chapterIV ;
     GDPRtext:isPartOfSection gdpr:chapterIV-3 .
@@ -11453,6 +11605,10 @@ gdpr:article41-2 a eli:LegalResourceSubdivision,
         gdpr:chapterIV-5 ;
     eli:number "2"^^xsd:string ;
     eli:title_alternative "Article41(2)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article41-2-1,
+        gdpr:article41-2-2,
+        gdpr:article41-2-3,
+        gdpr:article41-2-4 ;
     GDPRtext:isPartOfArticle gdpr:article41 ;
     GDPRtext:isPartOfChapter gdpr:chapterIV ;
     GDPRtext:isPartOfSection gdpr:chapterIV-5 .
@@ -11465,18 +11621,12 @@ gdpr:article50-1 a eli:LegalResourceSubdivision,
         gdpr:chapterV ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article50(1)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article50-1-1,
+        gdpr:article50-1-2,
+        gdpr:article50-1-3,
+        gdpr:article50-1-4 ;
     GDPRtext:isPartOfArticle gdpr:article50 ;
     GDPRtext:isPartOfChapter gdpr:chapterV .
-
-gdpr:article51 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterVI,
-        gdpr:chapterVI-1 ;
-    eli:number "51"^^xsd:string ;
-    eli:title_alternative "Article 51"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterVI ;
-    GDPRtext:isPartOfSection gdpr:chapterVI-1 .
 
 gdpr:article53-1 a eli:LegalResourceSubdivision,
         GDPRtext:Point ;
@@ -11487,19 +11637,26 @@ gdpr:article53-1 a eli:LegalResourceSubdivision,
         gdpr:chapterVI-1 ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article53(1)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article53-1-1,
+        gdpr:article53-1-2,
+        gdpr:article53-1-3,
+        gdpr:article53-1-4 ;
     GDPRtext:isPartOfArticle gdpr:article53 ;
     GDPRtext:isPartOfChapter gdpr:chapterVI ;
     GDPRtext:isPartOfSection gdpr:chapterVI-1 .
 
-gdpr:article66 a eli:LegalResourceSubdivision,
+gdpr:article55 a eli:LegalResourceSubdivision,
         GDPRtext:Article ;
     eli:is_part_of gdpr:GDPR,
-        gdpr:chapterVII,
-        gdpr:chapterVII-2 ;
-    eli:number "66"^^xsd:string ;
-    eli:title_alternative "Article 66"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterVII ;
-    GDPRtext:isPartOfSection gdpr:chapterVII-2 .
+        gdpr:chapterVI,
+        gdpr:chapterVI-2 ;
+    eli:number "55"^^xsd:string ;
+    eli:title_alternative "Article 55"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article55-1,
+        gdpr:article55-2,
+        gdpr:article55-3 ;
+    GDPRtext:isPartOfChapter gdpr:chapterVI ;
+    GDPRtext:isPartOfSection gdpr:chapterVI-2 .
 
 gdpr:article7 a eli:LegalResourceSubdivision,
         GDPRtext:Article ;
@@ -11507,6 +11664,10 @@ gdpr:article7 a eli:LegalResourceSubdivision,
         gdpr:chapterII ;
     eli:number "7"^^xsd:string ;
     eli:title_alternative "Article 7"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article7-1,
+        gdpr:article7-2,
+        gdpr:article7-3,
+        gdpr:article7-4 ;
     GDPRtext:isPartOfChapter gdpr:chapterII .
 
 gdpr:article78 a eli:LegalResourceSubdivision,
@@ -11515,6 +11676,10 @@ gdpr:article78 a eli:LegalResourceSubdivision,
         gdpr:chapterVIII ;
     eli:number "78"^^xsd:string ;
     eli:title_alternative "Article 78"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article78-1,
+        gdpr:article78-2,
+        gdpr:article78-3,
+        gdpr:article78-4 ;
     GDPRtext:isPartOfChapter gdpr:chapterVIII .
 
 gdpr:article89 a eli:LegalResourceSubdivision,
@@ -11523,6 +11688,10 @@ gdpr:article89 a eli:LegalResourceSubdivision,
         gdpr:chapterIX ;
     eli:number "89"^^xsd:string ;
     eli:title_alternative "Article 89"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article89-1,
+        gdpr:article89-2,
+        gdpr:article89-3,
+        gdpr:article89-4 ;
     GDPRtext:isPartOfChapter gdpr:chapterIX .
 
 gdpr:article17-3 a eli:LegalResourceSubdivision,
@@ -11534,17 +11703,14 @@ gdpr:article17-3 a eli:LegalResourceSubdivision,
         gdpr:chapterIII-3 ;
     eli:number "3"^^xsd:string ;
     eli:title_alternative "Article17(3)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article17-3-1,
+        gdpr:article17-3-2,
+        gdpr:article17-3-3,
+        gdpr:article17-3-4,
+        gdpr:article17-3-5 ;
     GDPRtext:isPartOfArticle gdpr:article17 ;
     GDPRtext:isPartOfChapter gdpr:chapterIII ;
     GDPRtext:isPartOfSection gdpr:chapterIII-3 .
-
-gdpr:article3 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterI ;
-    eli:number "3"^^xsd:string ;
-    eli:title_alternative "Article 3"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterI .
 
 gdpr:article39-1 a eli:LegalResourceSubdivision,
         GDPRtext:Point ;
@@ -11555,6 +11721,11 @@ gdpr:article39-1 a eli:LegalResourceSubdivision,
         gdpr:chapterIV-4 ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article39(1)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article39-1-1,
+        gdpr:article39-1-2,
+        gdpr:article39-1-3,
+        gdpr:article39-1-4,
+        gdpr:article39-1-5 ;
     GDPRtext:isPartOfArticle gdpr:article39 ;
     GDPRtext:isPartOfChapter gdpr:chapterIV ;
     GDPRtext:isPartOfSection gdpr:chapterIV-4 .
@@ -11568,17 +11739,28 @@ gdpr:article43-2 a eli:LegalResourceSubdivision,
         gdpr:chapterIV-5 ;
     eli:number "2"^^xsd:string ;
     eli:title_alternative "Article43(2)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article43-2-1,
+        gdpr:article43-2-2,
+        gdpr:article43-2-3,
+        gdpr:article43-2-4,
+        gdpr:article43-2-5 ;
     GDPRtext:isPartOfArticle gdpr:article43 ;
     GDPRtext:isPartOfChapter gdpr:chapterIV ;
     GDPRtext:isPartOfSection gdpr:chapterIV-5 .
 
-gdpr:article50 a eli:LegalResourceSubdivision,
+gdpr:article51 a eli:LegalResourceSubdivision,
         GDPRtext:Article ;
     eli:is_part_of gdpr:GDPR,
-        gdpr:chapterV ;
-    eli:number "50"^^xsd:string ;
-    eli:title_alternative "Article 50"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterV .
+        gdpr:chapterVI,
+        gdpr:chapterVI-1 ;
+    eli:number "51"^^xsd:string ;
+    eli:title_alternative "Article 51"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article51-1,
+        gdpr:article51-2,
+        gdpr:article51-3,
+        gdpr:article51-4 ;
+    GDPRtext:isPartOfChapter gdpr:chapterVI ;
+    GDPRtext:isPartOfSection gdpr:chapterVI-1 .
 
 gdpr:article6-4 a eli:LegalResourceSubdivision,
         GDPRtext:Point ;
@@ -11588,18 +11770,27 @@ gdpr:article6-4 a eli:LegalResourceSubdivision,
         gdpr:chapterII ;
     eli:number "4"^^xsd:string ;
     eli:title_alternative "Article6(4)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article6-4-1,
+        gdpr:article6-4-2,
+        gdpr:article6-4-3,
+        gdpr:article6-4-4,
+        gdpr:article6-4-5 ;
     GDPRtext:isPartOfArticle gdpr:article6 ;
     GDPRtext:isPartOfChapter gdpr:chapterII .
 
-gdpr:article74 a eli:LegalResourceSubdivision,
+gdpr:article66 a eli:LegalResourceSubdivision,
         GDPRtext:Article ;
     eli:is_part_of gdpr:GDPR,
         gdpr:chapterVII,
-        gdpr:chapterVII-3 ;
-    eli:number "74"^^xsd:string ;
-    eli:title_alternative "Article 74"^^xsd:string ;
+        gdpr:chapterVII-2 ;
+    eli:number "66"^^xsd:string ;
+    eli:title_alternative "Article 66"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article66-1,
+        gdpr:article66-2,
+        gdpr:article66-3,
+        gdpr:article66-4 ;
     GDPRtext:isPartOfChapter gdpr:chapterVII ;
-    GDPRtext:isPartOfSection gdpr:chapterVII-3 .
+    GDPRtext:isPartOfSection gdpr:chapterVII-2 .
 
 gdpr:article83-5 a eli:LegalResourceSubdivision,
         GDPRtext:Point ;
@@ -11609,8 +11800,33 @@ gdpr:article83-5 a eli:LegalResourceSubdivision,
         gdpr:chapterVIII ;
     eli:number "5"^^xsd:string ;
     eli:title_alternative "Article83(5)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article83-5-1,
+        gdpr:article83-5-2,
+        gdpr:article83-5-3,
+        gdpr:article83-5-4,
+        gdpr:article83-5-5 ;
     GDPRtext:isPartOfArticle gdpr:article83 ;
     GDPRtext:isPartOfChapter gdpr:chapterVIII .
+
+gdpr:article3 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterI ;
+    eli:number "3"^^xsd:string ;
+    eli:title_alternative "Article 3"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article3-1,
+        gdpr:article3-2,
+        gdpr:article3-3 ;
+    GDPRtext:isPartOfChapter gdpr:chapterI .
+
+gdpr:article50 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterV ;
+    eli:number "50"^^xsd:string ;
+    eli:title_alternative "Article 50"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article50-1 ;
+    GDPRtext:isPartOfChapter gdpr:chapterV .
 
 gdpr:article92 a eli:LegalResourceSubdivision,
         GDPRtext:Article ;
@@ -11618,6 +11834,11 @@ gdpr:article92 a eli:LegalResourceSubdivision,
         gdpr:chapterX ;
     eli:number "92"^^xsd:string ;
     eli:title_alternative "Article 92"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article92-1,
+        gdpr:article92-2,
+        gdpr:article92-3,
+        gdpr:article92-4,
+        gdpr:article92-5 ;
     GDPRtext:isPartOfChapter gdpr:chapterX .
 
 gdpr:article13-1 a eli:LegalResourceSubdivision,
@@ -11629,6 +11850,12 @@ gdpr:article13-1 a eli:LegalResourceSubdivision,
         gdpr:chapterIII-2 ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article13(1)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article13-1-1,
+        gdpr:article13-1-2,
+        gdpr:article13-1-3,
+        gdpr:article13-1-4,
+        gdpr:article13-1-5,
+        gdpr:article13-1-6 ;
     GDPRtext:isPartOfArticle gdpr:article13 ;
     GDPRtext:isPartOfChapter gdpr:chapterIII ;
     GDPRtext:isPartOfSection gdpr:chapterIII-2 .
@@ -11642,6 +11869,12 @@ gdpr:article13-2 a eli:LegalResourceSubdivision,
         gdpr:chapterIII-2 ;
     eli:number "2"^^xsd:string ;
     eli:title_alternative "Article13(2)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article13-2-1,
+        gdpr:article13-2-2,
+        gdpr:article13-2-3,
+        gdpr:article13-2-4,
+        gdpr:article13-2-5,
+        gdpr:article13-2-6 ;
     GDPRtext:isPartOfArticle gdpr:article13 ;
     GDPRtext:isPartOfChapter gdpr:chapterIII ;
     GDPRtext:isPartOfSection gdpr:chapterIII-2 .
@@ -11655,6 +11888,12 @@ gdpr:article14-1 a eli:LegalResourceSubdivision,
         gdpr:chapterIII-2 ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article14(1)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article14-1-1,
+        gdpr:article14-1-2,
+        gdpr:article14-1-3,
+        gdpr:article14-1-4,
+        gdpr:article14-1-5,
+        gdpr:article14-1-6 ;
     GDPRtext:isPartOfArticle gdpr:article14 ;
     GDPRtext:isPartOfChapter gdpr:chapterIII ;
     GDPRtext:isPartOfSection gdpr:chapterIII-2 .
@@ -11668,29 +11907,15 @@ gdpr:article17-1 a eli:LegalResourceSubdivision,
         gdpr:chapterIII-3 ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article17(1)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article17-1-1,
+        gdpr:article17-1-2,
+        gdpr:article17-1-3,
+        gdpr:article17-1-4,
+        gdpr:article17-1-5,
+        gdpr:article17-1-6 ;
     GDPRtext:isPartOfArticle gdpr:article17 ;
     GDPRtext:isPartOfChapter gdpr:chapterIII ;
     GDPRtext:isPartOfSection gdpr:chapterIII-3 .
-
-gdpr:article20 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterIII,
-        gdpr:chapterIII-3 ;
-    eli:number "20"^^xsd:string ;
-    eli:title_alternative "Article 20"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterIII ;
-    GDPRtext:isPartOfSection gdpr:chapterIII-3 .
-
-gdpr:article21 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterIII,
-        gdpr:chapterIII-4 ;
-    eli:number "21"^^xsd:string ;
-    eli:title_alternative "Article 21"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterIII ;
-    GDPRtext:isPartOfSection gdpr:chapterIII-4 .
 
 gdpr:article36-3 a eli:LegalResourceSubdivision,
         GDPRtext:Point ;
@@ -11701,19 +11926,15 @@ gdpr:article36-3 a eli:LegalResourceSubdivision,
         gdpr:chapterIV-3 ;
     eli:number "3"^^xsd:string ;
     eli:title_alternative "Article36(3)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article36-3-1,
+        gdpr:article36-3-2,
+        gdpr:article36-3-3,
+        gdpr:article36-3-4,
+        gdpr:article36-3-5,
+        gdpr:article36-3-6 ;
     GDPRtext:isPartOfArticle gdpr:article36 ;
     GDPRtext:isPartOfChapter gdpr:chapterIV ;
     GDPRtext:isPartOfSection gdpr:chapterIV-3 .
-
-gdpr:article38 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterIV,
-        gdpr:chapterIV-4 ;
-    eli:number "38"^^xsd:string ;
-    eli:title_alternative "Article 38"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterIV ;
-    GDPRtext:isPartOfSection gdpr:chapterIV-4 .
 
 gdpr:article46-2 a eli:LegalResourceSubdivision,
         GDPRtext:Point ;
@@ -11723,6 +11944,12 @@ gdpr:article46-2 a eli:LegalResourceSubdivision,
         gdpr:chapterV ;
     eli:number "2"^^xsd:string ;
     eli:title_alternative "Article46(2)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article46-2-1,
+        gdpr:article46-2-2,
+        gdpr:article46-2-3,
+        gdpr:article46-2-4,
+        gdpr:article46-2-5,
+        gdpr:article46-2-6 ;
     GDPRtext:isPartOfArticle gdpr:article46 ;
     GDPRtext:isPartOfChapter gdpr:chapterV .
 
@@ -11734,18 +11961,14 @@ gdpr:article5-1 a eli:LegalResourceSubdivision,
         gdpr:chapterII ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article5(1)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article5-1-1,
+        gdpr:article5-1-2,
+        gdpr:article5-1-3,
+        gdpr:article5-1-4,
+        gdpr:article5-1-5,
+        gdpr:article5-1-6 ;
     GDPRtext:isPartOfArticle gdpr:article5 ;
     GDPRtext:isPartOfChapter gdpr:chapterII .
-
-gdpr:article52 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterVI,
-        gdpr:chapterVI-1 ;
-    eli:number "52"^^xsd:string ;
-    eli:title_alternative "Article 52"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterVI ;
-    GDPRtext:isPartOfSection gdpr:chapterVI-1 .
 
 gdpr:article54-1 a eli:LegalResourceSubdivision,
         GDPRtext:Point ;
@@ -11756,19 +11979,15 @@ gdpr:article54-1 a eli:LegalResourceSubdivision,
         gdpr:chapterVI-1 ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article54(1)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article54-1-1,
+        gdpr:article54-1-2,
+        gdpr:article54-1-3,
+        gdpr:article54-1-4,
+        gdpr:article54-1-5,
+        gdpr:article54-1-6 ;
     GDPRtext:isPartOfArticle gdpr:article54 ;
     GDPRtext:isPartOfChapter gdpr:chapterVI ;
     GDPRtext:isPartOfSection gdpr:chapterVI-1 .
-
-gdpr:article56 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterVI,
-        gdpr:chapterVI-2 ;
-    eli:number "56"^^xsd:string ;
-    eli:title_alternative "Article 56"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterVI ;
-    GDPRtext:isPartOfSection gdpr:chapterVI-2 .
 
 gdpr:article58-1 a eli:LegalResourceSubdivision,
         GDPRtext:Point ;
@@ -11779,6 +11998,12 @@ gdpr:article58-1 a eli:LegalResourceSubdivision,
         gdpr:chapterVI-2 ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article58(1)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article58-1-1,
+        gdpr:article58-1-2,
+        gdpr:article58-1-3,
+        gdpr:article58-1-4,
+        gdpr:article58-1-5,
+        gdpr:article58-1-6 ;
     GDPRtext:isPartOfArticle gdpr:article58 ;
     GDPRtext:isPartOfChapter gdpr:chapterVI ;
     GDPRtext:isPartOfSection gdpr:chapterVI-2 .
@@ -11792,6 +12017,12 @@ gdpr:article6-1 a eli:LegalResourceSubdivision,
         gdpr:chapterII ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article6(1)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article6-1-1,
+        gdpr:article6-1-2,
+        gdpr:article6-1-3,
+        gdpr:article6-1-4,
+        gdpr:article6-1-5,
+        gdpr:article6-1-6 ;
     GDPRtext:isPartOfArticle gdpr:article6 ;
     GDPRtext:isPartOfChapter gdpr:chapterII .
 
@@ -11804,17 +12035,25 @@ gdpr:article64-1 a eli:LegalResourceSubdivision,
         gdpr:chapterVII-2 ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article64(1)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article64-1-1,
+        gdpr:article64-1-2,
+        gdpr:article64-1-3,
+        gdpr:article64-1-4,
+        gdpr:article64-1-5,
+        gdpr:article64-1-6 ;
     GDPRtext:isPartOfArticle gdpr:article64 ;
     GDPRtext:isPartOfChapter gdpr:chapterVII ;
     GDPRtext:isPartOfSection gdpr:chapterVII-2 .
 
-gdpr:article68 a eli:LegalResourceSubdivision,
+gdpr:article74 a eli:LegalResourceSubdivision,
         GDPRtext:Article ;
     eli:is_part_of gdpr:GDPR,
         gdpr:chapterVII,
         gdpr:chapterVII-3 ;
-    eli:number "68"^^xsd:string ;
-    eli:title_alternative "Article 68"^^xsd:string ;
+    eli:number "74"^^xsd:string ;
+    eli:title_alternative "Article 74"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article74-1,
+        gdpr:article74-2 ;
     GDPRtext:isPartOfChapter gdpr:chapterVII ;
     GDPRtext:isPartOfSection gdpr:chapterVII-3 .
 
@@ -11824,6 +12063,12 @@ gdpr:article82 a eli:LegalResourceSubdivision,
         gdpr:chapterVIII ;
     eli:number "82"^^xsd:string ;
     eli:title_alternative "Article 82"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article82-1,
+        gdpr:article82-2,
+        gdpr:article82-3,
+        gdpr:article82-4,
+        gdpr:article82-5,
+        gdpr:article82-6 ;
     GDPRtext:isPartOfChapter gdpr:chapterVIII .
 
 gdpr:article14-2 a eli:LegalResourceSubdivision,
@@ -11835,39 +12080,46 @@ gdpr:article14-2 a eli:LegalResourceSubdivision,
         gdpr:chapterIII-2 ;
     eli:number "2"^^xsd:string ;
     eli:title_alternative "Article14(2)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article14-2-1,
+        gdpr:article14-2-2,
+        gdpr:article14-2-3,
+        gdpr:article14-2-4,
+        gdpr:article14-2-5,
+        gdpr:article14-2-6,
+        gdpr:article14-2-7 ;
     GDPRtext:isPartOfArticle gdpr:article14 ;
     GDPRtext:isPartOfChapter gdpr:chapterIII ;
     GDPRtext:isPartOfSection gdpr:chapterIII-2 .
 
-gdpr:article18 a eli:LegalResourceSubdivision,
+gdpr:article20 a eli:LegalResourceSubdivision,
         GDPRtext:Article ;
     eli:is_part_of gdpr:GDPR,
         gdpr:chapterIII,
         gdpr:chapterIII-3 ;
-    eli:number "18"^^xsd:string ;
-    eli:title_alternative "Article 18"^^xsd:string ;
+    eli:number "20"^^xsd:string ;
+    eli:title_alternative "Article 20"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article20-1,
+        gdpr:article20-2,
+        gdpr:article20-3,
+        gdpr:article20-4 ;
     GDPRtext:isPartOfChapter gdpr:chapterIII ;
     GDPRtext:isPartOfSection gdpr:chapterIII-3 .
 
-gdpr:article22 a eli:LegalResourceSubdivision,
+gdpr:article21 a eli:LegalResourceSubdivision,
         GDPRtext:Article ;
     eli:is_part_of gdpr:GDPR,
         gdpr:chapterIII,
         gdpr:chapterIII-4 ;
-    eli:number "22"^^xsd:string ;
-    eli:title_alternative "Article 22"^^xsd:string ;
+    eli:number "21"^^xsd:string ;
+    eli:title_alternative "Article 21"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article21-1,
+        gdpr:article21-2,
+        gdpr:article21-3,
+        gdpr:article21-4,
+        gdpr:article21-5,
+        gdpr:article21-6 ;
     GDPRtext:isPartOfChapter gdpr:chapterIII ;
     GDPRtext:isPartOfSection gdpr:chapterIII-4 .
-
-gdpr:article27 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterIV,
-        gdpr:chapterIV-1 ;
-    eli:number "27"^^xsd:string ;
-    eli:title_alternative "Article 27"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterIV ;
-    GDPRtext:isPartOfSection gdpr:chapterIV-1 .
 
 gdpr:article30-1 a eli:LegalResourceSubdivision,
         GDPRtext:Point ;
@@ -11878,27 +12130,30 @@ gdpr:article30-1 a eli:LegalResourceSubdivision,
         gdpr:chapterIV-1 ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article30(1)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article30-1-1,
+        gdpr:article30-1-2,
+        gdpr:article30-1-3,
+        gdpr:article30-1-4,
+        gdpr:article30-1-5,
+        gdpr:article30-1-6,
+        gdpr:article30-1-7 ;
     GDPRtext:isPartOfArticle gdpr:article30 ;
     GDPRtext:isPartOfChapter gdpr:chapterIV ;
     GDPRtext:isPartOfSection gdpr:chapterIV-1 .
 
-gdpr:article34 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterIV,
-        gdpr:chapterIV-2 ;
-    eli:number "34"^^xsd:string ;
-    eli:title_alternative "Article 34"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterIV ;
-    GDPRtext:isPartOfSection gdpr:chapterIV-2 .
-
-gdpr:article39 a eli:LegalResourceSubdivision,
+gdpr:article38 a eli:LegalResourceSubdivision,
         GDPRtext:Article ;
     eli:is_part_of gdpr:GDPR,
         gdpr:chapterIV,
         gdpr:chapterIV-4 ;
-    eli:number "39"^^xsd:string ;
-    eli:title_alternative "Article 39"^^xsd:string ;
+    eli:number "38"^^xsd:string ;
+    eli:title_alternative "Article 38"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article38-1,
+        gdpr:article38-2,
+        gdpr:article38-3,
+        gdpr:article38-4,
+        gdpr:article38-5,
+        gdpr:article38-6 ;
     GDPRtext:isPartOfChapter gdpr:chapterIV ;
     GDPRtext:isPartOfSection gdpr:chapterIV-4 .
 
@@ -11911,18 +12166,63 @@ gdpr:article49-1 a eli:LegalResourceSubdivision,
         gdpr:chapterV ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article49(1)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article49-1-1,
+        gdpr:article49-1-2,
+        gdpr:article49-1-3,
+        gdpr:article49-1-4,
+        gdpr:article49-1-5,
+        gdpr:article49-1-6,
+        gdpr:article49-1-7 ;
     GDPRtext:isPartOfArticle gdpr:article49 ;
     GDPRtext:isPartOfChapter gdpr:chapterV .
 
-gdpr:article62 a eli:LegalResourceSubdivision,
+gdpr:article52 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterVI,
+        gdpr:chapterVI-1 ;
+    eli:number "52"^^xsd:string ;
+    eli:title_alternative "Article 52"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article52-1,
+        gdpr:article52-2,
+        gdpr:article52-3,
+        gdpr:article52-4,
+        gdpr:article52-5,
+        gdpr:article52-6 ;
+    GDPRtext:isPartOfChapter gdpr:chapterVI ;
+    GDPRtext:isPartOfSection gdpr:chapterVI-1 .
+
+gdpr:article56 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterVI,
+        gdpr:chapterVI-2 ;
+    eli:number "56"^^xsd:string ;
+    eli:title_alternative "Article 56"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article56-1,
+        gdpr:article56-2,
+        gdpr:article56-3,
+        gdpr:article56-4,
+        gdpr:article56-5,
+        gdpr:article56-6 ;
+    GDPRtext:isPartOfChapter gdpr:chapterVI ;
+    GDPRtext:isPartOfSection gdpr:chapterVI-2 .
+
+gdpr:article68 a eli:LegalResourceSubdivision,
         GDPRtext:Article ;
     eli:is_part_of gdpr:GDPR,
         gdpr:chapterVII,
-        gdpr:chapterVII-1 ;
-    eli:number "62"^^xsd:string ;
-    eli:title_alternative "Article 62"^^xsd:string ;
+        gdpr:chapterVII-3 ;
+    eli:number "68"^^xsd:string ;
+    eli:title_alternative "Article 68"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article68-1,
+        gdpr:article68-2,
+        gdpr:article68-3,
+        gdpr:article68-4,
+        gdpr:article68-5,
+        gdpr:article68-6 ;
     GDPRtext:isPartOfChapter gdpr:chapterVII ;
-    GDPRtext:isPartOfSection gdpr:chapterVII-1 .
+    GDPRtext:isPartOfSection gdpr:chapterVII-3 .
 
 gdpr:article75-6 a eli:LegalResourceSubdivision,
         GDPRtext:Point ;
@@ -11933,6 +12233,13 @@ gdpr:article75-6 a eli:LegalResourceSubdivision,
         gdpr:chapterVII-3 ;
     eli:number "6"^^xsd:string ;
     eli:title_alternative "Article75(6)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article75-6-1,
+        gdpr:article75-6-2,
+        gdpr:article75-6-3,
+        gdpr:article75-6-4,
+        gdpr:article75-6-5,
+        gdpr:article75-6-6,
+        gdpr:article75-6-7 ;
     GDPRtext:isPartOfArticle gdpr:article75 ;
     GDPRtext:isPartOfChapter gdpr:chapterVII ;
     GDPRtext:isPartOfSection gdpr:chapterVII-3 .
@@ -11943,6 +12250,11 @@ gdpr:article97 a eli:LegalResourceSubdivision,
         gdpr:chapterXI ;
     eli:number "97"^^xsd:string ;
     eli:title_alternative "Article 97"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article97-1,
+        gdpr:article97-2,
+        gdpr:article97-3,
+        gdpr:article97-4,
+        gdpr:article97-5 ;
     GDPRtext:isPartOfChapter gdpr:chapterXI .
 
 gdpr:article15-1 a eli:LegalResourceSubdivision,
@@ -11954,17 +12266,44 @@ gdpr:article15-1 a eli:LegalResourceSubdivision,
         gdpr:chapterIII-2 ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article15(1)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article15-1-1,
+        gdpr:article15-1-2,
+        gdpr:article15-1-3,
+        gdpr:article15-1-4,
+        gdpr:article15-1-5,
+        gdpr:article15-1-6,
+        gdpr:article15-1-7,
+        gdpr:article15-1-8 ;
     GDPRtext:isPartOfArticle gdpr:article15 ;
     GDPRtext:isPartOfChapter gdpr:chapterIII ;
     GDPRtext:isPartOfSection gdpr:chapterIII-2 .
 
-gdpr:article2 a eli:LegalResourceSubdivision,
+gdpr:article18 a eli:LegalResourceSubdivision,
         GDPRtext:Article ;
     eli:is_part_of gdpr:GDPR,
-        gdpr:chapterI ;
-    eli:number "2"^^xsd:string ;
-    eli:title_alternative "Article 2"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterI .
+        gdpr:chapterIII,
+        gdpr:chapterIII-3 ;
+    eli:number "18"^^xsd:string ;
+    eli:title_alternative "Article 18"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article18-1,
+        gdpr:article18-2,
+        gdpr:article18-3 ;
+    GDPRtext:isPartOfChapter gdpr:chapterIII ;
+    GDPRtext:isPartOfSection gdpr:chapterIII-3 .
+
+gdpr:article22 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterIII,
+        gdpr:chapterIII-4 ;
+    eli:number "22"^^xsd:string ;
+    eli:title_alternative "Article 22"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article22-1,
+        gdpr:article22-2,
+        gdpr:article22-3,
+        gdpr:article22-4 ;
+    GDPRtext:isPartOfChapter gdpr:chapterIII ;
+    GDPRtext:isPartOfSection gdpr:chapterIII-4 .
 
 gdpr:article23-2 a eli:LegalResourceSubdivision,
         GDPRtext:Point ;
@@ -11975,9 +12314,32 @@ gdpr:article23-2 a eli:LegalResourceSubdivision,
         gdpr:chapterIII-5 ;
     eli:number "2"^^xsd:string ;
     eli:title_alternative "Article23(2)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article23-2-1,
+        gdpr:article23-2-2,
+        gdpr:article23-2-3,
+        gdpr:article23-2-4,
+        gdpr:article23-2-5,
+        gdpr:article23-2-6,
+        gdpr:article23-2-7,
+        gdpr:article23-2-8 ;
     GDPRtext:isPartOfArticle gdpr:article23 ;
     GDPRtext:isPartOfChapter gdpr:chapterIII ;
     GDPRtext:isPartOfSection gdpr:chapterIII-5 .
+
+gdpr:article27 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterIV,
+        gdpr:chapterIV-1 ;
+    eli:number "27"^^xsd:string ;
+    eli:title_alternative "Article 27"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article27-1,
+        gdpr:article27-2,
+        gdpr:article27-3,
+        gdpr:article27-4,
+        gdpr:article27-5 ;
+    GDPRtext:isPartOfChapter gdpr:chapterIV ;
+    GDPRtext:isPartOfSection gdpr:chapterIV-1 .
 
 gdpr:article28-3 a eli:LegalResourceSubdivision,
         GDPRtext:Point ;
@@ -11988,9 +12350,82 @@ gdpr:article28-3 a eli:LegalResourceSubdivision,
         gdpr:chapterIV-1 ;
     eli:number "3"^^xsd:string ;
     eli:title_alternative "Article28(3)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article28-3-1,
+        gdpr:article28-3-2,
+        gdpr:article28-3-3,
+        gdpr:article28-3-4,
+        gdpr:article28-3-5,
+        gdpr:article28-3-6,
+        gdpr:article28-3-7,
+        gdpr:article28-3-8 ;
     GDPRtext:isPartOfArticle gdpr:article28 ;
     GDPRtext:isPartOfChapter gdpr:chapterIV ;
     GDPRtext:isPartOfSection gdpr:chapterIV-1 .
+
+gdpr:article34 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterIV,
+        gdpr:chapterIV-2 ;
+    eli:number "34"^^xsd:string ;
+    eli:title_alternative "Article 34"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article34-1,
+        gdpr:article34-2,
+        gdpr:article34-3,
+        gdpr:article34-4 ;
+    GDPRtext:isPartOfChapter gdpr:chapterIV ;
+    GDPRtext:isPartOfSection gdpr:chapterIV-2 .
+
+gdpr:article39 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterIV,
+        gdpr:chapterIV-4 ;
+    eli:number "39"^^xsd:string ;
+    eli:title_alternative "Article 39"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article39-1,
+        gdpr:article39-2 ;
+    GDPRtext:isPartOfChapter gdpr:chapterIV ;
+    GDPRtext:isPartOfSection gdpr:chapterIV-4 .
+
+gdpr:article62 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterVII,
+        gdpr:chapterVII-1 ;
+    eli:number "62"^^xsd:string ;
+    eli:title_alternative "Article 62"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article62-1,
+        gdpr:article62-2,
+        gdpr:article62-3,
+        gdpr:article62-4,
+        gdpr:article62-5,
+        gdpr:article62-6,
+        gdpr:article62-7 ;
+    GDPRtext:isPartOfChapter gdpr:chapterVII ;
+    GDPRtext:isPartOfSection gdpr:chapterVII-1 .
+
+gdpr:article2 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterI ;
+    eli:number "2"^^xsd:string ;
+    eli:title_alternative "Article 2"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article2-1,
+        gdpr:article2-2,
+        gdpr:article2-3,
+        gdpr:article2-4 ;
+    GDPRtext:isPartOfChapter gdpr:chapterI .
+
+gdpr:article5 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterII ;
+    eli:number "5"^^xsd:string ;
+    eli:title_alternative "Article 5"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article5-1,
+        gdpr:article5-2 ;
+    GDPRtext:isPartOfChapter gdpr:chapterII .
 
 gdpr:article32 a eli:LegalResourceSubdivision,
         GDPRtext:Article ;
@@ -11999,6 +12434,10 @@ gdpr:article32 a eli:LegalResourceSubdivision,
         gdpr:chapterIV-2 ;
     eli:number "32"^^xsd:string ;
     eli:title_alternative "Article 32"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article32-1,
+        gdpr:article32-2,
+        gdpr:article32-3,
+        gdpr:article32-4 ;
     GDPRtext:isPartOfChapter gdpr:chapterIV ;
     GDPRtext:isPartOfSection gdpr:chapterIV-2 .
 
@@ -12009,16 +12448,16 @@ gdpr:article42 a eli:LegalResourceSubdivision,
         gdpr:chapterIV-5 ;
     eli:number "42"^^xsd:string ;
     eli:title_alternative "Article 42"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article42-1,
+        gdpr:article42-2,
+        gdpr:article42-3,
+        gdpr:article42-4,
+        gdpr:article42-5,
+        gdpr:article42-6,
+        gdpr:article42-7,
+        gdpr:article42-8 ;
     GDPRtext:isPartOfChapter gdpr:chapterIV ;
     GDPRtext:isPartOfSection gdpr:chapterIV-5 .
-
-gdpr:article5 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterII ;
-    eli:number "5"^^xsd:string ;
-    eli:title_alternative "Article 5"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterII .
 
 gdpr:article53 a eli:LegalResourceSubdivision,
         GDPRtext:Article ;
@@ -12027,6 +12466,10 @@ gdpr:article53 a eli:LegalResourceSubdivision,
         gdpr:chapterVI-1 ;
     eli:number "53"^^xsd:string ;
     eli:title_alternative "Article 53"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article53-1,
+        gdpr:article53-2,
+        gdpr:article53-3,
+        gdpr:article53-4 ;
     GDPRtext:isPartOfChapter gdpr:chapterVI ;
     GDPRtext:isPartOfSection gdpr:chapterVI-1 .
 
@@ -12037,38 +12480,10 @@ gdpr:article54 a eli:LegalResourceSubdivision,
         gdpr:chapterVI-1 ;
     eli:number "54"^^xsd:string ;
     eli:title_alternative "Article 54"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article54-1,
+        gdpr:article54-2 ;
     GDPRtext:isPartOfChapter gdpr:chapterVI ;
     GDPRtext:isPartOfSection gdpr:chapterVI-1 .
-
-gdpr:article33 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterIV,
-        gdpr:chapterIV-2 ;
-    eli:number "33"^^xsd:string ;
-    eli:title_alternative "Article 33"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterIV ;
-    GDPRtext:isPartOfSection gdpr:chapterIV-2 .
-
-gdpr:article65 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterVII,
-        gdpr:chapterVII-2 ;
-    eli:number "65"^^xsd:string ;
-    eli:title_alternative "Article 65"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterVII ;
-    GDPRtext:isPartOfSection gdpr:chapterVII-2 .
-
-gdpr:article12 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterIII,
-        gdpr:chapterIII-1 ;
-    eli:number "12"^^xsd:string ;
-    eli:title_alternative "Article 12"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterIII ;
-    GDPRtext:isPartOfSection gdpr:chapterIII-1 .
 
 gdpr:article23-1 a eli:LegalResourceSubdivision,
         GDPRtext:Point ;
@@ -12079,29 +12494,34 @@ gdpr:article23-1 a eli:LegalResourceSubdivision,
         gdpr:chapterIII-5 ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article23(1)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article23-1-1,
+        gdpr:article23-1-10,
+        gdpr:article23-1-2,
+        gdpr:article23-1-3,
+        gdpr:article23-1-4,
+        gdpr:article23-1-5,
+        gdpr:article23-1-6,
+        gdpr:article23-1-7,
+        gdpr:article23-1-8,
+        gdpr:article23-1-9 ;
     GDPRtext:isPartOfArticle gdpr:article23 ;
     GDPRtext:isPartOfChapter gdpr:chapterIII ;
     GDPRtext:isPartOfSection gdpr:chapterIII-5 .
 
-gdpr:article37 a eli:LegalResourceSubdivision,
+gdpr:article33 a eli:LegalResourceSubdivision,
         GDPRtext:Article ;
     eli:is_part_of gdpr:GDPR,
         gdpr:chapterIV,
-        gdpr:chapterIV-4 ;
-    eli:number "37"^^xsd:string ;
-    eli:title_alternative "Article 37"^^xsd:string ;
+        gdpr:chapterIV-2 ;
+    eli:number "33"^^xsd:string ;
+    eli:title_alternative "Article 33"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article33-1,
+        gdpr:article33-2,
+        gdpr:article33-3,
+        gdpr:article33-4,
+        gdpr:article33-5 ;
     GDPRtext:isPartOfChapter gdpr:chapterIV ;
-    GDPRtext:isPartOfSection gdpr:chapterIV-4 .
-
-gdpr:article41 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterIV,
-        gdpr:chapterIV-5 ;
-    eli:number "41"^^xsd:string ;
-    eli:title_alternative "Article 41"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterIV ;
-    GDPRtext:isPartOfSection gdpr:chapterIV-5 .
+    GDPRtext:isPartOfSection gdpr:chapterIV-2 .
 
 gdpr:article58-2 a eli:LegalResourceSubdivision,
         GDPRtext:Point ;
@@ -12112,6 +12532,16 @@ gdpr:article58-2 a eli:LegalResourceSubdivision,
         gdpr:chapterVI-2 ;
     eli:number "2"^^xsd:string ;
     eli:title_alternative "Article58(2)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article58-2-1,
+        gdpr:article58-2-10,
+        gdpr:article58-2-2,
+        gdpr:article58-2-3,
+        gdpr:article58-2-4,
+        gdpr:article58-2-5,
+        gdpr:article58-2-6,
+        gdpr:article58-2-7,
+        gdpr:article58-2-8,
+        gdpr:article58-2-9 ;
     GDPRtext:isPartOfArticle gdpr:article58 ;
     GDPRtext:isPartOfChapter gdpr:chapterVI ;
     GDPRtext:isPartOfSection gdpr:chapterVI-2 .
@@ -12125,9 +12555,35 @@ gdpr:article58-3 a eli:LegalResourceSubdivision,
         gdpr:chapterVI-2 ;
     eli:number "3"^^xsd:string ;
     eli:title_alternative "Article58(3)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article58-3-1,
+        gdpr:article58-3-10,
+        gdpr:article58-3-2,
+        gdpr:article58-3-3,
+        gdpr:article58-3-4,
+        gdpr:article58-3-5,
+        gdpr:article58-3-6,
+        gdpr:article58-3-7,
+        gdpr:article58-3-8,
+        gdpr:article58-3-9 ;
     GDPRtext:isPartOfArticle gdpr:article58 ;
     GDPRtext:isPartOfChapter gdpr:chapterVI ;
     GDPRtext:isPartOfSection gdpr:chapterVI-2 .
+
+gdpr:article65 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterVII,
+        gdpr:chapterVII-2 ;
+    eli:number "65"^^xsd:string ;
+    eli:title_alternative "Article 65"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article65-1,
+        gdpr:article65-2,
+        gdpr:article65-3,
+        gdpr:article65-4,
+        gdpr:article65-5,
+        gdpr:article65-6 ;
+    GDPRtext:isPartOfChapter gdpr:chapterVII ;
+    GDPRtext:isPartOfSection gdpr:chapterVII-2 .
 
 gdpr:article9-2 a eli:LegalResourceSubdivision,
         GDPRtext:Point ;
@@ -12137,6 +12593,16 @@ gdpr:article9-2 a eli:LegalResourceSubdivision,
         gdpr:chapterII ;
     eli:number "2"^^xsd:string ;
     eli:title_alternative "Article9(2)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article9-2-1,
+        gdpr:article9-2-10,
+        gdpr:article9-2-2,
+        gdpr:article9-2-3,
+        gdpr:article9-2-4,
+        gdpr:article9-2-5,
+        gdpr:article9-2-6,
+        gdpr:article9-2-7,
+        gdpr:article9-2-8,
+        gdpr:article9-2-9 ;
     GDPRtext:isPartOfArticle gdpr:article9 ;
     GDPRtext:isPartOfChapter gdpr:chapterII .
 
@@ -12145,17 +12611,44 @@ gdpr:chapterX a eli:LegalResourceSubdivision,
     eli:is_part_of gdpr:GDPR ;
     eli:number "X"^^xsd:string ;
     eli:title "Delegated acts and implementing acts"^^xsd:string ;
-    eli:title_alternative "Chapter X"^^xsd:string .
+    eli:title_alternative "Chapter X"^^xsd:string ;
+    GDPRtext:hasArticle gdpr:article92,
+        gdpr:article93 .
 
-gdpr:article36 a eli:LegalResourceSubdivision,
+gdpr:article12 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterIII,
+        gdpr:chapterIII-1 ;
+    eli:number "12"^^xsd:string ;
+    eli:title_alternative "Article 12"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article12-1,
+        gdpr:article12-2,
+        gdpr:article12-3,
+        gdpr:article12-4,
+        gdpr:article12-5,
+        gdpr:article12-6,
+        gdpr:article12-7,
+        gdpr:article12-8 ;
+    GDPRtext:isPartOfChapter gdpr:chapterIII ;
+    GDPRtext:isPartOfSection gdpr:chapterIII-1 .
+
+gdpr:article37 a eli:LegalResourceSubdivision,
         GDPRtext:Article ;
     eli:is_part_of gdpr:GDPR,
         gdpr:chapterIV,
-        gdpr:chapterIV-3 ;
-    eli:number "36"^^xsd:string ;
-    eli:title_alternative "Article 36"^^xsd:string ;
+        gdpr:chapterIV-4 ;
+    eli:number "37"^^xsd:string ;
+    eli:title_alternative "Article 37"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article37-1,
+        gdpr:article37-2,
+        gdpr:article37-3,
+        gdpr:article37-4,
+        gdpr:article37-5,
+        gdpr:article37-6,
+        gdpr:article37-7 ;
     GDPRtext:isPartOfChapter gdpr:chapterIV ;
-    GDPRtext:isPartOfSection gdpr:chapterIV-3 .
+    GDPRtext:isPartOfSection gdpr:chapterIV-4 .
 
 gdpr:article40-2 a eli:LegalResourceSubdivision,
         GDPRtext:Point ;
@@ -12166,19 +12659,36 @@ gdpr:article40-2 a eli:LegalResourceSubdivision,
         gdpr:chapterIV-5 ;
     eli:number "2"^^xsd:string ;
     eli:title_alternative "Article40(2)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article40-2-1,
+        gdpr:article40-2-10,
+        gdpr:article40-2-11,
+        gdpr:article40-2-2,
+        gdpr:article40-2-3,
+        gdpr:article40-2-4,
+        gdpr:article40-2-5,
+        gdpr:article40-2-6,
+        gdpr:article40-2-7,
+        gdpr:article40-2-8,
+        gdpr:article40-2-9 ;
     GDPRtext:isPartOfArticle gdpr:article40 ;
     GDPRtext:isPartOfChapter gdpr:chapterIV ;
     GDPRtext:isPartOfSection gdpr:chapterIV-5 .
 
-gdpr:article61 a eli:LegalResourceSubdivision,
+gdpr:article41 a eli:LegalResourceSubdivision,
         GDPRtext:Article ;
     eli:is_part_of gdpr:GDPR,
-        gdpr:chapterVII,
-        gdpr:chapterVII-1 ;
-    eli:number "61"^^xsd:string ;
-    eli:title_alternative "Article 61"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterVII ;
-    GDPRtext:isPartOfSection gdpr:chapterVII-1 .
+        gdpr:chapterIV,
+        gdpr:chapterIV-5 ;
+    eli:number "41"^^xsd:string ;
+    eli:title_alternative "Article 41"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article41-1,
+        gdpr:article41-2,
+        gdpr:article41-3,
+        gdpr:article41-4,
+        gdpr:article41-5,
+        gdpr:article41-6 ;
+    GDPRtext:isPartOfChapter gdpr:chapterIV ;
+    GDPRtext:isPartOfSection gdpr:chapterIV-5 .
 
 gdpr:article83-2 a eli:LegalResourceSubdivision,
         GDPRtext:Point ;
@@ -12188,6 +12698,17 @@ gdpr:article83-2 a eli:LegalResourceSubdivision,
         gdpr:chapterVIII ;
     eli:number "2"^^xsd:string ;
     eli:title_alternative "Article83(2)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article83-2-1,
+        gdpr:article83-2-10,
+        gdpr:article83-2-11,
+        gdpr:article83-2-2,
+        gdpr:article83-2-3,
+        gdpr:article83-2-4,
+        gdpr:article83-2-5,
+        gdpr:article83-2-6,
+        gdpr:article83-2-7,
+        gdpr:article83-2-8,
+        gdpr:article83-2-9 ;
     GDPRtext:isPartOfArticle gdpr:article83 ;
     GDPRtext:isPartOfChapter gdpr:chapterVIII .
 
@@ -12198,7 +12719,59 @@ gdpr:chapterIII-1 a eli:LegalResourceSubdivision,
     eli:number "1"^^xsd:string ;
     eli:title "Transparency and modalities"^^xsd:string ;
     eli:title_alternative "Section 1"^^xsd:string ;
+    GDPRtext:hasArticle gdpr:article12 ;
     GDPRtext:isPartOfChapter gdpr:chapterIII .
+
+gdpr:article36 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterIV,
+        gdpr:chapterIV-3 ;
+    eli:number "36"^^xsd:string ;
+    eli:title_alternative "Article 36"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article36-1,
+        gdpr:article36-2,
+        gdpr:article36-3,
+        gdpr:article36-4,
+        gdpr:article36-5 ;
+    GDPRtext:isPartOfChapter gdpr:chapterIV ;
+    GDPRtext:isPartOfSection gdpr:chapterIV-3 .
+
+gdpr:article61 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterVII,
+        gdpr:chapterVII-1 ;
+    eli:number "61"^^xsd:string ;
+    eli:title_alternative "Article 61"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article61-1,
+        gdpr:article61-2,
+        gdpr:article61-3,
+        gdpr:article61-4,
+        gdpr:article61-5,
+        gdpr:article61-6,
+        gdpr:article61-7,
+        gdpr:article61-8,
+        gdpr:article61-9 ;
+    GDPRtext:isPartOfChapter gdpr:chapterVII ;
+    GDPRtext:isPartOfSection gdpr:chapterVII-1 .
+
+gdpr:article45 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterV ;
+    eli:number "45"^^xsd:string ;
+    eli:title_alternative "Article 45"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article45-1,
+        gdpr:article45-2,
+        gdpr:article45-3,
+        gdpr:article45-4,
+        gdpr:article45-5,
+        gdpr:article45-6,
+        gdpr:article45-7,
+        gdpr:article45-8,
+        gdpr:article45-9 ;
+    GDPRtext:isPartOfChapter gdpr:chapterV .
 
 gdpr:article15 a eli:LegalResourceSubdivision,
         GDPRtext:Article ;
@@ -12207,16 +12780,12 @@ gdpr:article15 a eli:LegalResourceSubdivision,
         gdpr:chapterIII-2 ;
     eli:number "15"^^xsd:string ;
     eli:title_alternative "Article 15"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article15-1,
+        gdpr:article15-2,
+        gdpr:article15-3,
+        gdpr:article15-4 ;
     GDPRtext:isPartOfChapter gdpr:chapterIII ;
     GDPRtext:isPartOfSection gdpr:chapterIII-2 .
-
-gdpr:article45 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterV ;
-    eli:number "45"^^xsd:string ;
-    eli:title_alternative "Article 45"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterV .
 
 gdpr:article60 a eli:LegalResourceSubdivision,
         GDPRtext:Article ;
@@ -12225,6 +12794,18 @@ gdpr:article60 a eli:LegalResourceSubdivision,
         gdpr:chapterVII-1 ;
     eli:number "60"^^xsd:string ;
     eli:title_alternative "Article 60"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article60-1,
+        gdpr:article60-10,
+        gdpr:article60-11,
+        gdpr:article60-12,
+        gdpr:article60-2,
+        gdpr:article60-3,
+        gdpr:article60-4,
+        gdpr:article60-5,
+        gdpr:article60-6,
+        gdpr:article60-7,
+        gdpr:article60-8,
+        gdpr:article60-9 ;
     GDPRtext:isPartOfChapter gdpr:chapterVII ;
     GDPRtext:isPartOfSection gdpr:chapterVII-1 .
 
@@ -12234,6 +12815,11 @@ gdpr:article46 a eli:LegalResourceSubdivision,
         gdpr:chapterV ;
     eli:number "46"^^xsd:string ;
     eli:title_alternative "Article 46"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article46-1,
+        gdpr:article46-2,
+        gdpr:article46-3,
+        gdpr:article46-4,
+        gdpr:article46-5 ;
     GDPRtext:isPartOfChapter gdpr:chapterV .
 
 gdpr:article49 a eli:LegalResourceSubdivision,
@@ -12242,27 +12828,13 @@ gdpr:article49 a eli:LegalResourceSubdivision,
         gdpr:chapterV ;
     eli:number "49"^^xsd:string ;
     eli:title_alternative "Article 49"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article49-1,
+        gdpr:article49-2,
+        gdpr:article49-3,
+        gdpr:article49-4,
+        gdpr:article49-5,
+        gdpr:article49-6 ;
     GDPRtext:isPartOfChapter gdpr:chapterV .
-
-gdpr:article75 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterVII,
-        gdpr:chapterVII-3 ;
-    eli:number "75"^^xsd:string ;
-    eli:title_alternative "Article 75"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterVII ;
-    GDPRtext:isPartOfSection gdpr:chapterVII-3 .
-
-gdpr:article17 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterIII,
-        gdpr:chapterIII-3 ;
-    eli:number "17"^^xsd:string ;
-    eli:title_alternative "Article 17"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterIII ;
-    GDPRtext:isPartOfSection gdpr:chapterIII-3 .
 
 gdpr:article47-2 a eli:LegalResourceSubdivision,
         GDPRtext:Point ;
@@ -12272,8 +12844,38 @@ gdpr:article47-2 a eli:LegalResourceSubdivision,
         gdpr:chapterV ;
     eli:number "2"^^xsd:string ;
     eli:title_alternative "Article47(2)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article47-2-1,
+        gdpr:article47-2-10,
+        gdpr:article47-2-11,
+        gdpr:article47-2-12,
+        gdpr:article47-2-13,
+        gdpr:article47-2-14,
+        gdpr:article47-2-2,
+        gdpr:article47-2-3,
+        gdpr:article47-2-4,
+        gdpr:article47-2-5,
+        gdpr:article47-2-6,
+        gdpr:article47-2-7,
+        gdpr:article47-2-8,
+        gdpr:article47-2-9 ;
     GDPRtext:isPartOfArticle gdpr:article47 ;
     GDPRtext:isPartOfChapter gdpr:chapterV .
+
+gdpr:article75 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterVII,
+        gdpr:chapterVII-3 ;
+    eli:number "75"^^xsd:string ;
+    eli:title_alternative "Article 75"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article75-1,
+        gdpr:article75-2,
+        gdpr:article75-3,
+        gdpr:article75-4,
+        gdpr:article75-5,
+        gdpr:article75-6 ;
+    GDPRtext:isPartOfChapter gdpr:chapterVII ;
+    GDPRtext:isPartOfSection gdpr:chapterVII-3 .
 
 gdpr:article9 a eli:LegalResourceSubdivision,
         GDPRtext:Article ;
@@ -12281,7 +12883,24 @@ gdpr:article9 a eli:LegalResourceSubdivision,
         gdpr:chapterII ;
     eli:number "9"^^xsd:string ;
     eli:title_alternative "Article 9"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article9-1,
+        gdpr:article9-2,
+        gdpr:article9-3,
+        gdpr:article9-4 ;
     GDPRtext:isPartOfChapter gdpr:chapterII .
+
+gdpr:article17 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterIII,
+        gdpr:chapterIII-3 ;
+    eli:number "17"^^xsd:string ;
+    eli:title_alternative "Article 17"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article17-1,
+        gdpr:article17-2,
+        gdpr:article17-3 ;
+    GDPRtext:isPartOfChapter gdpr:chapterIII ;
+    GDPRtext:isPartOfSection gdpr:chapterIII-3 .
 
 gdpr:chapterIII-4 a eli:LegalResourceSubdivision,
         GDPRtext:Section ;
@@ -12290,6 +12909,8 @@ gdpr:chapterIII-4 a eli:LegalResourceSubdivision,
     eli:number "4"^^xsd:string ;
     eli:title "Right to object and automated individual decision-making"^^xsd:string ;
     eli:title_alternative "Section 4"^^xsd:string ;
+    GDPRtext:hasArticle gdpr:article21,
+        gdpr:article22 ;
     GDPRtext:isPartOfChapter gdpr:chapterIII .
 
 gdpr:article13 a eli:LegalResourceSubdivision,
@@ -12299,6 +12920,10 @@ gdpr:article13 a eli:LegalResourceSubdivision,
         gdpr:chapterIII-2 ;
     eli:number "13"^^xsd:string ;
     eli:title_alternative "Article 13"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article13-1,
+        gdpr:article13-2,
+        gdpr:article13-3,
+        gdpr:article13-4 ;
     GDPRtext:isPartOfChapter gdpr:chapterIII ;
     GDPRtext:isPartOfSection gdpr:chapterIII-2 .
 
@@ -12309,6 +12934,11 @@ gdpr:article30 a eli:LegalResourceSubdivision,
         gdpr:chapterIV-1 ;
     eli:number "30"^^xsd:string ;
     eli:title_alternative "Article 30"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article30-1,
+        gdpr:article30-2,
+        gdpr:article30-3,
+        gdpr:article30-4,
+        gdpr:article30-5 ;
     GDPRtext:isPartOfChapter gdpr:chapterIV ;
     GDPRtext:isPartOfSection gdpr:chapterIV-1 .
 
@@ -12319,6 +12949,15 @@ gdpr:article43 a eli:LegalResourceSubdivision,
         gdpr:chapterIV-5 ;
     eli:number "43"^^xsd:string ;
     eli:title_alternative "Article 43"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article43-1,
+        gdpr:article43-2,
+        gdpr:article43-3,
+        gdpr:article43-4,
+        gdpr:article43-5,
+        gdpr:article43-6,
+        gdpr:article43-7,
+        gdpr:article43-8,
+        gdpr:article43-9 ;
     GDPRtext:isPartOfChapter gdpr:chapterIV ;
     GDPRtext:isPartOfSection gdpr:chapterIV-5 .
 
@@ -12329,6 +12968,14 @@ gdpr:article64 a eli:LegalResourceSubdivision,
         gdpr:chapterVII-2 ;
     eli:number "64"^^xsd:string ;
     eli:title_alternative "Article 64"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article64-1,
+        gdpr:article64-2,
+        gdpr:article64-3,
+        gdpr:article64-4,
+        gdpr:article64-5,
+        gdpr:article64-6,
+        gdpr:article64-7,
+        gdpr:article64-8 ;
     GDPRtext:isPartOfChapter gdpr:chapterVII ;
     GDPRtext:isPartOfSection gdpr:chapterVII-2 .
 
@@ -12338,6 +12985,10 @@ gdpr:article6 a eli:LegalResourceSubdivision,
         gdpr:chapterII ;
     eli:number "6"^^xsd:string ;
     eli:title_alternative "Article 6"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article6-1,
+        gdpr:article6-2,
+        gdpr:article6-3,
+        gdpr:article6-4 ;
     GDPRtext:isPartOfChapter gdpr:chapterII .
 
 gdpr:article28 a eli:LegalResourceSubdivision,
@@ -12347,6 +12998,16 @@ gdpr:article28 a eli:LegalResourceSubdivision,
         gdpr:chapterIV-1 ;
     eli:number "28"^^xsd:string ;
     eli:title_alternative "Article 28"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article28-1,
+        gdpr:article28-10,
+        gdpr:article28-2,
+        gdpr:article28-3,
+        gdpr:article28-4,
+        gdpr:article28-5,
+        gdpr:article28-6,
+        gdpr:article28-7,
+        gdpr:article28-8,
+        gdpr:article28-9 ;
     GDPRtext:isPartOfChapter gdpr:chapterIV ;
     GDPRtext:isPartOfSection gdpr:chapterIV-1 .
 
@@ -12357,8 +13018,43 @@ gdpr:article35 a eli:LegalResourceSubdivision,
         gdpr:chapterIV-3 ;
     eli:number "35"^^xsd:string ;
     eli:title_alternative "Article 35"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article35-1,
+        gdpr:article35-10,
+        gdpr:article35-11,
+        gdpr:article35-2,
+        gdpr:article35-3,
+        gdpr:article35-4,
+        gdpr:article35-5,
+        gdpr:article35-6,
+        gdpr:article35-7,
+        gdpr:article35-8,
+        gdpr:article35-9 ;
     GDPRtext:isPartOfChapter gdpr:chapterIV ;
     GDPRtext:isPartOfSection gdpr:chapterIV-3 .
+
+gdpr:chapterXI a eli:LegalResourceSubdivision,
+        GDPRtext:Chapter ;
+    eli:is_part_of gdpr:GDPR ;
+    eli:number "XI"^^xsd:string ;
+    eli:title "Final provisions"^^xsd:string ;
+    eli:title_alternative "Chapter XI"^^xsd:string ;
+    GDPRtext:hasArticle gdpr:article94,
+        gdpr:article95,
+        gdpr:article96,
+        gdpr:article97,
+        gdpr:article98,
+        gdpr:article99 .
+
+gdpr:article47 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterV ;
+    eli:number "47"^^xsd:string ;
+    eli:title_alternative "Article 47"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article47-1,
+        gdpr:article47-2,
+        gdpr:article47-3 ;
+    GDPRtext:isPartOfChapter gdpr:chapterV .
 
 gdpr:article23 a eli:LegalResourceSubdivision,
         GDPRtext:Article ;
@@ -12367,23 +13063,10 @@ gdpr:article23 a eli:LegalResourceSubdivision,
         gdpr:chapterIII-5 ;
     eli:number "23"^^xsd:string ;
     eli:title_alternative "Article 23"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article23-1,
+        gdpr:article23-2 ;
     GDPRtext:isPartOfChapter gdpr:chapterIII ;
     GDPRtext:isPartOfSection gdpr:chapterIII-5 .
-
-gdpr:article47 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterV ;
-    eli:number "47"^^xsd:string ;
-    eli:title_alternative "Article 47"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterV .
-
-gdpr:chapterXI a eli:LegalResourceSubdivision,
-        GDPRtext:Chapter ;
-    eli:is_part_of gdpr:GDPR ;
-    eli:number "XI"^^xsd:string ;
-    eli:title "Final provisions"^^xsd:string ;
-    eli:title_alternative "Chapter XI"^^xsd:string .
 
 gdpr:chapterIII-5 a eli:LegalResourceSubdivision,
         GDPRtext:Section ;
@@ -12392,17 +13075,8 @@ gdpr:chapterIII-5 a eli:LegalResourceSubdivision,
     eli:number "5"^^xsd:string ;
     eli:title "Restrictions"^^xsd:string ;
     eli:title_alternative "Section 5"^^xsd:string ;
+    GDPRtext:hasArticle gdpr:article23 ;
     GDPRtext:isPartOfChapter gdpr:chapterIII .
-
-gdpr:article40 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterIV,
-        gdpr:chapterIV-5 ;
-    eli:number "40"^^xsd:string ;
-    eli:title_alternative "Article 40"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterIV ;
-    GDPRtext:isPartOfSection gdpr:chapterIV-5 .
 
 gdpr:article57-1 a eli:LegalResourceSubdivision,
         GDPRtext:Point ;
@@ -12413,26 +13087,66 @@ gdpr:article57-1 a eli:LegalResourceSubdivision,
         gdpr:chapterVI-2 ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article57(1)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article57-1-1,
+        gdpr:article57-1-10,
+        gdpr:article57-1-11,
+        gdpr:article57-1-12,
+        gdpr:article57-1-13,
+        gdpr:article57-1-14,
+        gdpr:article57-1-15,
+        gdpr:article57-1-16,
+        gdpr:article57-1-17,
+        gdpr:article57-1-18,
+        gdpr:article57-1-19,
+        gdpr:article57-1-2,
+        gdpr:article57-1-20,
+        gdpr:article57-1-21,
+        gdpr:article57-1-22,
+        gdpr:article57-1-3,
+        gdpr:article57-1-4,
+        gdpr:article57-1-5,
+        gdpr:article57-1-6,
+        gdpr:article57-1-7,
+        gdpr:article57-1-8,
+        gdpr:article57-1-9 ;
     GDPRtext:isPartOfArticle gdpr:article57 ;
     GDPRtext:isPartOfChapter gdpr:chapterVI ;
     GDPRtext:isPartOfSection gdpr:chapterVI-2 .
+
+gdpr:article40 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterIV,
+        gdpr:chapterIV-5 ;
+    eli:number "40"^^xsd:string ;
+    eli:title_alternative "Article 40"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article40-1,
+        gdpr:article40-10,
+        gdpr:article40-11,
+        gdpr:article40-2,
+        gdpr:article40-3,
+        gdpr:article40-4,
+        gdpr:article40-5,
+        gdpr:article40-6,
+        gdpr:article40-7,
+        gdpr:article40-8,
+        gdpr:article40-9 ;
+    GDPRtext:isPartOfChapter gdpr:chapterIV ;
+    GDPRtext:isPartOfSection gdpr:chapterIV-5 .
 
 gdpr:chapterIX a eli:LegalResourceSubdivision,
         GDPRtext:Chapter ;
     eli:is_part_of gdpr:GDPR ;
     eli:number "IX"^^xsd:string ;
     eli:title "Provisions relating to specific processing situations"^^xsd:string ;
-    eli:title_alternative "Chapter IX"^^xsd:string .
-
-gdpr:article14 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterIII,
-        gdpr:chapterIII-2 ;
-    eli:number "14"^^xsd:string ;
-    eli:title_alternative "Article 14"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterIII ;
-    GDPRtext:isPartOfSection gdpr:chapterIII-2 .
+    eli:title_alternative "Chapter IX"^^xsd:string ;
+    GDPRtext:hasArticle gdpr:article85,
+        gdpr:article86,
+        gdpr:article87,
+        gdpr:article88,
+        gdpr:article89,
+        gdpr:article90,
+        gdpr:article91 .
 
 gdpr:article70-1 a eli:LegalResourceSubdivision,
         GDPRtext:Point ;
@@ -12443,19 +13157,49 @@ gdpr:article70-1 a eli:LegalResourceSubdivision,
         gdpr:chapterVII-3 ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article70(1)"^^xsd:string ;
+    GDPRtext:hasSubPoint gdpr:article70-1-1,
+        gdpr:article70-1-10,
+        gdpr:article70-1-11,
+        gdpr:article70-1-12,
+        gdpr:article70-1-13,
+        gdpr:article70-1-14,
+        gdpr:article70-1-15,
+        gdpr:article70-1-16,
+        gdpr:article70-1-17,
+        gdpr:article70-1-18,
+        gdpr:article70-1-19,
+        gdpr:article70-1-2,
+        gdpr:article70-1-20,
+        gdpr:article70-1-21,
+        gdpr:article70-1-22,
+        gdpr:article70-1-23,
+        gdpr:article70-1-24,
+        gdpr:article70-1-25,
+        gdpr:article70-1-3,
+        gdpr:article70-1-4,
+        gdpr:article70-1-5,
+        gdpr:article70-1-6,
+        gdpr:article70-1-7,
+        gdpr:article70-1-8,
+        gdpr:article70-1-9 ;
     GDPRtext:isPartOfArticle gdpr:article70 ;
     GDPRtext:isPartOfChapter gdpr:chapterVII ;
     GDPRtext:isPartOfSection gdpr:chapterVII-3 .
 
-gdpr:article57 a eli:LegalResourceSubdivision,
+gdpr:article14 a eli:LegalResourceSubdivision,
         GDPRtext:Article ;
     eli:is_part_of gdpr:GDPR,
-        gdpr:chapterVI,
-        gdpr:chapterVI-2 ;
-    eli:number "57"^^xsd:string ;
-    eli:title_alternative "Article 57"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterVI ;
-    GDPRtext:isPartOfSection gdpr:chapterVI-2 .
+        gdpr:chapterIII,
+        gdpr:chapterIII-2 ;
+    eli:number "14"^^xsd:string ;
+    eli:title_alternative "Article 14"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article14-1,
+        gdpr:article14-2,
+        gdpr:article14-3,
+        gdpr:article14-4,
+        gdpr:article14-5 ;
+    GDPRtext:isPartOfChapter gdpr:chapterIII ;
+    GDPRtext:isPartOfSection gdpr:chapterIII-2 .
 
 gdpr:chapterIV-4 a eli:LegalResourceSubdivision,
         GDPRtext:Section ;
@@ -12464,7 +13208,24 @@ gdpr:chapterIV-4 a eli:LegalResourceSubdivision,
     eli:number "4"^^xsd:string ;
     eli:title "Data protection officer"^^xsd:string ;
     eli:title_alternative "Section 4"^^xsd:string ;
+    GDPRtext:hasArticle gdpr:article37,
+        gdpr:article38,
+        gdpr:article39 ;
     GDPRtext:isPartOfChapter gdpr:chapterIV .
+
+gdpr:article57 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterVI,
+        gdpr:chapterVI-2 ;
+    eli:number "57"^^xsd:string ;
+    eli:title_alternative "Article 57"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article57-1,
+        gdpr:article57-2,
+        gdpr:article57-3,
+        gdpr:article57-4 ;
+    GDPRtext:isPartOfChapter gdpr:chapterVI ;
+    GDPRtext:isPartOfSection gdpr:chapterVI-2 .
 
 gdpr:chapterIV-2 a eli:LegalResourceSubdivision,
         GDPRtext:Section ;
@@ -12473,6 +13234,9 @@ gdpr:chapterIV-2 a eli:LegalResourceSubdivision,
     eli:number "2"^^xsd:string ;
     eli:title "Security of personal data"^^xsd:string ;
     eli:title_alternative "Section 2"^^xsd:string ;
+    GDPRtext:hasArticle gdpr:article32,
+        gdpr:article33,
+        gdpr:article34 ;
     GDPRtext:isPartOfChapter gdpr:chapterIV .
 
 gdpr:article83 a eli:LegalResourceSubdivision,
@@ -12481,6 +13245,15 @@ gdpr:article83 a eli:LegalResourceSubdivision,
         gdpr:chapterVIII ;
     eli:number "83"^^xsd:string ;
     eli:title_alternative "Article 83"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article83-1,
+        gdpr:article83-2,
+        gdpr:article83-3,
+        gdpr:article83-4,
+        gdpr:article83-5,
+        gdpr:article83-6,
+        gdpr:article83-7,
+        gdpr:article83-8,
+        gdpr:article83-9 ;
     GDPRtext:isPartOfChapter gdpr:chapterVIII .
 
 gdpr:article70 a eli:LegalResourceSubdivision,
@@ -12490,6 +13263,10 @@ gdpr:article70 a eli:LegalResourceSubdivision,
         gdpr:chapterVII-3 ;
     eli:number "70"^^xsd:string ;
     eli:title_alternative "Article 70"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article70-1,
+        gdpr:article70-2,
+        gdpr:article70-3,
+        gdpr:article70-4 ;
     GDPRtext:isPartOfChapter gdpr:chapterVII ;
     GDPRtext:isPartOfSection gdpr:chapterVII-3 .
 
@@ -12500,6 +13277,10 @@ gdpr:chapterVI-1 a eli:LegalResourceSubdivision,
     eli:number "1"^^xsd:string ;
     eli:title "Independent status"^^xsd:string ;
     eli:title_alternative "Section 1"^^xsd:string ;
+    GDPRtext:hasArticle gdpr:article51,
+        gdpr:article52,
+        gdpr:article53,
+        gdpr:article54 ;
     GDPRtext:isPartOfChapter gdpr:chapterVI .
 
 gdpr:chapterIV-3 a eli:LegalResourceSubdivision,
@@ -12509,6 +13290,8 @@ gdpr:chapterIV-3 a eli:LegalResourceSubdivision,
     eli:number "3"^^xsd:string ;
     eli:title "Data protection impact assessment and prior consultation"^^xsd:string ;
     eli:title_alternative "Section 3"^^xsd:string ;
+    GDPRtext:hasArticle gdpr:article35,
+        gdpr:article36 ;
     GDPRtext:isPartOfChapter gdpr:chapterIV .
 
 gdpr:article58 a eli:LegalResourceSubdivision,
@@ -12518,16 +13301,14 @@ gdpr:article58 a eli:LegalResourceSubdivision,
         gdpr:chapterVI-2 ;
     eli:number "58"^^xsd:string ;
     eli:title_alternative "Article 58"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article58-1,
+        gdpr:article58-2,
+        gdpr:article58-3,
+        gdpr:article58-4,
+        gdpr:article58-5,
+        gdpr:article58-6 ;
     GDPRtext:isPartOfChapter gdpr:chapterVI ;
     GDPRtext:isPartOfSection gdpr:chapterVI-2 .
-
-gdpr:article4 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
-    eli:is_part_of gdpr:GDPR,
-        gdpr:chapterI ;
-    eli:number "4"^^xsd:string ;
-    eli:title_alternative "Article 4"^^xsd:string ;
-    GDPRtext:isPartOfChapter gdpr:chapterI .
 
 gdpr:chapterVII-1 a eli:LegalResourceSubdivision,
         GDPRtext:Section ;
@@ -12536,7 +13317,44 @@ gdpr:chapterVII-1 a eli:LegalResourceSubdivision,
     eli:number "1"^^xsd:string ;
     eli:title "Cooperation"^^xsd:string ;
     eli:title_alternative "Section 1"^^xsd:string ;
+    GDPRtext:hasArticle gdpr:article60,
+        gdpr:article61,
+        gdpr:article62 ;
     GDPRtext:isPartOfChapter gdpr:chapterVII .
+
+gdpr:article4 a eli:LegalResourceSubdivision,
+        GDPRtext:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterI ;
+    eli:number "4"^^xsd:string ;
+    eli:title_alternative "Article 4"^^xsd:string ;
+    GDPRtext:hasPoint gdpr:article4-1,
+        gdpr:article4-10,
+        gdpr:article4-11,
+        gdpr:article4-12,
+        gdpr:article4-13,
+        gdpr:article4-14,
+        gdpr:article4-15,
+        gdpr:article4-16,
+        gdpr:article4-17,
+        gdpr:article4-18,
+        gdpr:article4-19,
+        gdpr:article4-2,
+        gdpr:article4-20,
+        gdpr:article4-21,
+        gdpr:article4-22,
+        gdpr:article4-23,
+        gdpr:article4-24,
+        gdpr:article4-25,
+        gdpr:article4-26,
+        gdpr:article4-3,
+        gdpr:article4-4,
+        gdpr:article4-5,
+        gdpr:article4-6,
+        gdpr:article4-7,
+        gdpr:article4-8,
+        gdpr:article4-9 ;
+    GDPRtext:isPartOfChapter gdpr:chapterI .
 
 gdpr:chapterIII-3 a eli:LegalResourceSubdivision,
         GDPRtext:Section ;
@@ -12545,6 +13363,11 @@ gdpr:chapterIII-3 a eli:LegalResourceSubdivision,
     eli:number "3"^^xsd:string ;
     eli:title "Rectification and erasure"^^xsd:string ;
     eli:title_alternative "Section 3"^^xsd:string ;
+    GDPRtext:hasArticle gdpr:article16,
+        gdpr:article17,
+        gdpr:article18,
+        gdpr:article19,
+        gdpr:article20 ;
     GDPRtext:isPartOfChapter gdpr:chapterIII .
 
 gdpr:chapterVII-2 a eli:LegalResourceSubdivision,
@@ -12554,6 +13377,11 @@ gdpr:chapterVII-2 a eli:LegalResourceSubdivision,
     eli:number "2"^^xsd:string ;
     eli:title "Consistency"^^xsd:string ;
     eli:title_alternative "Section 2"^^xsd:string ;
+    GDPRtext:hasArticle gdpr:article63,
+        gdpr:article64,
+        gdpr:article65,
+        gdpr:article66,
+        gdpr:article67 ;
     GDPRtext:isPartOfChapter gdpr:chapterVII .
 
 gdpr:chapterI a eli:LegalResourceSubdivision,
@@ -12561,14 +13389,25 @@ gdpr:chapterI a eli:LegalResourceSubdivision,
     eli:is_part_of gdpr:GDPR ;
     eli:number "I"^^xsd:string ;
     eli:title "General provisions"^^xsd:string ;
-    eli:title_alternative "Chapter I"^^xsd:string .
+    eli:title_alternative "Chapter I"^^xsd:string ;
+    GDPRtext:hasArticle gdpr:article1,
+        gdpr:article2,
+        gdpr:article3,
+        gdpr:article4 .
 
 gdpr:chapterII a eli:LegalResourceSubdivision,
         GDPRtext:Chapter ;
     eli:is_part_of gdpr:GDPR ;
     eli:number "II"^^xsd:string ;
     eli:title "Principles"^^xsd:string ;
-    eli:title_alternative "Chapter II"^^xsd:string .
+    eli:title_alternative "Chapter II"^^xsd:string ;
+    GDPRtext:hasArticle gdpr:article10,
+        gdpr:article11,
+        gdpr:article5,
+        gdpr:article6,
+        gdpr:article7,
+        gdpr:article8,
+        gdpr:article9 .
 
 gdpr:chapterIII-2 a eli:LegalResourceSubdivision,
         GDPRtext:Section ;
@@ -12577,6 +13416,9 @@ gdpr:chapterIII-2 a eli:LegalResourceSubdivision,
     eli:number "2"^^xsd:string ;
     eli:title "Information and access to personal data"^^xsd:string ;
     eli:title_alternative "Section 2"^^xsd:string ;
+    GDPRtext:hasArticle gdpr:article13,
+        gdpr:article14,
+        gdpr:article15 ;
     GDPRtext:isPartOfChapter gdpr:chapterIII .
 
 gdpr:chapterVIII a eli:LegalResourceSubdivision,
@@ -12584,7 +13426,15 @@ gdpr:chapterVIII a eli:LegalResourceSubdivision,
     eli:is_part_of gdpr:GDPR ;
     eli:number "VIII"^^xsd:string ;
     eli:title "Remedies, liability and penalties"^^xsd:string ;
-    eli:title_alternative "Chapter VIII"^^xsd:string .
+    eli:title_alternative "Chapter VIII"^^xsd:string ;
+    GDPRtext:hasArticle gdpr:article77,
+        gdpr:article78,
+        gdpr:article79,
+        gdpr:article80,
+        gdpr:article81,
+        gdpr:article82,
+        gdpr:article83,
+        gdpr:article84 .
 
 gdpr:chapterIV-1 a eli:LegalResourceSubdivision,
         GDPRtext:Section ;
@@ -12593,6 +13443,14 @@ gdpr:chapterIV-1 a eli:LegalResourceSubdivision,
     eli:number "1"^^xsd:string ;
     eli:title "General obligations"^^xsd:string ;
     eli:title_alternative "Section 1"^^xsd:string ;
+    GDPRtext:hasArticle gdpr:article24,
+        gdpr:article25,
+        gdpr:article26,
+        gdpr:article27,
+        gdpr:article28,
+        gdpr:article29,
+        gdpr:article30,
+        gdpr:article31 ;
     GDPRtext:isPartOfChapter gdpr:chapterIV .
 
 gdpr:chapterIV-5 a eli:LegalResourceSubdivision,
@@ -12602,6 +13460,10 @@ gdpr:chapterIV-5 a eli:LegalResourceSubdivision,
     eli:number "5"^^xsd:string ;
     eli:title "Codes of conduct and certification"^^xsd:string ;
     eli:title_alternative "Section 5"^^xsd:string ;
+    GDPRtext:hasArticle gdpr:article40,
+        gdpr:article41,
+        gdpr:article42,
+        gdpr:article43 ;
     GDPRtext:isPartOfChapter gdpr:chapterIV .
 
 gdpr:chapterV a eli:LegalResourceSubdivision,
@@ -12609,7 +13471,14 @@ gdpr:chapterV a eli:LegalResourceSubdivision,
     eli:is_part_of gdpr:GDPR ;
     eli:number "V"^^xsd:string ;
     eli:title "Transfers of personal data to third countries or international organisations"^^xsd:string ;
-    eli:title_alternative "Chapter V"^^xsd:string .
+    eli:title_alternative "Chapter V"^^xsd:string ;
+    GDPRtext:hasArticle gdpr:article44,
+        gdpr:article45,
+        gdpr:article46,
+        gdpr:article47,
+        gdpr:article48,
+        gdpr:article49,
+        gdpr:article50 .
 
 gdpr:chapterVII-3 a eli:LegalResourceSubdivision,
         GDPRtext:Section ;
@@ -12618,6 +13487,15 @@ gdpr:chapterVII-3 a eli:LegalResourceSubdivision,
     eli:number "3"^^xsd:string ;
     eli:title "European data protection board"^^xsd:string ;
     eli:title_alternative "Section 3"^^xsd:string ;
+    GDPRtext:hasArticle gdpr:article68,
+        gdpr:article69,
+        gdpr:article70,
+        gdpr:article71,
+        gdpr:article72,
+        gdpr:article73,
+        gdpr:article74,
+        gdpr:article75,
+        gdpr:article76 ;
     GDPRtext:isPartOfChapter gdpr:chapterVII .
 
 gdpr:chapterVI-2 a eli:LegalResourceSubdivision,
@@ -12627,6 +13505,11 @@ gdpr:chapterVI-2 a eli:LegalResourceSubdivision,
     eli:number "2"^^xsd:string ;
     eli:title "Competence, tasks and powers"^^xsd:string ;
     eli:title_alternative "Section 2"^^xsd:string ;
+    GDPRtext:hasArticle gdpr:article55,
+        gdpr:article56,
+        gdpr:article57,
+        gdpr:article58,
+        gdpr:article59 ;
     GDPRtext:isPartOfChapter gdpr:chapterVI .
 
 gdpr:chapterVI a eli:LegalResourceSubdivision,
@@ -12634,40 +13517,417 @@ gdpr:chapterVI a eli:LegalResourceSubdivision,
     eli:is_part_of gdpr:GDPR ;
     eli:number "VI"^^xsd:string ;
     eli:title "Independent supervisory authorities"^^xsd:string ;
-    eli:title_alternative "Chapter VI"^^xsd:string .
+    eli:title_alternative "Chapter VI"^^xsd:string ;
+    GDPRtext:hasArticle gdpr:article51,
+        gdpr:article52,
+        gdpr:article53,
+        gdpr:article54,
+        gdpr:article55,
+        gdpr:article56,
+        gdpr:article57,
+        gdpr:article58,
+        gdpr:article59 ;
+    GDPRtext:hasSection gdpr:chapterVI-1,
+        gdpr:chapterVI-2 .
 
 gdpr:chapterIII a eli:LegalResourceSubdivision,
         GDPRtext:Chapter ;
     eli:is_part_of gdpr:GDPR ;
     eli:number "III"^^xsd:string ;
     eli:title "Rights of the data subject"^^xsd:string ;
-    eli:title_alternative "Chapter III"^^xsd:string .
+    eli:title_alternative "Chapter III"^^xsd:string ;
+    GDPRtext:hasArticle gdpr:article12,
+        gdpr:article13,
+        gdpr:article14,
+        gdpr:article15,
+        gdpr:article16,
+        gdpr:article17,
+        gdpr:article18,
+        gdpr:article19,
+        gdpr:article20,
+        gdpr:article21,
+        gdpr:article22,
+        gdpr:article23 ;
+    GDPRtext:hasSection gdpr:chapterIII-1,
+        gdpr:chapterIII-2,
+        gdpr:chapterIII-3,
+        gdpr:chapterIII-4,
+        gdpr:chapterIII-5 .
 
 gdpr:chapterVII a eli:LegalResourceSubdivision,
         GDPRtext:Chapter ;
     eli:is_part_of gdpr:GDPR ;
     eli:number "VII"^^xsd:string ;
     eli:title "Cooperation and consistency"^^xsd:string ;
-    eli:title_alternative "Chapter VII"^^xsd:string .
+    eli:title_alternative "Chapter VII"^^xsd:string ;
+    GDPRtext:hasArticle gdpr:article60,
+        gdpr:article61,
+        gdpr:article62,
+        gdpr:article63,
+        gdpr:article64,
+        gdpr:article65,
+        gdpr:article66,
+        gdpr:article67,
+        gdpr:article68,
+        gdpr:article69,
+        gdpr:article70,
+        gdpr:article71,
+        gdpr:article72,
+        gdpr:article73,
+        gdpr:article74,
+        gdpr:article75,
+        gdpr:article76 ;
+    GDPRtext:hasSection gdpr:chapterVII-1,
+        gdpr:chapterVII-2,
+        gdpr:chapterVII-3 .
 
 gdpr:chapterIV a eli:LegalResourceSubdivision,
         GDPRtext:Chapter ;
     eli:is_part_of gdpr:GDPR ;
     eli:number "IV"^^xsd:string ;
     eli:title "Controller and processor"^^xsd:string ;
-    eli:title_alternative "Chapter IV"^^xsd:string .
+    eli:title_alternative "Chapter IV"^^xsd:string ;
+    GDPRtext:hasArticle gdpr:article24,
+        gdpr:article25,
+        gdpr:article26,
+        gdpr:article27,
+        gdpr:article28,
+        gdpr:article29,
+        gdpr:article30,
+        gdpr:article31,
+        gdpr:article32,
+        gdpr:article33,
+        gdpr:article34,
+        gdpr:article35,
+        gdpr:article36,
+        gdpr:article37,
+        gdpr:article38,
+        gdpr:article39,
+        gdpr:article40,
+        gdpr:article41,
+        gdpr:article42,
+        gdpr:article43 ;
+    GDPRtext:hasSection gdpr:chapterIV-1,
+        gdpr:chapterIV-2,
+        gdpr:chapterIV-3,
+        gdpr:chapterIV-4,
+        gdpr:chapterIV-5 .
 
 gdpr:GDPR a eli:LR,
         dcterms:Policy ;
+    eli:cites gdpr:citation1,
+        gdpr:citation10,
+        gdpr:citation11,
+        gdpr:citation12,
+        gdpr:citation13,
+        gdpr:citation14,
+        gdpr:citation15,
+        gdpr:citation16,
+        gdpr:citation17,
+        gdpr:citation18,
+        gdpr:citation19,
+        gdpr:citation2,
+        gdpr:citation20,
+        gdpr:citation21,
+        gdpr:citation3,
+        gdpr:citation4,
+        gdpr:citation5,
+        gdpr:citation6,
+        gdpr:citation7,
+        gdpr:citation8,
+        gdpr:citation9 ;
     eli:date_applicability "2018-05-25"^^xsd:date ;
     eli:date_document "2016-04-27"^^xsd:date ;
     eli:date_publication "2016-05-04"^^xsd:date ;
     eli:in_force "2016-05-24"^^xsd:date ;
+    GDPRtext:hasArticle gdpr:article1,
+        gdpr:article10,
+        gdpr:article11,
+        gdpr:article12,
+        gdpr:article13,
+        gdpr:article14,
+        gdpr:article15,
+        gdpr:article16,
+        gdpr:article17,
+        gdpr:article18,
+        gdpr:article19,
+        gdpr:article2,
+        gdpr:article20,
+        gdpr:article21,
+        gdpr:article22,
+        gdpr:article23,
+        gdpr:article24,
+        gdpr:article25,
+        gdpr:article26,
+        gdpr:article27,
+        gdpr:article28,
+        gdpr:article29,
+        gdpr:article3,
+        gdpr:article30,
+        gdpr:article31,
+        gdpr:article32,
+        gdpr:article33,
+        gdpr:article34,
+        gdpr:article35,
+        gdpr:article36,
+        gdpr:article37,
+        gdpr:article38,
+        gdpr:article39,
+        gdpr:article4,
+        gdpr:article40,
+        gdpr:article41,
+        gdpr:article42,
+        gdpr:article43,
+        gdpr:article44,
+        gdpr:article45,
+        gdpr:article46,
+        gdpr:article47,
+        gdpr:article48,
+        gdpr:article49,
+        gdpr:article5,
+        gdpr:article50,
+        gdpr:article51,
+        gdpr:article52,
+        gdpr:article53,
+        gdpr:article54,
+        gdpr:article55,
+        gdpr:article56,
+        gdpr:article57,
+        gdpr:article58,
+        gdpr:article59,
+        gdpr:article6,
+        gdpr:article60,
+        gdpr:article61,
+        gdpr:article62,
+        gdpr:article63,
+        gdpr:article64,
+        gdpr:article65,
+        gdpr:article66,
+        gdpr:article67,
+        gdpr:article68,
+        gdpr:article69,
+        gdpr:article7,
+        gdpr:article70,
+        gdpr:article71,
+        gdpr:article72,
+        gdpr:article73,
+        gdpr:article74,
+        gdpr:article75,
+        gdpr:article76,
+        gdpr:article77,
+        gdpr:article78,
+        gdpr:article79,
+        gdpr:article8,
+        gdpr:article80,
+        gdpr:article81,
+        gdpr:article82,
+        gdpr:article83,
+        gdpr:article84,
+        gdpr:article85,
+        gdpr:article86,
+        gdpr:article87,
+        gdpr:article88,
+        gdpr:article89,
+        gdpr:article9,
+        gdpr:article90,
+        gdpr:article91,
+        gdpr:article92,
+        gdpr:article93,
+        gdpr:article94,
+        gdpr:article95,
+        gdpr:article96,
+        gdpr:article97,
+        gdpr:article98,
+        gdpr:article99 ;
+    GDPRtext:hasChapter gdpr:chapterI,
+        gdpr:chapterII,
+        gdpr:chapterIII,
+        gdpr:chapterIV,
+        gdpr:chapterIX,
+        gdpr:chapterV,
+        gdpr:chapterVI,
+        gdpr:chapterVII,
+        gdpr:chapterVIII,
+        gdpr:chapterX,
+        gdpr:chapterXI ;
+    GDPRtext:hasRecital gdpr:recital1,
+        gdpr:recital10,
+        gdpr:recital100,
+        gdpr:recital101,
+        gdpr:recital102,
+        gdpr:recital103,
+        gdpr:recital104,
+        gdpr:recital105,
+        gdpr:recital106,
+        gdpr:recital107,
+        gdpr:recital108,
+        gdpr:recital109,
+        gdpr:recital11,
+        gdpr:recital110,
+        gdpr:recital111,
+        gdpr:recital112,
+        gdpr:recital113,
+        gdpr:recital114,
+        gdpr:recital115,
+        gdpr:recital116,
+        gdpr:recital117,
+        gdpr:recital118,
+        gdpr:recital119,
+        gdpr:recital12,
+        gdpr:recital120,
+        gdpr:recital121,
+        gdpr:recital122,
+        gdpr:recital123,
+        gdpr:recital124,
+        gdpr:recital125,
+        gdpr:recital126,
+        gdpr:recital127,
+        gdpr:recital128,
+        gdpr:recital129,
+        gdpr:recital13,
+        gdpr:recital130,
+        gdpr:recital131,
+        gdpr:recital132,
+        gdpr:recital133,
+        gdpr:recital134,
+        gdpr:recital135,
+        gdpr:recital136,
+        gdpr:recital137,
+        gdpr:recital138,
+        gdpr:recital139,
+        gdpr:recital14,
+        gdpr:recital140,
+        gdpr:recital141,
+        gdpr:recital142,
+        gdpr:recital143,
+        gdpr:recital144,
+        gdpr:recital145,
+        gdpr:recital146,
+        gdpr:recital147,
+        gdpr:recital148,
+        gdpr:recital149,
+        gdpr:recital15,
+        gdpr:recital150,
+        gdpr:recital151,
+        gdpr:recital152,
+        gdpr:recital153,
+        gdpr:recital154,
+        gdpr:recital155,
+        gdpr:recital156,
+        gdpr:recital157,
+        gdpr:recital158,
+        gdpr:recital159,
+        gdpr:recital16,
+        gdpr:recital160,
+        gdpr:recital161,
+        gdpr:recital162,
+        gdpr:recital163,
+        gdpr:recital164,
+        gdpr:recital165,
+        gdpr:recital166,
+        gdpr:recital167,
+        gdpr:recital168,
+        gdpr:recital169,
+        gdpr:recital17,
+        gdpr:recital170,
+        gdpr:recital171,
+        gdpr:recital172,
+        gdpr:recital173,
+        gdpr:recital18,
+        gdpr:recital19,
+        gdpr:recital2,
+        gdpr:recital20,
+        gdpr:recital21,
+        gdpr:recital22,
+        gdpr:recital23,
+        gdpr:recital24,
+        gdpr:recital25,
+        gdpr:recital26,
+        gdpr:recital27,
+        gdpr:recital28,
+        gdpr:recital29,
+        gdpr:recital3,
+        gdpr:recital30,
+        gdpr:recital31,
+        gdpr:recital32,
+        gdpr:recital33,
+        gdpr:recital34,
+        gdpr:recital35,
+        gdpr:recital36,
+        gdpr:recital37,
+        gdpr:recital38,
+        gdpr:recital39,
+        gdpr:recital4,
+        gdpr:recital40,
+        gdpr:recital41,
+        gdpr:recital42,
+        gdpr:recital43,
+        gdpr:recital44,
+        gdpr:recital45,
+        gdpr:recital46,
+        gdpr:recital47,
+        gdpr:recital48,
+        gdpr:recital49,
+        gdpr:recital5,
+        gdpr:recital50,
+        gdpr:recital51,
+        gdpr:recital52,
+        gdpr:recital53,
+        gdpr:recital54,
+        gdpr:recital55,
+        gdpr:recital56,
+        gdpr:recital57,
+        gdpr:recital58,
+        gdpr:recital59,
+        gdpr:recital6,
+        gdpr:recital60,
+        gdpr:recital61,
+        gdpr:recital62,
+        gdpr:recital63,
+        gdpr:recital64,
+        gdpr:recital65,
+        gdpr:recital66,
+        gdpr:recital67,
+        gdpr:recital68,
+        gdpr:recital69,
+        gdpr:recital7,
+        gdpr:recital70,
+        gdpr:recital71,
+        gdpr:recital72,
+        gdpr:recital73,
+        gdpr:recital74,
+        gdpr:recital75,
+        gdpr:recital76,
+        gdpr:recital77,
+        gdpr:recital78,
+        gdpr:recital79,
+        gdpr:recital8,
+        gdpr:recital80,
+        gdpr:recital81,
+        gdpr:recital82,
+        gdpr:recital83,
+        gdpr:recital84,
+        gdpr:recital85,
+        gdpr:recital86,
+        gdpr:recital87,
+        gdpr:recital88,
+        gdpr:recital89,
+        gdpr:recital9,
+        gdpr:recital90,
+        gdpr:recital91,
+        gdpr:recital92,
+        gdpr:recital93,
+        gdpr:recital94,
+        gdpr:recital95,
+        gdpr:recital96,
+        gdpr:recital97,
+        gdpr:recital98,
+        gdpr:recital99 ;
     dcterms:abstract "REGULATION (EU) 2016/679 OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation)"^^xsd:string ;
     dcterms:creator "Council of the European Union"^^xsd:string,
         "European Parliament"^^xsd:string ;
     dcterms:date "2016-04-27"^^xsd:date ;
-    dcterms:description _:Ndd6e111a62774cc2ab2fa9deb72a7d75 ;
+    dcterms:description gdpr:description ;
     dcterms:identifier "2016/679"^^xsd:string ;
     dcterms:issued "2016-05-04"^^xsd:date ;
     dcterms:language "English"^^xsd:string ;
@@ -12676,32 +13936,4 @@ gdpr:GDPR a eli:LR,
     dcterms:title "General Data Protection Regulation"^^xsd:string ;
     dcterms:title_alternative "GDPR"^^xsd:string,
         "REGULATION (EU) 2016/679"^^xsd:string .
-
-_:N108682ddbdcd43b6bcee8abc089dca58 a rdf:Statement ;
-    eli:cites gdpr:citation2 ;
-    dcterms:description "Having regard to the opinion of the Committee of the Regions,"^^xsd:string ;
-    dcterms:isPartOf _:Ndd6e111a62774cc2ab2fa9deb72a7d75 ;
-    dcterms:references gdpr:citation2 .
-
-_:N12104d0037b74fe9b30bbf1a4d925742 a rdf:Statement ;
-    dcterms:description "THE EUROPEAN PARLIAMENT AND THE COUNCIL OF THE EUROPEAN UNION, Having regard to the Treaty on the Functioning of the European Union, and in particular Article 16 thereof, Having regard to the proposal from the European Commission, After transmission of the draft legislative act to the national parliaments,"^^xsd:string ;
-    dcterms:isPartOf _:Ndd6e111a62774cc2ab2fa9deb72a7d75 .
-
-_:N510dc3c2f8b84b8eb91b57598f534a21 a rdf:Statement ;
-    eli:cites gdpr:citation1 ;
-    dcterms:description "Having regard to the opinion of the European Economic and Social Committee,"^^xsd:string ;
-    dcterms:isPartOf _:Ndd6e111a62774cc2ab2fa9deb72a7d75 ;
-    dcterms:references gdpr:citation1 .
-
-_:Ncc0072dda66d4422966c8e3f52fb62fa a rdf:Statement ;
-    eli:cites gdpr:citation3 ;
-    dcterms:description "Acting in accordance with the ordinary legislative procedure,"^^xsd:string ;
-    dcterms:isPartOf _:Ndd6e111a62774cc2ab2fa9deb72a7d75 ;
-    dcterms:references gdpr:citation3 .
-
-_:Ndd6e111a62774cc2ab2fa9deb72a7d75 a rdf:Statement ;
-    dcterms:hasPart _:N108682ddbdcd43b6bcee8abc089dca58,
-        _:N12104d0037b74fe9b30bbf1a4d925742,
-        _:N510dc3c2f8b84b8eb91b57598f534a21,
-        _:Ncc0072dda66d4422966c8e3f52fb62fa .
 

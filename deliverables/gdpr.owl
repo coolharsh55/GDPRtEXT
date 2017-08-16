@@ -1,18 +1,17 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.org/adaptcentre/ontologies/GDPRtEXT#"
      xml:base="http://purl.org/adaptcentre/ontologies/GDPRtEXT"
-     xmlns:eli="http://data.europa.eu/eli/ontology#"
-     xmlns:GDPRtEXT="http://purl.org/adaptcentre/ontologies/GDPRtEXT#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:gdprtext="http://purl.org/adaptcentre/ontologies/GDPRtEXT#">
     <owl:Ontology rdf:about="http://purl.org/adaptcentre/ontologies/GDPRtEXT#">
         <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GDPRtEXT</dc:title>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is an ontology to represent GDPR text as a set of RDF resources</rdfs:comment>
-        <dc:description rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">This ontology extends the canonical (official) GDPR text with additional annotations</dc:description>
+        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This ontology extends the canonical (official) GDPR text with additional annotations</dc:description>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GDPR text EXTensions</rdfs:label>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harshvardhan J. Pandit</dc:creator>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.1</owl:versionInfo>
@@ -31,9 +30,97 @@
     
 
 
+    <!-- http://data.europa.eu/eli/ontology#has_part -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/ontology#has_part">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://data.europa.eu/eli/ontology#is_part_of -->
 
-    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/ontology#is_part_of"/>
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/ontology#is_part_of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/adaptcentre/ontologies/GDPRtEXT#hasArticle -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/adaptcentre/ontologies/GDPRtEXT#hasArticle">
+        <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/eli/ontology#has_part"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/ontology#LegalResourceSubdivision"/>
+        <rdfs:range rdf:resource="http://purl.org/adaptcentre/ontologies/GDPRtEXT#Article"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">indicates the legal resource has the Article</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has Article</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/adaptcentre/ontologies/GDPRtEXT#hasChapter -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/adaptcentre/ontologies/GDPRtEXT#hasChapter">
+        <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/eli/ontology#has_part"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/ontology#LegalResource"/>
+        <rdfs:range rdf:resource="http://purl.org/adaptcentre/ontologies/GDPRtEXT#Chapter"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">indicates the legal resource has the Chapter</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has Chapter</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/adaptcentre/ontologies/GDPRtEXT#hasPoint -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/adaptcentre/ontologies/GDPRtEXT#hasPoint">
+        <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/eli/ontology#has_part"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/ontology#LegalResourceSubdivision"/>
+        <rdfs:range rdf:resource="http://purl.org/adaptcentre/ontologies/GDPRtEXT#Point"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">indicates the legal resource has the Point</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has Point</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/adaptcentre/ontologies/GDPRtEXT#hasRecital -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/adaptcentre/ontologies/GDPRtEXT#hasRecital">
+        <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/eli/ontology#has_part"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/ontology#LegalResourceSubdivision"/>
+        <rdfs:range rdf:resource="http://purl.org/adaptcentre/ontologies/GDPRtEXT#Recital"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">indicates the legal resource has the Recital</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has Recital</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/adaptcentre/ontologies/GDPRtEXT#hasSection -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/adaptcentre/ontologies/GDPRtEXT#hasSection">
+        <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/eli/ontology#has_part"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/ontology#LegalResourceSubdivision"/>
+        <rdfs:range rdf:resource="http://purl.org/adaptcentre/ontologies/GDPRtEXT#Section"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">indicates the legal resource has the Section</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has Section</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/adaptcentre/ontologies/GDPRtEXT#hasSubPoint -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/adaptcentre/ontologies/GDPRtEXT#hasSubPoint">
+        <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/eli/ontology#has_part"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/ontology#LegalResourceSubdivision"/>
+        <rdfs:range rdf:resource="http://purl.org/adaptcentre/ontologies/GDPRtEXT#SubPoint"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">indicates the legal resource has the SubPoint</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has SubPoint</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -97,6 +184,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://data.europa.eu/eli/ontology#LegalResource -->
+
+    <owl:Class rdf:about="http://data.europa.eu/eli/ontology#LegalResource"/>
     
 
 

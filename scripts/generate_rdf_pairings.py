@@ -58,6 +58,7 @@ TITLE_ALT = ELI.title_alternative
 PART_OF = ELI.is_part_of
 # graph.add((PART_OF, RDF.type, OWL.TransitiveProperty))
 DESC = ELI.description
+HAS_RECITAL = GDPRtEXT['hasRecital']
 
 ##############################################################################
 # GDPR as named individual
@@ -94,46 +95,22 @@ graph.add((gdpr, DCTERMS.abstract, Literal((
     'personal data and on the free movement of such data, '
     'and repealing Directive 95/46/EC '
     '(General Data Protection Regulation)'), datatype=XSD.string)))
-gdpr_description = BNode()
-graph.add((gdpr_description, RDF.type, RDF.Statement))
-gdpr_description1 = BNode()
-graph.add((gdpr_description1, RDF.type, RDF.Statement))
-graph.add((gdpr_description1, DCTERMS.description, Literal((
+gdpr_description = GDPR['description']
+graph.add((gdpr_description, RDF.type, ELI.LRS))
+graph.add((gdpr_description, DCTERMS.description, Literal((
     'THE EUROPEAN PARLIAMENT AND THE COUNCIL OF THE EUROPEAN UNION, '
     'Having regard to the Treaty on the Functioning of the European Union, '
     'and in particular Article 16 thereof, Having regard to the proposal from '
     'the European Commission, After transmission of the draft legislative act '
-    'to the national parliaments,'), datatype=XSD.string)))
-graph.add((gdpr_description1, DCTERMS.isPartOf, gdpr_description))
-graph.add((gdpr_description, DCTERMS.hasPart, gdpr_description1))
-gdpr_description2 = BNode()
-graph.add((gdpr_description2, RDF.type, RDF.Statement))
-graph.add((gdpr_description2, DCTERMS.description, Literal((
+    'to the national parliaments, '
     'Having regard to the opinion of the European Economic '
-    'and Social Committee,'), datatype=XSD.string)))
-graph.add((gdpr_description2, DCTERMS.isPartOf, gdpr_description))
-graph.add((gdpr_description, DCTERMS.hasPart, gdpr_description2))
-graph.add((gdpr_description2, DCTERMS.references, GDPR['citation1']))
-graph.add((gdpr_description2, ELI.cites, GDPR['citation1']))
-gdpr_description3 = BNode()
-graph.add((gdpr_description3, RDF.type, RDF.Statement))
-graph.add((gdpr_description3, DCTERMS.description, Literal(
-    'Having regard to the opinion of the Committee of the Regions,',
-    datatype=XSD.string)))
-graph.add((gdpr_description3, DCTERMS.isPartOf, gdpr_description))
-graph.add((gdpr_description, DCTERMS.hasPart, gdpr_description3))
-graph.add((gdpr_description3, DCTERMS.references, GDPR['citation2']))
-graph.add((gdpr_description3, ELI.cites, GDPR['citation2']))
-graph.add((gdpr, DCTERMS.description, gdpr_description))
-gdpr_description4 = BNode()
-graph.add((gdpr_description4, RDF.type, RDF.Statement))
-graph.add((gdpr_description4, DCTERMS.description, Literal(
-    'Acting in accordance with the ordinary legislative procedure,',
-    datatype=XSD.string)))
-graph.add((gdpr_description4, DCTERMS.isPartOf, gdpr_description))
-graph.add((gdpr_description, DCTERMS.hasPart, gdpr_description4))
-graph.add((gdpr_description4, DCTERMS.references, GDPR['citation3']))
-graph.add((gdpr_description4, ELI.cites, GDPR['citation3']))
+    'and Social Committee, '
+    'Having regard to the opinion of the Committee of the Regions, '
+    'Acting in accordance with the ordinary legislative procedure,'
+    ),  datatype=XSD.string)))
+graph.add((gdpr_description, ELI.cites, GDPR['citation1']))
+graph.add((gdpr_description, ELI.cites, GDPR['citation2']))
+graph.add((gdpr_description, ELI.cites, GDPR['citation3']))
 graph.add((gdpr, DCTERMS.description, gdpr_description))
 graph.add((gdpr, ELI.date_document, Literal('2016-04-27', datatype=XSD.date)))
 graph.add((gdpr, DCTERMS.date, Literal('2016-04-27', datatype=XSD.date)))
@@ -157,6 +134,11 @@ property_partof_chapter = GDPRtEXT['isPartOfChapter']
 property_partof_section = GDPRtEXT['isPartOfSection']
 property_partof_article = GDPRtEXT['isPartOfArticle']
 property_partof_point = GDPRtEXT['isPartOfPoint']
+property_has_chapter = GDPRtEXT['hasChapter']
+property_has_section = GDPRtEXT['hasSection']
+property_has_article = GDPRtEXT['hasArticle']
+property_has_point = GDPRtEXT['hasPoint']
+property_has_subpoint = GDPRtEXT['hasSubPoint']
 
 #############################################################################
 
@@ -194,6 +176,7 @@ def graph_subpoint(
     graph.add((node_subpoint, property_partof_article, article))
     graph.add((node_subpoint, PART_OF, point))
     graph.add((node_subpoint, property_partof_point, point))
+    graph.add((point, property_has_subpoint, node_subpoint))
     graph.add((node_subpoint, PART_OF, gdpr))
     graph.add((node_subpoint, DESC, Literal(
         subpoint['text'], datatype=XSD.string)))
@@ -218,6 +201,7 @@ def graph_point(point, article_number, article, section=None, chapter=None):
         graph.add((node_point, property_partof_section, section))
     graph.add((node_point, PART_OF, article))
     graph.add((node_point, property_partof_article, article))
+    graph.add((article, property_has_point, node_point))
     graph.add((node_point, PART_OF, gdpr))
     graph.add((node_point, DESC, Literal(
         point['text'], datatype=XSD.string)))
@@ -244,10 +228,13 @@ def graph_article(article, section=None, chapter=None):
         'Article ' + article['number'], datatype=XSD.string)))
     graph.add((node_article, PART_OF, chapter))
     graph.add((node_article, property_partof_chapter, chapter))
+    graph.add((chapter, property_has_article, node_article))
+    graph.add((gdpr, property_has_article, node_article))
     graph.add((node_article, PART_OF, gdpr))
     if section is not None:
         graph.add((node_article, PART_OF, section))
         graph.add((node_article, property_partof_section, section))
+        graph.add((section, property_has_article, node_article))
     # point number for when points are unnumbered
     point_nos = 1
     for point in article['contents']:
@@ -273,6 +260,7 @@ def graph_section(section, chapter, chapter_number):
     graph.add((node_section, PART_OF, chapter))
     graph.add((node_section, PART_OF, gdpr))
     graph.add((node_section, property_partof_chapter, chapter))
+    graph.add((chapter, property_has_section, node_section))
     for article in section['contents']:
         graph_article(article, node_section, chapter)
 
@@ -290,6 +278,7 @@ def graph_chapter(chapter):
     graph.add((node_chapter, TITLE_ALT, Literal(
         'Chapter ' + chapter['number'], datatype=XSD.string)))
     graph.add((node_chapter, PART_OF, gdpr))
+    graph.add((gdpr, property_has_chapter, node_chapter))
 
     contents = chapter['contents']
     # Section (if any)
@@ -314,6 +303,7 @@ for recital in gdpr_json['recitals']:
     graph.add((node_recital, DESC, Literal(
         recital['text'], datatype=XSD.string)))
     graph.add((node_recital, PART_OF, gdpr))
+    graph.add((gdpr, HAS_RECITAL, node_recital))
 
 
 for citation in gdpr_json['citations'].values():
@@ -325,6 +315,7 @@ for citation in gdpr_json['citations'].values():
     graph.add((node_citation, DESC, Literal(
         citation['text'], datatype=XSD.string)))
     graph.add((node_citation, PART_OF, gdpr))
+    graph.add((gdpr, ELI.cites, node_citation))
 
 
 # Add citations
