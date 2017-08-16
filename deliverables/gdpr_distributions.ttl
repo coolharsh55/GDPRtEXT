@@ -1,0 +1,164 @@
+@prefix GDPRtext: <http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix rdf: <http://www.w3.org/1999/02/22_rdf_syntax_ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf_schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+@prefix gdprdist: <http://purl.org/adaptcentre/openscience/resources/GDPRtEXT/distributions#> .
+
+gdprdist:catalog a dcat:Catalog ;
+    dcterms:title "General Data Protection Regulation" ;
+    rdfs:label "General Data Protection Regulation" ;
+    foaf:homepage "purl.org/adaptcentre/projects/GDPRtEXT"^^xsd:string ;
+    dcterms:publisher "ADAPT"^^xsd:string ;
+    dcterms:publisher "Trinity College Dublin"^^xsd:string ;
+    dcterms:language "English"^^xsd:string ;
+    dcat:dataset gdprdist:canonical_dataset ;
+    dcat:dataset gdprdist:textid_dataset ;
+    dcat:dataset gdprdist:annotated_dataset .
+
+gdprdist:canonical_dataset a dcat:Dataset ;
+    dcterms:title "GDPR canonical dataset" ;
+    rdfs:label "GDPR canonical dataset" ;
+    dcterms:keyword "GDPR"^^xsd:string ;
+    dcterms:issued "2016_04_27"^^xsd:date;
+    dcterms:publisher "Official Journal of European Union"^^xsd:string ;
+    dcterms:language "English"^^xsd:string ;
+    dcat:distribution gdprdist:gdpr_canonical_PDF,
+        gdprdist:gdpr_canonical_HTML;
+    dcat:landingPage "http://eur_lex.europa.eu/legal_content/EN/ALL/?uri=CELEX:32016R0679"^^xsd:string .
+
+gdprdist:canonical_PDF a dcat:Distribution ;
+    dcat:downloadURL "http://eur_lex.europa.eu/legal_content/EN/TXT/PDF/?uri=CELEX:32016R0679&from=EN" ;
+    dcterms:title "General Data Protection Regulation (GDPR)"^^xsd:string ;
+    dcterms:mediaType "application/pdf"^^xsd:string .
+
+gdprdist:canonical_HTML a dcat:Distribution ;
+    dcat:downloadURL "http://eur_lex.europa.eu/legal_content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN" ;
+    dcterms:title "General Data Protection Regulation (GDPR)"^^xsd:string ;
+    dcterms:mediaType "text/html"^^xsd:string .
+
+gdprdist:canonical_XML a dcat:Distribution ;
+    dcat:downloadURL "http://publications.europa.eu/resource/cellar/3e485e15_11bd_11e6_ba9a_01aa75ed71a1.0006.02/DOC_2" ;
+    dcterms:title "General Data Protection Regulation (GDPR)"^^xsd:string ;
+    dcterms:mediaType "text/xml"^^xsd:string .
+
+gdprdist:textid_dataset a dcat:Dataset ;
+    dcterms:title "GDPR text (GDPRtEXT)"^^xsd:string ;
+    rdfs:label "GDPR text (GDPRtEXT)"^^xsd:string ;
+    dcterms:keyword "GDPR"^^xsd:string ;
+    dcterms:issued "2017_07_10"^^xsd:date ;
+    dcterms:modified "2017_08_16"^^xsd:date ;
+    dcterms:publisher "ADAPT"^^xsd:string ;
+    dcterms:publisher "Trinity College Dublin"^^xsd:string ;
+    dcterms:language "English"^^xsd:string ;
+    dcat:distribution gdprdist:gdpr_html,
+        gdprdist:gdpr_json .
+
+gdprdist:gdpr_html a dcat:Distribution ;
+    dcat:downloadURL "http://purl.org/adaptcentre/resources/GDPRtEXT/gdpr.html"^^xsd:string ;
+    dcterms:title "GDPR with HTML id attributes (GDPRtEXT)"^^xsd:string ;
+    dcterms:mediaType "text/html"^^xsd:string .
+
+gdprdist:gdpr_json a dcat:Distribution ;
+    dcat:downloadURL "http://purl.org/adaptcentre/resources/GDPRtEXT/gdpr.json"^^xsd:string ;
+    dcterms:title "GDPR in JSON format (GDPRtEXT)"^^xsd:string ;
+    dcterms:mediaType "application/json"^^xsd:string .
+
+gdprdist:annotated_dataset a dcat:Dataset ;
+    dcterms:title "GDPR Extended text (GDPRtEXT)"^^xsd:string ;
+    rdfs:label "GDPR Extended text (GDPRtEXT)"^^xsd:string ;
+    dcterms:keyword "GDPR"^^xsd:string ;
+    dcterms:issued "2017_08_15"^^xsd:date ;
+    dcterms:modified "2017_08_16"^^xsd:date ;
+    dcterms:publisher "ADAPT"^^xsd:string ;
+    dcterms:publisher "Trinity College Dublin"^^xsd:string ;
+    dcterms:language "English"^^xsd:string ;
+    dcat:distribution gdprdist:gdprtext_rdf,
+        gdprdist:gdprtext_n3, gdprdist:gdprtext_nt, gdprdist:gdprtext_ttl,
+        gdprdist:gdprtext_jsonld .
+
+gdprdist:gdprtext_rdf a dcat:Distribution,
+    void:Dataset ;
+    dcat:downloadURL "http://purl.org/adaptcentre/resources/GDPRtEXT/gdprtext.rdf"^^xsd:string ;
+    void:dataDump "http://purl.org/adaptcentre/resources/GDPRtEXT/gdprtext.rdf"^^xsd:string ;
+    dcterms:title "GDPR (GDPRtEXT) expressed in RDF/XML"^^xsd:string ;
+    dcterms:mediaType "application/rdf+xml" ;
+    void:sparqlEndpoint "http://purl.org/adaptcentre/resources/GDPRtEXT/sparql"^^xsd:string ;
+    void:feature <http://www.w3.org/ns/formats/RDF_XML>;
+    void:vocabulary <http://purl.org/adaptcentre/ontologies/GDPRtEXT#> ;
+    void:vocabulary <http://purl.org/dc/terms/> ;
+    void:vocabulary <http://data.europa.eu/eli/ontology#> ;
+    void:vocabulary <http://www.w3.org/1999/02/22_rdf_syntax_ns#> ;
+    void:vocabulary <http://www.w3.org/2000/01/rdf_schema#> ;
+    void:vocabulary <http://www.w3.org/XML/1998/namespace> ;
+    void:vocabulary <http://www.w3.org/2001/XMLSchema#> .
+
+gdprdist:gdprtext_n3 a dcat:Distribution,
+    void:Dataset ;
+    dcat:downloadURL "http://purl.org/adaptcentre/resources/GDPRtEXT/gdprtext.n3"^^xsd:string ;
+    void:dataDump "http://purl.org/adaptcentre/resources/GDPRtEXT/gdprtext.n3"^^xsd:string ;
+    dcterms:title "GDPR (GDPRtEXT) expressed in N3"^^xsd:string ;
+    dcterms:mediaType "text/n3" ;
+    void:sparqlEndpoint "http://purl.org/adaptcentre/resources/GDPRtEXT/sparql"^^xsd:string ;
+    void:feature <http://www.w3.org/ns/formats/RDF_XML>;
+    void:vocabulary <http://purl.org/adaptcentre/ontologies/GDPRtEXT#> ;
+    void:vocabulary <http://purl.org/dc/terms/> ;
+    void:vocabulary <http://data.europa.eu/eli/ontology#> ;
+    void:vocabulary <http://www.w3.org/1999/02/22_rdf_syntax_ns#> ;
+    void:vocabulary <http://www.w3.org/2000/01/rdf_schema#> ;
+    void:vocabulary <http://www.w3.org/XML/1998/namespace> ;
+    void:vocabulary <http://www.w3.org/2001/XMLSchema#> .
+
+gdprdist:gdprtext_nt a dcat:Distribution,
+    void:Dataset ;
+    dcat:downloadURL "http://purl.org/adaptcentre/resources/GDPRtEXT/gdprtext.nt"^^xsd:string ;
+    void:dataDump "http://purl.org/adaptcentre/resources/GDPRtEXT/gdprtext.nt"^^xsd:string ;
+    dcterms:title "GDPR (GDPRtEXT) expressed in N_Triples"^^xsd:string ;
+    dcterms:mediaType "application/n_triples" ;
+    void:sparqlEndpoint "http://purl.org/adaptcentre/resources/GDPRtEXT/sparql"^^xsd:string ;
+    void:feature <http://www.w3.org/ns/formats/RDF_XML>;
+    void:vocabulary <http://purl.org/adaptcentre/ontologies/GDPRtEXT#> ;
+    void:vocabulary <http://purl.org/dc/terms/> ;
+    void:vocabulary <http://data.europa.eu/eli/ontology#> ;
+    void:vocabulary <http://www.w3.org/1999/02/22_rdf_syntax_ns#> ;
+    void:vocabulary <http://www.w3.org/2000/01/rdf_schema#> ;
+    void:vocabulary <http://www.w3.org/XML/1998/namespace> ;
+    void:vocabulary <http://www.w3.org/2001/XMLSchema#> .
+
+gdprdist:gdprtext_ttl a dcat:Distribution,
+    void:Dataset ;
+    dcat:downloadURL "http://purl.org/adaptcentre/resources/GDPRtEXT/gdprtext.ttl"^^xsd:string ;
+    void:dataDump "http://purl.org/adaptcentre/resources/GDPRtEXT/gdprtext.ttl"^^xsd:string ;
+    dcterms:title "GDPR (GDPRtEXT) expressed in Turtle"^^xsd:string ;
+    dcterms:mediaType "text/turtle" ;
+    void:sparqlEndpoint "http://purl.org/adaptcentre/resources/GDPRtEXT/sparql"^^xsd:string ;
+    void:feature <http://www.w3.org/ns/formats/RDF_XML>;
+    void:vocabulary <http://purl.org/adaptcentre/ontologies/GDPRtEXT#> ;
+    void:vocabulary <http://purl.org/dc/terms/> ;
+    void:vocabulary <http://data.europa.eu/eli/ontology#> ;
+    void:vocabulary <http://www.w3.org/1999/02/22_rdf_syntax_ns#> ;
+    void:vocabulary <http://www.w3.org/2000/01/rdf_schema#> ;
+    void:vocabulary <http://www.w3.org/XML/1998/namespace> ;
+    void:vocabulary <http://www.w3.org/2001/XMLSchema#> .
+
+gdprdist:gdprtext_jsonld a dcat:Distribution,
+    void:Dataset ;
+    dcat:downloadURL "http://purl.org/adaptcentre/resources/GDPRtEXT/gdprtext.jsonld"^^xsd:string ;
+    void:dataDump "http://purl.org/adaptcentre/resources/GDPRtEXT/gdprtext.jsonld"^^xsd:string ;
+    dcterms:title "GDPR (GDPRtEXT) expressed in JSON_LD"^^xsd:string ;
+    dcterms:mediaType "application/ld+json" ;
+    void:sparqlEndpoint "http://purl.org/adaptcentre/resources/GDPRtEXT/sparql"^^xsd:string ;
+    void:feature <http://www.w3.org/ns/formats/RDF_XML>;
+    void:vocabulary <http://purl.org/adaptcentre/ontologies/GDPRtEXT#> ;
+    void:vocabulary <http://purl.org/dc/terms/> ;
+    void:vocabulary <http://data.europa.eu/eli/ontology#> ;
+    void:vocabulary <http://www.w3.org/1999/02/22_rdf_syntax_ns#> ;
+    void:vocabulary <http://www.w3.org/2000/01/rdf_schema#> ;
+    void:vocabulary <http://www.w3.org/XML/1998/namespace> ;
+    void:vocabulary <http://www.w3.org/2001/XMLSchema#> .
