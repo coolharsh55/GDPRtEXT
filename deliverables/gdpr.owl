@@ -2,19 +2,35 @@
 <rdf:RDF xmlns="http://purl.org/adaptcentre/ontologies/GDPRtEXT#"
      xml:base="http://purl.org/adaptcentre/ontologies/GDPRtEXT"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:gdprtext="http://purl.org/adaptcentre/ontologies/GDPRtEXT#">
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:ontology="http://data.europa.eu/eli/ontology#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.org/adaptcentre/ontologies/GDPRtEXT#">
+        <owl:imports rdf:resource="http://data.europa.eu/eli/ontology#"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-08-15</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-08-18</terms:modified>
         <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GDPRtEXT</dc:title>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is an ontology to represent GDPR text as a set of RDF resources</rdfs:comment>
         <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This ontology extends the canonical (official) GDPR text with additional annotations</dc:description>
+        <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://harshp.com#me</terms:creator>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This ontology extends the canonical (official) GDPR text with additional annotations</terms:description>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GDPR text EXTensions</rdfs:label>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harshvardhan J. Pandit</dc:creator>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.1</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</owl:versionInfo>
+        <vann:preferredNamespacePrefix>gdprtext</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT</vann:preferredNamespaceUri>
+        <foaf:homepage>https://openscience.adaptcentre.ie/projects/GDPRtEXT/</foaf:homepage>
+        <terms:license rdf:datatype="https://w3.org/2001/XMLSchema#anyURI">http://creativecommons.org/licenses/by/4.0/</terms:license>
     </owl:Ontology>
     
 

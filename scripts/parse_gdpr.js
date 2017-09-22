@@ -217,6 +217,7 @@ var extract_points_from_article4 = function(article4) {
  * Extracts points from article
  */
 var extract_points_from_article = function(article) {
+    // console.log(article.number);
 	var text = article.contents;
 	// The extraction mechanism works on the basis of sequential points.
 	// This means that if a point has a subpoint,
@@ -252,7 +253,7 @@ var extract_points_from_article = function(article) {
 		} else if (element_type == 'TABLE') {
 			var p_in_element = element.find('p');
 			var p_number = $(p_in_element[0]).text().trim();
-			var match = p_number.match('^(\\w+).');
+			var match = p_number.match('(\\w+)');
 			if (match == undefined || match == null) {
 				p_number = null;
 			} else {
@@ -267,7 +268,9 @@ var extract_points_from_article = function(article) {
 		}
 	}
 	for(pt of points) {
-		// console.log(pt.type, pt.number, pt.text);
+        for(spt of pt.subpoints) {
+            // console.log(article.number, pt.number, spt.number);
+        }
 	}
 
 	return points;
@@ -435,6 +438,9 @@ data.citations = $('p.note').map(function(index, element) {
 /**
  * Download data as JSON
  */
+delete data.citations.prevObject;
+delete data.citations.context;
+delete data.citations.length;
 $('<a id="downloadAnchorElem" style="display:none"></a>').appendTo('body');
 var dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(data));
 var btn_download = document.getElementById('downloadAnchorElem');
