@@ -1,0 +1,469 @@
+<h2 id="desc" class="list">GDPR text EXTensions: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<iframe align="center" width="100%" height ="500px" src="webvowl/index.html#ontology"></iframe> 
+<h3 id="desc-gdpr" class="list">Classes describing structure of GDPR</h3>
+<span class="markdown">
+#### Chapter
+A [Chapter](#Chapter) is the largest sub-unit in the GDPR. A chapter can contain
+one or more sections or articles. There are a total of 10 chapters in GDPR,
+named in the roman style from `I` to `X`. Their unique-id in GDPRtEXT is defined
+as `chapterN` where `N` is the chapter number in roman numerals.
+
+Chapters are linked with the GDPR resource through the property [hasChapter](#hasChapter)
+which specifies that the GDPR contains the referenced chapters.
+
+Chapters are linked to their sections, articles, points, and subpoints using the
+property [isPartOfChapter](#isPartOfChapter) which specifies that the chapter
+contains the defined subresource.
+
+#### Section
+A [Section](#Section) is an collection of article within a Chapter. 
+A section can contain
+one or more articles.
+Section are named using decimanl numbers from 1.
+Their unique-id in GDPRtEXT is defined
+as `chapterN-X` where `N` is the chapter number in roman and `X` is the 
+section number in decimal numerals.
+
+Sections are linked to their chapters using the property [hasSection](#hasSection)
+which specifies that the chapter contains the referenced section.
+
+Sections are linked to their articles, points, and subpoints using the property
+[isPartOfSection](#isPartOfSection) which specifies that the section contains
+the defined subresource.
+
+#### Article
+A [Article](#Article) is a unit of points within the GDPR. 
+A article can contain
+one or more points, each of which can contain zero or more subpoints.
+Article are named using decimanl numbers from 1.
+Their unique-id in GDPRtEXT is defined
+as `articleX` where `X` is the 
+article number in decimal numerals.
+
+Articles are linked to their chapters and sections using the property
+[hasArticle](#hasArticle) which specifies that the chapter or section contains
+the referenced article.
+
+Articles are linked to their points and subpoints using the property
+[isPartOfArticle](#isPartOfArticle) which specifies that the article contains
+the defined subresource.
+
+#### Point
+A [Point](#Point) is an paragraph or point of text within an article.
+It can contain zero or more sub-points. It's unique id in GDPRtEXT is defined
+as `articleX-Y` where `X` is the article number in decimal,
+and `Y` is the point number (or letter).
+
+Points are linked to their articles using the property [hasPoint](#hasPoint)
+which specifies that the article contains the referenced point.
+
+Points are linked to their subpoints using [isPartOfPoint](#isPartOfPoint]
+which specifies that the point contains the defined subpoints.
+
+#### Sub-Point
+A [SubPoint](#SubPoint) is an paragraph or subpoint of text within a point of an article.
+It's unique id in GDPRtEXT is definde
+as `articleX-Y-Z` where `X` is the article number in decimal,
+and `Y` is the point number (or letter) and `Z` is the subpoint number (or letter).
+
+SubPoints are linked to their points using the property [hasSubPoint](#hasSubPoint)
+which specifies that the point contains the referenced subpoint.
+
+#### Recital
+A [Recital](#Recital) is the text preceding the chapters and articles of the GDPR
+which specifies the reasons and provisions for the GDPR.
+It's unique id in GDPRtEXT is defined as `recitalX` where `X` is the recital number.
+
+Recitals are linked to GDPR using the property [hasRecital](#hasRecital) which
+specifies that the referenced recital is part of GDPR.
+
+#### Citation
+The [Citation](#Citation) within the GDPR text are references to other documents.
+The unique id for citations is given by `citationX` where `X` is the citation number.
+
+Citations are referenced to legal resources using the property [hasCitation](#hasCitation)
+which specifies that the citation occurs or is referenced within that legal resource.
+
+</span>
+<h4>Object Properties</h4><ul class="hlist">
+   <li>
+      <a href="#hasArticle"
+         title="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#hasArticle">has Article</a>
+   </li>
+   <li>
+      <a href="#hasChapter"
+         title="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#hasChapter">has Chapter</a>
+   </li>
+   <li>
+      <a href="#http://data.europa.eu/eli/ontology#has_part" title="http://data.europa.eu/eli/ontology#has_part">
+         <span>has part</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasPoint"
+         title="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#hasPoint">has Point</a>
+   </li>
+   <li>
+      <a href="#hasRecital"
+         title="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#hasRecital">has Recital</a>
+   </li>
+   <li>
+      <a href="#hasSection"
+         title="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#hasSection">has Section</a>
+   </li>
+   <li>
+      <a href="#hasSubPoint"
+         title="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#hasSubPoint">has SubPoint</a>
+   </li>
+   <li>
+      <a href="#http://data.europa.eu/eli/ontology#is_part_of" title="http://data.europa.eu/eli/ontology#is_part_of">
+         <span>is part of</span>
+      </a>
+   </li>
+   <li>
+      <a href="#isPartOfArticle"
+         title="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#isPartOfArticle">is part of Article</a>
+   </li>
+   <li>
+      <a href="#isPartOfChapter"
+         title="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#isPartOfChapter">is part of Chapter</a>
+   </li>
+   <li>
+      <a href="#isPartOfPoint"
+         title="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#isPartOfPoint">is part of Point</a>
+   </li>
+   <li>
+      <a href="#isPartOfSection"
+         title="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#isPartOfSection">is part of Section</a>
+   </li>
+</ul>
+<h3 id="desc-concepts" class="list">Classes defining concepts of GDPR</h3>
+<span class="markdown">
+All concepts from the GDPR are described using `skos:Concept` where the hierarchy
+of concepts signifies the relationship of being narrow, specific, or related grouping of concepts.
+
+#### Data
+[Data](#Data) refers to the generic usage of the term 'data' and contains subclasses
+defining [personal data](#PersonalData) along with the various specific types
+of [sensitive personal data](#SensitivePersonalData) mentioned in the GDPR text. 
+This also contains concepts related to representing [anonymised](#AnonymousData) and
+[pseudonymised](#PseudoAnonymousData) data.
+</span>
+<ul class="hlist">
+    <li><a href="#Data">Data</a></li>
+    <li><a href="#PersonalData">Personal Data</a></li>
+    <li><a href="#SensitivePersonalData">Sensitive Personal Data</a></li>
+    <li><a href="#CriminalData">Criminal Data</a></li>
+    <li><a href="#GeneticData">Genetic Data</a></li>
+    <li><a href="#HealthData">Health Data</a></li>
+    <li><a href="#RacialData">Racial Data</a></li>
+    <li><a href="#AnonymousData">Anonymous Data</a></li>
+    <li><a href="#PseudoAnonymousData">PseudoAnonymous Data</a></li>
+</ul>
+<span class="markdown">
+#### Consent
+[Consent](#Consent) refers specifically to the concept of consent as specified
+within the GDPR. It contains concepts to refer to the [given consent](#GivenConsent)
+and to consent that is considered to be [valid](#ValidConsent) under the GDPR.
+</span>
+<ul class="hlist">
+    <li><a href="#Consent">Consent</a></li>
+    <li><a href="#GivenConsent">GivenConsent</a></li>
+    <li><a href="#ValidConsent">ValidConsent</a></li>
+</ul>
+<span class="markdown">
+#### Entity
+[Entity](#Entity) refers to specific entities that are mentioned or are referred
+to by the GDPR such as [data subject](#DataSubject), [controller](#Controller),
+[processor](#Processor), [data protection office (DPO)](#DPO), etc.
+</span>
+<ul class="hlist">
+    <li><a href="#Entity">Entity</a></li>
+    <li><a href="#DataSubject">Data Subject</a></li>
+    <li><a href="#Controller">Controller</a></li>
+    <li><a href="#JointController">Joint Controller</a></li>
+    <li><a href="#Processor">Processor</a></li>
+    <li><a href="#SubProcessor">SubProcessor</a></li>
+    <li><a href="#DPO">Data Protection Officer (DPO)</a></li>
+    <li><a href="#DPA">Data Protection Authority (DPA)</a></li>
+    <li><a href="#ControllerRepresentative">Representative of Controller</a></li>
+    <li><a href="#ProcessorRepresentative">Representative of Processor</a></li>
+    <li><a href="#CertificationBody">Certification Body</a></li>
+    <li><a href="#RegulatoryAuthority">Regulatory Authority</a></li>
+</ul>
+<span class="markdown">
+#### Activity
+[Activity](#Activity) refers to some process or action mentioned, referred,
+implied, or defined by the GDPR. It contains concepts to distinguish between
+[activities about consent](#ConsentActivity) and [activities involving data](#DataActivity).
+It also defines several other activities related to the functioning of the GDPR
+such as [reporting data breach](#ReportDataBreach), [processing](#Processing),
+[demonstrating consent](#DemonstratingConsent), etc.
+</span>
+<h5>Consent Activity</h5>
+<span class="markdown">Consent Activity refers to activities that deal or interact with consent.</span>
+<ul class="hlist">
+    <li><a href="#ConsentActivity">Consent Activity</a></li>
+    <li><a href="#ObtainingConsent">Obtaining Consent</a></li>
+    <li><a href="#WithdrawingConsent">Withdrawing Consent</a></li>
+</ul>
+<h5>Data Activity</h5>
+<span class="markdown"></span>
+<span class="markdown">Data Activity refers to activities that interact or involve data.
+_Processing_ is a Data Activity that uses data (therefore is the same as 'Use Data').
+But because GDPR specifically mentions Processing in several of its points, there
+is a separate activity defined as Processing which is equivalent to 'Use Data'.</span>
+<ul class="hlist">
+    <li><a href="#DataActivity">Data Activity</a></li>
+    <li><a href="#UseData">Use Data (&#8801;Processing)</a></li>
+    <li><a href="#ArchiveData">Archive Data</a></li>
+    <li><a href="#CollectionOfPersonalData">Collection of Personal Data</a></li>
+    <li><a href="#CrossBorderTransfer">Cross Border Transfer</a></li>
+    <li><a href="#EraseData">Erase Data</a></li>
+    <li><a href="#ProvideCopyOfPersonalData">Provide Copy of Personal Data</a></li>
+    <li><a href="#RectifyData">Rectify Data</a></li>
+    <li><a href="#ShareDataWithThirdParty">Share data with Third Party</a></li>
+    <li><a href="#StoreData">Store Data</a></li>
+</ul>
+<h5>Processing</h5>
+<span class="markdown">Processing refers to the activity of 'processing' data,
+which can be considered to be the same as 'use data'. This concept is equivalent
+to 'Use Data'.</span>
+<ul class="hlist">
+    <li><a href="#Processing">Processing (&#8801;Use Data)</a></li>
+    <li><a href="#AutomatedProcessing">Automated Processing</a></li>
+    <li><a href="#AutomatedDecisionMakingWithSignificantEffect">Automated Decision Making with Significant Effect</a></li>
+    <li><a href="#ConfirmingOrMatchingDatasets">Confirming or Matching Datasets</a></li>
+    <li><a href="#LargeScaleProcessing">Large Scale Processing</a></li>
+    <li><a href="#ProcessingAffectedVulnerableIndividuals">Processing Affected or Vulnerable Individuals</a></li>
+    <li><a href="#ProcessingSensitiveData">Processing Sensitive Data</a></li>
+    <li><a href="#ProcessingUsingUntestedTechnologies">Processing using Untested Technologies</a></li>
+    <li><a href="#UnlawfulProcessing">Unlawful Processing</a></li>
+</ul>
+<h5>Reporting Data Breach</h5>
+<span class="markdown">The activity of reporting a data breach.</span>
+<ul class="hlist">
+    <li><a href="#ReportDataBreach">Report Data Breach</a></li>
+    <li><a href="#MaintainRecordOfBreach">Maintain Record of Breach</a></li>
+    <li><a href="#NotifyDataSubjectOfBreach">Notify Data Subject of Breach</a></li>
+    <li><a href="#ReportDataBreachToController">Report Breach to Controller</a></li>
+    <li><a href="#ReportDataBreachToDPAWithin72Hours">Report Breach to DPA within 72 hours</a></li>
+</ul>
+<h5>Other Activities</h5>
+<span class="markdown">These are other activities that are not categorised or
+grouped together.</span>
+<ul class="hlist">
+    <li><a href="#SecurityOfPersonalData">Security of Personal Data</a></li>
+    <li><a href="#AppointmentOfProcessors">Appointment of Processors</a></li>
+    <li><a href="#DemonstratingConsent">Demonstrating Consent</a></li>
+    <li><a href="#ExerciseRights">Exercise Rights</a></li>
+    <li><a href="#IdentificationOfDataSubject">Identification of Data Subject</a></li>
+    <li><a href="#ImpactAssessment">Impact Assessment</a></li>
+    <li><a href="#Marketing">Marketing</a></li>
+    <li><a href="#DirectMarketing">Direct Marketing</a></li>
+    <li><a href="#MonitorCompliance">Monitor Compliance</a></li>
+    <li><a href="#PropogateRightsToThirdParties">Propogate Rights to Third Parties</a></li>
+    <li><a href="#SystematicMonitoring">Systematic Monitoring</a></li>
+</ul>
+<span class="markdown">
+#### Compliance
+[Compliance](#Compliance) refers to the compliance towards the GDPR and contains
+concepts regarding the same.
+</span>
+<ul class="hlist">
+    <li><a href="#Compliance">Compliance</a></li>
+    <li><a href="#DemonstratingConsent">Demonstration Consent</a></li>
+    <li><a href="#MonitorCompliance">Monitor Compliance</a></li>
+    <li><a href="#ReportDataBreach">Report Data Breach</a></li>
+</ul>
+<h4>Principles</h4>
+<span class="markdown">GDPR mentions several _principles_ which are reflected 
+by these concepts.</span>
+<ul class="hlist">
+    <li><a href="#Principle">Principle</a></li>
+    <li><a href="#Accountability">Accountability</a></li>
+    <li><a href="#Accuracy">Accuracy</a></li>
+    <li><a href="#DataMinimisation">Data Minimisation</a></li>
+    <li><a href="#IntegrityAndConfidentiality">Integrity and Confidentiality</a></li>
+    <li><a href="#LawfulnessFairnessAndTransparency">Lawfulness, Fairness, and Transparency</a></li>
+    <li><a href="#PurposeLimitation">Purpose Limitation</a></li>
+    <li><a href="#StorageLimitation">Storage Limitation</a></li>
+</ul>
+<h4>Rights</h4>
+<span class="markdown">GDPR provides the data subject with several 'rights'
+which are reflected in these concepts.</span>
+<h5>Right of Data Portability</h5>
+<ul class="hlist">
+    <li><a href="#RightOfDataPortability">Right of Data Portability</a></li>
+    <li><a href="#ProvideCopyOfPersonalData">Provide copy of Personal Data</a></li>
+    <li><a href="#ShouldBeCommonlyUsedFormat">Should be commonly used format</a></li>
+    <li><a href="#ShouldBeMachineReadable">Should be machine readable</a></li>
+    <li><a href="#ShouldBeStructured">Should be structured</a></li>
+    <li><a href="#ShouldSupportReuse">Should support reuse</a></li>
+</ul>
+<h5>Right of Erasure</h5>
+<ul class="hlist">
+    <li><a href="#RightOfErasure">Right of Erasure</a></li>
+    <li><a href="#EraseWhenConsentWasWithdrawn">Erase when consent was withdrawn</a></li>
+    <li><a href="#EraseWhenDataIsNoLongerNeededForOriginalPurpose">Erase when data is no longer needed for original purpose</a></li>
+</ul>
+<h5>Right to Access Personal Data</h5>
+<ul class="hlist">
+    <li><a href="#RightToAccessPersonalData">Right to Access Personal Data</a></li>
+    <li><a href="#IfAndWhereControllerIsProcessingData">If and where Controller is processing data</a></li>
+    <li><a href="#InfoAboutAutomatedProcessingWithSignificantEffectsOnDataSubject">Automated processing with significant effects on data subject</a></li>
+    <li><a href="#InfoAboutCatgegoriesOfDataBeingProcessed">Categories of data being processed</a></li>
+    <li><a href="#InfoAboutCategoriesOfRecipientsDataSharedWith">Categories of recipients data is shared with</a></li>
+    <li><a href="#InfoAboutExistenceOfRights">Existence of Rights</a></li>
+    <li><a href="#InfoAboutProcessing">Information about Processing</a></li>
+    <li><a href="#InfoAboutSourceOfData">Source of Data</a></li>
+    <li><a href="#InfoAboutStoragePeriod">Storage Period</a></li>
+    <li><a href="#NoChargeLeviedForRightToAccess">No charges levied</a></li>
+</ul>
+<h5>Right to Basic Information about Processing</h5>
+<ul class="hlist">
+    <li><a href="#RightToBasicInformationAboutProcessing">Right to Basic Information about Processing</a></li>
+    <li><a href="#InformationAboutThirdParties">Information about Third Parties</a></li>
+</ul>
+<h5>Right to restrict Processing</h5>
+<ul class="hlist">
+    <li><a href="#RightToRestrictProcessing">Right to restrict Processing</a></li>
+    <li><a href="#AccuracyIsContested">Accuracy is contested</a></li>
+    <li><a href="#DataNoLongerNeededForOriginalPurpose">Data no longer needed for original purpose</a></li>
+    <li><a href="#ProcessingIsUnlawful">Processing is unlawful</a></li>
+</ul>
+<h5>Right to Transparency</h5>
+<ul class="hlist">
+    <li><a href="#RightToTransparency">Right to Transparency</a></li>
+    <li><a href="#InformationShouldBeConcise">concise</a></li>
+    <li><a href="#InformationShouldBeEasilyAccessible">easily accessible</a></li>
+    <li><a href="#InformationShouldBeIntelligible">intelligible</a></li>
+    <li><a href="#InformationShouldBeTransparent">transparent</a></li>
+</ul>
+<h5>Other Rights</h5>
+<ul class="hlist">
+    <li><a href="#RightToNotBeEvaluatedThroughAutomatedProcessing">Not be evaluated through Automated Processing</a></li>
+    <li><a href="#RightToObjectForDirectMarketting">Object to Direct Marketing</a></li>
+    <li><a href="#RightToObjectToProcessing">Object to Processing</a></li>
+    <li><a href="#RightToRectification">Right of Rectification</a></li>
+</ul>
+<h4>Obligations</h4>
+<span class="markdown">Obligations specified by the GDPR are represented by these concepts.</span>
+<h5>Controller Obligations</h5>
+<ul class="hlist">
+    <li><a href="#ControllerObligation">Controller Obligation</a></li>
+    <li><a href="#AppointmentOfProcessors">Appointment of Processors</a></li>
+    <li><a href="#ControllerAccountability">Accountability</a></li>
+    <li><a href="#ControllerResponsibility">Controller Responsibility</a></li>
+    <li><a href="#CooperateWithDPA">Co-operate with DPA</a></li>
+    <li><a href="#DataProtectionByDesignAndByDefault">Data Protection by Design and Default</a></li>
+    <li><a href="#DataSecurity">Data Security</a></li>
+    <li><a href="#LiabilityOfJointController">Liability of Joint Controller(s)</a></li>
+    <li><a href="#MaintainRecordsOfProcessingActivities">Maintain records of processing activities</a></li>
+    <li><a href="#PrivacyByDesign">Privacy by Design</a></li>
+    <li><a href="#PropogateRightsToThirdParties">Propogate Rights to Third Parties</a></li>
+    <li><a href="#ReportDataBreach">Report Data Breach</a></li>
+</ul>
+<h5>Processor Obligations</h5>
+<ul class="hlist">
+    <li><a href="#ProcessorObligation">Processor Obligation</a></li>
+    <li><a href="#AppointingSubProcessors">Appointing Sub-Processors</a></li>
+    <li><a href="#AssistInComplyingWithRights">Assist in complying with Rights</a></li>
+    <li><a href="#ComplianceWithControllersInstructions">Compliance with Controller's instructions</a></li>
+    <li><a href="#CooperateWithDPA">Co-operate with DPA</a></li>
+    <li><a href="#DataSecurity">Data Security</a></li>
+    <li><a href="#ImposeConfidentialityObligationOnPersonnel">Impose Confidentiality on Personnel</a></li>
+    <li><a href="#InformControllerOfConflictWithLaw">Inform Controller of conflict with Law</a></li>
+    <li><a href="#MaintainRecordsOfProcessingActivities">Maintain records of processing activities</a></li>
+    <li><a href="#OnlyActOnDocumentedInstructionFromController">Only act on documented instructions</a></li>
+    <li><a href="#PropogateRightsToThirdParties">Propogate Rights to Third Parties</a></li>
+    <li><a href="#ProvideControllerWithInfoForCompliance">Provide Controller with information for Compliance</a></li>
+    <li><a href="#ReportDataBreachToController">Report Data Breach to Controller</a></li>
+    <li><a href="#RestrictionsOnCrossBorderTransfers">Restrictions on Cross-Border Transfers</a></li>
+    <li><a href="#ReturnOrDestroyPersonalDataAtEndTerm">Return or destroy Personal Data at end term</a></li>
+</ul>
+<h5>DPO Obligations</h5>
+<ul class="hlist">
+    <li><a href="#DPOObligation">DPO Obligation</a></li>
+    <li><a href="#MonitorCompliance">Monitor Compliance</a></li>
+</ul>
+<h5>Lawful Basis for Processing</h5>
+<ul class="hlist">
+    <li><a href="#LawfulBasisForProcessing">Lawful Basis for Processing</a></li>
+    <li><a href="#ContractWithDataSubject">Contract with Data Subject</a></li>
+    <li><a href="#ExemptedByNationalLaw">Exempted by National Law</a></li>
+    <li><a href="#EmploymentLaw">Employment Law</a></li>
+    <li><a href="#GivenConsent">Given Consent</a></li>
+    <li><a href="#HistoricStatisticScientificPurposes">Historic, Statistical, or Scientific Purposes</a></li>
+    <li><a href="#LegalClaims">Legal claims</a></li>
+    <li><a href="#LegalObligation">Legal obligation</a></li>
+    <li><a href="#LegitimateInterest">Legitimate Interest</a></li>
+    <li><a href="#MadePublicByDataSubject">Made public by Data Subject</a></li>
+    <li><a href="#MedicalDiagnosisTreatment">Medical, Diagnostic, or Treatement</a></li>
+    <li><a href="#NotForProfitOrg">Not for Profit Org.</a></li>
+    <li><a href="#PublicInterest">Public Interest</a></li>
+    <li><a href="#PurposeOfNewProcessing">Purpose of New Processing</a></li>
+    <li><a href="#VitalInterest">Vital Interest</a></li>
+</ul>
+<span class="markdown">**Valid Consent**: As a valid consent is the lawful basis for processing, the following concepts are
+defined for the validity of such consent as specified by the GDPR.</span>
+<ul class="hlist">
+    <li><a href="#ValidConsent">Valid Consent</a></li>
+    <li><a href="#FreelyGivenConsentObligation">freely given</a></li>
+    <li><a href="#InformedConsentObligation">informed</a></li>
+    <li><a href="#SpecificConsentObligation">specific</a></li>
+    <li><a href="#VoluntaryOptInConsentObligation">voluntary, and opt-in</a></li>
+</ul>
+<h5>Obligations for Data Collection</h5>
+<ul class="hlist">
+    <li><a href="#ObligationForCollectionOfPersonalData">Obligation for Data Collection</a></li>
+    <li><a href="#AccurateCollection">Accurate Collection</a></li>
+    <li><a href="#ExplicitPurpose">Explicit Purpose</a></li>
+    <li><a href="#LegitimatePurpose">Legitimate Purpose</a></li>
+    <li><a href="#NotFurtherProcessedThanOriginalPurpose">Not further processed than original purpose</a></li>
+    <li><a href="#SpecifiedPurpose">Specified Purpose</a></li>
+</ul>
+<h5>Obligations for Obtaining Consent</h5>
+<ul class="hlist">
+    <li><a href="#InformationAboutThirdParties">Information about Third Parties</a></li>
+    <li><a href="#CanBeWithdrawnEasilyConsentObligation">Consent can be withdrawn easily</a></li>
+    <li><a href="#ClearExplanationOfProcessingConsentObligation">clear explanatin of processing</a></li>
+    <li><a href="#NotFromSilenceOrInactivityConsentObligation">not from silence or inactivity</a></li>
+    <li><a href="#ShouldBeDemonstrable">demonstrable</a></li>
+    <li><a href="#ShouldBeDistinguishableFromOtherMatters">distinguishable from other matters</a></li>
+    <li><a href="#ValidConsent">valid consent</a></li>
+</ul>
+<h5>Obligations for Retention of Personal Data</h5>
+<ul class="hlist">
+    <li><a href="#RetentionOfPersonalData">Retention of Personal Data</a></li>
+    <li><a href="#AdequateForProcessing">adequate for processing</a></li>
+    <li><a href="#IdentifiableForRequiredProcessing">identifiable for required processing</a></li>
+    <li><a href="#KeptUpToDate">kept up to date</a></li>
+    <li><a href="#LimitedForProcessing">limited for processing</a></li>
+    <li><a href="#RectifyInaccuracy">rectify inaccuracies</a></li>
+    <li><a href="#RelevantForProcessing">relevant for processing</a></li>
+</ul>
+<h5>Obligation for Security of Personal Data</h5>
+<ul class="hlist">
+    <li><a href="#SecurityOfPersonalData">Security of Personal Data</a></li>
+    <li><a href="#ProtectionAgainstAccidentalLoss">Accidental Loss</a></li>
+    <li><a href="#ProtectionAgainstDamage">Damage</a></li>
+    <li><a href="#ProtectionAgainstDestruction">Destruction</a></li>
+    <li><a href="#ProtectionAgainstUnlawfulProcessing">Unlawful Processing</a></li>
+</ul>
+
+<h4>Seals and Certifications</h4>
+<span class="markdown">GDPR has provisions for seals and certifications which
+can help organisations with a measure of compliance as well as good practices.
+The following concepts reflect such seals and certifications.</span>
+<ul class="hlist">
+    <li><a href="#Seal">Seal</a></li>
+    <li><a href="#Certification">Certification</a></li>
+</ul>
+<span class="markdown">The following refer to the conditions for awarding such seals and certifications.</span>
+<ul class="hlist">
+    <li><a href="#ConditionsForSealsAndCertifications">Conditions for Seals and Certifications</a></li>
+    <li><a href="#AdherenceToSealCertification">Adherence to Seal/Certification</a></li>
+    <li><a href="#MaximumValidity3Years">Max. validity of 3 years</a></li>
+    <li><a href="#VoluntarySystemOfAccredition">Voluntary system of Accredition</a></li>
+</ul>

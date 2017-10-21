@@ -1,0 +1,89 @@
+<h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+The **GDPRtEXT** ontology aims to provide a way to refer and use concepts defined
+by the General Data Protection Regulation (GDPR). It does so by exposing the 
+text of the GDPR as a linked data resource using the
+<a href="http://publications.europa.eu/mdr/eli/index.html">European Legislation Identified (ELI)</a>
+ontology. [SKOS](https://www.w3.org/TR/skos-primer/) is then used to
+define concepts defined / specified / used by the GDPR.
+
+The process provides each article or point within the GDPR with a unique ID
+(also it's linked-data URI) that can be used to refer to it. This is then used
+to relate each article with the concepts (defined by _SKOS_) that are defined
+or mentioned within it or are related to it.
+
+The [ELI](#ns) ontology provides a way to express the individual legislative
+points using `eli:LegalResourceSubdivision` which is used to defined the 
+[chapters](#Chapter),
+[sections](#Section),
+[articles](#Article),
+[points](#Point), and 
+[subpoints](#SubPoint) within the GDPR.
+GDPR itself is a represented using `all:LegalResource` with various 
+[properties](#properties) connecting the related resources.
+Using these concepts, the GDPR text is given unique identifiers, and then related
+to the concepts it contains using `skos:Concept`.
+
+By defining GDPR text as a linked data resource (and using semantic web vocabularies to do so),
+it is possible to create resources (which can be defined separately or independent of each other)
+that annotate or refer to the text within the GDPR. For example, a document that refers to
+specific rights within the GDPR can be created as a table listing the specific articles or points
+of relevance using their IRI in the GDPRtEXT resource. `skos:Concept` classes can be further
+used to annotate these articles and other documentation pertaining to GDPR.
+</span>
+<h3 id="distributions" class="list">GDPR text distributions</h3>
+<span class="markdown">
+Using the terms defined within the ontology for referring to specific subdivisions
+within the GDPR, an RDF dataset was created from the GDPR text by assigning
+each subdivision an unique id (through the RDF URI).
+The GDPR dataset is available as a 
+_DCAT distribution_ at 
+[http://purl.org/adaptcentre/openscience/resources/GDPRtEXT/distributions#](http://purl.org/adaptcentre/openscience/resources/GDPRtEXT/distributions#) (namespace `gdprdist`)
+with the following datasets -
+
+ * official (canonical) text of the GDPR - `gdprdist:canonical_dataset`
+   * as HTML webpage - `gdprdist:canonical_HTML`
+   * as PDF - `gdprdist:canonical_PDF`
+   * as XML - `gdprdist:canonical_XML`
+ * hosted text of GDPR (for use as linked data resource) - `gdprdist:textid_dataset`
+   * annotated HTML - `gdprdist:gdpr_html`
+   * text as json - `gdprdist:gdpr_json`
+ * annotated datasets (using semantic web ontologies) - `gdprdist:annotated_dataset`
+   * RDF - `gdprdist:gdprtext_rdf` [download](http://purl.org/adaptcentre/openscience/resources/GDPRtEXT/gdprtext.rdf)
+   * N3 - `gdprdist:gdprtext_n3` [download](http://purl.org/adaptcentre/openscience/resources/GDPRtEXT/gdprtext.n3)
+   * N-Triples - `gdprdist:gdprtext_nt` [download](http://purl.org/adaptcentre/openscience/resources/GDPRtEXT/gdprtext.nt)
+   * Turtle - `gdprdist:gdprtext_ttl` [download](http://purl.org/adaptcentre/openscience/resources/GDPRtEXT/gdprtext.ttl)
+   * JSON-LD - `gdprdist:gdprtext_jsonld` [download](http://purl.org/adaptcentre/openscience/resources/GDPRtEXT/gdprtext.jsonld)
+</span>
+<div id="namespacedeclarations">
+<h3 id="ns" class="list">Namespace declarations</h3>
+<div id="ns" align="center">
+<table>
+<caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
+<tbody>
+<tr><td><b>all</b></td><td>&lt;http://eur_lex.europa.eu/legal_content/EN/ALL/&gt;</td></tr>
+<tr><td><b>vaem</b></td><td>&lt;http://www.linkedmodel.org/schema/vaem#&gt;</td></tr>
+<tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl#&gt;</td></tr>
+<tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema#&gt;</td></tr>
+<tr><td><b>resources</b></td><td>&lt;https://raw.githubusercontent.com/guerret/lu.uni.eclipse.bpmn2/master/resources/&gt;</td></tr>
+<tr><td><b>skos</b></td><td>&lt;http://www.w3.org/2004/02/skos/core#&gt;</td></tr>
+<tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</td></tr>
+<tr><td><b>people</b></td><td>&lt;http://purl.org/adaptcentre/people/&gt;</td></tr>
+<tr><td><b>xmlschema</b></td><td>&lt;https://w3.org/2001/XMLSchema#&gt;</td></tr>
+<tr><td><b>gdprtext</b></td><td>&lt;https://openscience.adaptcentre.ie/ontologies/v/GDPRtEXT/&gt;</td></tr>
+<tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</td></tr>
+<tr><td><b>terms</b></td><td>&lt;http://purl.org/dc/terms/&gt;</td></tr>
+<tr><td><b>v</b></td><td>&lt;https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/v/&gt;</td></tr>
+<tr><td><b>bibo</b></td><td>&lt;http://purl.org/ontology/bibo/&gt;</td></tr>
+<tr><td><b>vann</b></td><td>&lt;http://purl.org/vocab/vann/&gt;</td></tr>
+<tr><td><b>foaf</b></td><td>&lt;http://xmlns.com/foaf/0.1/&gt;</td></tr>
+<tr><td><b>gdprov</b></td><td>&lt;http://purl.org/adaptcentre/openscience/projects/GDPRov/&gt;</td></tr>
+<tr><td><b>ontologies</b></td><td>&lt;http://purl.org/adaptcentre/openscience/ontologies/&gt;</td></tr>
+<tr><td><b>ontology</b></td><td>&lt;http://data.europa.eu/eli/ontology#&gt;</td></tr>
+<tr><td><b>gdprtext</b></td><td>&lt;http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#&gt;</td></tr>
+<tr><td><b>dc</b></td><td>&lt;http://purl.org/dc/elements/1.1/&gt;</td></tr>
+<tr><td><b>status</b></td><td>&lt;http://purl.org/ontology/bibo/status/&gt;</td></tr>
+</tbody>
+</table>
+</div>
+</div>
