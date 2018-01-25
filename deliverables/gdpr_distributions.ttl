@@ -30,7 +30,8 @@ gdprdist:canonical_dataset a dcat:Dataset ;
     dcterms:publisher "Official Journal of European Union"^^xsd:string ;
     dcterms:language "English"^^xsd:string ;
     dcat:distribution gdprdist:gdpr_canonical_PDF,
-        gdprdist:gdpr_canonical_HTML;
+        gdprdist:gdpr_canonical_HTML,
+        gdprdist:gdpr_canonical_XML ;
     dcat:landingPage "http://eur_lex.europa.eu/legal_content/EN/ALL/?uri=CELEX:32016R0679"^^xsd:string .
 
 gdprdist:canonical_PDF a dcat:Distribution ;
