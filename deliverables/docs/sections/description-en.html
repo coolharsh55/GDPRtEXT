@@ -467,3 +467,147 @@ The following concepts reflect such seals and certifications.</span>
     <li><a href="#MaximumValidity3Years">Max. validity of 3 years</a></li>
     <li><a href="#VoluntarySystemOfAccredition">Voluntary system of Accredition</a></li>
 </ul>
+
+<h2 id="usecase" class="list">Example Use-Cases<span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<h3 id="usecase-compliance-report" class="list">Compliance Reports<span class="backlink"> back to <a href="#toc">ToC</a></span></h3>
+<span class="markdown">
+This example use-case takes a look at how references to GDPR can aid in creation of compliance reports.
+For this, we consider a system for creation of compliance reports that stores information related to each of the
+obligations it addresses from the GDPR. It uses the [EARL vocabulary](https://www.w3.org/TR/EARL10-Schema/)
+for expressing results of conformance checks within the report. GDPRtEXT is used to link the resources in EARL reports with
+articles and points within the GDPR as well as to express and define concepts related to compliance in a suitable and comprehensible
+manner. 
+
+EARL provides a standardized vocabulary to describe specific resources and relationships that are relevant to test reporting. The core construct of EARL is an Assertion, which describes the context and outcome of an individual test execution. It contains the following information (copied verbatim from EARL website):
+
+ * Assertor - This can include information about who or what ran the test. For example human evaluators, automated accessibility checkers, or combinations of these.
+ * Test Subject - This can include web content (such as web pages, videos, applets, etc.), software (such as authoring tools, user agents, etc.), or other things being tested.
+ * Test Criterion - What are we evaluating the test subject against? This could be a specification, a set of guidelines, a test from a test suite, or some other testable statement.
+ * Test Result - What was the outcome of the test? A test result could also include contextual information such as error messages or relevant locations within the test subject. 
+
+Taking the example of Right to Data Portability, the EARL report below represents
+compliance checks with conditions associated with the relevant articles in GDPR (Article 20).
+The compliance system has a module `_system_dataportability` that checks the software that
+handles the provision of personal data copy `_org_dataportability` through the test case
+`_test_provide_data_copy` and generates the following report which shows that the test
+has passed in `_result_pass`.
+
+```
+@prefix earl: http://www.w3.org/ns/earl# .
+@prefix dct:  http://purl.org/dc/terms/ .
+@prefix gdprtext: http://purl.org/adaptcentre/resources/GDPRtEXT# .
+
+:_org_dataportability
+	a	earl:TestSubject, earl:Software ;
+	dct:description """System that handles data portability requests"""@en ;
+	dct:title "Data Portability Handler"@en .
+
+:_system_dataportability
+	a	earl:Assertor ;
+	dct:description """Module checking data portability obligations"""@en ;
+	dct:hasVersion "1.4" ;
+	dct:title "DataPortability Module"@en ;
+	earl:asserts { :_org_dataportability :_result_pass :_test_provide_data_copy } .
+
+:_result_pass
+	a	earl:ResultProperty ;
+	earl:date "2018-01-01" ;
+	earl:validity earl:Pass ;
+	earl:confidence earl:High .
+
+:_test_provide_data_copy
+	a	earl:TestCase ;
+	earl:testMode earl:automatic ;
+	dct:title "Test provision of data copy"@en ;
+	dct:description """Tests whether system provides a copy of personal data on exercising right to data portability"""@en ;
+	dct:subject gdprtext:article20 .
+```
+
+Now to gather such related resources together, a SPARQL query (simplified) would focus on the
+link between `TestCase` and its result using `earl:validity`.
+
+```
+SELECT ?gdpr ?result ?confidence ?mode WHERE {
+	?assertor a earl:Assertor .
+	?assertor earl:asserts ?assertion .
+	
+	?testcase rdf:predicate ?assertion .
+	?testcase a earl:TestCase .
+	?testcase dct:subject ?gdpr .
+	?testcase ear:testMode ?mode .
+	
+	?testresult rdf:object ?assertion .
+	?testresult a earl:ResultProperty .
+	?testresult earl:validity ?result .
+	?testresult earl:confidence ?confidence .
+}
+```
+
+Which will give a table like:
+```
+| gdpr      	| result 	| confidence 	| mode      	|
+|-----------	|--------	|------------	|-----------	|
+| article16 	| pass   	| low        	| automatic 	|
+| article17 	| pass   	| high       	| automatic 	|
+| article18 	| fail   	| high       	| manual    	|
+| article19 	| pass   	| high       	| automatic 	|
+```
+
+These can be further combined using `Test Suites` to group compliance checks
+related to each article or a particular concept and structure the testing around
+this form of logical grouping of concepts.
+</span>
+<h3 id="usecase-dpd" class="list">Link obligations from Data Protection Directive<span class="backlink"> back to <a href="#toc">ToC</a></span></h3>
+<span class="markdown">
+The Data Protection Directive (DPD) is the previous data protection legislation
+which was adopted in 1995 and is superseded by the GDPR. As a large number
+of solutions and approaches already exist that address compliance with the DPD,
+it would be beneficial to look into reusing these existing solutions for GDPR.
+To that end, we provide a mapping from DPD obligations to GDPR obligations
+containing annotations that describe the nature of change between the two. The
+annotation also describes changes required in our previous work in using XACML
+rules to model DPD obligations [1][2]. 
+
+The annotations are available online 
+on the [OpenScience](http://openscience.adaptcentre.ie/projects/GDPRtEXT/)
+website in the form of a [HTML table](http://openscience.adaptcentre.ie/projects/GDPRtEXT/dpd_mapping.html)
+as well as a CSV file and a RDF dataset. 
+Each row (HTML table, CSV) has 5 columns that contain
+a reference from a point in DPD to its corresponding point in the GDPR, the
+nature of change between the two, whether the corresponding XACML rule needs
+to be extended, and a description comment. The nature of change is represented
+as one of the following - same, reduced, slightly changed, completely changed,
+and extended. For XACML rules, the notation N/A is used in the case where
+there were no XACML rules for DPD but the corresponding point in GDPR has
+changed. The value No is used where there is no change in the GDPR obligation
+or the existing XACML rule is sufficient to handle the change, whereas Yes is
+used to indicate a change required in the XACML rule to handle the obligation.
+
+```
+@prefix gdpr: http://purl.org/adaptcentre/openscience/resources/GDPRtEXT# .
+@prefix dpd: http://purl.org/adaptcentre/openscience/resources/DPD# .
+@prefix rdfs: http://www.w3.org/2000/01/rdf-schema# .
+
+dpd:mappingrule6
+	a dpd:DPDToGDPR_Annotation ;
+	dpd:hasChange dpd:ChangeExtended ;
+	dpd:hasXACMLChange dpd:XACMLNoChange ;
+	dpd:resourceInDPD dpd:Article7 - a ;
+	dpd:resourceInGDPR gdpr:Article6-1-a ;
+	rdfs:comment "added consent given to ..." .
+```
+
+To model the annotations as a RDF resource using GDPRtEXT, we created
+a linked data version of the DPD which assigned URIs for every resource in
+the legislation similar to the GDPR linked data resource. The annotations are
+represented as instances of the class `DPDToGDPRAnnotation`. 
+The property `resourceInDPD` is used to refer to the particular resource within DPD through
+its URI. Similarly, the property `resourceInGDPR` is used to refer to the 
+corresponding resource in GDPR. The nature of change is defined using the property
+`hasChange` whose value is an instances of the class `ChangeInObligation`, with
+defined instances for `Extended, Same, Reduced, CompletelyChanged`, and 
+`SlightlyChanged`. Similarly, the change in the XACML rules is defined as a property
+whose values are one of Yes, No, and N/A defined as instances of the class
+`ChangeInXACMLRule`. Comments are defined using the `rdfs:comment` property.
+
+</span>
