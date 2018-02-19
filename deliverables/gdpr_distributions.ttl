@@ -20,7 +20,10 @@ gdprdist:catalog a dcat:Catalog ;
     dcterms:language "English"^^xsd:string ;
     dcat:dataset gdprdist:canonical_dataset ;
     dcat:dataset gdprdist:textid_dataset ;
-    dcat:dataset gdprdist:annotated_dataset .
+    dcat:dataset gdprdist:annotated_dataset ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights <https://creativecommons.org/licenses/by/4.0/> .
+
 
 gdprdist:canonical_dataset a dcat:Dataset ;
     dcterms:title "GDPR canonical dataset" ;
@@ -32,22 +35,30 @@ gdprdist:canonical_dataset a dcat:Dataset ;
     dcat:distribution gdprdist:gdpr_canonical_PDF,
         gdprdist:gdpr_canonical_HTML,
         gdprdist:gdpr_canonical_XML ;
-    dcat:landingPage "http://eur_lex.europa.eu/legal_content/EN/ALL/?uri=CELEX:32016R0679"^^xsd:string .
+    dcat:landingPage "http://eur_lex.europa.eu/legal_content/EN/ALL/?uri=CELEX:32016R0679"^^xsd:string ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights <https://creativecommons.org/licenses/by/4.0/> .
 
 gdprdist:canonical_PDF a dcat:Distribution ;
     dcat:downloadURL "http://eur_lex.europa.eu/legal_content/EN/TXT/PDF/?uri=CELEX:32016R0679&from=EN" ;
     dcterms:title "General Data Protection Regulation (GDPR)"^^xsd:string ;
-    dcterms:mediaType "application/pdf"^^xsd:string .
+    dcterms:mediaType "application/pdf"^^xsd:string ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights <https://creativecommons.org/licenses/by/4.0/> .
 
 gdprdist:canonical_HTML a dcat:Distribution ;
     dcat:downloadURL "http://eur_lex.europa.eu/legal_content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN" ;
     dcterms:title "General Data Protection Regulation (GDPR)"^^xsd:string ;
-    dcterms:mediaType "text/html"^^xsd:string .
+    dcterms:mediaType "text/html"^^xsd:string ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights <https://creativecommons.org/licenses/by/4.0/> .
 
 gdprdist:canonical_XML a dcat:Distribution ;
     dcat:downloadURL "http://publications.europa.eu/resource/cellar/3e485e15_11bd_11e6_ba9a_01aa75ed71a1.0006.02/DOC_2" ;
     dcterms:title "General Data Protection Regulation (GDPR)"^^xsd:string ;
-    dcterms:mediaType "text/xml"^^xsd:string .
+    dcterms:mediaType "text/xml"^^xsd:string ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights <https://creativecommons.org/licenses/by/4.0/> .
 
 gdprdist:textid_dataset a dcat:Dataset ;
     dcterms:title "GDPR text (GDPRtEXT)"^^xsd:string ;
@@ -59,17 +70,23 @@ gdprdist:textid_dataset a dcat:Dataset ;
     dcterms:publisher "Trinity College Dublin"^^xsd:string ;
     dcterms:language "English"^^xsd:string ;
     dcat:distribution gdprdist:gdpr_html,
-        gdprdist:gdpr_json .
+        gdprdist:gdpr_json ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights <https://creativecommons.org/licenses/by/4.0/> .
 
 gdprdist:gdpr_html a dcat:Distribution ;
     dcat:downloadURL "http://purl.org/adaptcentre/resources/GDPRtEXT/gdpr.html"^^xsd:string ;
     dcterms:title "GDPR with HTML id attributes (GDPRtEXT)"^^xsd:string ;
-    dcterms:mediaType "text/html"^^xsd:string .
+    dcterms:mediaType "text/html"^^xsd:string ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights <https://creativecommons.org/licenses/by/4.0/> .
 
 gdprdist:gdpr_json a dcat:Distribution ;
     dcat:downloadURL "http://purl.org/adaptcentre/resources/GDPRtEXT/gdpr.json"^^xsd:string ;
     dcterms:title "GDPR in JSON format (GDPRtEXT)"^^xsd:string ;
-    dcterms:mediaType "application/json"^^xsd:string .
+    dcterms:mediaType "application/json"^^xsd:string ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights <https://creativecommons.org/licenses/by/4.0/> .
 
 gdprdist:annotated_dataset a dcat:Dataset ;
     dcterms:title "GDPR Extended text (GDPRtEXT)"^^xsd:string ;
@@ -82,7 +99,9 @@ gdprdist:annotated_dataset a dcat:Dataset ;
     dcterms:language "English"^^xsd:string ;
     dcat:distribution gdprdist:gdprtext_rdf,
         gdprdist:gdprtext_n3, gdprdist:gdprtext_nt, gdprdist:gdprtext_ttl,
-        gdprdist:gdprtext_jsonld .
+        gdprdist:gdprtext_jsonld ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights <https://creativecommons.org/licenses/by/4.0/> .
 
 gdprdist:gdprtext_rdf a dcat:Distribution,
     void:Dataset ;
@@ -98,7 +117,9 @@ gdprdist:gdprtext_rdf a dcat:Distribution,
     void:vocabulary <http://www.w3.org/1999/02/22_rdf_syntax_ns#> ;
     void:vocabulary <http://www.w3.org/2000/01/rdf_schema#> ;
     void:vocabulary <http://www.w3.org/XML/1998/namespace> ;
-    void:vocabulary <http://www.w3.org/2001/XMLSchema#> .
+    void:vocabulary <http://www.w3.org/2001/XMLSchema#> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights <https://creativecommons.org/licenses/by/4.0/> .
 
 gdprdist:gdprtext_n3 a dcat:Distribution,
     void:Dataset ;
@@ -114,7 +135,9 @@ gdprdist:gdprtext_n3 a dcat:Distribution,
     void:vocabulary <http://www.w3.org/1999/02/22_rdf_syntax_ns#> ;
     void:vocabulary <http://www.w3.org/2000/01/rdf_schema#> ;
     void:vocabulary <http://www.w3.org/XML/1998/namespace> ;
-    void:vocabulary <http://www.w3.org/2001/XMLSchema#> .
+    void:vocabulary <http://www.w3.org/2001/XMLSchema#> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights <https://creativecommons.org/licenses/by/4.0/> .
 
 gdprdist:gdprtext_nt a dcat:Distribution,
     void:Dataset ;
@@ -130,7 +153,9 @@ gdprdist:gdprtext_nt a dcat:Distribution,
     void:vocabulary <http://www.w3.org/1999/02/22_rdf_syntax_ns#> ;
     void:vocabulary <http://www.w3.org/2000/01/rdf_schema#> ;
     void:vocabulary <http://www.w3.org/XML/1998/namespace> ;
-    void:vocabulary <http://www.w3.org/2001/XMLSchema#> .
+    void:vocabulary <http://www.w3.org/2001/XMLSchema#> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights <https://creativecommons.org/licenses/by/4.0/> .
 
 gdprdist:gdprtext_ttl a dcat:Distribution,
     void:Dataset ;
@@ -146,7 +171,9 @@ gdprdist:gdprtext_ttl a dcat:Distribution,
     void:vocabulary <http://www.w3.org/1999/02/22_rdf_syntax_ns#> ;
     void:vocabulary <http://www.w3.org/2000/01/rdf_schema#> ;
     void:vocabulary <http://www.w3.org/XML/1998/namespace> ;
-    void:vocabulary <http://www.w3.org/2001/XMLSchema#> .
+    void:vocabulary <http://www.w3.org/2001/XMLSchema#> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights <https://creativecommons.org/licenses/by/4.0/> .
 
 gdprdist:gdprtext_jsonld a dcat:Distribution,
     void:Dataset ;
@@ -162,4 +189,6 @@ gdprdist:gdprtext_jsonld a dcat:Distribution,
     void:vocabulary <http://www.w3.org/1999/02/22_rdf_syntax_ns#> ;
     void:vocabulary <http://www.w3.org/2000/01/rdf_schema#> ;
     void:vocabulary <http://www.w3.org/XML/1998/namespace> ;
-    void:vocabulary <http://www.w3.org/2001/XMLSchema#> .
+    void:vocabulary <http://www.w3.org/2001/XMLSchema#> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights <https://creativecommons.org/licenses/by/4.0/> .
