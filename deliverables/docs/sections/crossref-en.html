@@ -1,7 +1,7 @@
 <h2  id="crossreference" class="list">Cross reference for GDPR text EXTensions classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 This section provides details for each class and property defined by GDPR text EXTensions.
 <div id="classes">
-   <h3 id="classes" class="list">Classes</h3>
+   <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
          <a href="#AccuracyIsContested"
@@ -98,6 +98,10 @@ This section provides details for each class and property defined by GDPR text E
       <li>
          <a href="#CodeOfConduct"
             title="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CodeOfConduct">Code of Conduct</a>
+      </li>
+      <li>
+         <a href="#CollectionMechanism"
+            title="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CollectionMechanism">Collection Mechanism</a>
       </li>
       <li>
          <a href="#CollectionOfPersonalData"
@@ -256,8 +260,8 @@ This section provides details for each class and property defined by GDPR text E
             title="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#InformationShouldBeEasilyAccessible">Easily Accessible</a>
       </li>
       <li>
-         <a href="#ExploymentLaw"
-            title="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ExploymentLaw">Employment Law</a>
+         <a href="#EmploymentLaw"
+            title="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#EmploymentLaw">Employment Law</a>
       </li>
       <li>
          <a href="#Entity"
@@ -1588,6 +1592,25 @@ This section provides details for each class and property defined by GDPR text E
          </dd>
       </dl>
    </div>
+   <div class="entity" id="CollectionMechanism">
+      <h3>Collection Mechanism<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CollectionMechanism</p>
+      <div class="comment">
+         <span class="markdown">Specifies collection mechanism used to collect personal data</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#CollectionOfPersonalData"
+               title="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CollectionOfPersonalData">Collection of Personal Data</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="CollectionOfPersonalData">
       <h3>Collection of Personal Data<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -1603,6 +1626,12 @@ This section provides details for each class and property defined by GDPR text E
          <dd>
             <a href="#DataActivity"
                title="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataActivity">Data Activity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#CollectionMechanism"
+               title="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CollectionMechanism">Collection Mechanism</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -2652,13 +2681,13 @@ This section provides details for each class and property defined by GDPR text E
          </dd>
       </dl>
    </div>
-   <div class="entity" id="ExploymentLaw">
+   <div class="entity" id="EmploymentLaw">
       <h3>Employment Law<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ExploymentLaw</p>
+         <strong>IRI:</strong> http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#EmploymentLaw</p>
       <div class="comment">
          <span class="markdown">Lawful basis for processing is provided by Employment Law</span>
       </div>
@@ -3753,8 +3782,8 @@ This section provides details for each class and property defined by GDPR text E
          <dd>
             <a href="#ContractWithDataSubject"
                title="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ContractWithDataSubject">Contract with Data Subject</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#ExploymentLaw"
-               title="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ExploymentLaw">Employment Law</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#EmploymentLaw"
+               title="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#EmploymentLaw">Employment Law</a>
             <sup class="type-c" title="class">c</sup>, <a href="#ExemptedByNationalLaw"
                title="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ExemptedByNationalLaw">Exempted by National Law</a>
             <sup class="type-c" title="class">c</sup>, <a href="#GivenConsent"

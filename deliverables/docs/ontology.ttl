@@ -7,7 +7,7 @@
 @base <http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT> .
 
 <http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT> rdf:type owl:Ontology ;
-                                                               owl:versionIRI <https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/v/gdpr_v0.5.owl> ;
+                                                               owl:versionIRI <https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/v/gdpr_v0.7.owl> ;
                                                                <http://purl.org/dc/elements/1.1/creator> "Harshvardhan J. Pandit"^^xsd:string ;
                                                                <http://purl.org/dc/elements/1.1/description> "The General Data Protection Regulation (GDPR) is comprised of several articles, each with points that refer to specific concepts. The general convention of referring to these points and concepts is to quote the specific article or point using a human-readable reference. This ontology provides a way to refer to the points within the GDPR using the EurLex ontology published by the European Publication Office. It also defines the concepts defined, mentioned, and requried by the GDPR using the Simple Knowledge Organization System (SKOS) ontology."^^xsd:string ;
                                                                <http://purl.org/dc/elements/1.1/title> "GDPRtEXT"^^xsd:string ;
@@ -16,7 +16,7 @@
                                                                <http://purl.org/dc/terms/creator> "http://purl.org/adaptcentre/people/HJP"^^xsd:anyURI ;
                                                                <http://purl.org/dc/terms/description> "This ontology extends the canonical (official) GDPR text with additional annotations"^^xsd:string ;
                                                                <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by/4.0/"^^<https://w3.org/2001/XMLSchema#anyURI> ;
-                                                               <http://purl.org/dc/terms/modified> "2017-10-01"^^xsd:string ;
+                                                               <http://purl.org/dc/terms/modified> "2018-07-31"^^xsd:string ;
                                                                <http://purl.org/dc/terms/publisher> <http://purl.org/adaptcentre/people/ADAPT> ;
                                                                <http://purl.org/dc/terms/source> <http://eur_lex.europa.eu/legal_content/EN/ALL/?uri=CELEX:32016R0679> ;
                                                                <http://purl.org/ontology/bibo/status> <http://purl.org/ontology/bibo/status/draft> ;
@@ -29,7 +29,7 @@
                                                                             "Bartolini, C., Muthuri, R., & Santos, C. (2015, November). Using ontologies to model data protection requirements in workflows. In JSAI International Symposium on Artificial Intelligence (pp. 233-248). Springer, Cham."^^rdfs:Literal ;
                                                                owl:backwardCompatibleWith <https://openscience.adaptcentre.ie/ontologies/v/GDPRtEXT/gdpr_v0.1.owl> ;
                                                                owl:priorVersion <https://openscience.adaptcentre.ie/ontologies/v/GDPRtEXT/gdpr_v0.1.owl> ;
-                                                               owl:versionInfo 0.5 ;
+                                                               owl:versionInfo 0.6 ;
                                                                <http://xmlns.com/foaf/0.1/homepage> "https://openscience.adaptcentre.ie/projects/GDPRtEXT/"^^xsd:string .
 
 #################################################################
@@ -446,6 +446,13 @@
                                 <http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital98> ,
                                 <http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital99> ;
                rdfs:label "Code of Conduct"^^xsd:string .
+
+
+###  http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CollectionMechanism
+:CollectionMechanism rdf:type owl:Class ;
+                     rdfs:subClassOf :CollectionOfPersonalData ;
+                     rdfs:comment "Specifies collection mechanism used to collect personal data"^^xsd:string ;
+                     rdfs:label "Collection Mechanism"^^xsd:string .
 
 
 ###  http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CollectionOfPersonalData
@@ -2442,13 +2449,13 @@
 <http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
 
 
-[ rdfs:comment "An ontology for representing provenance traces pertainining to GDPR compliance. It uses concepts from GDPRtEXT along with extending PROV and P-Plan."@en
-] .
+_:genid1 rdfs:comment "TEST"^^xsd:string ,
+                      "TEST2"^^xsd:string .
 
 _:genid2 rdfs:comment "TEST"^^xsd:string ,
                        "TEST2"^^xsd:string .
 
-_:genid3 rdfs:comment "TEST"^^xsd:string ,
-                       "TEST2"^^xsd:string .
+[ rdfs:comment "An ontology for representing provenance traces pertainining to GDPR compliance. It uses concepts from GDPRtEXT along with extending PROV and P-Plan."@en
+ ] .
 
 ###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

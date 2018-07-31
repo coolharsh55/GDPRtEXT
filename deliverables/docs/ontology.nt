@@ -1,5 +1,5 @@
 <http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT> <http://www.w3.org/2002/07/owl#versionIRI> <https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/v/gdpr_v0.5.owl> .
+<http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT> <http://www.w3.org/2002/07/owl#versionIRI> <https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/v/gdpr_v0.7.owl> .
 <http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT> <http://purl.org/dc/elements/1.1/creator> "Harshvardhan J. Pandit" .
 <http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT> <http://purl.org/dc/elements/1.1/description> "The General Data Protection Regulation (GDPR) is comprised of several articles, each with points that refer to specific concepts. The general convention of referring to these points and concepts is to quote the specific article or point using a human-readable reference. This ontology provides a way to refer to the points within the GDPR using the EurLex ontology published by the European Publication Office. It also defines the concepts defined, mentioned, and requried by the GDPR using the Simple Knowledge Organization System (SKOS) ontology." .
 <http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT> <http://purl.org/dc/elements/1.1/title> "GDPRtEXT" .
@@ -8,7 +8,7 @@
 <http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT> <http://purl.org/dc/terms/creator> "http://purl.org/adaptcentre/people/HJP"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 <http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT> <http://purl.org/dc/terms/description> "This ontology extends the canonical (official) GDPR text with additional annotations" .
 <http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT> <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by/4.0/"^^<https://w3.org/2001/XMLSchema#anyURI> .
-<http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT> <http://purl.org/dc/terms/modified> "2017-10-01" .
+<http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT> <http://purl.org/dc/terms/modified> "2018-07-31" .
 <http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT> <http://purl.org/dc/terms/publisher> <http://purl.org/adaptcentre/people/ADAPT> .
 <http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT> <http://purl.org/dc/terms/source> <http://eur_lex.europa.eu/legal_content/EN/ALL/?uri=CELEX:32016R0679> .
 <http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT> <http://purl.org/ontology/bibo/status> <http://purl.org/ontology/bibo/status/draft> .
@@ -21,7 +21,7 @@
 <http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "Bartolini, C., Muthuri, R., & Santos, C. (2015, November). Using ontologies to model data protection requirements in workflows. In JSAI International Symposium on Artificial Intelligence (pp. 233-248). Springer, Cham."^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 <http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT> <http://www.w3.org/2002/07/owl#backwardCompatibleWith> <https://openscience.adaptcentre.ie/ontologies/v/GDPRtEXT/gdpr_v0.1.owl> .
 <http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT> <http://www.w3.org/2002/07/owl#priorVersion> <https://openscience.adaptcentre.ie/ontologies/v/GDPRtEXT/gdpr_v0.1.owl> .
-<http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT> <http://www.w3.org/2002/07/owl#versionInfo> "0.5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT> <http://www.w3.org/2002/07/owl#versionInfo> "0.6"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT> <http://xmlns.com/foaf/0.1/homepage> "https://openscience.adaptcentre.ie/projects/GDPRtEXT/" .
 # 
 # 
@@ -387,6 +387,12 @@
 <http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CodeOfConduct> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital98> .
 <http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CodeOfConduct> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital99> .
 <http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CodeOfConduct> <http://www.w3.org/2000/01/rdf-schema#label> "Code of Conduct" .
+# 
+# http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CollectionMechanism
+<http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CollectionMechanism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CollectionMechanism> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CollectionOfPersonalData> .
+<http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CollectionMechanism> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies collection mechanism used to collect personal data" .
+<http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CollectionMechanism> <http://www.w3.org/2000/01/rdf-schema#label> "Collection Mechanism" .
 # 
 # http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CollectionOfPersonalData
 <http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CollectionOfPersonalData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2142,9 +2148,9 @@
 # http://www.w3.org/2004/02/skos/core#Concept
 <http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
-_:genid1 <http://www.w3.org/2000/01/rdf-schema#comment> "An ontology for representing provenance traces pertainining to GDPR compliance. It uses concepts from GDPRtEXT along with extending PROV and P-Plan."@en .
+_:genid1 <http://www.w3.org/2000/01/rdf-schema#comment> "TEST" .
+_:genid1 <http://www.w3.org/2000/01/rdf-schema#comment> "TEST2" .
 _:genid2 <http://www.w3.org/2000/01/rdf-schema#comment> "TEST" .
 _:genid2 <http://www.w3.org/2000/01/rdf-schema#comment> "TEST2" .
-_:genid3 <http://www.w3.org/2000/01/rdf-schema#comment> "TEST" .
-_:genid3 <http://www.w3.org/2000/01/rdf-schema#comment> "TEST2" .
+_:genid3 <http://www.w3.org/2000/01/rdf-schema#comment> "An ontology for representing provenance traces pertainining to GDPR compliance. It uses concepts from GDPRtEXT along with extending PROV and P-Plan."@en .
 # Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

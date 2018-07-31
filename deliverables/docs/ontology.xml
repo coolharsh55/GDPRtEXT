@@ -15,7 +15,7 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT">
-        <owl:versionIRI rdf:resource="https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/v/gdpr_v0.5.owl"/>
+        <owl:versionIRI rdf:resource="https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/v/gdpr_v0.7.owl"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harshvardhan J. Pandit</dc:creator>
         <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The General Data Protection Regulation (GDPR) is comprised of several articles, each with points that refer to specific concepts. The general convention of referring to these points and concepts is to quote the specific article or point using a human-readable reference. This ontology provides a way to refer to the points within the GDPR using the EurLex ontology published by the European Publication Office. It also defines the concepts defined, mentioned, and requried by the GDPR using the Simple Knowledge Organization System (SKOS) ontology.</dc:description>
         <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GDPRtEXT</dc:title>
@@ -24,7 +24,7 @@
         <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/adaptcentre/people/HJP</terms:creator>
         <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This ontology extends the canonical (official) GDPR text with additional annotations</terms:description>
         <terms:license rdf:datatype="https://w3.org/2001/XMLSchema#anyURI">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2017-10-01</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-07-31</terms:modified>
         <terms:publisher rdf:resource="http://purl.org/adaptcentre/people/ADAPT"/>
         <terms:source rdf:resource="http://eur_lex.europa.eu/legal_content/EN/ALL/?uri=CELEX:32016R0679"/>
         <bibo:status rdf:resource="http://purl.org/ontology/bibo/status/draft"/>
@@ -37,7 +37,7 @@
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Bartolini, C., Muthuri, R., &amp; Santos, C. (2015, November). Using ontologies to model data protection requirements in workflows. In JSAI International Symposium on Artificial Intelligence (pp. 233-248). Springer, Cham.</rdfs:seeAlso>
         <owl:backwardCompatibleWith rdf:resource="https://openscience.adaptcentre.ie/ontologies/v/GDPRtEXT/gdpr_v0.1.owl"/>
         <owl:priorVersion rdf:resource="https://openscience.adaptcentre.ie/ontologies/v/GDPRtEXT/gdpr_v0.1.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.6</owl:versionInfo>
         <foaf:homepage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://openscience.adaptcentre.ie/projects/GDPRtEXT/</foaf:homepage>
     </owl:Ontology>
     
@@ -653,6 +653,17 @@
         <rdfs:isDefinedBy rdf:resource="http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital98"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital99"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Code of Conduct</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CollectionMechanism -->
+
+
+    <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CollectionMechanism">
+        <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CollectionOfPersonalData"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specifies collection mechanism used to collect personal data</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Collection Mechanism</rdfs:label>
     </owl:Class>
     
 
@@ -3443,16 +3454,16 @@
 
 
     <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:Description>
-        <rdfs:comment xml:lang="en">An ontology for representing provenance traces pertainining to GDPR compliance. It uses concepts from GDPRtEXT along with extending PROV and P-Plan.</rdfs:comment>
+    <rdf:Description rdf:nodeID="_:genid1">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TEST</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TEST2</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:nodeID="_:genid2">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TEST</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TEST2</rdfs:comment>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="_:genid3">
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TEST</rdfs:comment>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TEST2</rdfs:comment>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">An ontology for representing provenance traces pertainining to GDPR compliance. It uses concepts from GDPRtEXT along with extending PROV and P-Plan.</rdfs:comment>
     </rdf:Description>
 </rdf:RDF>
 

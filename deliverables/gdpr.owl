@@ -15,30 +15,30 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT">
-        <owl:versionIRI rdf:resource="https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/v/gdpr_v0.5.owl"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harshvardhan J. Pandit</dc:creator>
-        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The General Data Protection Regulation (GDPR) is comprised of several articles, each with points that refer to specific concepts. The general convention of referring to these points and concepts is to quote the specific article or point using a human-readable reference. This ontology provides a way to refer to the points within the GDPR using the EurLex ontology published by the European Publication Office. It also defines the concepts defined, mentioned, and requried by the GDPR using the Simple Knowledge Organization System (SKOS) ontology.</dc:description>
-        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GDPRtEXT</dc:title>
-        <terms:abstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The General Data Protection Regulation (GDPR) defines legal obligations over the use of personal data by organisations. This ontology aims to identify and model such terms and obligations as an OWL vocabulary and to directly link the terms to their occurence, usage, and influence in the GDPR text.</terms:abstract>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-08-15</terms:created>
-        <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/adaptcentre/people/HJP</terms:creator>
-        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This ontology extends the canonical (official) GDPR text with additional annotations</terms:description>
-        <terms:license rdf:datatype="https://w3.org/2001/XMLSchema#anyURI">http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2017-10-01</terms:modified>
-        <terms:publisher rdf:resource="http://purl.org/adaptcentre/people/ADAPT"/>
+        <owl:versionIRI rdf:resource="https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/v/gdpr_v0.7.owl"/>
         <terms:source rdf:resource="http://eur_lex.europa.eu/legal_content/EN/ALL/?uri=CELEX:32016R0679"/>
-        <bibo:status rdf:resource="http://purl.org/ontology/bibo/status/draft"/>
-        <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gdprtext</vann:preferredNamespacePrefix>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Bartolini, C., Muthuri, R., &amp; Santos, C. (2015, November). Using ontologies to model data protection requirements in workflows. In JSAI International Symposium on Artificial Intelligence (pp. 233-248). Springer, Cham.</rdfs:seeAlso>
+        <owl:priorVersion rdf:resource="https://openscience.adaptcentre.ie/ontologies/v/GDPRtEXT/gdpr_v0.1.owl"/>
+        <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/adaptcentre/people/HJP</terms:creator>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.6</owl:versionInfo>
+        <rdfs:seeAlso rdf:resource="http://purl.org/adaptcentre/openscience/projects/GDPRov/docs"/>
+        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GDPRtEXT</dc:title>
         <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT</vann:preferredNamespaceUri>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is an ontology to represent GDPR text as a set of RDF resources</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GDPR text EXTensions</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://purl.org/adaptcentre/openscience/projects/GDPRov/docs"/>
         <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/guerret/lu.uni.eclipse.bpmn2/master/resources/dataprotection.owl"/>
-        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Bartolini, C., Muthuri, R., &amp; Santos, C. (2015, November). Using ontologies to model data protection requirements in workflows. In JSAI International Symposium on Artificial Intelligence (pp. 233-248). Springer, Cham.</rdfs:seeAlso>
-        <owl:backwardCompatibleWith rdf:resource="https://openscience.adaptcentre.ie/ontologies/v/GDPRtEXT/gdpr_v0.1.owl"/>
-        <owl:priorVersion rdf:resource="https://openscience.adaptcentre.ie/ontologies/v/GDPRtEXT/gdpr_v0.1.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</owl:versionInfo>
+        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The General Data Protection Regulation (GDPR) is comprised of several articles, each with points that refer to specific concepts. The general convention of referring to these points and concepts is to quote the specific article or point using a human-readable reference. This ontology provides a way to refer to the points within the GDPR using the EurLex ontology published by the European Publication Office. It also defines the concepts defined, mentioned, and requried by the GDPR using the Simple Knowledge Organization System (SKOS) ontology.</dc:description>
+        <bibo:status rdf:resource="http://purl.org/ontology/bibo/status/draft"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GDPR text EXTensions</rdfs:label>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harshvardhan J. Pandit</dc:creator>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-07-31</terms:modified>
         <foaf:homepage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://openscience.adaptcentre.ie/projects/GDPRtEXT/</foaf:homepage>
+        <terms:publisher rdf:resource="http://purl.org/adaptcentre/people/ADAPT"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-08-15</terms:created>
+        <owl:backwardCompatibleWith rdf:resource="https://openscience.adaptcentre.ie/ontologies/v/GDPRtEXT/gdpr_v0.1.owl"/>
+        <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gdprtext</vann:preferredNamespacePrefix>
+        <terms:abstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The General Data Protection Regulation (GDPR) defines legal obligations over the use of personal data by organisations. This ontology aims to identify and model such terms and obligations as an OWL vocabulary and to directly link the terms to their occurence, usage, and influence in the GDPR text.</terms:abstract>
+        <terms:license rdf:datatype="https://w3.org/2001/XMLSchema#anyURI">http://creativecommons.org/licenses/by/4.0/</terms:license>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This ontology extends the canonical (official) GDPR text with additional annotations</terms:description>
     </owl:Ontology>
     
 
@@ -51,12 +51,10 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#involves -->
-
 
     <owl:AnnotationProperty rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#involves">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It signifies that two concepts are related within the context of the GDPR.</rdfs:comment>
@@ -67,13 +65,11 @@
 
     <!-- http://purl.org/dc/terms/abstract -->
 
-
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
     
 
 
     <!-- http://purl.org/dc/terms/publisher -->
-
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
     
@@ -81,13 +77,11 @@
 
     <!-- http://purl.org/dc/terms/source -->
 
-
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
     
 
 
     <!-- http://purl.org/ontology/bibo/status -->
-
 
     <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/status"/>
     
@@ -95,13 +89,11 @@
 
     <!-- http://www.linkedmodel.org/schema/vaem#rationale -->
 
-
     <owl:AnnotationProperty rdf:about="http://www.linkedmodel.org/schema/vaem#rationale"/>
     
 
 
     <!-- http://www.w3.org/2004/02/skos/core#example -->
-
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
     
@@ -109,13 +101,11 @@
 
     <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
 
-
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
     
 
 
     <!-- http://www.w3.org/2004/02/skos/core#preflabel -->
-
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#preflabel"/>
     
@@ -129,12 +119,10 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     
 
 
     <!-- http://data.europa.eu/eli/ontology#has_part -->
-
 
     <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/ontology#has_part">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
@@ -144,7 +132,6 @@
 
     <!-- http://data.europa.eu/eli/ontology#is_part_of -->
 
-
     <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/ontology#is_part_of">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
     </owl:ObjectProperty>
@@ -152,7 +139,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#hasArticle -->
-
 
     <owl:ObjectProperty rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#hasArticle">
         <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/eli/ontology#has_part"/>
@@ -167,7 +153,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#hasChapter -->
 
-
     <owl:ObjectProperty rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#hasChapter">
         <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/eli/ontology#has_part"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
@@ -181,7 +166,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#hasCitation -->
 
-
     <owl:ObjectProperty rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#hasCitation">
         <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/eli/ontology#has_part"/>
         <rdfs:domain rdf:resource="http://data.europa.eu/eli/ontology#LegalResourceSubdivision"/>
@@ -193,7 +177,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#hasPoint -->
-
 
     <owl:ObjectProperty rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#hasPoint">
         <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/eli/ontology#has_part"/>
@@ -208,7 +191,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#hasRecital -->
 
-
     <owl:ObjectProperty rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#hasRecital">
         <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/eli/ontology#has_part"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
@@ -221,7 +203,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#hasSection -->
-
 
     <owl:ObjectProperty rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#hasSection">
         <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/eli/ontology#has_part"/>
@@ -236,7 +217,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#hasSubPoint -->
 
-
     <owl:ObjectProperty rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#hasSubPoint">
         <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/eli/ontology#has_part"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
@@ -249,7 +229,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#isPartOfArticle -->
-
 
     <owl:ObjectProperty rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#isPartOfArticle">
         <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/eli/ontology#is_part_of"/>
@@ -264,7 +243,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#isPartOfChapter -->
 
-
     <owl:ObjectProperty rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#isPartOfChapter">
         <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/eli/ontology#is_part_of"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
@@ -278,7 +256,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#isPartOfPoint -->
 
-
     <owl:ObjectProperty rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#isPartOfPoint">
         <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/eli/ontology#is_part_of"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
@@ -291,7 +268,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#isPartOfSection -->
-
 
     <owl:ObjectProperty rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#isPartOfSection">
         <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/eli/ontology#is_part_of"/>
@@ -312,12 +288,10 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     
 
 
     <!-- http://data.europa.eu/eli/ontology#LegalResource -->
-
 
     <owl:Class rdf:about="http://data.europa.eu/eli/ontology#LegalResource"/>
     
@@ -325,13 +299,11 @@
 
     <!-- http://data.europa.eu/eli/ontology#LegalResourceSubdivision -->
 
-
     <owl:Class rdf:about="http://data.europa.eu/eli/ontology#LegalResourceSubdivision"/>
     
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Accountability -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Accountability">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Principle"/>
@@ -348,7 +320,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Accuracy -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Accuracy">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Principle"/>
@@ -367,7 +338,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#AccuracyIsContested -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#AccuracyIsContested">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightToRestrictProcessing"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData"/>
@@ -378,7 +348,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#AccurateCollection -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#AccurateCollection">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ObligationForCollectionOfPersonalData"/>
@@ -392,7 +361,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Activity -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Activity">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:comment xml:lang="en">An Activity signifies some process(es) or step(s) towards specific deed(s), action(s), function(s), or sphere(s) of action.</rdfs:comment>
@@ -402,7 +370,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#AdequateForProcessing -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#AdequateForProcessing">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RetentionOfPersonalData"/>
@@ -416,7 +383,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#AdherenceToSealCertification -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#AdherenceToSealCertification">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ConditionsForSealsAndCertifications"/>
         <rdfs:comment xml:lang="en">The seal or certification does not reduce or impact the responsiblity of the controller or processor for compliance with the GDPR</rdfs:comment>
@@ -429,7 +395,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#AnonymousData -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#AnonymousData">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Data"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData"/>
@@ -441,7 +406,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#AppointingSubProcessors -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#AppointingSubProcessors">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProcessorObligation"/>
@@ -456,7 +420,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#AppointmentOfProcessors -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#AppointmentOfProcessors">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Activity"/>
@@ -475,7 +438,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ArchiveData -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ArchiveData">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataActivity"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData"/>
@@ -486,7 +448,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Article -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Article">
         <rdfs:subClassOf rdf:resource="http://data.europa.eu/eli/ontology#LegalResourceSubdivision"/>
@@ -507,7 +468,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#AssistInComplyingWithRights -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#AssistInComplyingWithRights">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProcessorObligation"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Compliance"/>
@@ -522,21 +482,19 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#AutomatedDecisionMakingWithSignificantEffect -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#AutomatedDecisionMakingWithSignificantEffect">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#AutomatedProcessing"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#FactorsForImpactAssessment"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSubject"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData"/>
-        <rdfs:comment xml:lang="en">This type of processing involves automated processing that does decision making having significant effects on the data subject.</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Automated decision making with significant effect</rdfs:comment>
+        <rdfs:comment xml:lang="en">This type of processing involves automated processing that does decision making having significant effects on the data subject.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Automatic decision making with significant effect</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#AutomatedProcessing -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#AutomatedProcessing">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Processing"/>
@@ -548,7 +506,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CanBeWithdrawnEasilyConsentObligation -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CanBeWithdrawnEasilyConsentObligation">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ObligationForObtainingConsent"/>
@@ -565,7 +522,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Certification -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Certification">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#SealsAndCertification"/>
         <rdfs:comment xml:lang="en">A certification pertaining to GDPR compliance</rdfs:comment>
@@ -577,7 +533,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CertificationBody -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CertificationBody">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Entity"/>
@@ -591,7 +546,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Chapter -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Chapter">
         <rdfs:subClassOf rdf:resource="http://data.europa.eu/eli/ontology#LegalResourceSubdivision"/>
@@ -614,7 +568,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Citation -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Citation">
         <rdfs:subClassOf rdf:resource="http://data.europa.eu/eli/ontology#LegalResourceSubdivision"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Citation in GDPR text</rdfs:comment>
@@ -631,7 +584,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ClearExplanationOfProcessingConsentObligation -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ClearExplanationOfProcessingConsentObligation">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ObligationForObtainingConsent"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Processing"/>
@@ -642,7 +594,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CodeOfConduct -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CodeOfConduct">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -657,8 +608,17 @@
     
 
 
-    <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CollectionOfPersonalData -->
+    <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CollectionMechanism -->
 
+    <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CollectionMechanism">
+        <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CollectionOfPersonalData"/>
+        <rdfs:comment>Specifies collection mechanism used to collect personal data</rdfs:comment>
+        <rdfs:label>Collection Mechanism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CollectionOfPersonalData -->
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CollectionOfPersonalData">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataActivity"/>
@@ -671,7 +631,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Compliance -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Compliance">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:comment xml:lang="en">Represents the act of complying with the obligations and actions specified by the GDPR.</rdfs:comment>
@@ -681,7 +640,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ComplianceWithControllersInstructions -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ComplianceWithControllersInstructions">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProcessorObligation"/>
@@ -695,7 +653,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ConditionsForSealsAndCertifications -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ConditionsForSealsAndCertifications">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#SealsAndCertification"/>
@@ -712,7 +669,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ConfirmingOrMatchingDatasets -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ConfirmingOrMatchingDatasets">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#FactorsForImpactAssessment"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Processing"/>
@@ -724,7 +680,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Consent -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Consent">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -740,7 +695,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ConsentActivity -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ConsentActivity">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Activity"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Consent"/>
@@ -752,7 +706,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ContextOfDataCollection -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ContextOfDataCollection">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PurposeOfNewProcessing"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CollectionOfPersonalData"/>
@@ -763,7 +716,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ContractWithDataSubject -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ContractWithDataSubject">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#LawfulBasisForProcessing"/>
@@ -778,7 +730,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Controller -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Controller">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Entity"/>
         <rdfs:comment xml:lang="en">The natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the processing of personal data.</rdfs:comment>
@@ -791,7 +742,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ControllerAccountability -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ControllerAccountability">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ControllerObligation"/>
@@ -806,7 +756,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ControllerHasTakenAction -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ControllerHasTakenAction">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ExceptionsOnReportingDataSubjectsOfBreach"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Controller"/>
@@ -819,7 +768,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ControllerObligation -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ControllerObligation">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Obligation"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Controller"/>
@@ -830,7 +778,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ControllerRepresentative -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ControllerRepresentative">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Entity"/>
@@ -846,7 +793,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ControllerResponsibility -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ControllerResponsibility">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ControllerObligation"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Controller"/>
@@ -859,7 +805,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CooperateWithDPA -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CooperateWithDPA">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ControllerObligation"/>
@@ -874,7 +819,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CriminalData -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CriminalData">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#SensitivePersonalData"/>
@@ -894,7 +838,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CrossBorderTransfer -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CrossBorderTransfer">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataActivity"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#FactorsForImpactAssessment"/>
@@ -907,7 +850,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DPA -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DPA">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Entity"/>
         <rdfs:comment xml:lang="en">The Data Protection Authority (DPA) is a public institution responsible for monitoring the application of data protection laws.</rdfs:comment>
@@ -917,7 +859,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DPO -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DPO">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Entity"/>
@@ -935,7 +876,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DPOObligation -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DPOObligation">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Obligation"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DPO"/>
@@ -947,7 +887,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Data -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Data">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:comment xml:lang="en">A generic term to refer to Data.</rdfs:comment>
@@ -957,7 +896,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataActivity -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataActivity">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Activity"/>
@@ -970,7 +908,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataBreach -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataBreach">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData"/>
@@ -982,7 +919,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataMinimisation -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataMinimisation">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Principle"/>
@@ -1001,7 +937,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataNoLongerNeededForOriginalPurpose -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataNoLongerNeededForOriginalPurpose">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightToRestrictProcessing"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CollectionOfPersonalData"/>
@@ -1013,7 +948,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataProtectionByDesignAndByDefault -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataProtectionByDesignAndByDefault">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ControllerObligation"/>
@@ -1027,7 +961,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSecurity -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSecurity">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ControllerObligation"/>
@@ -1048,7 +981,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSubject -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSubject">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Entity"/>
         <rdfs:comment xml:lang="en">An individual or entity to whom their personal data relates.</rdfs:comment>
@@ -1058,7 +990,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataWasInferredOrDerived -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataWasInferredOrDerived">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ExclusionException"/>
@@ -1070,7 +1001,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DemonstratingConsent -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DemonstratingConsent">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Activity"/>
@@ -1085,7 +1015,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DirectMarketing -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DirectMarketing">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Marketing"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSubject"/>
@@ -1096,7 +1025,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#EmploymentLaw -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#EmploymentLaw">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#LawfulBasisForProcessing"/>
@@ -1109,7 +1037,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Entity -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Entity">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:comment xml:lang="en">A general term for any institution, company, corporation, partnership, government agency, university, or any other organization including  individuals.</rdfs:comment>
@@ -1119,7 +1046,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#EraseData -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#EraseData">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataActivity"/>
@@ -1131,7 +1057,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#EraseWhenConsentWasWithdrawn -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#EraseWhenConsentWasWithdrawn">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightOfErasure"/>
@@ -1146,7 +1071,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#EraseWhenDataIsNoLongerNeededForOriginalPurpose -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#EraseWhenDataIsNoLongerNeededForOriginalPurpose">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightOfErasure"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CollectionOfPersonalData"/>
@@ -1160,7 +1084,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#EvaluationOfDataSubject -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#EvaluationOfDataSubject">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#FactorsForImpactAssessment"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSubject"/>
@@ -1171,7 +1094,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ExceptionsOnReportingDataSubjectsOfBreach -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ExceptionsOnReportingDataSubjectsOfBreach">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ExclusionException"/>
@@ -1184,7 +1106,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ExclusionException -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ExclusionException">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:comment xml:lang="en">Exclusions and Exemptions provided by the GDPR for not complying with the specified obligations.</rdfs:comment>
@@ -1194,7 +1115,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ExemptedByNationalLaw -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ExemptedByNationalLaw">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#LawfulBasisForProcessing"/>
@@ -1207,7 +1127,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ExemptedWithoutProofOfDataSubjectIdentity -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ExemptedWithoutProofOfDataSubjectIdentity">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ExclusionException"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#IdentificationOfDataSubject"/>
@@ -1218,7 +1137,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ExerciseRights -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ExerciseRights">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Activity"/>
@@ -1232,7 +1150,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ExistenceOfSafeguards -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ExistenceOfSafeguards">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PurposeOfNewProcessing"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData"/>
@@ -1245,7 +1162,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ExplicitPurpose -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ExplicitPurpose">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ObligationForCollectionOfPersonalData"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CollectionOfPersonalData"/>
@@ -1256,7 +1172,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#FactorsForImpactAssessment -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#FactorsForImpactAssessment">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1276,7 +1191,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#FreedomsProtection -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#FreedomsProtection">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ExclusionException"/>
         <rdfs:comment xml:lang="en">The stated obligation could not be completed as it concerns rights protection.</rdfs:comment>
@@ -1287,7 +1201,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#FreelyGivenConsentObligation -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#FreelyGivenConsentObligation">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ValidConsent"/>
@@ -1303,7 +1216,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#GeneticData -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#GeneticData">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#SensitivePersonalData"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSubject"/>
@@ -1315,7 +1227,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#GivenConsent -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#GivenConsent">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Consent"/>
@@ -1336,7 +1247,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#HarmWasRemote -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#HarmWasRemote">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ExceptionsOnReportingDataSubjectsOfBreach"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataBreach"/>
@@ -1347,7 +1257,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#HealthData -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#HealthData">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#SensitivePersonalData"/>
@@ -1364,7 +1273,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#HistoricStatisticScientificPurposes -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#HistoricStatisticScientificPurposes">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#LawfulBasisForProcessing"/>
         <rdfs:comment xml:lang="en">Lawful basis if provided by the GDPR for processing related to historic, statistical, or scientific purposes.</rdfs:comment>
@@ -1379,7 +1287,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#IdentifiableForRequiredProcessing -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#IdentifiableForRequiredProcessing">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RetentionOfPersonalData"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#IdentificationOfDataSubject"/>
@@ -1392,7 +1299,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#IdentificationOfDataSubject -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#IdentificationOfDataSubject">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Activity"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSubject"/>
@@ -1403,7 +1309,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#IfAndWhereControllerIsProcessingData -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#IfAndWhereControllerIsProcessingData">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightToAccessPersonalData"/>
@@ -1417,7 +1322,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ImpactAssessment -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ImpactAssessment">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Activity"/>
@@ -1433,7 +1337,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ImplementTechnicalMeasuresForCompliance -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ImplementTechnicalMeasuresForCompliance">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ControllerResponsibility"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Compliance"/>
@@ -1445,7 +1348,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ImposeConfidentialityObligationOnPersonnel -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ImposeConfidentialityObligationOnPersonnel">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProcessorObligation"/>
@@ -1460,7 +1362,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#InfoAboutAutomatedProcessingWithSignificantEffectsOnDataSubject -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#InfoAboutAutomatedProcessingWithSignificantEffectsOnDataSubject">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightToAccessPersonalData"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#AutomatedProcessing"/>
@@ -1472,7 +1373,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#InfoAboutCategoriesOfRecipientsDataSharedWith -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#InfoAboutCategoriesOfRecipientsDataSharedWith">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightToAccessPersonalData"/>
@@ -1487,7 +1387,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#InfoAboutCatgegoriesOfDataBeingProcessed -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#InfoAboutCatgegoriesOfDataBeingProcessed">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightToAccessPersonalData"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData"/>
@@ -1500,7 +1399,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#InfoAboutExistenceOfRights -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#InfoAboutExistenceOfRights">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightToAccessPersonalData"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Rights"/>
@@ -1511,7 +1409,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#InfoAboutProcessing -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#InfoAboutProcessing">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightToAccessPersonalData"/>
@@ -1525,7 +1422,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#InfoAboutSourceOfData -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#InfoAboutSourceOfData">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightToAccessPersonalData"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CollectionOfPersonalData"/>
@@ -1537,7 +1433,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#InfoAboutStoragePeriod -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#InfoAboutStoragePeriod">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightToAccessPersonalData"/>
@@ -1551,7 +1446,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#InformControllerOfConflictWithLaw -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#InformControllerOfConflictWithLaw">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProcessorObligation"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Controller"/>
@@ -1563,7 +1457,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#InformationAboutThirdParties -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#InformationAboutThirdParties">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightToBasicInformationAboutProcessing"/>
@@ -1578,7 +1471,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#InformationShouldBeConcise -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#InformationShouldBeConcise">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightToTransparency"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightToTransparency"/>
@@ -1589,7 +1481,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#InformationShouldBeEasilyAccessible -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#InformationShouldBeEasilyAccessible">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightToTransparency"/>
@@ -1602,7 +1493,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#InformationShouldBeIntelligible -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#InformationShouldBeIntelligible">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightToTransparency"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightToTransparency"/>
@@ -1613,7 +1503,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#InformationShouldBeTransparent -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#InformationShouldBeTransparent">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightToTransparency"/>
@@ -1626,7 +1515,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#InformedConsentObligation -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#InformedConsentObligation">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ValidConsent"/>
@@ -1645,7 +1533,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#IntegrityAndConfidentiality -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#IntegrityAndConfidentiality">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Principle"/>
@@ -1673,7 +1560,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#IsImpossible -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#IsImpossible">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ExclusionException"/>
         <rdfs:comment xml:lang="en">The obligation or activity could not be completed as it was deemed to be impossible.</rdfs:comment>
@@ -1683,7 +1569,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#JointController -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#JointController">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Controller"/>
@@ -1699,7 +1584,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#KeptUpToDate -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#KeptUpToDate">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RetentionOfPersonalData"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData"/>
@@ -1710,7 +1594,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#LargeScaleProcessing -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#LargeScaleProcessing">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#FactorsForImpactAssessment"/>
@@ -1724,7 +1607,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#LawfulBasisForProcessing -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#LawfulBasisForProcessing">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Obligation"/>
@@ -1741,7 +1623,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#LawfulnessFairnessAndTransparency -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#LawfulnessFairnessAndTransparency">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Principle"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Data"/>
@@ -1757,7 +1638,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#LegalClaims -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#LegalClaims">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#LawfulBasisForProcessing"/>
         <rdfs:comment xml:lang="en">Lawful basis for processing is provided by legal claims.</rdfs:comment>
@@ -1768,7 +1648,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#LegalObligation -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#LegalObligation">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#LawfulBasisForProcessing"/>
@@ -1782,7 +1661,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#LegitimateInterest -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#LegitimateInterest">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#LawfulBasisForProcessing"/>
@@ -1798,7 +1676,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#LegitimatePurpose -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#LegitimatePurpose">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ObligationForCollectionOfPersonalData"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CollectionOfPersonalData"/>
@@ -1809,7 +1686,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#LiabilityOfJointController -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#LiabilityOfJointController">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ControllerObligation"/>
@@ -1827,7 +1703,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#LimitedForProcessing -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#LimitedForProcessing">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RetentionOfPersonalData"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData"/>
@@ -1839,7 +1714,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#LinkBetweenNewAndOldPurpose -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#LinkBetweenNewAndOldPurpose">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PurposeOfNewProcessing"/>
@@ -1853,7 +1727,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#MadePublicByDataSubject -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#MadePublicByDataSubject">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#LawfulBasisForProcessing"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSubject"/>
@@ -1866,7 +1739,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#MaintainRecordOfBreach -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#MaintainRecordOfBreach">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ReportDataBreach"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataBreach"/>
@@ -1877,7 +1749,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#MaintainRecordsOfProcessingActivities -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#MaintainRecordsOfProcessingActivities">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ControllerObligation"/>
@@ -1895,7 +1766,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Marketing -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Marketing">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Activity"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The process or technique of promoting, selling, and distributing a product or service.</rdfs:comment>
@@ -1905,7 +1775,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#MaximumValidity3Years -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#MaximumValidity3Years">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ConditionsForSealsAndCertifications"/>
@@ -1917,7 +1786,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#MedicalDiagnosisTreatment -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#MedicalDiagnosisTreatment">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#LawfulBasisForProcessing"/>
@@ -1931,7 +1799,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#MonitorCompliance -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#MonitorCompliance">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Activity"/>
@@ -1948,7 +1815,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#NationalSecurity -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#NationalSecurity">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ExclusionException"/>
         <rdfs:comment xml:lang="en">The stated obligation could not be completed as it concerns national security.</rdfs:comment>
@@ -1960,7 +1826,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#NatureOfPersonalData -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#NatureOfPersonalData">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PurposeOfNewProcessing"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData"/>
@@ -1971,7 +1836,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#NoChargeLeviedForRightToAccess -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#NoChargeLeviedForRightToAccess">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightToAccessPersonalData"/>
@@ -1988,7 +1852,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#NotForProfitOrg -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#NotForProfitOrg">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#LawfulBasisForProcessing"/>
         <rdfs:comment xml:lang="en">Lawful basis is provided by the GDPR for activities of/for not-for-profit organisations</rdfs:comment>
@@ -1999,7 +1862,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#NotFromSilenceOrInactivityConsentObligation -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#NotFromSilenceOrInactivityConsentObligation">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ObligationForObtainingConsent"/>
@@ -2013,7 +1875,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#NotFurtherProcessedThanOriginalPurpose -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#NotFurtherProcessedThanOriginalPurpose">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ObligationForCollectionOfPersonalData"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Processing"/>
@@ -2024,7 +1885,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#NotificationRequiresDisproportionateEfforts -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#NotificationRequiresDisproportionateEfforts">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ExceptionsOnReportingDataSubjectsOfBreach"/>
@@ -2038,7 +1898,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#NotifyDataSubjectAboutConsequencesOfDataBreach -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#NotifyDataSubjectAboutConsequencesOfDataBreach">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#NotifyDataSubjectOfBreach"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataBreach"/>
@@ -2049,7 +1908,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#NotifyDataSubjectAboutDPOForDataBreach -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#NotifyDataSubjectAboutDPOForDataBreach">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#NotifyDataSubjectOfBreach"/>
@@ -2062,7 +1920,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#NotifyDataSubjectOfBreach -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#NotifyDataSubjectOfBreach">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ReportDataBreach"/>
@@ -2081,7 +1938,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#NotifyDataSubjectOfMeasuresTakenForDataBreach -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#NotifyDataSubjectOfMeasuresTakenForDataBreach">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#NotifyDataSubjectOfBreach"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataBreach"/>
@@ -2094,7 +1950,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Obligation -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Obligation">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:comment xml:lang="en">These are the obligations specified by the GDPR. Following the obligations is necessary for compliance.</rdfs:comment>
@@ -2104,7 +1959,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ObligationForCollectionOfPersonalData -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ObligationForCollectionOfPersonalData">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Obligation"/>
@@ -2117,7 +1971,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ObligationForObtainingConsent -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ObligationForObtainingConsent">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Obligation"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ObtainingConsent"/>
@@ -2129,7 +1982,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ObtainingConsent -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ObtainingConsent">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ConsentActivity"/>
@@ -2144,7 +1996,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#OnlyActOnDocumentedInstructionFromController -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#OnlyActOnDocumentedInstructionFromController">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProcessorObligation"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Controller"/>
@@ -2155,7 +2006,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#OutsideMaterialScope -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#OutsideMaterialScope">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ExclusionException"/>
@@ -2169,7 +2019,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Data"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSubject"/>
@@ -2182,7 +2031,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Point -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Point">
         <rdfs:subClassOf rdf:resource="http://data.europa.eu/eli/ontology#LegalResourceSubdivision"/>
@@ -2209,7 +2057,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PossibleConsequenceForDataSubject -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PossibleConsequenceForDataSubject">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PurposeOfNewProcessing"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSubject"/>
@@ -2220,7 +2067,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Principle -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Principle">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2233,7 +2079,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PrivacyByDesign -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PrivacyByDesign">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ControllerObligation"/>
         <rdfs:comment xml:lang="en">Privacy by Design is the approach of taking privacy into consideration throughout the whole planning and execution processes.</rdfs:comment>
@@ -2245,7 +2090,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Processing -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Processing">
         <owl:equivalentClass rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#UseData"/>
@@ -2260,7 +2104,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProcessingAffectedVulnerableIndividuals -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProcessingAffectedVulnerableIndividuals">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#FactorsForImpactAssessment"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Processing"/>
@@ -2274,7 +2117,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProcessingIsUnlawful -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProcessingIsUnlawful">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightToRestrictProcessing"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData"/>
@@ -2286,7 +2128,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProcessingSensitiveData -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProcessingSensitiveData">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#FactorsForImpactAssessment"/>
@@ -2300,7 +2141,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProcessingUsingUntestedTechnologies -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProcessingUsingUntestedTechnologies">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#FactorsForImpactAssessment"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Processing"/>
@@ -2313,7 +2153,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Processor -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Processor">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Entity"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Controller"/>
@@ -2325,7 +2164,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProcessorControllerAgreement -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProcessorControllerAgreement">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2340,7 +2178,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProcessorObligation -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProcessorObligation">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Obligation"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Processor"/>
@@ -2352,7 +2189,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProcessorRepresentative -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProcessorRepresentative">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Entity"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Processor"/>
@@ -2363,7 +2199,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PropogateRightsToThirdParties -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PropogateRightsToThirdParties">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Activity"/>
@@ -2380,7 +2215,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProtectionAgainstAccidentalLoss -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProtectionAgainstAccidentalLoss">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#SecurityOfPersonalData"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSecurity"/>
@@ -2392,7 +2226,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProtectionAgainstDamage -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProtectionAgainstDamage">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#SecurityOfPersonalData"/>
@@ -2406,7 +2239,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProtectionAgainstDestruction -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProtectionAgainstDestruction">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#SecurityOfPersonalData"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSecurity"/>
@@ -2418,7 +2250,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProtectionAgainstUnlawfulProcessing -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProtectionAgainstUnlawfulProcessing">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#SecurityOfPersonalData"/>
@@ -2433,7 +2264,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProvideControllerWithInfoForCompliance -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProvideControllerWithInfoForCompliance">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProcessorObligation"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Compliance"/>
@@ -2446,7 +2276,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProvideCopyOfPersonalData -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProvideCopyOfPersonalData">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataActivity"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightOfDataPortability"/>
@@ -2458,7 +2287,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PseudoAnonymousData -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PseudoAnonymousData">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Data"/>
@@ -2483,7 +2311,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PublicInterest -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PublicInterest">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#LawfulBasisForProcessing"/>
         <rdfs:comment xml:lang="en">Lawful basis is provided by the GDPR as being in the interest of the public</rdfs:comment>
@@ -2497,7 +2324,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PurposeLimitation -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PurposeLimitation">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Principle"/>
@@ -2519,7 +2345,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PurposeOfNewProcessing -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PurposeOfNewProcessing">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#LawfulBasisForProcessing"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Processing"/>
@@ -2533,7 +2358,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#R17 -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#R17">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ExclusionException"/>
         <rdfs:comment xml:lang="en">Related to Regulation (EC) No. 45/2001</rdfs:comment>
@@ -2544,7 +2368,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#R18 -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#R18">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ExclusionException"/>
@@ -2557,7 +2380,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#R19 -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#R19">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ExclusionException"/>
         <rdfs:comment xml:lang="en">Exempted as it involves areas covered by Directive (EU) 2016/680</rdfs:comment>
@@ -2568,7 +2390,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RacialData -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RacialData">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#SensitivePersonalData"/>
@@ -2581,7 +2402,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Recital -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Recital">
         <rdfs:subClassOf rdf:resource="http://data.europa.eu/eli/ontology#LegalResourceSubdivision"/>
@@ -2599,7 +2419,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RecordCategoriesOfDataSubjectsAndPersonalData -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RecordCategoriesOfDataSubjectsAndPersonalData">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#MaintainRecordsOfProcessingActivities"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSubject"/>
@@ -2612,7 +2431,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RecordCategoriesOfRecipientsWhereDataShared -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RecordCategoriesOfRecipientsWhereDataShared">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#MaintainRecordsOfProcessingActivities"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ShareDataWithThirdParty"/>
@@ -2623,7 +2441,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RecordCrossBorderDataTransfer -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RecordCrossBorderDataTransfer">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#MaintainRecordsOfProcessingActivities"/>
@@ -2636,7 +2453,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RecordDataRetentionPeriod -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RecordDataRetentionPeriod">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#MaintainRecordsOfProcessingActivities"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#StoreData"/>
@@ -2647,7 +2463,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RecordPurposeOfProcessing -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RecordPurposeOfProcessing">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#MaintainRecordsOfProcessingActivities"/>
@@ -2660,7 +2475,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RecordSecurityMeasures -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RecordSecurityMeasures">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#MaintainRecordsOfProcessingActivities"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#SecurityOfPersonalData"/>
@@ -2671,7 +2485,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RectifyData -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RectifyData">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataActivity"/>
@@ -2684,7 +2497,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RectifyInaccuracy -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RectifyInaccuracy">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RetentionOfPersonalData"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData"/>
@@ -2696,7 +2508,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RegulatoryAuthority -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RegulatoryAuthority">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Entity"/>
         <rdfs:comment xml:lang="en">The authority responsible for regulating data protection laws.</rdfs:comment>
@@ -2706,7 +2517,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RelevantForProcessing -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RelevantForProcessing">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RetentionOfPersonalData"/>
@@ -2719,7 +2529,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ReportDataBreach -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ReportDataBreach">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Activity"/>
@@ -2743,7 +2552,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ReportDataBreachToController -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ReportDataBreachToController">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProcessorObligation"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ReportDataBreach"/>
@@ -2760,7 +2568,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ReportDataBreachToDPAWithin72Hours -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ReportDataBreachToDPAWithin72Hours">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ReportDataBreach"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DPA"/>
@@ -2773,7 +2580,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RequiresDisproportionateEfforts -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RequiresDisproportionateEfforts">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ExclusionException"/>
         <rdfs:comment xml:lang="en">The stated obligation or activity could not be completed as it requires disproportionate efforts to complete.</rdfs:comment>
@@ -2783,7 +2589,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RequiresWrittenConsentOfControllerToAppointSubProcessor -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RequiresWrittenConsentOfControllerToAppointSubProcessor">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#AppointingSubProcessors"/>
@@ -2798,7 +2603,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RestrictionsOnCrossBorderTransfers -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RestrictionsOnCrossBorderTransfers">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProcessorObligation"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CrossBorderTransfer"/>
@@ -2812,7 +2616,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RetentionOfPersonalData -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RetentionOfPersonalData">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Obligation"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData"/>
@@ -2824,7 +2627,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ReturnOrDestroyPersonalDataAtEndTerm -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ReturnOrDestroyPersonalDataAtEndTerm">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProcessorObligation"/>
@@ -2838,7 +2640,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightOfDataPortability -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightOfDataPortability">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Rights"/>
@@ -2861,7 +2662,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightOfErasure -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightOfErasure">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Rights"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSubject"/>
@@ -2879,7 +2679,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightToAccessPersonalData -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightToAccessPersonalData">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Rights"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSubject"/>
@@ -2895,7 +2694,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightToBasicInformationAboutProcessing -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightToBasicInformationAboutProcessing">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Rights"/>
@@ -2913,7 +2711,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightToNotBeEvaluatedThroughAutomatedProcessing -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightToNotBeEvaluatedThroughAutomatedProcessing">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Rights"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#AutomatedProcessing"/>
@@ -2929,7 +2726,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightToObjectForDirectMarketting -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightToObjectForDirectMarketting">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Rights"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSubject"/>
@@ -2943,7 +2739,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightToObjectToProcessing -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightToObjectToProcessing">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Rights"/>
@@ -2964,7 +2759,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightToRectification -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightToRectification">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Rights"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSubject"/>
@@ -2983,7 +2777,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightToRestrictProcessing -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightToRestrictProcessing">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Rights"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#AccuracyIsContested"/>
@@ -3000,7 +2793,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightToTransparency -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightToTransparency">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Rights"/>
@@ -3028,7 +2820,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Rights -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Rights">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:comment xml:lang="en">The GDPR provides several rights to the data subjects which may be exercised at any time by the data subject and which are mandatory for the organisation to provide, comply with, and inform the data subject about.</rdfs:comment>
@@ -3041,7 +2832,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightsProtection -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RightsProtection">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ExclusionException"/>
         <rdfs:comment xml:lang="en">The stated obligation could not be completed as it concerns freedoms protection.</rdfs:comment>
@@ -3052,7 +2842,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Seal -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Seal">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#SealsAndCertification"/>
@@ -3065,7 +2854,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#SealsAndCertification -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#SealsAndCertification">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -3080,7 +2868,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Section -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Section">
         <rdfs:subClassOf rdf:resource="http://data.europa.eu/eli/ontology#LegalResourceSubdivision"/>
@@ -3105,7 +2892,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#SecurityOfPersonalData -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#SecurityOfPersonalData">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Activity"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Obligation"/>
@@ -3118,7 +2904,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#SensitivePersonalData -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#SensitivePersonalData">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData"/>
@@ -3136,7 +2921,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ShareDataWithThirdParty -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ShareDataWithThirdParty">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataActivity"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Controller"/>
@@ -3150,7 +2934,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ShouldBeCommonlyUsedFormat -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ShouldBeCommonlyUsedFormat">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProvideCopyOfPersonalData"/>
         <rdfs:comment xml:lang="en">The provided copy of personal data should be in a commonly used format</rdfs:comment>
@@ -3160,7 +2943,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ShouldBeDemonstrable -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ShouldBeDemonstrable">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ObligationForObtainingConsent"/>
@@ -3176,7 +2958,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ShouldBeDistinguishableFromOtherMatters -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ShouldBeDistinguishableFromOtherMatters">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ObligationForObtainingConsent"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#GivenConsent"/>
@@ -3189,7 +2970,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ShouldBeMachineReadable -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ShouldBeMachineReadable">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProvideCopyOfPersonalData"/>
         <rdfs:comment xml:lang="en">The provided copy of personal data should be machine readable</rdfs:comment>
@@ -3199,7 +2979,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ShouldBeStructured -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ShouldBeStructured">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProvideCopyOfPersonalData"/>
@@ -3211,7 +2990,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ShouldSupportReuse -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ShouldSupportReuse">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProvideCopyOfPersonalData"/>
         <rdfs:comment xml:lang="en">The provided copy of personal data should support reuse</rdfs:comment>
@@ -3221,7 +2999,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#SpecificConsentObligation -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#SpecificConsentObligation">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ValidConsent"/>
@@ -3236,7 +3013,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#SpecifiedPurpose -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#SpecifiedPurpose">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ObligationForCollectionOfPersonalData"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CollectionOfPersonalData"/>
@@ -3248,7 +3024,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#StorageLimitation -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#StorageLimitation">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Principle"/>
@@ -3269,7 +3044,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#StoreData -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#StoreData">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataActivity"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData"/>
@@ -3280,7 +3054,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#SubPoint -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#SubPoint">
         <rdfs:subClassOf rdf:resource="http://data.europa.eu/eli/ontology#LegalResourceSubdivision"/>
@@ -3307,7 +3080,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#SubProcessor -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#SubProcessor">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Processor"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Controller"/>
@@ -3319,7 +3091,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#SubProcessorMustFollowSameTermsAsProcessorControllerAgreement -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#SubProcessorMustFollowSameTermsAsProcessorControllerAgreement">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#AppointingSubProcessors"/>
@@ -3333,7 +3104,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#SystematicMonitoring -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#SystematicMonitoring">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Activity"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#FactorsForImpactAssessment"/>
@@ -3346,7 +3116,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#UnlawfulProcessing -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#UnlawfulProcessing">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Processing"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Processing of personal data that is termed to be unlawful in the context of the GDPR or other relevant laws and regulations</rdfs:comment>
@@ -3356,7 +3125,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#UseData -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#UseData">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataActivity"/>
@@ -3368,7 +3136,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ValidConsent -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ValidConsent">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#GivenConsent"/>
@@ -3389,7 +3156,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#VitalInterest -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#VitalInterest">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#LawfulBasisForProcessing"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSubject"/>
@@ -3404,7 +3170,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#VoluntaryOptInConsentObligation -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#VoluntaryOptInConsentObligation">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ValidConsent"/>
         <involves rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#GivenConsent"/>
@@ -3416,7 +3181,6 @@
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#VoluntarySystemOfAccredition -->
 
-
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#VoluntarySystemOfAccredition">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ConditionsForSealsAndCertifications"/>
         <rdfs:comment xml:lang="en">The seals and certifications should be a voluntary system of accredition</rdfs:comment>
@@ -3427,7 +3191,6 @@
 
 
     <!-- http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#WithdrawingConsent -->
-
 
     <owl:Class rdf:about="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#WithdrawingConsent">
         <rdfs:subClassOf rdf:resource="http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ConsentActivity"/>
@@ -3441,16 +3204,15 @@
 
     <!-- http://www.w3.org/2004/02/skos/core#Concept -->
 
-
     <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:Description>
         <rdfs:comment xml:lang="en">An ontology for representing provenance traces pertainining to GDPR compliance. It uses concepts from GDPRtEXT along with extending PROV and P-Plan.</rdfs:comment>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="_:genid2">
+    <rdf:Description>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TEST</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TEST2</rdfs:comment>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="_:genid3">
+    <rdf:Description>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TEST</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TEST2</rdfs:comment>
     </rdf:Description>
@@ -3458,6 +3220,5 @@
 
 
 
-<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
-
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
 
