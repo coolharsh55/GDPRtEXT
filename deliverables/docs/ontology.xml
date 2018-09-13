@@ -494,13 +494,13 @@
         <rdfs:isDefinedBy rdf:resource="http://eur_lex.europa.eu/legal_content/EN/ALL/?uri=CELEX:32016R0679"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Article</rdfs:label>
         <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gdpr:article10 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
+        GDPRtEXT:Article ;
     eli:is_part_of gdpr:GDPR,
         gdpr:chapterII ;
     eli:number &quot;10&quot;^^xsd:string ;
     eli:title_alternative &quot;Article 10&quot;^^xsd:string ;
-    GDPRtext:hasPoint gdpr:article10-1 ;
-    GDPRtext:isPartOfChapter gdpr:chapterII .</skos:example>
+    GDPRtEXT:hasPoint gdpr:article10-1 ;
+    GDPRtEXT:isPartOfChapter gdpr:chapterII .</skos:example>
     </owl:Class>
     
 
@@ -599,12 +599,12 @@
         <rdfs:isDefinedBy rdf:resource="http://eur_lex.europa.eu/legal_content/EN/ALL/?uri=CELEX:32016R0679"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chapter</rdfs:label>
         <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gdpr:chapterI a eli:LegalResourceSubdivision,
-        GDPRtext:Chapter ;
+        GDPRtEXT:Chapter ;
     eli:is_part_of gdpr:GDPR ;
     eli:number &quot;I&quot;^^xsd:string ;
     eli:title &quot;General provisions&quot;^^xsd:string ;
     eli:title_alternative &quot;Chapter I&quot;^^xsd:string ;
-    GDPRtext:hasArticle gdpr:article1,
+    GDPRtEXT:hasArticle gdpr:article1,
         gdpr:article2,
         gdpr:article3,
         gdpr:article4 .</skos:example>
@@ -621,7 +621,7 @@
         <rdfs:isDefinedBy rdf:resource="http://eur_lex.europa.eu/legal_content/EN/ALL/?uri=CELEX:32016R0679"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Citation</rdfs:label>
         <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gdpr:citation1 a eli:LegalResourceSubdivision,
-        GDPRtext:Citation ;
+        GDPRtEXT:Citation ;
     eli:description &quot;OJ C 229, 31.7.2012, p. 90.&quot;^^xsd:string ;
     eli:is_part_of gdpr:GDPR ;
     eli:number &quot;1&quot;^^xsd:string .</skos:example>
@@ -2201,7 +2201,7 @@
         <rdfs:isDefinedBy rdf:resource="http://eur_lex.europa.eu/legal_content/EN/ALL/?uri=CELEX:32016R0679"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Point</rdfs:label>
         <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gdpr:article27-2 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description &quot;The obligation laid down in paragraph 1 of this Article shall not apply to:&quot;^^xsd:string ;
     eli:is_part_of gdpr:GDPR,
         gdpr:article27,
@@ -2209,11 +2209,11 @@
         gdpr:chapterIV-1 ;
     eli:number &quot;2&quot;^^xsd:string ;
     eli:title_alternative &quot;Article27(2)&quot;^^xsd:string ;
-    GDPRtext:hasSubPoint gdpr:article27-2-a,
+    GDPRtEXT:hasSubPoint gdpr:article27-2-a,
         gdpr:article27-2-b ;
-    GDPRtext:isPartOfArticle gdpr:article27 ;
-    GDPRtext:isPartOfChapter gdpr:chapterIV ;
-    GDPRtext:isPartOfSection gdpr:chapterIV-1 .</skos:example>
+    GDPRtEXT:isPartOfArticle gdpr:article27 ;
+    GDPRtEXT:isPartOfChapter gdpr:chapterIV ;
+    GDPRtEXT:isPartOfSection gdpr:chapterIV-1 .</skos:example>
     </owl:Class>
     
 
@@ -2600,7 +2600,7 @@
         <rdfs:isDefinedBy rdf:resource="http://eur_lex.europa.eu/legal_content/EN/ALL/?uri=CELEX:32016R0679"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regulation</rdfs:label>
         <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gdpr:recital1 a eli:LegalResourceSubdivision,
-        GDPRtext:Recital ;
+        GDPRtEXT:Recital ;
     eli:description &quot;The protection of natural persons in relation to the processing of personal data is a fundamental right. Article 8(1) of the Charter of Fundamental Rights of the European Union (the ‘Charter’) and Article 16(1) of the Treaty on the Functioning of the European Union (TFEU) provide that everyone has the right to the protection of personal data concerning him or her.&quot;^^xsd:string ;
     eli:is_part_of gdpr:GDPR ;
     eli:number &quot;1&quot;^^xsd:string .</skos:example>
@@ -3099,17 +3099,17 @@
         <rdfs:isDefinedBy rdf:resource="http://eur_lex.europa.eu/legal_content/EN/ALL/?uri=CELEX:32016R0679"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Section</rdfs:label>
         <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gdpr:chapterIV-5 a eli:LegalResourceSubdivision,
-        GDPRtext:Section ;
+        GDPRtEXT:Section ;
     eli:is_part_of gdpr:GDPR,
         gdpr:chapterIV ;
     eli:number &quot;5&quot;^^xsd:string ;
     eli:title &quot;Codes of conduct and certification&quot;^^xsd:string ;
     eli:title_alternative &quot;Section 5&quot;^^xsd:string ;
-    GDPRtext:hasArticle gdpr:article40,
+    GDPRtEXT:hasArticle gdpr:article40,
         gdpr:article41,
         gdpr:article42,
         gdpr:article43 ;
-    GDPRtext:isPartOfChapter gdpr:chapterIV .</skos:example>
+    GDPRtEXT:isPartOfChapter gdpr:chapterIV .</skos:example>
     </owl:Class>
     
 
@@ -3299,7 +3299,7 @@
         <rdfs:isDefinedBy rdf:resource="http://eur_lex.europa.eu/legal_content/EN/ALL/?uri=CELEX:32016R0679"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SubPoint</rdfs:label>
         <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gdpr:article12-5-b a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description &quot;refuse to act on the request.&quot;^^xsd:string ;
     eli:is_part_of gdpr:GDPR,
         gdpr:article12,
@@ -3308,10 +3308,10 @@
         gdpr:chapterIII-1 ;
     eli:number &quot;b&quot;^^xsd:string ;
     eli:title_alternative &quot;Article12(5)(b)&quot;^^xsd:string ;
-    GDPRtext:isPartOfArticle gdpr:article12 ;
-    GDPRtext:isPartOfChapter gdpr:chapterIII ;
-    GDPRtext:isPartOfPoint gdpr:article12-5 ;
-    GDPRtext:isPartOfSection gdpr:chapterIII-1 .</skos:example>
+    GDPRtEXT:isPartOfArticle gdpr:article12 ;
+    GDPRtEXT:isPartOfChapter gdpr:chapterIII ;
+    GDPRtEXT:isPartOfPoint gdpr:article12-5 ;
+    GDPRtEXT:isPartOfSection gdpr:chapterIII-1 .</skos:example>
     </owl:Class>
     
 

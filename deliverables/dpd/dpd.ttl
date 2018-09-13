@@ -1,4 +1,4 @@
-@prefix GDPRtext: <http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#> .
+@prefix GDPRtEXT: <http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dpd: <http://purl.org/adaptcentre/openscience/resources/DPD#> .
 @prefix eli: <http://data.europa.eu/eli/ontology#> .
@@ -8,1155 +8,1155 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 dpd:article1-1 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "In accordance with this Directive, Member States shall protect the fundamental rights and freedoms of natural persons, and in particular their right to privacy with respect to the processing of personal data."^^xsd:string ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article1(1)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article1-1 ;
-    GDPRtext:isPartOfArticle dpd:article1 .
+    GDPRtEXT:hasPoint dpd:article1-1 ;
+    GDPRtEXT:isPartOfArticle dpd:article1 .
 
 dpd:article1-2 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Member States shall neither restrict nor prohibit the free flow of personal data between Member States for reasons connected with the protection afforded under paragraph 1."^^xsd:string ;
     eli:number "2"^^xsd:string ;
     eli:title_alternative "Article1(2)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article1-2 ;
-    GDPRtext:isPartOfArticle dpd:article1 .
+    GDPRtEXT:hasPoint dpd:article1-2 ;
+    GDPRtEXT:isPartOfArticle dpd:article1 .
 
 dpd:article10-1-a a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "the identity of the controller and of his representative, if any;"^^xsd:string,
         "the recipients or categories of recipients of the data,"^^xsd:string ;
     eli:number "a"^^xsd:string ;
     eli:title_alternative "Article10(1)(a)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article10-1 .
+    GDPRtEXT:isPartOfPoint dpd:article10-1 .
 
 dpd:article10-1-b a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "the purposes of the processing for which the data are intended;"^^xsd:string,
         "whether replies to the questions are obligatory or voluntary, as well as the possible consequences of failure to reply,"^^xsd:string ;
     eli:number "b"^^xsd:string ;
     eli:title_alternative "Article10(1)(b)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article10-1 .
+    GDPRtEXT:isPartOfPoint dpd:article10-1 .
 
 dpd:article10-1-c a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "any further information such as"^^xsd:string,
         "the existence of the right of access to and the right to rectify the data concerning him"^^xsd:string ;
     eli:number "c"^^xsd:string ;
     eli:title_alternative "Article10(1)(c)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article10-1 .
+    GDPRtEXT:isPartOfPoint dpd:article10-1 .
 
 dpd:article10-1-d a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "in so far as such further information is necessary, having regard to the specific circumstances in which the data are collected, to guarantee fair processing in respect of the data subject."^^xsd:string ;
     eli:number "d"^^xsd:string ;
     eli:title_alternative "Article10(1)(d)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article10-1 .
+    GDPRtEXT:isPartOfPoint dpd:article10-1 .
 
 dpd:article11-1-a a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "the categories of data concerned,"^^xsd:string,
         "the identity of the controller and of his representative, if any;"^^xsd:string ;
     eli:number "a"^^xsd:string ;
     eli:title_alternative "Article11(1)(a)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article11-1 .
+    GDPRtEXT:isPartOfPoint dpd:article11-1 .
 
 dpd:article11-1-b a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "the purposes of the processing;"^^xsd:string,
         "the recipients or categories of recipients,"^^xsd:string ;
     eli:number "b"^^xsd:string ;
     eli:title_alternative "Article11(1)(b)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article11-1 .
+    GDPRtEXT:isPartOfPoint dpd:article11-1 .
 
 dpd:article11-1-c a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "any further information such as"^^xsd:string,
         "the existence of the right of access to and the right to rectify the data concerning him"^^xsd:string ;
     eli:number "c"^^xsd:string ;
     eli:title_alternative "Article11(1)(c)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article11-1 .
+    GDPRtEXT:isPartOfPoint dpd:article11-1 .
 
 dpd:article11-1-d a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "in so far as such further information is necessary, having regard to the specific circumstances in which the data are processed, to guarantee fair processing in respect of the data subject."^^xsd:string ;
     eli:number "d"^^xsd:string ;
     eli:title_alternative "Article11(1)(d)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article11-1 .
+    GDPRtEXT:isPartOfPoint dpd:article11-1 .
 
 dpd:article11-2 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Paragraph 1 shall not apply where, in particular for processing for statistical purposes or for the purposes of historical or scientific research, the provision of such information proves impossible or would involve a disproportionate effort or if recording or disclosure is expressly laid down by law. In these cases Member States shall provide appropriate safeguards."^^xsd:string ;
     eli:number "2"^^xsd:string ;
     eli:title_alternative "Article11(2)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article11-2 ;
-    GDPRtext:isPartOfArticle dpd:article11 .
+    GDPRtEXT:hasPoint dpd:article11-2 ;
+    GDPRtEXT:isPartOfArticle dpd:article11 .
 
 dpd:article12-1-a a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "confirmation as to whether or not data relating to him are being processed and information at least as to the purposes of the processing, the categories of data concerned, and the recipients or categories of recipients to whom the data are disclosed,"^^xsd:string,
         "without constraint at reasonable intervals and without excessive delay or expense:"^^xsd:string ;
     eli:number "a"^^xsd:string ;
     eli:title_alternative "Article12(1)(a)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article12-1 .
+    GDPRtEXT:isPartOfPoint dpd:article12-1 .
 
 dpd:article12-1-b a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "as appropriate the rectification, erasure or blocking of data the processing of which does not comply with the provisions of this Directive, in particular because of the incomplete or inaccurate nature of the data;"^^xsd:string,
         "communication to him in an intelligible form of the data undergoing processing and of any available information as to their source,"^^xsd:string ;
     eli:number "b"^^xsd:string ;
     eli:title_alternative "Article12(1)(b)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article12-1 .
+    GDPRtEXT:isPartOfPoint dpd:article12-1 .
 
 dpd:article12-1-c a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "knowledge of the logic involved in any automatic processing of data concerning him at least in the case of the automated decisions referred to in Article 15 (1);"^^xsd:string,
         "notification to third parties to whom the data have been disclosed of any rectification, erasure or blocking carried out in compliance with (b), unless this proves impossible or involves a disproportionate effort."^^xsd:string ;
     eli:number "c"^^xsd:string ;
     eli:title_alternative "Article12(1)(c)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article12-1 .
+    GDPRtEXT:isPartOfPoint dpd:article12-1 .
 
 dpd:article13-1-a a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "national security;"^^xsd:string ;
     eli:number "a"^^xsd:string ;
     eli:title_alternative "Article13(1)(a)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article13-1 .
+    GDPRtEXT:isPartOfPoint dpd:article13-1 .
 
 dpd:article13-1-b a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "defence;"^^xsd:string ;
     eli:number "b"^^xsd:string ;
     eli:title_alternative "Article13(1)(b)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article13-1 .
+    GDPRtEXT:isPartOfPoint dpd:article13-1 .
 
 dpd:article13-1-c a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "public security;"^^xsd:string ;
     eli:number "c"^^xsd:string ;
     eli:title_alternative "Article13(1)(c)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article13-1 .
+    GDPRtEXT:isPartOfPoint dpd:article13-1 .
 
 dpd:article13-1-d a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "the prevention, investigation, detection and prosecution of criminal offences, or of breaches of ethics for regulated professions;"^^xsd:string ;
     eli:number "d"^^xsd:string ;
     eli:title_alternative "Article13(1)(d)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article13-1 .
+    GDPRtEXT:isPartOfPoint dpd:article13-1 .
 
 dpd:article13-1-e a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "an important economic or financial interest of a Member State or of the European Union, including monetary, budgetary and taxation matters;"^^xsd:string ;
     eli:number "e"^^xsd:string ;
     eli:title_alternative "Article13(1)(e)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article13-1 .
+    GDPRtEXT:isPartOfPoint dpd:article13-1 .
 
 dpd:article13-1-f a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "a monitoring, inspection or regulatory function connected, even occasionally, with the exercise of official authority in cases referred to in (c), (d) and (e);"^^xsd:string ;
     eli:number "f"^^xsd:string ;
     eli:title_alternative "Article13(1)(f)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article13-1 .
+    GDPRtEXT:isPartOfPoint dpd:article13-1 .
 
 dpd:article13-1-g a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "the protection of the data subject or of the rights and freedoms of others."^^xsd:string ;
     eli:number "g"^^xsd:string ;
     eli:title_alternative "Article13(1)(g)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article13-1 .
+    GDPRtEXT:isPartOfPoint dpd:article13-1 .
 
 dpd:article13-2 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Subject to adequate legal safeguards, in particular that the data are not used for taking measures or decisions regarding any particular individual, Member States may, where there is clearly no risk of breaching the privacy of the data subject, restrict by a legislative measure the rights provided for in Article 12 when data are processed solely for purposes of scientific research or are kept in personal form for a period which does not exceed the period necessary for the sole purpose of creating statistics."^^xsd:string ;
     eli:number "2"^^xsd:string ;
     eli:title_alternative "Article13(2)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article13-2 ;
-    GDPRtext:isPartOfArticle dpd:article13 .
+    GDPRtEXT:hasPoint dpd:article13-2 ;
+    GDPRtEXT:isPartOfArticle dpd:article13 .
 
 dpd:article14-1-a a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "Member States shall take the necessary measures to ensure that data subjects are aware of the existence of the right referred to in the first subparagraph of (b)."^^xsd:string,
         "at least in the cases referred to in Article 7 (e) and (f), to object at any time on compelling legitimate grounds relating to his particular situation to the processing of data relating to him, save where otherwise provided by national legislation. Where there is a justified objection, the processing instigated by the controller may no longer involve those data;"^^xsd:string ;
     eli:number "a"^^xsd:string ;
     eli:title_alternative "Article14(1)(a)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article14-1 .
+    GDPRtEXT:isPartOfPoint dpd:article14-1 .
 
 dpd:article14-1-b a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "to object, on request and free of charge, to the processing of personal data relating to him which the controller anticipates being processed for the purposes of direct marketing, or to be informed before personal data are disclosed for the first time to third parties or used on their behalf for the purposes of direct marketing, and to be expressly offered the right to object free of charge to such disclosures or uses."^^xsd:string ;
     eli:number "b"^^xsd:string ;
     eli:title_alternative "Article14(1)(b)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article14-1 .
+    GDPRtEXT:isPartOfPoint dpd:article14-1 .
 
 dpd:article15-1 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Member States shall grant the right to every person not to be subject to a decision which produces legal effects concerning him or significantly affects him and which is based solely on automated processing of data intended to evaluate certain personal aspects relating to him, such as his performance at work, creditworthiness, reliability, conduct, etc."^^xsd:string ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article15(1)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article15-1 ;
-    GDPRtext:isPartOfArticle dpd:article15 .
+    GDPRtEXT:hasPoint dpd:article15-1 ;
+    GDPRtEXT:isPartOfArticle dpd:article15 .
 
 dpd:article15-2-a a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "is taken in the course of the entering into or performance of a contract, provided the request for the entering into or the performance of the contract, lodged by the data subject, has been satisfied or that there are suitable measures to safeguard his legitimate interests, such as arrangements allowing him to put his point of view; or"^^xsd:string ;
     eli:number "a"^^xsd:string ;
     eli:title_alternative "Article15(2)(a)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article15-2 .
+    GDPRtEXT:isPartOfPoint dpd:article15-2 .
 
 dpd:article15-2-b a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "is authorized by a law which also lays down measures to safeguard the data subject's legitimate interests."^^xsd:string ;
     eli:number "b"^^xsd:string ;
     eli:title_alternative "Article15(2)(b)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article15-2 .
+    GDPRtEXT:isPartOfPoint dpd:article15-2 .
 
 dpd:article16-1 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Any person acting under the authority of the controller or of the processor, including the processor himself, who has access to personal data must not process them except on instructions from the controller, unless he is required to do so by law."^^xsd:string ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article16(1)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article16-1 ;
-    GDPRtext:isPartOfArticle dpd:article16 .
+    GDPRtEXT:hasPoint dpd:article16-1 ;
+    GDPRtEXT:isPartOfArticle dpd:article16 .
 
 dpd:article17-1-a a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "Having regard to the state of the art and the cost of their implementation, such measures shall ensure a level of security appropriate to the risks represented by the processing and the nature of the data to be protected."^^xsd:string ;
     eli:number "a"^^xsd:string ;
     eli:title_alternative "Article17(1)(a)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article17-1 .
+    GDPRtEXT:isPartOfPoint dpd:article17-1 .
 
 dpd:article17-2 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "The Member States shall provide that the controller must, where processing is carried out on his behalf, choose a processor providing sufficient guarantees in respect of the technical security measures and organizational measures governing the processing to be carried out, and must ensure compliance with those measures."^^xsd:string ;
     eli:number "2"^^xsd:string ;
     eli:title_alternative "Article17(2)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article17-2 ;
-    GDPRtext:isPartOfArticle dpd:article17 .
+    GDPRtEXT:hasPoint dpd:article17-2 ;
+    GDPRtEXT:isPartOfArticle dpd:article17 .
 
 dpd:article17-3-a a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "the processor shall act only on instructions from the controller,"^^xsd:string ;
     eli:number "a"^^xsd:string ;
     eli:title_alternative "Article17(3)(a)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article17-3 .
+    GDPRtEXT:isPartOfPoint dpd:article17-3 .
 
 dpd:article17-3-b a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "the obligations set out in paragraph 1, as defined by the law of the Member State in which the processor is established, shall also be incumbent on the processor."^^xsd:string ;
     eli:number "b"^^xsd:string ;
     eli:title_alternative "Article17(3)(b)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article17-3 .
+    GDPRtEXT:isPartOfPoint dpd:article17-3 .
 
 dpd:article17-4 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "For the purposes of keeping proof, the parts of the contract or the legal act relating to data protection and the requirements relating to the measures referred to in paragraph 1 shall be in writing or in another equivalent form."^^xsd:string ;
     eli:number "4"^^xsd:string ;
     eli:title_alternative "Article17(4)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article17-4 ;
-    GDPRtext:isPartOfArticle dpd:article17 .
+    GDPRtEXT:hasPoint dpd:article17-4 ;
+    GDPRtEXT:isPartOfArticle dpd:article17 .
 
 dpd:article18-1 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Member States shall provide that the controller or his representative, if any, must notify the supervisory authority referred to in Article 28 before carrying out any wholly or partly automatic processing operation or set of such operations intended to serve a single purpose or several related purposes."^^xsd:string ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article18(1)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article18-1 ;
-    GDPRtext:isPartOfArticle dpd:article18 .
+    GDPRtEXT:hasPoint dpd:article18-1 ;
+    GDPRtEXT:isPartOfArticle dpd:article18 .
 
 dpd:article18-2-a a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "where, for categories of processing operations which are unlikely, taking account of the data to be processed, to affect adversely the rights and freedoms of data subjects, they specify the purposes of the processing, the data or categories of data undergoing processing, the category or categories of data subject, the recipients or categories of recipient to whom the data are to be disclosed and the length of time the data are to be stored, and/or"^^xsd:string ;
     eli:number "a"^^xsd:string ;
     eli:title_alternative "Article18(2)(a)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article18-2 .
+    GDPRtEXT:isPartOfPoint dpd:article18-2 .
 
 dpd:article18-2-b a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "where the controller, in compliance with the national law which governs him, appoints a personal data protection official, responsible in particular:"^^xsd:string ;
     eli:number "b"^^xsd:string ;
     eli:title_alternative "Article18(2)(b)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article18-2 .
+    GDPRtEXT:isPartOfPoint dpd:article18-2 .
 
 dpd:article18-2-c a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "for ensuring in an independent manner the internal application of the national provisions taken pursuant to this Directive"^^xsd:string ;
     eli:number "c"^^xsd:string ;
     eli:title_alternative "Article18(2)(c)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article18-2 .
+    GDPRtEXT:isPartOfPoint dpd:article18-2 .
 
 dpd:article18-2-d a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "for keeping the register of processing operations carried out by the controller, containing the items of information referred to in Article 21 (2),"^^xsd:string ;
     eli:number "d"^^xsd:string ;
     eli:title_alternative "Article18(2)(d)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article18-2 .
+    GDPRtEXT:isPartOfPoint dpd:article18-2 .
 
 dpd:article18-2-e a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "thereby ensuring that the rights and freedoms of the data subjects are unlikely to be adversely affected by the processing operations."^^xsd:string ;
     eli:number "e"^^xsd:string ;
     eli:title_alternative "Article18(2)(e)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article18-2 .
+    GDPRtEXT:isPartOfPoint dpd:article18-2 .
 
 dpd:article18-3 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Member States may provide that paragraph 1 does not apply to processing whose sole purpose is the keeping of a register which according to laws or regulations is intended to provide information to the public and which is open to consultation either by the public in general or by any person demonstrating a legitimate interest."^^xsd:string ;
     eli:number "3"^^xsd:string ;
     eli:title_alternative "Article18(3)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article18-3 ;
-    GDPRtext:isPartOfArticle dpd:article18 .
+    GDPRtEXT:hasPoint dpd:article18-3 ;
+    GDPRtEXT:isPartOfArticle dpd:article18 .
 
 dpd:article18-4 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Member States may provide for an exemption from the obligation to notify or a simplification of the notification in the case of processing operations referred to in Article 8 (2) (d)."^^xsd:string ;
     eli:number "4"^^xsd:string ;
     eli:title_alternative "Article18(4)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article18-4 ;
-    GDPRtext:isPartOfArticle dpd:article18 .
+    GDPRtEXT:hasPoint dpd:article18-4 ;
+    GDPRtEXT:isPartOfArticle dpd:article18 .
 
 dpd:article18-5 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Member States may stipulate that certain or all non-automatic processing operations involving personal data shall be notified, or provide for these processing operations to be subject to simplified notification."^^xsd:string ;
     eli:number "5"^^xsd:string ;
     eli:title_alternative "Article18(5)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article18-5 ;
-    GDPRtext:isPartOfArticle dpd:article18 .
+    GDPRtEXT:hasPoint dpd:article18-5 ;
+    GDPRtEXT:isPartOfArticle dpd:article18 .
 
 dpd:article19-1-a a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "the name and address of the controller and of his representative, if any;"^^xsd:string ;
     eli:number "a"^^xsd:string ;
     eli:title_alternative "Article19(1)(a)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article19-1 .
+    GDPRtEXT:isPartOfPoint dpd:article19-1 .
 
 dpd:article19-1-b a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "the purpose or purposes of the processing;"^^xsd:string ;
     eli:number "b"^^xsd:string ;
     eli:title_alternative "Article19(1)(b)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article19-1 .
+    GDPRtEXT:isPartOfPoint dpd:article19-1 .
 
 dpd:article19-1-c a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "a description of the category or categories of data subject and of the data or categories of data relating to them;"^^xsd:string ;
     eli:number "c"^^xsd:string ;
     eli:title_alternative "Article19(1)(c)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article19-1 .
+    GDPRtEXT:isPartOfPoint dpd:article19-1 .
 
 dpd:article19-1-d a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "the recipients or categories of recipient to whom the data might be disclosed;"^^xsd:string ;
     eli:number "d"^^xsd:string ;
     eli:title_alternative "Article19(1)(d)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article19-1 .
+    GDPRtEXT:isPartOfPoint dpd:article19-1 .
 
 dpd:article19-1-e a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "proposed transfers of data to third countries;"^^xsd:string ;
     eli:number "e"^^xsd:string ;
     eli:title_alternative "Article19(1)(e)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article19-1 .
+    GDPRtEXT:isPartOfPoint dpd:article19-1 .
 
 dpd:article19-1-f a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "a general description allowing a preliminary assessment to be made of the appropriateness of the measures taken pursuant to Article 17 to ensure security of processing."^^xsd:string ;
     eli:number "f"^^xsd:string ;
     eli:title_alternative "Article19(1)(f)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article19-1 .
+    GDPRtEXT:isPartOfPoint dpd:article19-1 .
 
 dpd:article19-2 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Member States shall specify the procedures under which any change affecting the information referred to in paragraph 1 must be notified to the supervisory authority."^^xsd:string ;
     eli:number "2"^^xsd:string ;
     eli:title_alternative "Article19(2)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article19-2 ;
-    GDPRtext:isPartOfArticle dpd:article19 .
+    GDPRtEXT:hasPoint dpd:article19-2 ;
+    GDPRtEXT:isPartOfArticle dpd:article19 .
 
 dpd:article2-1-a a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "'personal data' shall mean any information relating to an identified or identifiable natural person ('data subject'); an identifiable person is one who can be identified, directly or indirectly, in particular by reference to an identification number or to one or more factors specific to his physical, physiological, mental, economic, cultural or social identity;"^^xsd:string ;
     eli:number "a"^^xsd:string ;
     eli:title_alternative "Article2(1)(a)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article2-1 .
+    GDPRtEXT:isPartOfPoint dpd:article2-1 .
 
 dpd:article2-1-b a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "'processing of personal data' ('processing') shall mean any operation or set of operations which is performed upon personal data, whether or not by automatic means, such as collection, recording, organization, storage, adaptation or alteration, retrieval, consultation, use, disclosure by transmission, dissemination or otherwise making available, alignment or combination, blocking, erasure or destruction;"^^xsd:string ;
     eli:number "b"^^xsd:string ;
     eli:title_alternative "Article2(1)(b)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article2-1 .
+    GDPRtEXT:isPartOfPoint dpd:article2-1 .
 
 dpd:article2-1-c a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "'personal data filing system' ('filing system') shall mean any structured set of personal data which are accessible according to specific criteria, whether centralized, decentralized or dispersed on a functional or geographical basis;"^^xsd:string ;
     eli:number "c"^^xsd:string ;
     eli:title_alternative "Article2(1)(c)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article2-1 .
+    GDPRtEXT:isPartOfPoint dpd:article2-1 .
 
 dpd:article2-1-d a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "'controller' shall mean the natural or legal person, public authority, agency or any other body which alone or jointly with others determines the purposes and means of the processing of personal data; where the purposes and means of processing are determined by national or Community laws or regulations, the controller or the specific criteria for his nomination may be designated by national or Community law;"^^xsd:string ;
     eli:number "d"^^xsd:string ;
     eli:title_alternative "Article2(1)(d)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article2-1 .
+    GDPRtEXT:isPartOfPoint dpd:article2-1 .
 
 dpd:article2-1-e a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "'processor' shall mean a natural or legal person, public authority, agency or any other body which processes personal data on behalf of the controller;"^^xsd:string ;
     eli:number "e"^^xsd:string ;
     eli:title_alternative "Article2(1)(e)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article2-1 .
+    GDPRtEXT:isPartOfPoint dpd:article2-1 .
 
 dpd:article2-1-f a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "'third party' shall mean any natural or legal person, public authority, agency or any other body other than the data subject, the controller, the processor and the persons who, under the direct authority of the controller or the processor, are authorized to process the data;"^^xsd:string ;
     eli:number "f"^^xsd:string ;
     eli:title_alternative "Article2(1)(f)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article2-1 .
+    GDPRtEXT:isPartOfPoint dpd:article2-1 .
 
 dpd:article2-1-g a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "'recipient' shall mean a natural or legal person, public authority, agency or any other body to whom data are disclosed, whether a third party or not; however, authorities which may receive data in the framework of a particular inquiry shall not be regarded as recipients;"^^xsd:string ;
     eli:number "g"^^xsd:string ;
     eli:title_alternative "Article2(1)(g)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article2-1 .
+    GDPRtEXT:isPartOfPoint dpd:article2-1 .
 
 dpd:article2-1-h a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "'the data subject's consent' shall mean any freely given specific and informed indication of his wishes by which the data subject signifies his agreement to personal data relating to him being processed."^^xsd:string ;
     eli:number "h"^^xsd:string ;
     eli:title_alternative "Article2(1)(h)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article2-1 .
+    GDPRtEXT:isPartOfPoint dpd:article2-1 .
 
 dpd:article20-1 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Member States shall determine the processing operations likely to present specific risks to the rights and freedoms of data subjects and shall check that these processing operations are examined prior to the start thereof."^^xsd:string ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article20(1)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article20-1 ;
-    GDPRtext:isPartOfArticle dpd:article20 .
+    GDPRtEXT:hasPoint dpd:article20-1 ;
+    GDPRtEXT:isPartOfArticle dpd:article20 .
 
 dpd:article20-2 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Such prior checks shall be carried out by the supervisory authority following receipt of a notification from the controller or by the data protection official, who, in cases of doubt, must consult the supervisory authority."^^xsd:string ;
     eli:number "2"^^xsd:string ;
     eli:title_alternative "Article20(2)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article20-2 ;
-    GDPRtext:isPartOfArticle dpd:article20 .
+    GDPRtEXT:hasPoint dpd:article20-2 ;
+    GDPRtEXT:isPartOfArticle dpd:article20 .
 
 dpd:article20-3 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Member States may also carry out such checks in the context of preparation either of a measure of the national parliament or of a measure based on such a legislative measure, which define the nature of the processing and lay down appropriate safeguards."^^xsd:string ;
     eli:number "3"^^xsd:string ;
     eli:title_alternative "Article20(3)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article20-3 ;
-    GDPRtext:isPartOfArticle dpd:article20 .
+    GDPRtEXT:hasPoint dpd:article20-3 ;
+    GDPRtEXT:isPartOfArticle dpd:article20 .
 
 dpd:article21-1 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Member States shall take measures to ensure that processing operations are publicized."^^xsd:string ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article21(1)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article21-1 ;
-    GDPRtext:isPartOfArticle dpd:article21 .
+    GDPRtEXT:hasPoint dpd:article21-1 ;
+    GDPRtEXT:isPartOfArticle dpd:article21 .
 
 dpd:article21-2-a a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "The register shall contain at least the information listed in Article 19 (1) (a) to (e)."^^xsd:string ;
     eli:number "a"^^xsd:string ;
     eli:title_alternative "Article21(2)(a)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article21-2 .
+    GDPRtEXT:isPartOfPoint dpd:article21-2 .
 
 dpd:article21-2-b a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "The register may be inspected by any person."^^xsd:string ;
     eli:number "b"^^xsd:string ;
     eli:title_alternative "Article21(2)(b)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article21-2 .
+    GDPRtEXT:isPartOfPoint dpd:article21-2 .
 
 dpd:article21-3-a a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "Member States may provide that this provision does not apply to processing whose sole purpose is the keeping of a register which according to laws or regulations is intended to provide information to the public and which is open to consultation either by the public in general or by any person who can provide proof of a legitimate interest."^^xsd:string ;
     eli:number "a"^^xsd:string ;
     eli:title_alternative "Article21(3)(a)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article21-3 .
+    GDPRtEXT:isPartOfPoint dpd:article21-3 .
 
 dpd:article22-1 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Without prejudice to any administrative remedy for which provision may be made, inter alia before the supervisory authority referred to in Article 28, prior to referral to the judicial authority, Member States shall provide for the right of every person to a judicial remedy for any breach of the rights guaranteed him by the national law applicable to the processing in question."^^xsd:string ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article22(1)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article22-1 ;
-    GDPRtext:isPartOfArticle dpd:article22 .
+    GDPRtEXT:hasPoint dpd:article22-1 ;
+    GDPRtEXT:isPartOfArticle dpd:article22 .
 
 dpd:article23-1 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Member States shall provide that any person who has suffered damage as a result of an unlawful processing operation or of any act incompatible with the national provisions adopted pursuant to this Directive is entitled to receive compensation from the controller for the damage suffered."^^xsd:string ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article23(1)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article23-1 ;
-    GDPRtext:isPartOfArticle dpd:article23 .
+    GDPRtEXT:hasPoint dpd:article23-1 ;
+    GDPRtEXT:isPartOfArticle dpd:article23 .
 
 dpd:article23-2 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "The controller may be exempted from this liability, in whole or in part, if he proves that he is not responsible for the event giving rise to the damage."^^xsd:string ;
     eli:number "2"^^xsd:string ;
     eli:title_alternative "Article23(2)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article23-2 ;
-    GDPRtext:isPartOfArticle dpd:article23 .
+    GDPRtEXT:hasPoint dpd:article23-2 ;
+    GDPRtEXT:isPartOfArticle dpd:article23 .
 
 dpd:article24-1 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "The Member States shall adopt suitable measures to ensure the full implementation of the provisions of this Directive and shall in particular lay down the sanctions to be imposed in case of infringement of the provisions adopted pursuant to this Directive."^^xsd:string ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article24(1)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article24-1 ;
-    GDPRtext:isPartOfArticle dpd:article24 .
+    GDPRtEXT:hasPoint dpd:article24-1 ;
+    GDPRtEXT:isPartOfArticle dpd:article24 .
 
 dpd:article25-1 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "The Member States shall provide that the transfer to a third country of personal data which are undergoing processing or are intended for processing after transfer may take place only if, without prejudice to compliance with the national provisions adopted pursuant to the other provisions of this Directive, the third country in question ensures an adequate level of protection."^^xsd:string ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article25(1)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article25-1 ;
-    GDPRtext:isPartOfArticle dpd:article25 .
+    GDPRtEXT:hasPoint dpd:article25-1 ;
+    GDPRtEXT:isPartOfArticle dpd:article25 .
 
 dpd:article25-2 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "The adequacy of the level of protection afforded by a third country shall be assessed in the light of all the circumstances surrounding a data transfer operation or set of data transfer operations; particular consideration shall be given to the nature of the data, the purpose and duration of the proposed processing operation or operations, the country of origin and country of final destination, the rules of law, both general and sectoral, in force in the third country in question and the professional rules and security measures which are complied with in that country."^^xsd:string ;
     eli:number "2"^^xsd:string ;
     eli:title_alternative "Article25(2)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article25-2 ;
-    GDPRtext:isPartOfArticle dpd:article25 .
+    GDPRtEXT:hasPoint dpd:article25-2 ;
+    GDPRtEXT:isPartOfArticle dpd:article25 .
 
 dpd:article25-3 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "The Member States and the Commission shall inform each other of cases where they consider that a third country does not ensure an adequate level of protection within the meaning of paragraph 2."^^xsd:string ;
     eli:number "3"^^xsd:string ;
     eli:title_alternative "Article25(3)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article25-3 ;
-    GDPRtext:isPartOfArticle dpd:article25 .
+    GDPRtEXT:hasPoint dpd:article25-3 ;
+    GDPRtEXT:isPartOfArticle dpd:article25 .
 
 dpd:article25-4 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Where the Commission finds, under the procedure provided for in Article 31 (2), that a third country does not ensure an adequate level of protection within the meaning of paragraph 2 of this Article, Member States shall take the measures necessary to prevent any transfer of data of the same type to the third country in question."^^xsd:string ;
     eli:number "4"^^xsd:string ;
     eli:title_alternative "Article25(4)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article25-4 ;
-    GDPRtext:isPartOfArticle dpd:article25 .
+    GDPRtEXT:hasPoint dpd:article25-4 ;
+    GDPRtEXT:isPartOfArticle dpd:article25 .
 
 dpd:article25-5 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "At the appropriate time, the Commission shall enter into negotiations with a view to remedying the situation resulting from the finding made pursuant to paragraph 4."^^xsd:string ;
     eli:number "5"^^xsd:string ;
     eli:title_alternative "Article25(5)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article25-5 ;
-    GDPRtext:isPartOfArticle dpd:article25 .
+    GDPRtEXT:hasPoint dpd:article25-5 ;
+    GDPRtEXT:isPartOfArticle dpd:article25 .
 
 dpd:article25-6-a a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "Member States shall take the measures necessary to comply with the Commission's decision."^^xsd:string ;
     eli:number "a"^^xsd:string ;
     eli:title_alternative "Article25(6)(a)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article25-6 .
+    GDPRtEXT:isPartOfPoint dpd:article25-6 .
 
 dpd:article26-1-a a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "the data subject has given his consent unambiguously to the proposed transfer; or"^^xsd:string ;
     eli:number "a"^^xsd:string ;
     eli:title_alternative "Article26(1)(a)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article26-1 .
+    GDPRtEXT:isPartOfPoint dpd:article26-1 .
 
 dpd:article26-1-b a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "the transfer is necessary for the performance of a contract between the data subject and the controller or the implementation of precontractual measures taken in response to the data subject's request; or"^^xsd:string ;
     eli:number "b"^^xsd:string ;
     eli:title_alternative "Article26(1)(b)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article26-1 .
+    GDPRtEXT:isPartOfPoint dpd:article26-1 .
 
 dpd:article26-1-c a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "the transfer is necessary for the conclusion or performance of a contract concluded in the interest of the data subject between the controller and a third party; or"^^xsd:string ;
     eli:number "c"^^xsd:string ;
     eli:title_alternative "Article26(1)(c)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article26-1 .
+    GDPRtEXT:isPartOfPoint dpd:article26-1 .
 
 dpd:article26-1-d a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "the transfer is necessary or legally required on important public interest grounds, or for the establishment, exercise or defence of legal claims; or"^^xsd:string ;
     eli:number "d"^^xsd:string ;
     eli:title_alternative "Article26(1)(d)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article26-1 .
+    GDPRtEXT:isPartOfPoint dpd:article26-1 .
 
 dpd:article26-1-e a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "the transfer is necessary in order to protect the vital interests of the data subject; or"^^xsd:string ;
     eli:number "e"^^xsd:string ;
     eli:title_alternative "Article26(1)(e)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article26-1 .
+    GDPRtEXT:isPartOfPoint dpd:article26-1 .
 
 dpd:article26-1-f a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "the transfer is made from a register which according to laws or regulations is intended to provide information to the public and which is open to consultation either by the public in general or by any person who can demonstrate legitimate interest, to the extent that the conditions laid down in law for consultation are fulfilled in the particular case."^^xsd:string ;
     eli:number "f"^^xsd:string ;
     eli:title_alternative "Article26(1)(f)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article26-1 .
+    GDPRtEXT:isPartOfPoint dpd:article26-1 .
 
 dpd:article26-2 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Without prejudice to paragraph 1, a Member State may authorize a transfer or a set of transfers of personal data to a third country which does not ensure an adequate level of protection within the meaning of Article 25 (2), where the controller adduces adequate safeguards with respect to the protection of the privacy and fundamental rights and freedoms of individuals and as regards the exercise of the corresponding rights; such safeguards may in particular result from appropriate contractual clauses."^^xsd:string ;
     eli:number "2"^^xsd:string ;
     eli:title_alternative "Article26(2)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article26-2 ;
-    GDPRtext:isPartOfArticle dpd:article26 .
+    GDPRtEXT:hasPoint dpd:article26-2 ;
+    GDPRtEXT:isPartOfArticle dpd:article26 .
 
 dpd:article26-3-a a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "If a Member State or the Commission objects on justified grounds involving the protection of the privacy and fundamental rights and freedoms of individuals, the Commission shall take appropriate measures in accordance with the procedure laid down in Article 31 (2)."^^xsd:string ;
     eli:number "a"^^xsd:string ;
     eli:title_alternative "Article26(3)(a)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article26-3 .
+    GDPRtEXT:isPartOfPoint dpd:article26-3 .
 
 dpd:article26-3-b a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "Member States shall take the necessary measures to comply with the Commission's decision."^^xsd:string ;
     eli:number "b"^^xsd:string ;
     eli:title_alternative "Article26(3)(b)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article26-3 .
+    GDPRtEXT:isPartOfPoint dpd:article26-3 .
 
 dpd:article26-4 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Where the Commission decides, in accordance with the procedure referred to in Article 31 (2), that certain standard contractual clauses offer sufficient safeguards as required by paragraph 2, Member States shall take the necessary measures to comply with the Commission's decision."^^xsd:string ;
     eli:number "4"^^xsd:string ;
     eli:title_alternative "Article26(4)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article26-4 ;
-    GDPRtext:isPartOfArticle dpd:article26 .
+    GDPRtEXT:hasPoint dpd:article26-4 ;
+    GDPRtEXT:isPartOfArticle dpd:article26 .
 
 dpd:article27-1 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "The Member States and the Commission shall encourage the drawing up of codes of conduct intended to contribute to the proper implementation of the national provisions adopted by the Member States pursuant to this Directive, taking account of the specific features of the various sectors."^^xsd:string ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article27(1)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article27-1 ;
-    GDPRtext:isPartOfArticle dpd:article27 .
+    GDPRtEXT:hasPoint dpd:article27-1 ;
+    GDPRtEXT:isPartOfArticle dpd:article27 .
 
 dpd:article27-2-a a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "Member States shall make provision for this authority to ascertain, among other things, whether the drafts submitted to it are in accordance with the national provisions adopted pursuant to this Directive. If it sees fit, the authority shall seek the views of data subjects or their representatives."^^xsd:string ;
     eli:number "a"^^xsd:string ;
     eli:title_alternative "Article27(2)(a)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article27-2 .
+    GDPRtEXT:isPartOfPoint dpd:article27-2 .
 
 dpd:article27-3 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Draft Community codes, and amendments or extensions to existing Community codes, may be submitted to the Working Party referred to in Article 29. This Working Party shall determine, among other things, whether the drafts submitted to it are in accordance with the national provisions adopted pursuant to this Directive. If it sees fit, the authority shall seek the views of data subjects or their representatives. The Commission may ensure appropriate publicity for the codes which have been approved by the Working Party."^^xsd:string ;
     eli:number "3"^^xsd:string ;
     eli:title_alternative "Article27(3)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article27-3 ;
-    GDPRtext:isPartOfArticle dpd:article27 .
+    GDPRtEXT:hasPoint dpd:article27-3 ;
+    GDPRtEXT:isPartOfArticle dpd:article27 .
 
 dpd:article28-1-a a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "These authorities shall act with complete independence in exercising the functions entrusted to them."^^xsd:string ;
     eli:number "a"^^xsd:string ;
     eli:title_alternative "Article28(1)(a)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article28-1 .
+    GDPRtEXT:isPartOfPoint dpd:article28-1 .
 
 dpd:article28-2 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Each Member State shall provide that the supervisory authorities are consulted when drawing up administrative measures or regulations relating to the protection of individuals' rights and freedoms with regard to the processing of personal data."^^xsd:string ;
     eli:number "2"^^xsd:string ;
     eli:title_alternative "Article28(2)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article28-2 ;
-    GDPRtext:isPartOfArticle dpd:article28 .
+    GDPRtEXT:hasPoint dpd:article28-2 ;
+    GDPRtEXT:isPartOfArticle dpd:article28 .
 
 dpd:article28-3-a a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "investigative powers, such as powers of access to data forming the subject-matter of processing operations and powers to collect all the information necessary for the performance of its supervisory duties,"^^xsd:string ;
     eli:number "a"^^xsd:string ;
     eli:title_alternative "Article28(3)(a)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article28-3 .
+    GDPRtEXT:isPartOfPoint dpd:article28-3 .
 
 dpd:article28-3-b a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "effective powers of intervention, such as, for example, that of delivering opinions before processing operations are carried out, in accordance with Article 20, and ensuring appropriate publication of such opinions, of ordering the blocking, erasure or destruction of data, of imposing a temporary or definitive ban on processing, of warning or admonishing the controller, or that of referring the matter to national parliaments or other political institutions,"^^xsd:string ;
     eli:number "b"^^xsd:string ;
     eli:title_alternative "Article28(3)(b)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article28-3 .
+    GDPRtEXT:isPartOfPoint dpd:article28-3 .
 
 dpd:article28-3-c a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "the power to engage in legal proceedings where the national provisions adopted pursuant to this Directive have been violated or to bring these violations to the attention of the judicial authorities."^^xsd:string ;
     eli:number "c"^^xsd:string ;
     eli:title_alternative "Article28(3)(c)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article28-3 .
+    GDPRtEXT:isPartOfPoint dpd:article28-3 .
 
 dpd:article28-3-d a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "Decisions by the supervisory authority which give rise to complaints may be appealed against through the courts."^^xsd:string ;
     eli:number "d"^^xsd:string ;
     eli:title_alternative "Article28(3)(d)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article28-3 .
+    GDPRtEXT:isPartOfPoint dpd:article28-3 .
 
 dpd:article28-4-a a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "Each supervisory authority shall, in particular, hear claims for checks on the lawfulness of data processing lodged by any person when the national provisions adopted pursuant to Article 13 of this Directive apply. The person shall at any rate be informed that a check has taken place."^^xsd:string ;
     eli:number "a"^^xsd:string ;
     eli:title_alternative "Article28(4)(a)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article28-4 .
+    GDPRtEXT:isPartOfPoint dpd:article28-4 .
 
 dpd:article28-5 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Each supervisory authority shall draw up a report on its activities at regular intervals. The report shall be made public."^^xsd:string ;
     eli:number "5"^^xsd:string ;
     eli:title_alternative "Article28(5)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article28-5 ;
-    GDPRtext:isPartOfArticle dpd:article28 .
+    GDPRtEXT:hasPoint dpd:article28-5 ;
+    GDPRtEXT:isPartOfArticle dpd:article28 .
 
 dpd:article28-6-a a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "The supervisory authorities shall cooperate with one another to the extent necessary for the performance of their duties, in particular by exchanging all useful information."^^xsd:string ;
     eli:number "a"^^xsd:string ;
     eli:title_alternative "Article28(6)(a)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article28-6 .
+    GDPRtEXT:isPartOfPoint dpd:article28-6 .
 
 dpd:article28-7 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Member States shall provide that the members and staff of the supervisory authority, even after their employment has ended, are to be subject to a duty of professional secrecy with regard to confidential information to which they have access."^^xsd:string ;
     eli:number "7"^^xsd:string ;
     eli:title_alternative "Article28(7)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article28-7 ;
-    GDPRtext:isPartOfArticle dpd:article28 .
+    GDPRtEXT:hasPoint dpd:article28-7 ;
+    GDPRtEXT:isPartOfArticle dpd:article28 .
 
 dpd:article29-1-a a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "It shall have advisory status and act independently."^^xsd:string ;
     eli:number "a"^^xsd:string ;
     eli:title_alternative "Article29(1)(a)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article29-1 .
+    GDPRtEXT:isPartOfPoint dpd:article29-1 .
 
 dpd:article29-2-a a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "Each member of the Working Party shall be designated by the institution, authority or authorities which he represents. Where a Member State has designated more than one supervisory authority, they shall nominate a joint representative. The same shall apply to the authorities established for Community institutions and bodies."^^xsd:string ;
     eli:number "a"^^xsd:string ;
     eli:title_alternative "Article29(2)(a)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article29-2 .
+    GDPRtEXT:isPartOfPoint dpd:article29-2 .
 
 dpd:article29-3 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "The Working Party shall take decisions by a simple majority of the representatives of the supervisory authorities."^^xsd:string ;
     eli:number "3"^^xsd:string ;
     eli:title_alternative "Article29(3)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article29-3 ;
-    GDPRtext:isPartOfArticle dpd:article29 .
+    GDPRtEXT:hasPoint dpd:article29-3 ;
+    GDPRtEXT:isPartOfArticle dpd:article29 .
 
 dpd:article29-4 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "The Working Party shall elect its chairman. The chairman's term of office shall be two years. His appointment shall be renewable."^^xsd:string ;
     eli:number "4"^^xsd:string ;
     eli:title_alternative "Article29(4)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article29-4 ;
-    GDPRtext:isPartOfArticle dpd:article29 .
+    GDPRtEXT:hasPoint dpd:article29-4 ;
+    GDPRtEXT:isPartOfArticle dpd:article29 .
 
 dpd:article29-5 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "The Working Party's secretariat shall be provided by the Commission."^^xsd:string ;
     eli:number "5"^^xsd:string ;
     eli:title_alternative "Article29(5)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article29-5 ;
-    GDPRtext:isPartOfArticle dpd:article29 .
+    GDPRtEXT:hasPoint dpd:article29-5 ;
+    GDPRtEXT:isPartOfArticle dpd:article29 .
 
 dpd:article29-6 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "The Working Party shall adopt its own rules of procedure."^^xsd:string ;
     eli:number "6"^^xsd:string ;
     eli:title_alternative "Article29(6)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article29-6 ;
-    GDPRtext:isPartOfArticle dpd:article29 .
+    GDPRtEXT:hasPoint dpd:article29-6 ;
+    GDPRtEXT:isPartOfArticle dpd:article29 .
 
 dpd:article29-7 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "The Working Party shall consider items placed on its agenda by its chairman, either on his own initiative or at the request of a representative of the supervisory authorities or at the Commission's request."^^xsd:string ;
     eli:number "7"^^xsd:string ;
     eli:title_alternative "Article29(7)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article29-7 ;
-    GDPRtext:isPartOfArticle dpd:article29 .
+    GDPRtEXT:hasPoint dpd:article29-7 ;
+    GDPRtEXT:isPartOfArticle dpd:article29 .
 
 dpd:article3-1 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "This Directive shall apply to the processing of personal data wholly or partly by automatic means, and to the processing otherwise than by automatic means of personal data which form part of a filing system or are intended to form part of a filing system."^^xsd:string ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article3(1)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article3-1 ;
-    GDPRtext:isPartOfArticle dpd:article3 .
+    GDPRtEXT:hasPoint dpd:article3-1 ;
+    GDPRtEXT:isPartOfArticle dpd:article3 .
 
 dpd:article3-2-a a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "in the course of an activity which falls outside the scope of Community law, such as those provided for by Titles V and VI of the Treaty on European Union and in any case to processing operations concerning public security, defence, State security (including the economic well-being of the State when the processing operation relates to State security matters) and the activities of the State in areas of criminal law,"^^xsd:string ;
     eli:number "a"^^xsd:string ;
     eli:title_alternative "Article3(2)(a)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article3-2 .
+    GDPRtEXT:isPartOfPoint dpd:article3-2 .
 
 dpd:article3-2-b a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "by a natural person in the course of a purely personal or household activity."^^xsd:string ;
     eli:number "b"^^xsd:string ;
     eli:title_alternative "Article3(2)(b)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article3-2 .
+    GDPRtEXT:isPartOfPoint dpd:article3-2 .
 
 dpd:article30-1-a a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "examine any question covering the application of the national measures adopted under this Directive in order to contribute to the uniform application of such measures;"^^xsd:string ;
     eli:number "a"^^xsd:string ;
     eli:title_alternative "Article30(1)(a)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article30-1 .
+    GDPRtEXT:isPartOfPoint dpd:article30-1 .
 
 dpd:article30-1-b a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "give the Commission an opinion on the level of protection in the Community and in third countries;"^^xsd:string ;
     eli:number "b"^^xsd:string ;
     eli:title_alternative "Article30(1)(b)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article30-1 .
+    GDPRtEXT:isPartOfPoint dpd:article30-1 .
 
 dpd:article30-1-c a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "advise the Commission on any proposed amendment of this Directive, on any additional or specific measures to safeguard the rights and freedoms of natural persons with regard to the processing of personal data and on any other proposed Community measures affecting such rights and freedoms;"^^xsd:string ;
     eli:number "c"^^xsd:string ;
     eli:title_alternative "Article30(1)(c)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article30-1 .
+    GDPRtEXT:isPartOfPoint dpd:article30-1 .
 
 dpd:article30-1-d a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "give an opinion on codes of conduct drawn up at Community level."^^xsd:string ;
     eli:number "d"^^xsd:string ;
     eli:title_alternative "Article30(1)(d)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article30-1 .
+    GDPRtEXT:isPartOfPoint dpd:article30-1 .
 
 dpd:article30-2 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "If the Working Party finds that divergences likely to affect the equivalence of protection for persons with regard to the processing of personal data in the Community are arising between the laws or practices of Member States, it shall inform the Commission accordingly."^^xsd:string ;
     eli:number "2"^^xsd:string ;
     eli:title_alternative "Article30(2)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article30-2 ;
-    GDPRtext:isPartOfArticle dpd:article30 .
+    GDPRtEXT:hasPoint dpd:article30-2 ;
+    GDPRtEXT:isPartOfArticle dpd:article30 .
 
 dpd:article30-3 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "The Working Party may, on its own initiative, make recommendations on all matters relating to the protection of persons with regard to the processing of personal data in the Community."^^xsd:string ;
     eli:number "3"^^xsd:string ;
     eli:title_alternative "Article30(3)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article30-3 ;
-    GDPRtext:isPartOfArticle dpd:article30 .
+    GDPRtEXT:hasPoint dpd:article30-3 ;
+    GDPRtEXT:isPartOfArticle dpd:article30 .
 
 dpd:article30-4 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "The Working Party's opinions and recommendations shall be forwarded to the Commission and to the committee referred to in Article 31."^^xsd:string ;
     eli:number "4"^^xsd:string ;
     eli:title_alternative "Article30(4)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article30-4 ;
-    GDPRtext:isPartOfArticle dpd:article30 .
+    GDPRtEXT:hasPoint dpd:article30-4 ;
+    GDPRtEXT:isPartOfArticle dpd:article30 .
 
 dpd:article30-5 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "The Commission shall inform the Working Party of the action it has taken in response to its opinions and recommendations. It shall do so in a report which shall also be forwarded to the European Parliament and the Council. The report shall be made public."^^xsd:string ;
     eli:number "5"^^xsd:string ;
     eli:title_alternative "Article30(5)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article30-5 ;
-    GDPRtext:isPartOfArticle dpd:article30 .
+    GDPRtEXT:hasPoint dpd:article30-5 ;
+    GDPRtEXT:isPartOfArticle dpd:article30 .
 
 dpd:article30-6 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "The Working Party shall draw up an annual report on the situation regarding the protection of natural persons with regard to the processing of personal data in the Community and in third countries, which it shall transmit to the Commission, the European Parliament and the Council. The report shall be made public."^^xsd:string ;
     eli:number "6"^^xsd:string ;
     eli:title_alternative "Article30(6)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article30-6 ;
-    GDPRtext:isPartOfArticle dpd:article30 .
+    GDPRtEXT:hasPoint dpd:article30-6 ;
+    GDPRtEXT:isPartOfArticle dpd:article30 .
 
 dpd:article31-1 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "The Commission shall be assisted by a committee composed of the representatives of the Member States and chaired by the representative of the Commission."^^xsd:string ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article31(1)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article31-1 ;
-    GDPRtext:isPartOfArticle dpd:article31 .
+    GDPRtEXT:hasPoint dpd:article31-1 ;
+    GDPRtEXT:isPartOfArticle dpd:article31 .
 
 dpd:article31-2-a a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "The opinion shall be delivered by the majority laid down in Article 148 (2) of the Treaty. The votes of the representatives of the Member States within the committee shall be weighted in the manner set out in that Article. The chairman shall not vote."^^xsd:string ;
     eli:number "a"^^xsd:string ;
     eli:title_alternative "Article31(2)(a)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article31-2 .
+    GDPRtEXT:isPartOfPoint dpd:article31-2 .
 
 dpd:article31-2-b a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "The Commission shall adopt measures which shall apply immediately. However, if these measures are not in accordance with the opinion of the committee, they shall be communicated by the Commission to the Council forthwith. It that event:"^^xsd:string ;
     eli:number "b"^^xsd:string ;
     eli:title_alternative "Article31(2)(b)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article31-2 .
+    GDPRtEXT:isPartOfPoint dpd:article31-2 .
 
 dpd:article31-2-c a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "the Commission shall defer application of the measures which it has decided for a period of three months from the date of communication,"^^xsd:string ;
     eli:number "c"^^xsd:string ;
     eli:title_alternative "Article31(2)(c)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article31-2 .
+    GDPRtEXT:isPartOfPoint dpd:article31-2 .
 
 dpd:article31-2-d a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "the Council, acting by a qualified majority, may take a different decision within the time limit referred to in the first indent."^^xsd:string ;
     eli:number "d"^^xsd:string ;
     eli:title_alternative "Article31(2)(d)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article31-2 .
+    GDPRtEXT:isPartOfPoint dpd:article31-2 .
 
 dpd:article31-2-e a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "FINAL PROVISIONS"^^xsd:string ;
     eli:number "e"^^xsd:string ;
     eli:title_alternative "Article31(2)(e)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article31-2 .
+    GDPRtEXT:isPartOfPoint dpd:article31-2 .
 
 dpd:article32-1-a a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "When Member States adopt these measures, they shall contain a reference to this Directive or be accompanied by such reference on the occasion of their official publication. The methods of making such reference shall be laid down by the Member States."^^xsd:string ;
     eli:number "a"^^xsd:string ;
     eli:title_alternative "Article32(1)(a)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article32-1 .
+    GDPRtEXT:isPartOfPoint dpd:article32-1 .
 
 dpd:article32-2-a a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "By way of derogation from the preceding subparagraph, Member States may provide that the processing of data already held in manual filing systems on the date of entry into force of the national provisions adopted in implementation of this Directive shall be brought into conformity with Articles 6, 7 and 8 of this Directive within 12 years of the date on which it is adopted. Member States shall, however, grant the data subject the right to obtain, at his request and in particular at the time of exercising his right of access, the rectification, erasure or blocking of data which are incomplete, inaccurate or stored in a way incompatible with the legitimate purposes pursued by the controller."^^xsd:string ;
     eli:number "a"^^xsd:string ;
     eli:title_alternative "Article32(2)(a)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article32-2 .
+    GDPRtEXT:isPartOfPoint dpd:article32-2 .
 
 dpd:article32-3 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "By way of derogation from paragraph 2, Member States may provide, subject to suitable safeguards, that data kept for the sole purpose of historical research need not be brought into conformity with Articles 6, 7 and 8 of this Directive."^^xsd:string ;
     eli:number "3"^^xsd:string ;
     eli:title_alternative "Article32(3)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article32-3 ;
-    GDPRtext:isPartOfArticle dpd:article32 .
+    GDPRtEXT:hasPoint dpd:article32-3 ;
+    GDPRtEXT:isPartOfArticle dpd:article32 .
 
 dpd:article32-4 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Member States shall communicate to the Commission the text of the provisions of domestic law which they adopt in the field covered by this Directive."^^xsd:string ;
     eli:number "4"^^xsd:string ;
     eli:title_alternative "Article32(4)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article32-4 ;
-    GDPRtext:isPartOfArticle dpd:article32 .
+    GDPRtEXT:hasPoint dpd:article32-4 ;
+    GDPRtEXT:isPartOfArticle dpd:article32 .
 
 dpd:article33-1 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "The Commission shall examine, in particular, the application of this Directive to the data processing of sound and image data relating to natural persons and shall submit any appropriate proposals which prove to be necessary, taking account of developments in information technology and in the light of the state of progress in the information society."^^xsd:string ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article33(1)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article33-1 ;
-    GDPRtext:isPartOfArticle dpd:article33 .
+    GDPRtEXT:hasPoint dpd:article33-1 ;
+    GDPRtEXT:isPartOfArticle dpd:article33 .
 
 dpd:article4-1-a a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "the processing is carried out in the context of the activities of an establishment of the controller on the territory of the Member State; when the same controller is established on the territory of several Member States, he must take the necessary measures to ensure that each of these establishments complies with the obligations laid down by the national law applicable;"^^xsd:string ;
     eli:number "a"^^xsd:string ;
     eli:title_alternative "Article4(1)(a)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article4-1 .
+    GDPRtEXT:isPartOfPoint dpd:article4-1 .
 
 dpd:article4-1-b a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "the controller is not established on the Member State's territory, but in a place where its national law applies by virtue of international public law;"^^xsd:string ;
     eli:number "b"^^xsd:string ;
     eli:title_alternative "Article4(1)(b)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article4-1 .
+    GDPRtEXT:isPartOfPoint dpd:article4-1 .
 
 dpd:article4-1-c a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "the controller is not established on Community territory and, for purposes of processing personal data makes use of equipment, automated or otherwise, situated on the territory of the said Member State, unless such equipment is used only for purposes of transit through the territory of the Community."^^xsd:string ;
     eli:number "c"^^xsd:string ;
     eli:title_alternative "Article4(1)(c)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article4-1 .
+    GDPRtEXT:isPartOfPoint dpd:article4-1 .
 
 dpd:article4-2 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "In the circumstances referred to in paragraph 1 (c), the controller must designate a representative established in the territory of that Member State, without prejudice to legal actions which could be initiated against the controller himself."^^xsd:string ;
     eli:number "2"^^xsd:string ;
     eli:title_alternative "Article4(2)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article4-2 ;
-    GDPRtext:isPartOfArticle dpd:article4 .
+    GDPRtEXT:hasPoint dpd:article4-2 ;
+    GDPRtEXT:isPartOfArticle dpd:article4 .
 
 dpd:article6-1-a a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "processed fairly and lawfully;"^^xsd:string ;
     eli:number "a"^^xsd:string ;
     eli:title_alternative "Article6(1)(a)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article6-1 .
+    GDPRtEXT:isPartOfPoint dpd:article6-1 .
 
 dpd:article6-1-b a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "collected for specified, explicit and legitimate purposes and not further processed in a way incompatible with those purposes. Further processing of data for historical, statistical or scientific purposes shall not be considered as incompatible provided that Member States provide appropriate safeguards;"^^xsd:string ;
     eli:number "b"^^xsd:string ;
     eli:title_alternative "Article6(1)(b)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article6-1 .
+    GDPRtEXT:isPartOfPoint dpd:article6-1 .
 
 dpd:article6-1-c a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "adequate, relevant and not excessive in relation to the purposes for which they are collected and/or further processed;"^^xsd:string ;
     eli:number "c"^^xsd:string ;
     eli:title_alternative "Article6(1)(c)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article6-1 .
+    GDPRtEXT:isPartOfPoint dpd:article6-1 .
 
 dpd:article6-1-d a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "accurate and, where necessary, kept up to date; every reasonable step must be taken to ensure that data which are inaccurate or incomplete, having regard to the purposes for which they were collected or for which they are further processed, are erased or rectified;"^^xsd:string ;
     eli:number "d"^^xsd:string ;
     eli:title_alternative "Article6(1)(d)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article6-1 .
+    GDPRtEXT:isPartOfPoint dpd:article6-1 .
 
 dpd:article6-1-e a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "kept in a form which permits identification of data subjects for no longer than is necessary for the purposes for which the data were collected or for which they are further processed. Member States shall lay down appropriate safeguards for personal data stored for longer periods for historical, statistical or scientific use."^^xsd:string ;
     eli:number "e"^^xsd:string ;
     eli:title_alternative "Article6(1)(e)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article6-1 .
+    GDPRtEXT:isPartOfPoint dpd:article6-1 .
 
 dpd:article6-2 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "It shall be for the controller to ensure that paragraph 1 is complied with."^^xsd:string ;
     eli:number "2"^^xsd:string ;
     eli:title_alternative "Article6(2)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article6-2 ;
-    GDPRtext:isPartOfArticle dpd:article6 .
+    GDPRtEXT:hasPoint dpd:article6-2 ;
+    GDPRtEXT:isPartOfArticle dpd:article6 .
 
 dpd:article7-1-a a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "the data subject has unambiguously given his consent; or"^^xsd:string ;
     eli:number "a"^^xsd:string ;
     eli:title_alternative "Article7(1)(a)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article7-1 .
+    GDPRtEXT:isPartOfPoint dpd:article7-1 .
 
 dpd:article7-1-b a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "processing is necessary for the performance of a contract to which the data subject is party or in order to take steps at the request of the data subject prior to entering into a contract; or"^^xsd:string ;
     eli:number "b"^^xsd:string ;
     eli:title_alternative "Article7(1)(b)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article7-1 .
+    GDPRtEXT:isPartOfPoint dpd:article7-1 .
 
 dpd:article7-1-c a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "processing is necessary for compliance with a legal obligation to which the controller is subject; or"^^xsd:string ;
     eli:number "c"^^xsd:string ;
     eli:title_alternative "Article7(1)(c)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article7-1 .
+    GDPRtEXT:isPartOfPoint dpd:article7-1 .
 
 dpd:article7-1-d a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "processing is necessary in order to protect the vital interests of the data subject; or"^^xsd:string ;
     eli:number "d"^^xsd:string ;
     eli:title_alternative "Article7(1)(d)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article7-1 .
+    GDPRtEXT:isPartOfPoint dpd:article7-1 .
 
 dpd:article7-1-e a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "processing is necessary for the performance of a task carried out in the public interest or in the exercise of official authority vested in the controller or in a third party to whom the data are disclosed; or"^^xsd:string ;
     eli:number "e"^^xsd:string ;
     eli:title_alternative "Article7(1)(e)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article7-1 .
+    GDPRtEXT:isPartOfPoint dpd:article7-1 .
 
 dpd:article7-1-f a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "processing is necessary for the purposes of the legitimate interests pursued by the controller or by the third party or parties to whom the data are disclosed, except where such interests are overridden by the interests for fundamental rights and freedoms of the data subject which require protection under Article 1 (1)."^^xsd:string ;
     eli:number "f"^^xsd:string ;
     eli:title_alternative "Article7(1)(f)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article7-1 .
+    GDPRtEXT:isPartOfPoint dpd:article7-1 .
 
 dpd:article8-1 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Member States shall prohibit the processing of personal data revealing racial or ethnic origin, political opinions, religious or philosophical beliefs, trade-union membership, and the processing of data concerning health or sex life."^^xsd:string ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article8(1)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article8-1 ;
-    GDPRtext:isPartOfArticle dpd:article8 .
+    GDPRtEXT:hasPoint dpd:article8-1 ;
+    GDPRtEXT:isPartOfArticle dpd:article8 .
 
 dpd:article8-2-a a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "the data subject has given his explicit consent to the processing of those data, except where the laws of the Member State provide that the prohibition referred to in paragraph 1 may not be lifted by the data subject's giving his consent; or"^^xsd:string ;
     eli:number "a"^^xsd:string ;
     eli:title_alternative "Article8(2)(a)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article8-2 .
+    GDPRtEXT:isPartOfPoint dpd:article8-2 .
 
 dpd:article8-2-b a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "processing is necessary for the purposes of carrying out the obligations and specific rights of the controller in the field of employment law in so far as it is authorized by national law providing for adequate safeguards; or"^^xsd:string ;
     eli:number "b"^^xsd:string ;
     eli:title_alternative "Article8(2)(b)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article8-2 .
+    GDPRtEXT:isPartOfPoint dpd:article8-2 .
 
 dpd:article8-2-c a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "processing is necessary to protect the vital interests of the data subject or of another person where the data subject is physically or legally incapable of giving his consent; or"^^xsd:string ;
     eli:number "c"^^xsd:string ;
     eli:title_alternative "Article8(2)(c)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article8-2 .
+    GDPRtEXT:isPartOfPoint dpd:article8-2 .
 
 dpd:article8-2-d a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "processing is carried out in the course of its legitimate activities with appropriate guarantees by a foundation, association or any other non-profit-seeking body with a political, philosophical, religious or trade-union aim and on condition that the processing relates solely to the members of the body or to persons who have regular contact with it in connection with its purposes and that the data are not disclosed to a third party without the consent of the data subjects; or"^^xsd:string ;
     eli:number "d"^^xsd:string ;
     eli:title_alternative "Article8(2)(d)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article8-2 .
+    GDPRtEXT:isPartOfPoint dpd:article8-2 .
 
 dpd:article8-2-e a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "the processing relates to data which are manifestly made public by the data subject or is necessary for the establishment, exercise or defence of legal claims."^^xsd:string ;
     eli:number "e"^^xsd:string ;
     eli:title_alternative "Article8(2)(e)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article8-2 .
+    GDPRtEXT:isPartOfPoint dpd:article8-2 .
 
 dpd:article8-3 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Paragraph 1 shall not apply where processing of the data is required for the purposes of preventive medicine, medical diagnosis, the provision of care or treatment or the management of health-care services, and where those data are processed by a health professional subject under national law or rules established by national competent bodies to the obligation of professional secrecy or by another person also subject to an equivalent obligation of secrecy."^^xsd:string ;
     eli:number "3"^^xsd:string ;
     eli:title_alternative "Article8(3)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article8-3 ;
-    GDPRtext:isPartOfArticle dpd:article8 .
+    GDPRtEXT:hasPoint dpd:article8-3 ;
+    GDPRtEXT:isPartOfArticle dpd:article8 .
 
 dpd:article8-4 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Subject to the provision of suitable safeguards, Member States may, for reasons of substantial public interest, lay down exemptions in addition to those laid down in paragraph 2 either by national law or by decision of the supervisory authority."^^xsd:string ;
     eli:number "4"^^xsd:string ;
     eli:title_alternative "Article8(4)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article8-4 ;
-    GDPRtext:isPartOfArticle dpd:article8 .
+    GDPRtEXT:hasPoint dpd:article8-4 ;
+    GDPRtEXT:isPartOfArticle dpd:article8 .
 
 dpd:article8-5-a a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description "Member States may provide that data relating to administrative sanctions or judgements in civil cases shall also be processed under the control of official authority."^^xsd:string ;
     eli:number "a"^^xsd:string ;
     eli:title_alternative "Article8(5)(a)"^^xsd:string ;
-    GDPRtext:isPartOfPoint dpd:article8-5 .
+    GDPRtEXT:isPartOfPoint dpd:article8-5 .
 
 dpd:article8-6 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Derogations from paragraph 1 provided for in paragraphs 4 and 5 shall be notified to the Commission."^^xsd:string ;
     eli:number "6"^^xsd:string ;
     eli:title_alternative "Article8(6)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article8-6 ;
-    GDPRtext:isPartOfArticle dpd:article8 .
+    GDPRtEXT:hasPoint dpd:article8-6 ;
+    GDPRtEXT:isPartOfArticle dpd:article8 .
 
 dpd:article8-7 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Member States shall determine the conditions under which a national identification number or any other identifier of general application may be processed."^^xsd:string ;
     eli:number "7"^^xsd:string ;
     eli:title_alternative "Article8(7)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article8-7 ;
-    GDPRtext:isPartOfArticle dpd:article8 .
+    GDPRtEXT:hasPoint dpd:article8-7 ;
+    GDPRtEXT:isPartOfArticle dpd:article8 .
 
 dpd:article9-1 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Member States shall provide for exemptions or derogations from the provisions of this Chapter, Chapter IV and Chapter VI for the processing of personal data carried out solely for journalistic purposes or the purpose of artistic or literary expression only if they are necessary to reconcile the right to privacy with the rules governing freedom of expression."^^xsd:string ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article9(1)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article9-1 ;
-    GDPRtext:isPartOfArticle dpd:article9 .
+    GDPRtEXT:hasPoint dpd:article9-1 ;
+    GDPRtEXT:isPartOfArticle dpd:article9 .
 
 dpd:description a eli:LRS ;
     eli:cites dpd:citation1,
@@ -1165,758 +1165,758 @@ dpd:description a eli:LRS ;
     dcterms:description "DIRECTIVE 95/46/EC OF THE EUROPEAN PARLIAMENT AND OF THE COUNCILof 24 October 1995on the protection of individuals with regard to the processing of personal data and on the free movement of such dataTHE EUROPEAN PARLIAMENT AND THE COUNCIL OF THE EUROPEAN UNION,Having regard to the Treaty establishing the European Community, and inparticular Article 100a thereof,Having regard to the proposal from the Commission (1),Having regard to the opinion of the Economic and Social Committee (2),Acting in accordance with the procedure referred to in Article 189b of the Treaty (3),"^^xsd:string .
 
 dpd:article17-1 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Member States shall provide that the controller must implement appropriate technical and organizational measures to protect personal data against accidental or unlawful destruction or accidental loss, alteration, unauthorized disclosure or access, in particular where the processing involves the transmission of data over a network, and against all other unlawful forms of processing."^^xsd:string ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article17(1)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article17-1 ;
-    GDPRtext:hasSubPoint dpd:article17-1-a ;
-    GDPRtext:isPartOfArticle dpd:article17 .
+    GDPRtEXT:hasPoint dpd:article17-1 ;
+    GDPRtEXT:hasSubPoint dpd:article17-1-a ;
+    GDPRtEXT:isPartOfArticle dpd:article17 .
 
 dpd:article21-3 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Member States shall provide, in relation to processing operations not subject to notification, that controllers or another body appointed by the Member States make available at least the information referred to in Article 19 (1) (a) to (e) in an appropriate form to any person on request."^^xsd:string ;
     eli:number "3"^^xsd:string ;
     eli:title_alternative "Article21(3)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article21-3 ;
-    GDPRtext:hasSubPoint dpd:article21-3-a ;
-    GDPRtext:isPartOfArticle dpd:article21 .
+    GDPRtEXT:hasPoint dpd:article21-3 ;
+    GDPRtEXT:hasSubPoint dpd:article21-3-a ;
+    GDPRtEXT:isPartOfArticle dpd:article21 .
 
 dpd:article25-6 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "The Commission may find, in accordance with the procedure referred to in Article 31 (2), that a third country ensures an adequate level of protection within the meaning of paragraph 2 of this Article, by reason of its domestic law or of the international commitments it has entered into, particularly upon conclusion of the negotiations referred to in paragraph 5, for the protection of the private lives and basic freedoms and rights of individuals."^^xsd:string ;
     eli:number "6"^^xsd:string ;
     eli:title_alternative "Article25(6)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article25-6 ;
-    GDPRtext:hasSubPoint dpd:article25-6-a ;
-    GDPRtext:isPartOfArticle dpd:article25 .
+    GDPRtEXT:hasPoint dpd:article25-6 ;
+    GDPRtEXT:hasSubPoint dpd:article25-6-a ;
+    GDPRtEXT:isPartOfArticle dpd:article25 .
 
 dpd:article27-2 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Member States shall make provision for trade associations and other bodies representing other categories of controllers which have drawn up draft national codes or which have the intention of amending or extending existing national codes to be able to submit them to the opinion of the national authority."^^xsd:string ;
     eli:number "2"^^xsd:string ;
     eli:title_alternative "Article27(2)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article27-2 ;
-    GDPRtext:hasSubPoint dpd:article27-2-a ;
-    GDPRtext:isPartOfArticle dpd:article27 .
+    GDPRtEXT:hasPoint dpd:article27-2 ;
+    GDPRtEXT:hasSubPoint dpd:article27-2-a ;
+    GDPRtEXT:isPartOfArticle dpd:article27 .
 
 dpd:article28-1 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Each Member State shall provide that one or more public authorities are responsible for monitoring the application within its territory of the provisions adopted by the Member States pursuant to this Directive."^^xsd:string ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article28(1)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article28-1 ;
-    GDPRtext:hasSubPoint dpd:article28-1-a ;
-    GDPRtext:isPartOfArticle dpd:article28 .
+    GDPRtEXT:hasPoint dpd:article28-1 ;
+    GDPRtEXT:hasSubPoint dpd:article28-1-a ;
+    GDPRtEXT:isPartOfArticle dpd:article28 .
 
 dpd:article28-4 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Each supervisory authority shall hear claims lodged by any person, or by an association representing that person, concerning the protection of his rights and freedoms in regard to the processing of personal data. The person concerned shall be informed of the outcome of the claim."^^xsd:string ;
     eli:number "4"^^xsd:string ;
     eli:title_alternative "Article28(4)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article28-4 ;
-    GDPRtext:hasSubPoint dpd:article28-4-a ;
-    GDPRtext:isPartOfArticle dpd:article28 .
+    GDPRtEXT:hasPoint dpd:article28-4 ;
+    GDPRtEXT:hasSubPoint dpd:article28-4-a ;
+    GDPRtEXT:isPartOfArticle dpd:article28 .
 
 dpd:article28-6 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Each supervisory authority is competent, whatever the national law applicable to the processing in question, to exercise, on the territory of its own Member State, the powers conferred on it in accordance with paragraph 3. Each authority may be requested to exercise its powers by an authority of another Member State."^^xsd:string ;
     eli:number "6"^^xsd:string ;
     eli:title_alternative "Article28(6)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article28-6 ;
-    GDPRtext:hasSubPoint dpd:article28-6-a ;
-    GDPRtext:isPartOfArticle dpd:article28 .
+    GDPRtEXT:hasPoint dpd:article28-6 ;
+    GDPRtEXT:hasSubPoint dpd:article28-6-a ;
+    GDPRtEXT:isPartOfArticle dpd:article28 .
 
 dpd:article29-1 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "A Working Party on the Protection of Individuals with regard to the Processing of Personal Data, hereinafter referred to as 'the Working Party', is hereby set up."^^xsd:string ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article29(1)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article29-1 ;
-    GDPRtext:hasSubPoint dpd:article29-1-a ;
-    GDPRtext:isPartOfArticle dpd:article29 .
+    GDPRtEXT:hasPoint dpd:article29-1 ;
+    GDPRtEXT:hasSubPoint dpd:article29-1-a ;
+    GDPRtEXT:isPartOfArticle dpd:article29 .
 
 dpd:article29-2 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "The Working Party shall be composed of a representative of the supervisory authority or authorities designated by each Member State and of a representative of the authority or authorities established for the Community institutions and bodies, and of a representative of the Commission."^^xsd:string ;
     eli:number "2"^^xsd:string ;
     eli:title_alternative "Article29(2)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article29-2 ;
-    GDPRtext:hasSubPoint dpd:article29-2-a ;
-    GDPRtext:isPartOfArticle dpd:article29 .
+    GDPRtEXT:hasPoint dpd:article29-2 ;
+    GDPRtEXT:hasSubPoint dpd:article29-2-a ;
+    GDPRtEXT:isPartOfArticle dpd:article29 .
 
 dpd:article32-1 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Member States shall bring into force the laws, regulations and administrative provisions necessary to comply with this Directive at the latest at the end of a period of three years from the date of its adoption."^^xsd:string ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article32(1)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article32-1 ;
-    GDPRtext:hasSubPoint dpd:article32-1-a ;
-    GDPRtext:isPartOfArticle dpd:article32 .
+    GDPRtEXT:hasPoint dpd:article32-1 ;
+    GDPRtEXT:hasSubPoint dpd:article32-1-a ;
+    GDPRtEXT:isPartOfArticle dpd:article32 .
 
 dpd:article32-2 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Member States shall ensure that processing already under way on the date the national provisions adopted pursuant to this Directive enter into force, is brought into conformity with these provisions within three years of this date."^^xsd:string ;
     eli:number "2"^^xsd:string ;
     eli:title_alternative "Article32(2)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article32-2 ;
-    GDPRtext:hasSubPoint dpd:article32-2-a ;
-    GDPRtext:isPartOfArticle dpd:article32 .
+    GDPRtEXT:hasPoint dpd:article32-2 ;
+    GDPRtEXT:hasSubPoint dpd:article32-2-a ;
+    GDPRtEXT:isPartOfArticle dpd:article32 .
 
 dpd:article34 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
+        GDPRtEXT:Article ;
     eli:is_part_of dpd:chapterVII ;
     eli:number "34"^^xsd:string ;
     eli:title "This Directive is addressed to the Member States."^^xsd:string ;
     eli:title_alternative "Article 34"^^xsd:string ;
-    GDPRtext:isPartOfChapter dpd:chapterVII .
+    GDPRtEXT:isPartOfChapter dpd:chapterVII .
 
 dpd:article5 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
+        GDPRtEXT:Article ;
     eli:is_part_of dpd:chapterII ;
     eli:number "5"^^xsd:string ;
     eli:title "Member States shall, within the limits of the provisions of this Chapter, determine more precisely the conditions under which the processing of personal data is lawful."^^xsd:string ;
     eli:title_alternative "Article 5"^^xsd:string ;
-    GDPRtext:isPartOfChapter dpd:chapterII .
+    GDPRtEXT:isPartOfChapter dpd:chapterII .
 
 dpd:article8-5 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Processing of data relating to offences, criminal convictions or security measures may be carried out only under the control of official authority, or if suitable specific safeguards are provided under national law, subject to derogations which may be granted by the Member State under national provisions providing suitable specific safeguards. However, a complete register of criminal convictions may be kept only under the control of official authority."^^xsd:string ;
     eli:number "5"^^xsd:string ;
     eli:title_alternative "Article8(5)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article8-5 ;
-    GDPRtext:hasSubPoint dpd:article8-5-a ;
-    GDPRtext:isPartOfArticle dpd:article8 .
+    GDPRtEXT:hasPoint dpd:article8-5 ;
+    GDPRtEXT:hasSubPoint dpd:article8-5-a ;
+    GDPRtEXT:isPartOfArticle dpd:article8 .
 
 dpd:article14-1 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Member States shall grant the data subject the right:"^^xsd:string ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article14(1)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article14-1 ;
-    GDPRtext:hasSubPoint dpd:article14-1-a,
+    GDPRtEXT:hasPoint dpd:article14-1 ;
+    GDPRtEXT:hasSubPoint dpd:article14-1-a,
         dpd:article14-1-b ;
-    GDPRtext:isPartOfArticle dpd:article14 .
+    GDPRtEXT:isPartOfArticle dpd:article14 .
 
 dpd:article15-2 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Subject to the other Articles of this Directive, Member States shall provide that a person may be subjected to a decision of the kind referred to in paragraph 1 if that decision:"^^xsd:string ;
     eli:number "2"^^xsd:string ;
     eli:title_alternative "Article15(2)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article15-2 ;
-    GDPRtext:hasSubPoint dpd:article15-2-a,
+    GDPRtEXT:hasPoint dpd:article15-2 ;
+    GDPRtEXT:hasSubPoint dpd:article15-2-a,
         dpd:article15-2-b ;
-    GDPRtext:isPartOfArticle dpd:article15 .
+    GDPRtEXT:isPartOfArticle dpd:article15 .
 
 dpd:article17-3 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "The carrying out of processing by way of a processor must be governed by a contract or legal act binding the processor to the controller and stipulating in particular that:"^^xsd:string ;
     eli:number "3"^^xsd:string ;
     eli:title_alternative "Article17(3)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article17-3 ;
-    GDPRtext:hasSubPoint dpd:article17-3-a,
+    GDPRtEXT:hasPoint dpd:article17-3 ;
+    GDPRtEXT:hasSubPoint dpd:article17-3-a,
         dpd:article17-3-b ;
-    GDPRtext:isPartOfArticle dpd:article17 .
+    GDPRtEXT:isPartOfArticle dpd:article17 .
 
 dpd:article2 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
+        GDPRtEXT:Article ;
     eli:is_part_of dpd:chapterI ;
     eli:number "2"^^xsd:string ;
     eli:title "Definitions"^^xsd:string ;
     eli:title_alternative "Article 2"^^xsd:string ;
-    GDPRtext:isPartOfChapter dpd:chapterI .
+    GDPRtEXT:isPartOfChapter dpd:chapterI .
 
 dpd:article21-2 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Member States shall provide that a register of processing operations notified in accordance with Article 18 shall be kept by the supervisory authority."^^xsd:string ;
     eli:number "2"^^xsd:string ;
     eli:title_alternative "Article21(2)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article21-2 ;
-    GDPRtext:hasSubPoint dpd:article21-2-a,
+    GDPRtEXT:hasPoint dpd:article21-2 ;
+    GDPRtEXT:hasSubPoint dpd:article21-2-a,
         dpd:article21-2-b ;
-    GDPRtext:isPartOfArticle dpd:article21 .
+    GDPRtEXT:isPartOfArticle dpd:article21 .
 
 dpd:article22 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
+        GDPRtEXT:Article ;
     eli:is_part_of dpd:chapterIII ;
     eli:number "22"^^xsd:string ;
     eli:title "Remedies"^^xsd:string ;
     eli:title_alternative "Article 22"^^xsd:string ;
-    GDPRtext:isPartOfChapter dpd:chapterIII .
+    GDPRtEXT:isPartOfChapter dpd:chapterIII .
 
 dpd:article24 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
+        GDPRtEXT:Article ;
     eli:is_part_of dpd:chapterIII ;
     eli:number "24"^^xsd:string ;
     eli:title "Sanctions"^^xsd:string ;
     eli:title_alternative "Article 24"^^xsd:string ;
-    GDPRtext:isPartOfChapter dpd:chapterIII .
+    GDPRtEXT:isPartOfChapter dpd:chapterIII .
 
 dpd:article26-3 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "The Member State shall inform the Commission and the other Member States of the authorizations it grants pursuant to paragraph 2."^^xsd:string ;
     eli:number "3"^^xsd:string ;
     eli:title_alternative "Article26(3)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article26-3 ;
-    GDPRtext:hasSubPoint dpd:article26-3-a,
+    GDPRtEXT:hasPoint dpd:article26-3 ;
+    GDPRtEXT:hasSubPoint dpd:article26-3-a,
         dpd:article26-3-b ;
-    GDPRtext:isPartOfArticle dpd:article26 .
+    GDPRtEXT:isPartOfArticle dpd:article26 .
 
 dpd:article3-2 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "This Directive shall not apply to the processing of personal data:"^^xsd:string ;
     eli:number "2"^^xsd:string ;
     eli:title_alternative "Article3(2)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article3-2 ;
-    GDPRtext:hasSubPoint dpd:article3-2-a,
+    GDPRtEXT:hasPoint dpd:article3-2 ;
+    GDPRtEXT:hasSubPoint dpd:article3-2-a,
         dpd:article3-2-b ;
-    GDPRtext:isPartOfArticle dpd:article3 .
+    GDPRtEXT:isPartOfArticle dpd:article3 .
 
 dpd:article33 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
+        GDPRtEXT:Article ;
     eli:is_part_of dpd:chapterVII ;
     eli:number "33"^^xsd:string ;
     eli:title "The Commission shall report to the Council and the European Parliament at regular intervals, starting not later than three years after the date referred to in Article 32 (1), on the implementation of this Directive, attaching to its report, if necessary, suitable proposals for amendments. The report shall be made public."^^xsd:string ;
     eli:title_alternative "Article 33"^^xsd:string ;
-    GDPRtext:isPartOfChapter dpd:chapterVII .
+    GDPRtEXT:isPartOfChapter dpd:chapterVII .
 
 dpd:chapterII-I a eli:LegalResourceSubdivision,
-        GDPRtext:Section ;
+        GDPRtEXT:Section ;
     eli:is_part_of dpd:DPD,
         dpd:chapterII ;
     eli:number "I"^^xsd:string ;
     eli:title "PRINCIPLES RELATING TO DATA QUALITY"^^xsd:string ;
     eli:title_alternative "Section I"^^xsd:string ;
-    GDPRtext:hasArticle dpd:article6 ;
-    GDPRtext:isPartOfChapter dpd:chapterII .
+    GDPRtEXT:hasArticle dpd:article6 ;
+    GDPRtEXT:isPartOfChapter dpd:chapterII .
 
 dpd:chapterII-II a eli:LegalResourceSubdivision,
-        GDPRtext:Section ;
+        GDPRtEXT:Section ;
     eli:is_part_of dpd:DPD,
         dpd:chapterII ;
     eli:number "II"^^xsd:string ;
     eli:title "CRITERIA FOR MAKING DATA PROCESSING LEGITIMATE"^^xsd:string ;
     eli:title_alternative "Section II"^^xsd:string ;
-    GDPRtext:hasArticle dpd:article7 ;
-    GDPRtext:isPartOfChapter dpd:chapterII .
+    GDPRtEXT:hasArticle dpd:article7 ;
+    GDPRtEXT:isPartOfChapter dpd:chapterII .
 
 dpd:chapterII-V a eli:LegalResourceSubdivision,
-        GDPRtext:Section ;
+        GDPRtEXT:Section ;
     eli:is_part_of dpd:DPD,
         dpd:chapterII ;
     eli:number "V"^^xsd:string ;
     eli:title "THE DATA SUBJECT'S RIGHT OF ACCESS TO DATA"^^xsd:string ;
     eli:title_alternative "Section V"^^xsd:string ;
-    GDPRtext:hasArticle dpd:article12 ;
-    GDPRtext:isPartOfChapter dpd:chapterII .
+    GDPRtEXT:hasArticle dpd:article12 ;
+    GDPRtEXT:isPartOfChapter dpd:chapterII .
 
 dpd:chapterII-VI a eli:LegalResourceSubdivision,
-        GDPRtext:Section ;
+        GDPRtEXT:Section ;
     eli:is_part_of dpd:DPD,
         dpd:chapterII ;
     eli:number "VI"^^xsd:string ;
     eli:title "EXEMPTIONS AND RESTRICTIONS"^^xsd:string ;
     eli:title_alternative "Section VI"^^xsd:string ;
-    GDPRtext:hasArticle dpd:article13 ;
-    GDPRtext:isPartOfChapter dpd:chapterII .
+    GDPRtEXT:hasArticle dpd:article13 ;
+    GDPRtEXT:isPartOfChapter dpd:chapterII .
 
 dpd:chapterV a eli:LegalResourceSubdivision,
-        GDPRtext:Chapter ;
+        GDPRtEXT:Chapter ;
     eli:is_part_of dpd:DPD ;
     eli:number "V"^^xsd:string ;
     eli:title "CODES OF CONDUCT"^^xsd:string ;
     eli:title_alternative "Chapter V"^^xsd:string ;
-    GDPRtext:hasArticle dpd:article27 .
+    GDPRtEXT:hasArticle dpd:article27 .
 
 dpd:article1 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
+        GDPRtEXT:Article ;
     eli:is_part_of dpd:chapterI ;
     eli:number "1"^^xsd:string ;
     eli:title "Object of the Directive"^^xsd:string ;
     eli:title_alternative "Article 1"^^xsd:string ;
-    GDPRtext:isPartOfChapter dpd:chapterI .
+    GDPRtEXT:isPartOfChapter dpd:chapterI .
 
 dpd:article10 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
+        GDPRtEXT:Article ;
     eli:is_part_of dpd:chapterII,
         dpd:chapterII-IV ;
     eli:number "10"^^xsd:string ;
     eli:title "Information in cases of collection of data from the data subject"^^xsd:string ;
     eli:title_alternative "Article 10"^^xsd:string ;
-    GDPRtext:isPartOfChapter dpd:chapterII ;
-    GDPRtext:isPartOfSection dpd:chapterII-IV .
+    GDPRtEXT:isPartOfChapter dpd:chapterII ;
+    GDPRtEXT:isPartOfSection dpd:chapterII-IV .
 
 dpd:article12 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
+        GDPRtEXT:Article ;
     eli:is_part_of dpd:chapterII,
         dpd:chapterII-V ;
     eli:number "12"^^xsd:string ;
     eli:title "Right of access"^^xsd:string ;
     eli:title_alternative "Article 12"^^xsd:string ;
-    GDPRtext:isPartOfChapter dpd:chapterII ;
-    GDPRtext:isPartOfSection dpd:chapterII-V .
+    GDPRtEXT:isPartOfChapter dpd:chapterII ;
+    GDPRtEXT:isPartOfSection dpd:chapterII-V .
 
 dpd:article12-1 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Member States shall guarantee every data subject the right to obtain from the controller:"^^xsd:string ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article12(1)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article12-1 ;
-    GDPRtext:hasSubPoint dpd:article12-1-a,
+    GDPRtEXT:hasPoint dpd:article12-1 ;
+    GDPRtEXT:hasSubPoint dpd:article12-1-a,
         dpd:article12-1-b,
         dpd:article12-1-c ;
-    GDPRtext:isPartOfArticle dpd:article12 .
+    GDPRtEXT:isPartOfArticle dpd:article12 .
 
 dpd:article14 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
+        GDPRtEXT:Article ;
     eli:is_part_of dpd:chapterII,
         dpd:chapterII-VII ;
     eli:number "14"^^xsd:string ;
     eli:title "The data subject's right to object"^^xsd:string ;
     eli:title_alternative "Article 14"^^xsd:string ;
-    GDPRtext:isPartOfChapter dpd:chapterII ;
-    GDPRtext:isPartOfSection dpd:chapterII-VII .
+    GDPRtEXT:isPartOfChapter dpd:chapterII ;
+    GDPRtEXT:isPartOfSection dpd:chapterII-VII .
 
 dpd:article16 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
+        GDPRtEXT:Article ;
     eli:is_part_of dpd:chapterII,
         dpd:chapterII-VIII ;
     eli:number "16"^^xsd:string ;
     eli:title "Confidentiality of processing"^^xsd:string ;
     eli:title_alternative "Article 16"^^xsd:string ;
-    GDPRtext:isPartOfChapter dpd:chapterII ;
-    GDPRtext:isPartOfSection dpd:chapterII-VIII .
+    GDPRtEXT:isPartOfChapter dpd:chapterII ;
+    GDPRtEXT:isPartOfSection dpd:chapterII-VIII .
 
 dpd:article23 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
+        GDPRtEXT:Article ;
     eli:is_part_of dpd:chapterIII ;
     eli:number "23"^^xsd:string ;
     eli:title "Liability"^^xsd:string ;
     eli:title_alternative "Article 23"^^xsd:string ;
-    GDPRtext:isPartOfChapter dpd:chapterIII .
+    GDPRtEXT:isPartOfChapter dpd:chapterIII .
 
 dpd:article3 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
+        GDPRtEXT:Article ;
     eli:is_part_of dpd:chapterI ;
     eli:number "3"^^xsd:string ;
     eli:title "Scope"^^xsd:string ;
     eli:title_alternative "Article 3"^^xsd:string ;
-    GDPRtext:isPartOfChapter dpd:chapterI .
+    GDPRtEXT:isPartOfChapter dpd:chapterI .
 
 dpd:article31 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
+        GDPRtEXT:Article ;
     eli:is_part_of dpd:chapterVII ;
     eli:number "31"^^xsd:string ;
     eli:title "The Committee"^^xsd:string ;
     eli:title_alternative "Article 31"^^xsd:string ;
-    GDPRtext:isPartOfChapter dpd:chapterVII .
+    GDPRtEXT:isPartOfChapter dpd:chapterVII .
 
 dpd:article4 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
+        GDPRtEXT:Article ;
     eli:is_part_of dpd:chapterI ;
     eli:number "4"^^xsd:string ;
     eli:title "National law applicable"^^xsd:string ;
     eli:title_alternative "Article 4"^^xsd:string ;
-    GDPRtext:isPartOfChapter dpd:chapterI .
+    GDPRtEXT:isPartOfChapter dpd:chapterI .
 
 dpd:article4-1 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Each Member State shall apply the national provisions it adopts pursuant to this Directive to the processing of personal data where:"^^xsd:string ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article4(1)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article4-1 ;
-    GDPRtext:hasSubPoint dpd:article4-1-a,
+    GDPRtEXT:hasPoint dpd:article4-1 ;
+    GDPRtEXT:hasSubPoint dpd:article4-1-a,
         dpd:article4-1-b,
         dpd:article4-1-c ;
-    GDPRtext:isPartOfArticle dpd:article4 .
+    GDPRtEXT:isPartOfArticle dpd:article4 .
 
 dpd:article7 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
+        GDPRtEXT:Article ;
     eli:is_part_of dpd:chapterII,
         dpd:chapterII-II ;
     eli:number "7"^^xsd:string ;
     eli:title ""^^xsd:string ;
     eli:title_alternative "Article 7"^^xsd:string ;
-    GDPRtext:isPartOfChapter dpd:chapterII ;
-    GDPRtext:isPartOfSection dpd:chapterII-II .
+    GDPRtEXT:isPartOfChapter dpd:chapterII ;
+    GDPRtEXT:isPartOfSection dpd:chapterII-II .
 
 dpd:article9 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
+        GDPRtEXT:Article ;
     eli:is_part_of dpd:chapterII,
         dpd:chapterII-III ;
     eli:number "9"^^xsd:string ;
     eli:title "Processing of personal data and freedom of expression"^^xsd:string ;
     eli:title_alternative "Article 9"^^xsd:string ;
-    GDPRtext:isPartOfChapter dpd:chapterII ;
-    GDPRtext:isPartOfSection dpd:chapterII-III .
+    GDPRtEXT:isPartOfChapter dpd:chapterII ;
+    GDPRtEXT:isPartOfSection dpd:chapterII-III .
 
 dpd:article10-1 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Member States shall provide that the controller or his representative must provide a data subject from whom data relating to himself are collected with at least the following information, except where he already has it:"^^xsd:string ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article10(1)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article10-1 ;
-    GDPRtext:hasSubPoint dpd:article10-1-a,
+    GDPRtEXT:hasPoint dpd:article10-1 ;
+    GDPRtEXT:hasSubPoint dpd:article10-1-a,
         dpd:article10-1-b,
         dpd:article10-1-c,
         dpd:article10-1-d ;
-    GDPRtext:isPartOfArticle dpd:article10 .
+    GDPRtEXT:isPartOfArticle dpd:article10 .
 
 dpd:article11 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
+        GDPRtEXT:Article ;
     eli:is_part_of dpd:chapterII,
         dpd:chapterII-IV ;
     eli:number "11"^^xsd:string ;
     eli:title "Information where the data have not been obtained from the data subject"^^xsd:string ;
     eli:title_alternative "Article 11"^^xsd:string ;
-    GDPRtext:isPartOfChapter dpd:chapterII ;
-    GDPRtext:isPartOfSection dpd:chapterII-IV .
+    GDPRtEXT:isPartOfChapter dpd:chapterII ;
+    GDPRtEXT:isPartOfSection dpd:chapterII-IV .
 
 dpd:article11-1 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Where the data have not been obtained from the data subject, Member States shall provide that the controller or his representative must at the time of undertaking the recording of personal data or if a disclosure to a third party is envisaged, no later than the time when the data are first disclosed provide the data subject with at least the following information, except where he already has it:"^^xsd:string ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article11(1)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article11-1 ;
-    GDPRtext:hasSubPoint dpd:article11-1-a,
+    GDPRtEXT:hasPoint dpd:article11-1 ;
+    GDPRtEXT:hasSubPoint dpd:article11-1-a,
         dpd:article11-1-b,
         dpd:article11-1-c,
         dpd:article11-1-d ;
-    GDPRtext:isPartOfArticle dpd:article11 .
+    GDPRtEXT:isPartOfArticle dpd:article11 .
 
 dpd:article13 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
+        GDPRtEXT:Article ;
     eli:is_part_of dpd:chapterII,
         dpd:chapterII-VI ;
     eli:number "13"^^xsd:string ;
     eli:title "Exemptions and restrictions"^^xsd:string ;
     eli:title_alternative "Article 13"^^xsd:string ;
-    GDPRtext:isPartOfChapter dpd:chapterII ;
-    GDPRtext:isPartOfSection dpd:chapterII-VI .
+    GDPRtEXT:isPartOfChapter dpd:chapterII ;
+    GDPRtEXT:isPartOfSection dpd:chapterII-VI .
 
 dpd:article15 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
+        GDPRtEXT:Article ;
     eli:is_part_of dpd:chapterII,
         dpd:chapterII-VII ;
     eli:number "15"^^xsd:string ;
     eli:title "Automated individual decisions"^^xsd:string ;
     eli:title_alternative "Article 15"^^xsd:string ;
-    GDPRtext:isPartOfChapter dpd:chapterII ;
-    GDPRtext:isPartOfSection dpd:chapterII-VII .
+    GDPRtEXT:isPartOfChapter dpd:chapterII ;
+    GDPRtEXT:isPartOfSection dpd:chapterII-VII .
 
 dpd:article19 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
+        GDPRtEXT:Article ;
     eli:is_part_of dpd:chapterII,
         dpd:chapterII-IX ;
     eli:number "19"^^xsd:string ;
     eli:title "Contents of notification"^^xsd:string ;
     eli:title_alternative "Article 19"^^xsd:string ;
-    GDPRtext:isPartOfChapter dpd:chapterII ;
-    GDPRtext:isPartOfSection dpd:chapterII-IX .
+    GDPRtEXT:isPartOfChapter dpd:chapterII ;
+    GDPRtEXT:isPartOfSection dpd:chapterII-IX .
 
 dpd:article27 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
+        GDPRtEXT:Article ;
     eli:is_part_of dpd:chapterV ;
     eli:number "27"^^xsd:string ;
     eli:title ""^^xsd:string ;
     eli:title_alternative "Article 27"^^xsd:string ;
-    GDPRtext:isPartOfChapter dpd:chapterV .
+    GDPRtEXT:isPartOfChapter dpd:chapterV .
 
 dpd:article28-3 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Each authority shall in particular be endowed with:"^^xsd:string ;
     eli:number "3"^^xsd:string ;
     eli:title_alternative "Article28(3)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article28-3 ;
-    GDPRtext:hasSubPoint dpd:article28-3-a,
+    GDPRtEXT:hasPoint dpd:article28-3 ;
+    GDPRtEXT:hasSubPoint dpd:article28-3-a,
         dpd:article28-3-b,
         dpd:article28-3-c,
         dpd:article28-3-d ;
-    GDPRtext:isPartOfArticle dpd:article28 .
+    GDPRtEXT:isPartOfArticle dpd:article28 .
 
 dpd:article30-1 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "The Working Party shall:"^^xsd:string ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article30(1)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article30-1 ;
-    GDPRtext:hasSubPoint dpd:article30-1-a,
+    GDPRtEXT:hasPoint dpd:article30-1 ;
+    GDPRtEXT:hasSubPoint dpd:article30-1-a,
         dpd:article30-1-b,
         dpd:article30-1-c,
         dpd:article30-1-d ;
-    GDPRtext:isPartOfArticle dpd:article30 .
+    GDPRtEXT:isPartOfArticle dpd:article30 .
 
 dpd:article6 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
+        GDPRtEXT:Article ;
     eli:is_part_of dpd:chapterII,
         dpd:chapterII-I ;
     eli:number "6"^^xsd:string ;
     eli:title ""^^xsd:string ;
     eli:title_alternative "Article 6"^^xsd:string ;
-    GDPRtext:isPartOfChapter dpd:chapterII ;
-    GDPRtext:isPartOfSection dpd:chapterII-I .
+    GDPRtEXT:isPartOfChapter dpd:chapterII ;
+    GDPRtEXT:isPartOfSection dpd:chapterII-I .
 
 dpd:chapterII-III a eli:LegalResourceSubdivision,
-        GDPRtext:Section ;
+        GDPRtEXT:Section ;
     eli:is_part_of dpd:DPD,
         dpd:chapterII ;
     eli:number "III"^^xsd:string ;
     eli:title "SPECIAL CATEGORIES OF PROCESSING"^^xsd:string ;
     eli:title_alternative "Section III"^^xsd:string ;
-    GDPRtext:hasArticle dpd:article8,
+    GDPRtEXT:hasArticle dpd:article8,
         dpd:article9 ;
-    GDPRtext:isPartOfChapter dpd:chapterII .
+    GDPRtEXT:isPartOfChapter dpd:chapterII .
 
 dpd:chapterII-IV a eli:LegalResourceSubdivision,
-        GDPRtext:Section ;
+        GDPRtEXT:Section ;
     eli:is_part_of dpd:DPD,
         dpd:chapterII ;
     eli:number "IV"^^xsd:string ;
     eli:title "INFORMATION TO BE GIVEN TO THE DATA SUBJECT"^^xsd:string ;
     eli:title_alternative "Section IV"^^xsd:string ;
-    GDPRtext:hasArticle dpd:article10,
+    GDPRtEXT:hasArticle dpd:article10,
         dpd:article11 ;
-    GDPRtext:isPartOfChapter dpd:chapterII .
+    GDPRtEXT:isPartOfChapter dpd:chapterII .
 
 dpd:chapterII-VII a eli:LegalResourceSubdivision,
-        GDPRtext:Section ;
+        GDPRtEXT:Section ;
     eli:is_part_of dpd:DPD,
         dpd:chapterII ;
     eli:number "VII"^^xsd:string ;
     eli:title "THE DATA SUBJECT'S RIGHT TO OBJECT"^^xsd:string ;
     eli:title_alternative "Section VII"^^xsd:string ;
-    GDPRtext:hasArticle dpd:article14,
+    GDPRtEXT:hasArticle dpd:article14,
         dpd:article15 ;
-    GDPRtext:isPartOfChapter dpd:chapterII .
+    GDPRtEXT:isPartOfChapter dpd:chapterII .
 
 dpd:chapterII-VIII a eli:LegalResourceSubdivision,
-        GDPRtext:Section ;
+        GDPRtEXT:Section ;
     eli:is_part_of dpd:DPD,
         dpd:chapterII ;
     eli:number "VIII"^^xsd:string ;
     eli:title "CONFIDENTIALITY AND SECURITY OF PROCESSING"^^xsd:string ;
     eli:title_alternative "Section VIII"^^xsd:string ;
-    GDPRtext:hasArticle dpd:article16,
+    GDPRtEXT:hasArticle dpd:article16,
         dpd:article17 ;
-    GDPRtext:isPartOfChapter dpd:chapterII .
+    GDPRtEXT:isPartOfChapter dpd:chapterII .
 
 dpd:chapterIV a eli:LegalResourceSubdivision,
-        GDPRtext:Chapter ;
+        GDPRtEXT:Chapter ;
     eli:is_part_of dpd:DPD ;
     eli:number "IV"^^xsd:string ;
     eli:title "TRANSFER OF PERSONAL DATA TO THIRD COUNTRIES"^^xsd:string ;
     eli:title_alternative "Chapter IV"^^xsd:string ;
-    GDPRtext:hasArticle dpd:article25,
+    GDPRtEXT:hasArticle dpd:article25,
         dpd:article26 .
 
 dpd:article18-2 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Member States may provide for the simplification of or exemption from notification only in the following cases and under the following conditions:"^^xsd:string ;
     eli:number "2"^^xsd:string ;
     eli:title_alternative "Article18(2)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article18-2 ;
-    GDPRtext:hasSubPoint dpd:article18-2-a,
+    GDPRtEXT:hasPoint dpd:article18-2 ;
+    GDPRtEXT:hasSubPoint dpd:article18-2-a,
         dpd:article18-2-b,
         dpd:article18-2-c,
         dpd:article18-2-d,
         dpd:article18-2-e ;
-    GDPRtext:isPartOfArticle dpd:article18 .
+    GDPRtEXT:isPartOfArticle dpd:article18 .
 
 dpd:article20 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
+        GDPRtEXT:Article ;
     eli:is_part_of dpd:chapterII,
         dpd:chapterII-IX ;
     eli:number "20"^^xsd:string ;
     eli:title "Prior checking"^^xsd:string ;
     eli:title_alternative "Article 20"^^xsd:string ;
-    GDPRtext:isPartOfChapter dpd:chapterII ;
-    GDPRtext:isPartOfSection dpd:chapterII-IX .
+    GDPRtEXT:isPartOfChapter dpd:chapterII ;
+    GDPRtEXT:isPartOfSection dpd:chapterII-IX .
 
 dpd:article21 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
+        GDPRtEXT:Article ;
     eli:is_part_of dpd:chapterII,
         dpd:chapterII-IX ;
     eli:number "21"^^xsd:string ;
     eli:title "Publicizing of processing operations"^^xsd:string ;
     eli:title_alternative "Article 21"^^xsd:string ;
-    GDPRtext:isPartOfChapter dpd:chapterII ;
-    GDPRtext:isPartOfSection dpd:chapterII-IX .
+    GDPRtEXT:isPartOfChapter dpd:chapterII ;
+    GDPRtEXT:isPartOfSection dpd:chapterII-IX .
 
 dpd:article26 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
+        GDPRtEXT:Article ;
     eli:is_part_of dpd:chapterIV ;
     eli:number "26"^^xsd:string ;
     eli:title "Derogations"^^xsd:string ;
     eli:title_alternative "Article 26"^^xsd:string ;
-    GDPRtext:isPartOfChapter dpd:chapterIV .
+    GDPRtEXT:isPartOfChapter dpd:chapterIV .
 
 dpd:article31-2 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "The representative of the Commission shall submit to the committee a draft of the measures to be taken. The committee shall deliver its opinion on the draft within a time limit which the chairman may lay down according to the urgency of the matter."^^xsd:string ;
     eli:number "2"^^xsd:string ;
     eli:title_alternative "Article31(2)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article31-2 ;
-    GDPRtext:hasSubPoint dpd:article31-2-a,
+    GDPRtEXT:hasPoint dpd:article31-2 ;
+    GDPRtEXT:hasSubPoint dpd:article31-2-a,
         dpd:article31-2-b,
         dpd:article31-2-c,
         dpd:article31-2-d,
         dpd:article31-2-e ;
-    GDPRtext:isPartOfArticle dpd:article31 .
+    GDPRtEXT:isPartOfArticle dpd:article31 .
 
 dpd:article32 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
+        GDPRtEXT:Article ;
     eli:is_part_of dpd:chapterVII ;
     eli:number "32"^^xsd:string ;
     eli:title ""^^xsd:string ;
     eli:title_alternative "Article 32"^^xsd:string ;
-    GDPRtext:isPartOfChapter dpd:chapterVII .
+    GDPRtEXT:isPartOfChapter dpd:chapterVII .
 
 dpd:article6-1 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Member States shall provide that personal data must be:"^^xsd:string ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article6(1)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article6-1 ;
-    GDPRtext:hasSubPoint dpd:article6-1-a,
+    GDPRtEXT:hasPoint dpd:article6-1 ;
+    GDPRtEXT:hasSubPoint dpd:article6-1-a,
         dpd:article6-1-b,
         dpd:article6-1-c,
         dpd:article6-1-d,
         dpd:article6-1-e ;
-    GDPRtext:isPartOfArticle dpd:article6 .
+    GDPRtEXT:isPartOfArticle dpd:article6 .
 
 dpd:article8-2 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Paragraph 1 shall not apply where:"^^xsd:string ;
     eli:number "2"^^xsd:string ;
     eli:title_alternative "Article8(2)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article8-2 ;
-    GDPRtext:hasSubPoint dpd:article8-2-a,
+    GDPRtEXT:hasPoint dpd:article8-2 ;
+    GDPRtEXT:hasSubPoint dpd:article8-2-a,
         dpd:article8-2-b,
         dpd:article8-2-c,
         dpd:article8-2-d,
         dpd:article8-2-e ;
-    GDPRtext:isPartOfArticle dpd:article8 .
+    GDPRtEXT:isPartOfArticle dpd:article8 .
 
 dpd:article17 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
+        GDPRtEXT:Article ;
     eli:is_part_of dpd:chapterII,
         dpd:chapterII-VIII ;
     eli:number "17"^^xsd:string ;
     eli:title "Security of processing"^^xsd:string ;
     eli:title_alternative "Article 17"^^xsd:string ;
-    GDPRtext:isPartOfChapter dpd:chapterII ;
-    GDPRtext:isPartOfSection dpd:chapterII-VIII .
+    GDPRtEXT:isPartOfChapter dpd:chapterII ;
+    GDPRtEXT:isPartOfSection dpd:chapterII-VIII .
 
 dpd:article19-1 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Member States shall specify the information to be given in the notification. It shall include at least:"^^xsd:string ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article19(1)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article19-1 ;
-    GDPRtext:hasSubPoint dpd:article19-1-a,
+    GDPRtEXT:hasPoint dpd:article19-1 ;
+    GDPRtEXT:hasSubPoint dpd:article19-1-a,
         dpd:article19-1-b,
         dpd:article19-1-c,
         dpd:article19-1-d,
         dpd:article19-1-e,
         dpd:article19-1-f ;
-    GDPRtext:isPartOfArticle dpd:article19 .
+    GDPRtEXT:isPartOfArticle dpd:article19 .
 
 dpd:article26-1 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "By way of derogation from Article 25 and save where otherwise provided by domestic law governing particular cases, Member States shall provide that a transfer or a set of transfers of personal data to a third country which does not ensure an adequate level of protection within the meaning of Article 25 (2) may take place on condition that:"^^xsd:string ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article26(1)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article26-1 ;
-    GDPRtext:hasSubPoint dpd:article26-1-a,
+    GDPRtEXT:hasPoint dpd:article26-1 ;
+    GDPRtEXT:hasSubPoint dpd:article26-1-a,
         dpd:article26-1-b,
         dpd:article26-1-c,
         dpd:article26-1-d,
         dpd:article26-1-e,
         dpd:article26-1-f ;
-    GDPRtext:isPartOfArticle dpd:article26 .
+    GDPRtEXT:isPartOfArticle dpd:article26 .
 
 dpd:article7-1 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Member States shall provide that personal data may be processed only if:"^^xsd:string ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article7(1)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article7-1 ;
-    GDPRtext:hasSubPoint dpd:article7-1-a,
+    GDPRtEXT:hasPoint dpd:article7-1 ;
+    GDPRtEXT:hasSubPoint dpd:article7-1-a,
         dpd:article7-1-b,
         dpd:article7-1-c,
         dpd:article7-1-d,
         dpd:article7-1-e,
         dpd:article7-1-f ;
-    GDPRtext:isPartOfArticle dpd:article7 .
+    GDPRtEXT:isPartOfArticle dpd:article7 .
 
 dpd:chapterIII a eli:LegalResourceSubdivision,
-        GDPRtext:Chapter ;
+        GDPRtEXT:Chapter ;
     eli:is_part_of dpd:DPD ;
     eli:number "III"^^xsd:string ;
     eli:title "JUDICIAL REMEDIES, LIABILITY AND SANCTIONS"^^xsd:string ;
     eli:title_alternative "Chapter III"^^xsd:string ;
-    GDPRtext:hasArticle dpd:article22,
+    GDPRtEXT:hasArticle dpd:article22,
         dpd:article23,
         dpd:article24 .
 
 dpd:chapterVI a eli:LegalResourceSubdivision,
-        GDPRtext:Chapter ;
+        GDPRtEXT:Chapter ;
     eli:is_part_of dpd:DPD ;
     eli:number "VI"^^xsd:string ;
     eli:title "SUPERVISORY AUTHORITY AND WORKING PARTY ON THE PROTECTION OF INDIVIDUALS WITH REGARD TO THE PROCESSING OF PERSONAL DATA"^^xsd:string ;
     eli:title_alternative "Chapter VI"^^xsd:string ;
-    GDPRtext:hasArticle dpd:article28,
+    GDPRtEXT:hasArticle dpd:article28,
         dpd:article29,
         dpd:article30 .
 
 dpd:article13-1 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "Member States may adopt legislative measures to restrict the scope of the obligations and rights provided for in Articles 6 (1), 10, 11 (1), 12 and 21 when such a restriction constitutes a necessary measures to safeguard:"^^xsd:string ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article13(1)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article13-1 ;
-    GDPRtext:hasSubPoint dpd:article13-1-a,
+    GDPRtEXT:hasPoint dpd:article13-1 ;
+    GDPRtEXT:hasSubPoint dpd:article13-1-a,
         dpd:article13-1-b,
         dpd:article13-1-c,
         dpd:article13-1-d,
         dpd:article13-1-e,
         dpd:article13-1-f,
         dpd:article13-1-g ;
-    GDPRtext:isPartOfArticle dpd:article13 .
+    GDPRtEXT:isPartOfArticle dpd:article13 .
 
 dpd:article18 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
+        GDPRtEXT:Article ;
     eli:is_part_of dpd:chapterII,
         dpd:chapterII-IX ;
     eli:number "18"^^xsd:string ;
     eli:title "Obligation to notify the supervisory authority"^^xsd:string ;
     eli:title_alternative "Article 18"^^xsd:string ;
-    GDPRtext:isPartOfChapter dpd:chapterII ;
-    GDPRtext:isPartOfSection dpd:chapterII-IX .
+    GDPRtEXT:isPartOfChapter dpd:chapterII ;
+    GDPRtEXT:isPartOfSection dpd:chapterII-IX .
 
 dpd:article25 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
+        GDPRtEXT:Article ;
     eli:is_part_of dpd:chapterIV ;
     eli:number "25"^^xsd:string ;
     eli:title "Principles"^^xsd:string ;
     eli:title_alternative "Article 25"^^xsd:string ;
-    GDPRtext:isPartOfChapter dpd:chapterIV .
+    GDPRtEXT:isPartOfChapter dpd:chapterIV .
 
 dpd:article30 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
+        GDPRtEXT:Article ;
     eli:is_part_of dpd:chapterVI ;
     eli:number "30"^^xsd:string ;
     eli:title ""^^xsd:string ;
     eli:title_alternative "Article 30"^^xsd:string ;
-    GDPRtext:isPartOfChapter dpd:chapterVI .
+    GDPRtEXT:isPartOfChapter dpd:chapterVI .
 
 dpd:article2-1 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "For the purposes of this Directive:"^^xsd:string ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article2(1)"^^xsd:string ;
-    GDPRtext:hasPoint dpd:article2-1 ;
-    GDPRtext:hasSubPoint dpd:article2-1-a,
+    GDPRtEXT:hasPoint dpd:article2-1 ;
+    GDPRtEXT:hasSubPoint dpd:article2-1-a,
         dpd:article2-1-b,
         dpd:article2-1-c,
         dpd:article2-1-d,
@@ -1924,68 +1924,68 @@ dpd:article2-1 a eli:LegalResourceSubdivision,
         dpd:article2-1-f,
         dpd:article2-1-g,
         dpd:article2-1-h ;
-    GDPRtext:isPartOfArticle dpd:article2 .
+    GDPRtEXT:isPartOfArticle dpd:article2 .
 
 dpd:article28 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
+        GDPRtEXT:Article ;
     eli:is_part_of dpd:chapterVI ;
     eli:number "28"^^xsd:string ;
     eli:title "Supervisory authority"^^xsd:string ;
     eli:title_alternative "Article 28"^^xsd:string ;
-    GDPRtext:isPartOfChapter dpd:chapterVI .
+    GDPRtEXT:isPartOfChapter dpd:chapterVI .
 
 dpd:article29 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
+        GDPRtEXT:Article ;
     eli:is_part_of dpd:chapterVI ;
     eli:number "29"^^xsd:string ;
     eli:title "Working Party on the Protection of Individuals with regard to the Processing of Personal Data"^^xsd:string ;
     eli:title_alternative "Article 29"^^xsd:string ;
-    GDPRtext:isPartOfChapter dpd:chapterVI .
+    GDPRtEXT:isPartOfChapter dpd:chapterVI .
 
 dpd:chapterI a eli:LegalResourceSubdivision,
-        GDPRtext:Chapter ;
+        GDPRtEXT:Chapter ;
     eli:is_part_of dpd:DPD ;
     eli:number "I"^^xsd:string ;
     eli:title "GENERAL PROVISIONS"^^xsd:string ;
     eli:title_alternative "Chapter I"^^xsd:string ;
-    GDPRtext:hasArticle dpd:article1,
+    GDPRtEXT:hasArticle dpd:article1,
         dpd:article2,
         dpd:article3,
         dpd:article4 .
 
 dpd:chapterII-IX a eli:LegalResourceSubdivision,
-        GDPRtext:Section ;
+        GDPRtEXT:Section ;
     eli:is_part_of dpd:DPD,
         dpd:chapterII ;
     eli:number "IX"^^xsd:string ;
     eli:title "NOTIFICATION"^^xsd:string ;
     eli:title_alternative "Section IX"^^xsd:string ;
-    GDPRtext:hasArticle dpd:article18,
+    GDPRtEXT:hasArticle dpd:article18,
         dpd:article19,
         dpd:article20,
         dpd:article21 ;
-    GDPRtext:isPartOfChapter dpd:chapterII .
+    GDPRtEXT:isPartOfChapter dpd:chapterII .
 
 dpd:chapterVII a eli:LegalResourceSubdivision,
-        GDPRtext:Chapter ;
+        GDPRtEXT:Chapter ;
     eli:is_part_of dpd:DPD ;
     eli:number "VII"^^xsd:string ;
     eli:title "COMMUNITY IMPLEMENTING MEASURES"^^xsd:string ;
     eli:title_alternative "Chapter VII"^^xsd:string ;
-    GDPRtext:hasArticle dpd:article31,
+    GDPRtEXT:hasArticle dpd:article31,
         dpd:article32,
         dpd:article33,
         dpd:article34 .
 
 dpd:article8 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
+        GDPRtEXT:Article ;
     eli:is_part_of dpd:chapterII,
         dpd:chapterII-III ;
     eli:number "8"^^xsd:string ;
     eli:title "The processing of special categories of data"^^xsd:string ;
     eli:title_alternative "Article 8"^^xsd:string ;
-    GDPRtext:isPartOfChapter dpd:chapterII ;
-    GDPRtext:isPartOfSection dpd:chapterII-III .
+    GDPRtEXT:isPartOfChapter dpd:chapterII ;
+    GDPRtEXT:isPartOfSection dpd:chapterII-III .
 
 dpd:DPD a eli:LR,
         dcterms:Policy ;
@@ -1993,7 +1993,7 @@ dpd:DPD a eli:LR,
     eli:date_document "1995-10-24"^^xsd:date ;
     eli:date_publication "1995-11-23"^^xsd:date ;
     eli:in_force "1995-12-13"^^xsd:date ;
-    GDPRtext:hasArticle dpd:article1,
+    GDPRtEXT:hasArticle dpd:article1,
         dpd:article10,
         dpd:article11,
         dpd:article12,
@@ -2027,7 +2027,7 @@ dpd:DPD a eli:LR,
         dpd:article7,
         dpd:article8,
         dpd:article9 ;
-    GDPRtext:hasChapter dpd:chapterI,
+    GDPRtEXT:hasChapter dpd:chapterI,
         dpd:chapterII,
         dpd:chapterIII,
         dpd:chapterIV,
@@ -2049,12 +2049,12 @@ dpd:DPD a eli:LR,
         "Data Protection Directive"^^xsd:string .
 
 dpd:chapterII a eli:LegalResourceSubdivision,
-        GDPRtext:Chapter ;
+        GDPRtEXT:Chapter ;
     eli:is_part_of dpd:DPD ;
     eli:number "II"^^xsd:string ;
     eli:title "GENERAL RULES ON THE LAWFULNESS OF THE PROCESSING OF PERSONAL DATA"^^xsd:string ;
     eli:title_alternative "Chapter II"^^xsd:string ;
-    GDPRtext:hasArticle dpd:article10,
+    GDPRtEXT:hasArticle dpd:article10,
         dpd:article11,
         dpd:article12,
         dpd:article13,
@@ -2071,7 +2071,7 @@ dpd:chapterII a eli:LegalResourceSubdivision,
         dpd:article7,
         dpd:article8,
         dpd:article9 ;
-    GDPRtext:hasSection dpd:chapterII-I,
+    GDPRtEXT:hasSection dpd:chapterII-I,
         dpd:chapterII-II,
         dpd:chapterII-III,
         dpd:chapterII-IV,

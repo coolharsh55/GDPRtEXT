@@ -15,7 +15,7 @@ graph.namespace_manager.bind('dc', DC)
 graph.namespace_manager.bind('owl', OWL)
 GDPRtEXT_URI = URIRef('http://purl.org/adaptcentre/ontologies/GDPRtEXT#')
 GDPRtEXT = Namespace('http://purl.org/adaptcentre/ontologies/GDPRtEXT#')
-graph.namespace_manager.bind('GDPRtext', GDPRtEXT)
+graph.namespace_manager.bind('GDPRtEXT', GDPRtEXT)
 graph.add((GDPRtEXT_URI, RDF.type, OWL.Ontology))
 graph.add((GDPRtEXT_URI, RDFS.label, Literal(
     'GDPR text EXTensions', datatype=XSD.string)))

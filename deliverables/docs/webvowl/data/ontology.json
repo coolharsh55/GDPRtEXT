@@ -3741,7 +3741,7 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "undefined",
-        "value" : "gdpr:citation1 a eli:LegalResourceSubdivision,\n        GDPRtext:Citation ;\n    eli:description \"OJ C 229, 31.7.2012, p. 90.\"^^xsd:string ;\n    eli:is_part_of gdpr:GDPR ;\n    eli:number \"1\"^^xsd:string .",
+        "value" : "gdpr:citation1 a eli:LegalResourceSubdivision,\n        GDPRtEXT:Citation ;\n    eli:description \"OJ C 229, 31.7.2012, p. 90.\"^^xsd:string ;\n    eli:is_part_of gdpr:GDPR ;\n    eli:number \"1\"^^xsd:string .",
         "type" : "label"
       } ]
     },
@@ -4252,7 +4252,7 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "undefined",
-        "value" : "gdpr:article27-2 a eli:LegalResourceSubdivision,\n        GDPRtext:Point ;\n    eli:description \"The obligation laid down in paragraph 1 of this Article shall not apply to:\"^^xsd:string ;\n    eli:is_part_of gdpr:GDPR,\n        gdpr:article27,\n        gdpr:chapterIV,\n        gdpr:chapterIV-1 ;\n    eli:number \"2\"^^xsd:string ;\n    eli:title_alternative \"Article27(2)\"^^xsd:string ;\n    GDPRtext:hasSubPoint gdpr:article27-2-a,\n        gdpr:article27-2-b ;\n    GDPRtext:isPartOfArticle gdpr:article27 ;\n    GDPRtext:isPartOfChapter gdpr:chapterIV ;\n    GDPRtext:isPartOfSection gdpr:chapterIV-1 .",
+        "value" : "gdpr:article27-2 a eli:LegalResourceSubdivision,\n        GDPRtEXT:Point ;\n    eli:description \"The obligation laid down in paragraph 1 of this Article shall not apply to:\"^^xsd:string ;\n    eli:is_part_of gdpr:GDPR,\n        gdpr:article27,\n        gdpr:chapterIV,\n        gdpr:chapterIV-1 ;\n    eli:number \"2\"^^xsd:string ;\n    eli:title_alternative \"Article27(2)\"^^xsd:string ;\n    GDPRtEXT:hasSubPoint gdpr:article27-2-a,\n        gdpr:article27-2-b ;\n    GDPRtEXT:isPartOfArticle gdpr:article27 ;\n    GDPRtEXT:isPartOfChapter gdpr:chapterIV ;\n    GDPRtEXT:isPartOfSection gdpr:chapterIV-1 .",
         "type" : "label"
       } ]
     },
@@ -4306,7 +4306,7 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "undefined",
-        "value" : "gdpr:chapterI a eli:LegalResourceSubdivision,\n        GDPRtext:Chapter ;\n    eli:is_part_of gdpr:GDPR ;\n    eli:number \"I\"^^xsd:string ;\n    eli:title \"General provisions\"^^xsd:string ;\n    eli:title_alternative \"Chapter I\"^^xsd:string ;\n    GDPRtext:hasArticle gdpr:article1,\n        gdpr:article2,\n        gdpr:article3,\n        gdpr:article4 .",
+        "value" : "gdpr:chapterI a eli:LegalResourceSubdivision,\n        GDPRtEXT:Chapter ;\n    eli:is_part_of gdpr:GDPR ;\n    eli:number \"I\"^^xsd:string ;\n    eli:title \"General provisions\"^^xsd:string ;\n    eli:title_alternative \"Chapter I\"^^xsd:string ;\n    GDPRtEXT:hasArticle gdpr:article1,\n        gdpr:article2,\n        gdpr:article3,\n        gdpr:article4 .",
         "type" : "label"
       } ]
     },
@@ -5222,7 +5222,7 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "undefined",
-        "value" : "gdpr:article12-5-b a eli:LegalResourceSubdivision,\n        GDPRtext:SubPoint ;\n    eli:description \"refuse to act on the request.\"^^xsd:string ;\n    eli:is_part_of gdpr:GDPR,\n        gdpr:article12,\n        gdpr:article12-5,\n        gdpr:chapterIII,\n        gdpr:chapterIII-1 ;\n    eli:number \"b\"^^xsd:string ;\n    eli:title_alternative \"Article12(5)(b)\"^^xsd:string ;\n    GDPRtext:isPartOfArticle gdpr:article12 ;\n    GDPRtext:isPartOfChapter gdpr:chapterIII ;\n    GDPRtext:isPartOfPoint gdpr:article12-5 ;\n    GDPRtext:isPartOfSection gdpr:chapterIII-1 .",
+        "value" : "gdpr:article12-5-b a eli:LegalResourceSubdivision,\n        GDPRtEXT:SubPoint ;\n    eli:description \"refuse to act on the request.\"^^xsd:string ;\n    eli:is_part_of gdpr:GDPR,\n        gdpr:article12,\n        gdpr:article12-5,\n        gdpr:chapterIII,\n        gdpr:chapterIII-1 ;\n    eli:number \"b\"^^xsd:string ;\n    eli:title_alternative \"Article12(5)(b)\"^^xsd:string ;\n    GDPRtEXT:isPartOfArticle gdpr:article12 ;\n    GDPRtEXT:isPartOfChapter gdpr:chapterIII ;\n    GDPRtEXT:isPartOfPoint gdpr:article12-5 ;\n    GDPRtEXT:isPartOfSection gdpr:chapterIII-1 .",
         "type" : "label"
       } ]
     },
@@ -5249,7 +5249,7 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "undefined",
-        "value" : "gdpr:article10 a eli:LegalResourceSubdivision,\n        GDPRtext:Article ;\n    eli:is_part_of gdpr:GDPR,\n        gdpr:chapterII ;\n    eli:number \"10\"^^xsd:string ;\n    eli:title_alternative \"Article 10\"^^xsd:string ;\n    GDPRtext:hasPoint gdpr:article10-1 ;\n    GDPRtext:isPartOfChapter gdpr:chapterII .",
+        "value" : "gdpr:article10 a eli:LegalResourceSubdivision,\n        GDPRtEXT:Article ;\n    eli:is_part_of gdpr:GDPR,\n        gdpr:chapterII ;\n    eli:number \"10\"^^xsd:string ;\n    eli:title_alternative \"Article 10\"^^xsd:string ;\n    GDPRtEXT:hasPoint gdpr:article10-1 ;\n    GDPRtEXT:isPartOfChapter gdpr:chapterII .",
         "type" : "label"
       } ]
     },
@@ -6217,7 +6217,7 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "undefined",
-        "value" : "gdpr:chapterIV-5 a eli:LegalResourceSubdivision,\n        GDPRtext:Section ;\n    eli:is_part_of gdpr:GDPR,\n        gdpr:chapterIV ;\n    eli:number \"5\"^^xsd:string ;\n    eli:title \"Codes of conduct and certification\"^^xsd:string ;\n    eli:title_alternative \"Section 5\"^^xsd:string ;\n    GDPRtext:hasArticle gdpr:article40,\n        gdpr:article41,\n        gdpr:article42,\n        gdpr:article43 ;\n    GDPRtext:isPartOfChapter gdpr:chapterIV .",
+        "value" : "gdpr:chapterIV-5 a eli:LegalResourceSubdivision,\n        GDPRtEXT:Section ;\n    eli:is_part_of gdpr:GDPR,\n        gdpr:chapterIV ;\n    eli:number \"5\"^^xsd:string ;\n    eli:title \"Codes of conduct and certification\"^^xsd:string ;\n    eli:title_alternative \"Section 5\"^^xsd:string ;\n    GDPRtEXT:hasArticle gdpr:article40,\n        gdpr:article41,\n        gdpr:article42,\n        gdpr:article43 ;\n    GDPRtEXT:isPartOfChapter gdpr:chapterIV .",
         "type" : "label"
       } ]
     },
@@ -6788,7 +6788,7 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "undefined",
-        "value" : "gdpr:recital1 a eli:LegalResourceSubdivision,\n        GDPRtext:Recital ;\n    eli:description \"The protection of natural persons in relation to the processing of personal data is a fundamental right. Article 8(1) of the Charter of Fundamental Rights of the European Union (the ‘Charter’) and Article 16(1) of the Treaty on the Functioning of the European Union (TFEU) provide that everyone has the right to the protection of personal data concerning him or her.\"^^xsd:string ;\n    eli:is_part_of gdpr:GDPR ;\n    eli:number \"1\"^^xsd:string .",
+        "value" : "gdpr:recital1 a eli:LegalResourceSubdivision,\n        GDPRtEXT:Recital ;\n    eli:description \"The protection of natural persons in relation to the processing of personal data is a fundamental right. Article 8(1) of the Charter of Fundamental Rights of the European Union (the ‘Charter’) and Article 16(1) of the Treaty on the Functioning of the European Union (TFEU) provide that everyone has the right to the protection of personal data concerning him or her.\"^^xsd:string ;\n    eli:is_part_of gdpr:GDPR ;\n    eli:number \"1\"^^xsd:string .",
         "type" : "label"
       } ]
     },

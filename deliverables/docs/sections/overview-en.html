@@ -11,26 +11,26 @@ owl:Class rdf:about=&quot;http://purl.org/adaptcentre/openscience/ontologies/GDP
         &lt;rdfs:isDefinedBy rdf:resource=&quot;http://eur_lex.europa.eu/legal_content/EN/ALL/?uri=CELEX:32016R0679&quot;/&gt;
         &lt;rdfs:label rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Article&lt;/rdfs:label&gt;
         &lt;skos:example&gt;gdpr:article10 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
+        GDPRtEXT:Article ;
     eli:is_part_of gdpr:GDPR,
         gdpr:chapterII ;
     eli:number &amp;quot;10&amp;quot;^^xsd:string ;
     eli:title_alternative &amp;quot;Article 10&amp;quot;^^xsd:string ;
-    GDPRtext:hasPoint gdpr:article10-1 ;
-    GDPRtext:isPartOfChapter gdpr:chapterII .&lt;/skos:example&gt;
+    GDPRtEXT:hasPoint gdpr:article10-1 ;
+    GDPRtEXT:isPartOfChapter gdpr:chapterII .&lt;/skos:example&gt;
     &lt;/owl:Class&gt;
 ```
 ```
 gdpr:article1-1 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description "This Regulation ..."^^xsd:string ;
     eli:is_part_of gdpr:GDPR,
         gdpr:article1,
         gdpr:chapterI ;
     eli:number "1"^^xsd:string ;
     eli:title_alternative "Article1(1)"^^xsd:string ;
-    GDPRtext:isPartOfArticle gdpr:article1 ;
-    GDPRtext:isPartOfChapter gdpr:chapterI .
+    GDPRtEXT:isPartOfArticle gdpr:article1 ;
+    GDPRtEXT:isPartOfChapter gdpr:chapterI .
 ```
 
 The concepts within GDPR are expressed using `skos:Concept`. They are related

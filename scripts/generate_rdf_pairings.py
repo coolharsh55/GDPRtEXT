@@ -44,7 +44,7 @@ with open('../deliverables/gdpr.json') as fd:
 graph = Graph()
 GDPRtEXT_URI = URIRef('http://purl.org/adaptcentre/ontologies/GDPRtEXT#')
 GDPRtEXT = Namespace(GDPRtEXT_URI)
-graph.namespace_manager.bind('GDPRtext', GDPRtEXT)
+graph.namespace_manager.bind('GDPRtEXT', GDPRtEXT)
 DCTERMS = Namespace('http://purl.org/dc/terms/')
 graph.namespace_manager.bind('dcterms', DCTERMS)
 # This is the ELI namespace, used as the legal vocabulary for EU text

@@ -327,13 +327,13 @@
          rdfs:isDefinedBy <http://eur_lex.europa.eu/legal_content/EN/ALL/?uri=CELEX:32016R0679> ;
          rdfs:label "Article"^^xsd:string ;
          <http://www.w3.org/2004/02/skos/core#example> """gdpr:article10 a eli:LegalResourceSubdivision,
-        GDPRtext:Article ;
+        GDPRtEXT:Article ;
     eli:is_part_of gdpr:GDPR,
         gdpr:chapterII ;
     eli:number \"10\"^^xsd:string ;
     eli:title_alternative \"Article 10\"^^xsd:string ;
-    GDPRtext:hasPoint gdpr:article10-1 ;
-    GDPRtext:isPartOfChapter gdpr:chapterII ."""^^xsd:string .
+    GDPRtEXT:hasPoint gdpr:article10-1 ;
+    GDPRtEXT:isPartOfChapter gdpr:chapterII ."""^^xsd:string .
 
 
 ###  http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#AssistInComplyingWithRights
@@ -404,12 +404,12 @@
          rdfs:isDefinedBy <http://eur_lex.europa.eu/legal_content/EN/ALL/?uri=CELEX:32016R0679> ;
          rdfs:label "Chapter"^^xsd:string ;
          <http://www.w3.org/2004/02/skos/core#example> """gdpr:chapterI a eli:LegalResourceSubdivision,
-        GDPRtext:Chapter ;
+        GDPRtEXT:Chapter ;
     eli:is_part_of gdpr:GDPR ;
     eli:number \"I\"^^xsd:string ;
     eli:title \"General provisions\"^^xsd:string ;
     eli:title_alternative \"Chapter I\"^^xsd:string ;
-    GDPRtext:hasArticle gdpr:article1,
+    GDPRtEXT:hasArticle gdpr:article1,
         gdpr:article2,
         gdpr:article3,
         gdpr:article4 ."""^^xsd:string .
@@ -422,7 +422,7 @@
           rdfs:isDefinedBy <http://eur_lex.europa.eu/legal_content/EN/ALL/?uri=CELEX:32016R0679> ;
           rdfs:label "Citation"^^xsd:string ;
           <http://www.w3.org/2004/02/skos/core#example> """gdpr:citation1 a eli:LegalResourceSubdivision,
-        GDPRtext:Citation ;
+        GDPRtEXT:Citation ;
     eli:description \"OJ C 229, 31.7.2012, p. 90.\"^^xsd:string ;
     eli:is_part_of gdpr:GDPR ;
     eli:number \"1\"^^xsd:string ."""^^xsd:string .
@@ -1538,7 +1538,7 @@
        rdfs:isDefinedBy <http://eur_lex.europa.eu/legal_content/EN/ALL/?uri=CELEX:32016R0679> ;
        rdfs:label "Point"^^xsd:string ;
        <http://www.w3.org/2004/02/skos/core#example> """gdpr:article27-2 a eli:LegalResourceSubdivision,
-        GDPRtext:Point ;
+        GDPRtEXT:Point ;
     eli:description \"The obligation laid down in paragraph 1 of this Article shall not apply to:\"^^xsd:string ;
     eli:is_part_of gdpr:GDPR,
         gdpr:article27,
@@ -1546,11 +1546,11 @@
         gdpr:chapterIV-1 ;
     eli:number \"2\"^^xsd:string ;
     eli:title_alternative \"Article27(2)\"^^xsd:string ;
-    GDPRtext:hasSubPoint gdpr:article27-2-a,
+    GDPRtEXT:hasSubPoint gdpr:article27-2-a,
         gdpr:article27-2-b ;
-    GDPRtext:isPartOfArticle gdpr:article27 ;
-    GDPRtext:isPartOfChapter gdpr:chapterIV ;
-    GDPRtext:isPartOfSection gdpr:chapterIV-1 ."""^^xsd:string .
+    GDPRtEXT:isPartOfArticle gdpr:article27 ;
+    GDPRtEXT:isPartOfChapter gdpr:chapterIV ;
+    GDPRtEXT:isPartOfSection gdpr:chapterIV-1 ."""^^xsd:string .
 
 
 ###  http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PossibleConsequenceForDataSubject
@@ -1825,7 +1825,7 @@
          rdfs:isDefinedBy <http://eur_lex.europa.eu/legal_content/EN/ALL/?uri=CELEX:32016R0679> ;
          rdfs:label "Regulation"^^xsd:string ;
          <http://www.w3.org/2004/02/skos/core#example> """gdpr:recital1 a eli:LegalResourceSubdivision,
-        GDPRtext:Recital ;
+        GDPRtEXT:Recital ;
     eli:description \"The protection of natural persons in relation to the processing of personal data is a fundamental right. Article 8(1) of the Charter of Fundamental Rights of the European Union (the ‘Charter’) and Article 16(1) of the Treaty on the Functioning of the European Union (TFEU) provide that everyone has the right to the protection of personal data concerning him or her.\"^^xsd:string ;
     eli:is_part_of gdpr:GDPR ;
     eli:number \"1\"^^xsd:string ."""^^xsd:string .
@@ -2192,17 +2192,17 @@
          rdfs:isDefinedBy <http://eur_lex.europa.eu/legal_content/EN/ALL/?uri=CELEX:32016R0679> ;
          rdfs:label "Section"^^xsd:string ;
          <http://www.w3.org/2004/02/skos/core#example> """gdpr:chapterIV-5 a eli:LegalResourceSubdivision,
-        GDPRtext:Section ;
+        GDPRtEXT:Section ;
     eli:is_part_of gdpr:GDPR,
         gdpr:chapterIV ;
     eli:number \"5\"^^xsd:string ;
     eli:title \"Codes of conduct and certification\"^^xsd:string ;
     eli:title_alternative \"Section 5\"^^xsd:string ;
-    GDPRtext:hasArticle gdpr:article40,
+    GDPRtEXT:hasArticle gdpr:article40,
         gdpr:article41,
         gdpr:article42,
         gdpr:article43 ;
-    GDPRtext:isPartOfChapter gdpr:chapterIV ."""^^xsd:string .
+    GDPRtEXT:isPartOfChapter gdpr:chapterIV ."""^^xsd:string .
 
 
 ###  http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#SecurityOfPersonalData
@@ -2336,7 +2336,7 @@
           rdfs:isDefinedBy <http://eur_lex.europa.eu/legal_content/EN/ALL/?uri=CELEX:32016R0679> ;
           rdfs:label "SubPoint"^^xsd:string ;
           <http://www.w3.org/2004/02/skos/core#example> """gdpr:article12-5-b a eli:LegalResourceSubdivision,
-        GDPRtext:SubPoint ;
+        GDPRtEXT:SubPoint ;
     eli:description \"refuse to act on the request.\"^^xsd:string ;
     eli:is_part_of gdpr:GDPR,
         gdpr:article12,
@@ -2345,10 +2345,10 @@
         gdpr:chapterIII-1 ;
     eli:number \"b\"^^xsd:string ;
     eli:title_alternative \"Article12(5)(b)\"^^xsd:string ;
-    GDPRtext:isPartOfArticle gdpr:article12 ;
-    GDPRtext:isPartOfChapter gdpr:chapterIII ;
-    GDPRtext:isPartOfPoint gdpr:article12-5 ;
-    GDPRtext:isPartOfSection gdpr:chapterIII-1 ."""^^xsd:string .
+    GDPRtEXT:isPartOfArticle gdpr:article12 ;
+    GDPRtEXT:isPartOfChapter gdpr:chapterIII ;
+    GDPRtEXT:isPartOfPoint gdpr:article12-5 ;
+    GDPRtEXT:isPartOfSection gdpr:chapterIII-1 ."""^^xsd:string .
 
 
 ###  http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#SubProcessor
