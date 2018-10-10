@@ -42,17 +42,17 @@
         "value" : "2017-08-15",
         "type" : "label"
       } ],
-      "source" : [ {
-        "identifier" : "source",
-        "language" : "undefined",
-        "value" : "http://eur_lex.europa.eu/legal_content/EN/ALL/?uri=CELEX:32016R0679",
-        "type" : "iri"
-      } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
         "value" : "0.6",
         "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "undefined",
+        "value" : "http://eur_lex.europa.eu/legal_content/EN/ALL/?uri=CELEX:32016R0679",
+        "type" : "iri"
       } ],
       "abstract" : [ {
         "identifier" : "abstract",
@@ -75,11 +75,6 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "Bartolini, C., Muthuri, R., & Santos, C. (2015, November). Using ontologies to model data protection requirements in workflows. In JSAI International Symposium on Artificial Intelligence (pp. 233-248). Springer, Cham.",
-        "type" : "label"
-      }, {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
         "value" : "https://raw.githubusercontent.com/guerret/lu.uni.eclipse.bpmn2/master/resources/dataprotection.owl",
         "type" : "iri"
       }, {
@@ -87,6 +82,11 @@
         "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/projects/GDPRov/docs",
         "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "Bartolini, C., Muthuri, R., & Santos, C. (2015, November). Using ontologies to model data protection requirements in workflows. In JSAI International Symposium on Artificial Intelligence (pp. 233-248). Springer, Cham.",
+        "type" : "label"
       } ],
       "license" : [ {
         "identifier" : "license",
@@ -100,17 +100,17 @@
         "value" : "gdprtext",
         "type" : "label"
       } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2018-07-31",
-        "type" : "label"
-      } ],
       "publisher" : [ {
         "identifier" : "publisher",
         "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/people/ADAPT",
         "type" : "iri"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2018-07-31",
+        "type" : "label"
       } ],
       "preferredNamespaceUri" : [ {
         "identifier" : "preferredNamespaceUri",
@@ -823,12 +823,12 @@
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#UnlawfulProcessing",
         "type" : "iri"
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#UnlawfulProcessing",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
         "type" : "iri"
       } ]
     },
@@ -859,12 +859,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article5-1-a",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital39",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital39",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article5-1-a",
         "type" : "iri"
       } ],
       "involves" : [ {
@@ -875,12 +875,12 @@
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#LawfulBasisForProcessing",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Data",
         "type" : "iri"
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Data",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#LawfulBasisForProcessing",
         "type" : "iri"
       } ]
     },
@@ -1077,7 +1077,7 @@
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#GivenConsent",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#WithdrawingConsent",
         "type" : "iri"
       }, {
         "identifier" : "involves",
@@ -1087,7 +1087,7 @@
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#WithdrawingConsent",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#GivenConsent",
         "type" : "iri"
       } ]
     },
@@ -1121,7 +1121,7 @@
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CollectionOfPersonalData",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ExplicitPurpose",
         "type" : "iri"
       }, {
         "identifier" : "involves",
@@ -1131,7 +1131,7 @@
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ExplicitPurpose",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CollectionOfPersonalData",
         "type" : "iri"
       } ]
     },
@@ -1173,17 +1173,17 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article4-17",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article27",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital80",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article4-17",
         "type" : "iri"
       } ],
       "involves" : [ {
@@ -1253,11 +1253,6 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article14",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital60",
         "type" : "iri"
       }, {
@@ -1269,6 +1264,11 @@
         "identifier" : "isDefinedBy",
         "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital58",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article14",
         "type" : "iri"
       } ],
       "involves" : [ {
@@ -1322,12 +1322,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital82",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article31",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article31",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital82",
         "type" : "iri"
       } ],
       "involves" : [ {
@@ -1354,12 +1354,12 @@
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Controller",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataBreach",
         "type" : "iri"
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataBreach",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Controller",
         "type" : "iri"
       } ]
     },
@@ -1380,12 +1380,12 @@
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CollectionOfPersonalData",
         "type" : "iri"
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CollectionOfPersonalData",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
         "type" : "iri"
       } ]
     },
@@ -1475,17 +1475,17 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article28-10",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article4-7",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article6-5",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article28-10",
         "type" : "iri"
       } ]
     },
@@ -1528,12 +1528,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital42",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital32",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article9-2-a",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital42",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
@@ -1548,18 +1548,18 @@
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital32",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article9-2-a",
         "type" : "iri"
       } ],
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSubject",
         "type" : "iri"
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSubject",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
         "type" : "iri"
       }, {
         "identifier" : "involves",
@@ -1586,12 +1586,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital81",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital77",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital77",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital81",
         "type" : "iri"
       } ]
     },
@@ -1612,12 +1612,12 @@
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Processor",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProcessorControllerAgreement",
         "type" : "iri"
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProcessorControllerAgreement",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Processor",
         "type" : "iri"
       }, {
         "identifier" : "involves",
@@ -1643,12 +1643,12 @@
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Compliance",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Controller",
         "type" : "iri"
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Controller",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Compliance",
         "type" : "iri"
       } ]
     },
@@ -1708,23 +1708,23 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article42",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article43",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article43",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article42",
         "type" : "iri"
       } ],
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#VoluntarySystemOfAccredition",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#AdherenceToSealCertification",
         "type" : "iri"
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#AdherenceToSealCertification",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#VoluntarySystemOfAccredition",
         "type" : "iri"
       }, {
         "identifier" : "involves",
@@ -1826,17 +1826,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article12",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article14",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital39",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article13",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
@@ -1851,12 +1846,17 @@
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article13",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital58",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article12",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital39",
         "type" : "iri"
       } ],
       "involves" : [ {
@@ -1872,26 +1872,6 @@
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#InformationShouldBeEasilyAccessible",
-        "type" : "iri"
-      }, {
-        "identifier" : "involves",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#InformationShouldBeTransparent",
-        "type" : "iri"
-      }, {
-        "identifier" : "involves",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSubject",
-        "type" : "iri"
-      }, {
-        "identifier" : "involves",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Processing",
-        "type" : "iri"
-      }, {
-        "identifier" : "involves",
-        "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Controller",
         "type" : "iri"
       }, {
@@ -1902,7 +1882,27 @@
       }, {
         "identifier" : "involves",
         "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Processing",
+        "type" : "iri"
+      }, {
+        "identifier" : "involves",
+        "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#InformationShouldBeEasilyAccessible",
+        "type" : "iri"
+      }, {
+        "identifier" : "involves",
+        "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#InformationShouldBeTransparent",
+        "type" : "iri"
+      }, {
+        "identifier" : "involves",
+        "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#InformationShouldBeIntelligible",
+        "type" : "iri"
+      }, {
+        "identifier" : "involves",
+        "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSubject",
         "type" : "iri"
       } ]
     },
@@ -1945,7 +1945,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital51",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital35",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital34",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
@@ -1955,17 +1960,12 @@
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital35",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital51",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital10",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital34",
         "type" : "iri"
       } ],
       "involves" : [ {
@@ -2049,7 +2049,7 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article6-1-f",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital47",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
@@ -2059,7 +2059,7 @@
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital47",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article6-1-f",
         "type" : "iri"
       } ],
       "involves" : [ {
@@ -2176,12 +2176,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article82-5",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital146",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article26-3",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article82-5",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
@@ -2191,12 +2191,12 @@
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital146",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital79",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital79",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article26-3",
         "type" : "iri"
       } ],
       "involves" : [ {
@@ -2414,7 +2414,7 @@
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Processor",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ShareDataWithThirdParty",
         "type" : "iri"
       }, {
         "identifier" : "involves",
@@ -2424,7 +2424,7 @@
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ShareDataWithThirdParty",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Processor",
         "type" : "iri"
       } ]
     },
@@ -2478,7 +2478,7 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article4-11",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital32",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
@@ -2488,20 +2488,15 @@
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital42",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article4-11",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital32",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital42",
         "type" : "iri"
       } ],
       "involves" : [ {
-        "identifier" : "involves",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
-        "type" : "iri"
-      }, {
         "identifier" : "involves",
         "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataActivity",
@@ -2515,6 +2510,11 @@
         "identifier" : "involves",
         "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#GivenConsent",
+        "type" : "iri"
+      }, {
+        "identifier" : "involves",
+        "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
         "type" : "iri"
       } ]
     },
@@ -2541,12 +2541,12 @@
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CrossBorderTransfer",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Processor",
         "type" : "iri"
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Processor",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#CrossBorderTransfer",
         "type" : "iri"
       } ]
     },
@@ -2641,27 +2641,7 @@
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#IdentifiableForRequiredProcessing",
-        "type" : "iri"
-      }, {
-        "identifier" : "involves",
-        "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#StoreData",
-        "type" : "iri"
-      }, {
-        "identifier" : "involves",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ArchiveData",
-        "type" : "iri"
-      }, {
-        "identifier" : "involves",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PublicInterest",
-        "type" : "iri"
-      }, {
-        "identifier" : "involves",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
         "type" : "iri"
       }, {
         "identifier" : "involves",
@@ -2672,6 +2652,26 @@
         "identifier" : "involves",
         "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#HistoricStatisticScientificPurposes",
+        "type" : "iri"
+      }, {
+        "identifier" : "involves",
+        "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#IdentifiableForRequiredProcessing",
+        "type" : "iri"
+      }, {
+        "identifier" : "involves",
+        "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
+        "type" : "iri"
+      }, {
+        "identifier" : "involves",
+        "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ArchiveData",
+        "type" : "iri"
+      }, {
+        "identifier" : "involves",
+        "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PublicInterest",
         "type" : "iri"
       } ]
     },
@@ -2692,6 +2692,11 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article9-2-j",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article21-6",
         "type" : "iri"
       }, {
@@ -2703,11 +2708,6 @@
         "identifier" : "isDefinedBy",
         "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital156",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article9-2-j",
         "type" : "iri"
       } ]
     },
@@ -2823,17 +2823,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital91",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital92",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital94",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital90",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
@@ -2848,12 +2843,17 @@
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital92",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article35",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital90",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital91",
         "type" : "iri"
       } ],
       "involves" : [ {
@@ -2959,17 +2959,17 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article7-3",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital65",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital42",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article7-3",
         "type" : "iri"
       } ],
       "involves" : [ {
@@ -3101,12 +3101,12 @@
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#HistoricStatisticScientificPurposes",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#SpecifiedPurpose",
         "type" : "iri"
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#SpecifiedPurpose",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ExplicitPurpose",
         "type" : "iri"
       }, {
         "identifier" : "involves",
@@ -3117,6 +3117,11 @@
         "identifier" : "involves",
         "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#NotFurtherProcessedThanOriginalPurpose",
+        "type" : "iri"
+      }, {
+        "identifier" : "involves",
+        "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#HistoricStatisticScientificPurposes",
         "type" : "iri"
       }, {
         "identifier" : "involves",
@@ -3132,11 +3137,6 @@
         "identifier" : "involves",
         "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
-        "type" : "iri"
-      }, {
-        "identifier" : "involves",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ExplicitPurpose",
         "type" : "iri"
       } ]
     },
@@ -3157,12 +3157,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article6-1-b",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital44",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital44",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article6-1-b",
         "type" : "iri"
       } ],
       "involves" : [ {
@@ -3215,12 +3215,12 @@
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSecurity",
         "type" : "iri"
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSecurity",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
         "type" : "iri"
       } ]
     },
@@ -3267,12 +3267,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article2-3",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article2-2",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article2-2",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article2-3",
         "type" : "iri"
       } ]
     },
@@ -3293,12 +3293,12 @@
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSecurity",
         "type" : "iri"
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSecurity",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
         "type" : "iri"
       } ]
     },
@@ -3383,23 +3383,23 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article7-4",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital32",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital32",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article7-4",
         "type" : "iri"
       } ],
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#GivenConsent",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ObtainingConsent",
         "type" : "iri"
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ObtainingConsent",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#GivenConsent",
         "type" : "iri"
       } ]
     },
@@ -3420,27 +3420,7 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital91",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article10",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital50",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital19",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital73",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital80",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
@@ -3450,7 +3430,27 @@
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital80",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article10",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital19",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital50",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital73",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital91",
         "type" : "iri"
       } ],
       "involves" : [ {
@@ -3490,12 +3490,12 @@
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSubject",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
         "type" : "iri"
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSubject",
         "type" : "iri"
       } ]
     },
@@ -3548,12 +3548,7 @@
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Processing",
-        "type" : "iri"
-      }, {
-        "identifier" : "involves",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#SpecifiedPurpose",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
         "type" : "iri"
       }, {
         "identifier" : "involves",
@@ -3563,12 +3558,17 @@
       }, {
         "identifier" : "involves",
         "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Processing",
+        "type" : "iri"
+      }, {
+        "identifier" : "involves",
+        "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#AccurateCollection",
         "type" : "iri"
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#SpecifiedPurpose",
         "type" : "iri"
       } ]
     },
@@ -3600,6 +3600,11 @@
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#MonitorCompliance",
+        "type" : "iri"
+      }, {
+        "identifier" : "involves",
+        "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#NotifyDataSubjectAboutDPOForDataBreach",
         "type" : "iri"
       }, {
@@ -3611,11 +3616,6 @@
         "identifier" : "involves",
         "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Processor",
-        "type" : "iri"
-      }, {
-        "identifier" : "involves",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#MonitorCompliance",
         "type" : "iri"
       } ]
     },
@@ -3662,17 +3662,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital98",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article40-2",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital77",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital99",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
@@ -3682,7 +3677,12 @@
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital99",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital77",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital98",
         "type" : "iri"
       } ]
     },
@@ -3709,12 +3709,12 @@
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Certification",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Seal",
         "type" : "iri"
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Seal",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Certification",
         "type" : "iri"
       } ]
     },
@@ -3762,6 +3762,11 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital66",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article17",
         "type" : "iri"
       }, {
@@ -3774,18 +3779,8 @@
         "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital68",
         "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital66",
-        "type" : "iri"
       } ],
       "involves" : [ {
-        "identifier" : "involves",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#EraseData",
-        "type" : "iri"
-      }, {
         "identifier" : "involves",
         "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSubject",
@@ -3794,6 +3789,11 @@
         "identifier" : "involves",
         "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
+        "type" : "iri"
+      }, {
+        "identifier" : "involves",
+        "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#EraseData",
         "type" : "iri"
       } ]
     },
@@ -3821,12 +3821,12 @@
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ReportDataBreach",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Controller",
         "type" : "iri"
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataBreach",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ReportDataBreach",
         "type" : "iri"
       }, {
         "identifier" : "involves",
@@ -3836,7 +3836,7 @@
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Controller",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataBreach",
         "type" : "iri"
       } ]
     },
@@ -3863,7 +3863,7 @@
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#FactorsForImpactAssessment",
         "type" : "iri"
       }, {
         "identifier" : "involves",
@@ -3873,7 +3873,7 @@
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#FactorsForImpactAssessment",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
         "type" : "iri"
       } ]
     },
@@ -3894,12 +3894,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article6-1-d",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital46",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital46",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article6-1-d",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
@@ -3941,12 +3941,12 @@
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital45",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article9-2-g",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article9-2-g",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital45",
         "type" : "iri"
       } ]
     },
@@ -4042,12 +4042,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article42-4",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article42-6",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article42-6",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article42-4",
         "type" : "iri"
       } ]
     },
@@ -4110,12 +4110,12 @@
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RecordCategoriesOfRecipientsWhereDataShared",
         "type" : "iri"
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RecordCategoriesOfRecipientsWhereDataShared",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
         "type" : "iri"
       }, {
         "identifier" : "involves",
@@ -4141,12 +4141,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital78",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article25",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article25",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital78",
         "type" : "iri"
       } ],
       "involves" : [ {
@@ -4194,12 +4194,12 @@
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Controller",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#SubProcessor",
         "type" : "iri"
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#SubProcessor",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Controller",
         "type" : "iri"
       }, {
         "identifier" : "involves",
@@ -4333,12 +4333,12 @@
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Processor",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Controller",
         "type" : "iri"
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Controller",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Processor",
         "type" : "iri"
       } ]
     },
@@ -4738,12 +4738,12 @@
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#StoreData",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Processing",
         "type" : "iri"
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Processing",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#StoreData",
         "type" : "iri"
       } ]
     },
@@ -4764,12 +4764,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article24",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital74",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital74",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article24",
         "type" : "iri"
       } ],
       "involves" : [ {
@@ -4866,16 +4866,6 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article4-11",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital32",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article7",
         "type" : "iri"
       }, {
@@ -4883,16 +4873,21 @@
         "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article6-1-a",
         "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article4-11",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital32",
+        "type" : "iri"
       } ],
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#InformedConsentObligation",
-        "type" : "iri"
-      }, {
-        "identifier" : "involves",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#SpecificConsentObligation",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#GivenConsent",
         "type" : "iri"
       }, {
         "identifier" : "involves",
@@ -4902,7 +4897,12 @@
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#GivenConsent",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#SpecificConsentObligation",
+        "type" : "iri"
+      }, {
+        "identifier" : "involves",
+        "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#InformedConsentObligation",
         "type" : "iri"
       } ]
     },
@@ -4976,6 +4976,11 @@
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Rights",
+        "type" : "iri"
+      }, {
+        "identifier" : "involves",
+        "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Controller",
         "type" : "iri"
       }, {
@@ -4987,11 +4992,6 @@
         "identifier" : "involves",
         "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Processor",
-        "type" : "iri"
-      }, {
-        "identifier" : "involves",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Rights",
         "type" : "iri"
       } ]
     },
@@ -5038,22 +5038,17 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article33",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital88",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital87",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital73",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital85",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article33",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
@@ -5063,10 +5058,20 @@
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital73",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital85",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital87",
         "type" : "iri"
       } ],
       "involves" : [ {
+        "identifier" : "involves",
+        "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ReportDataBreachToDPAWithin72Hours",
+        "type" : "iri"
+      }, {
         "identifier" : "involves",
         "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#MaintainRecordOfBreach",
@@ -5075,11 +5080,6 @@
         "identifier" : "involves",
         "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#NotifyDataSubjectOfBreach",
-        "type" : "iri"
-      }, {
-        "identifier" : "involves",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ReportDataBreachToDPAWithin72Hours",
         "type" : "iri"
       }, {
         "identifier" : "involves",
@@ -5127,12 +5127,7 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital81",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article28-1",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article28-2",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
@@ -5142,7 +5137,12 @@
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article28-2",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article28-1",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital81",
         "type" : "iri"
       } ],
       "involves" : [ {
@@ -5270,7 +5270,17 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital73",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital39",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital59",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
@@ -5280,33 +5290,23 @@
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital73",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital65",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article16",
         "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital65",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital59",
-        "type" : "iri"
       } ],
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RectifyData",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSubject",
         "type" : "iri"
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSubject",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RectifyData",
         "type" : "iri"
       } ]
     },
@@ -5353,12 +5353,12 @@
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#StoreData",
         "type" : "iri"
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#StoreData",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
         "type" : "iri"
       } ]
     },
@@ -5379,20 +5379,15 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article5-1-d",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital39",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital39",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article5-1-d",
         "type" : "iri"
       } ],
       "involves" : [ {
-        "identifier" : "involves",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
-        "type" : "iri"
-      }, {
         "identifier" : "involves",
         "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#EraseData",
@@ -5400,7 +5395,12 @@
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RectifyData",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RectifyInaccuracy",
+        "type" : "iri"
+      }, {
+        "identifier" : "involves",
+        "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
         "type" : "iri"
       }, {
         "identifier" : "involves",
@@ -5410,7 +5410,7 @@
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RectifyInaccuracy",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#RectifyData",
         "type" : "iri"
       } ]
     },
@@ -5473,12 +5473,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital50",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article6-4",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article6-4",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital50",
         "type" : "iri"
       } ],
       "involves" : [ {
@@ -5506,47 +5506,7 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article4-5",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital156",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital75",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital28",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article6-4-e",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital78",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article89-1",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article40-2-d",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital26",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
@@ -5556,12 +5516,52 @@
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article25-1",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital32-1-a",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article25-1",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article6-4-e",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital28",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article40-2-d",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article89-1",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital26",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital75",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital78",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article4-5",
         "type" : "iri"
       } ],
       "involves" : [ {
@@ -5588,12 +5588,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital77",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article42",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article42",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital77",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
@@ -5640,12 +5640,12 @@
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSubject",
         "type" : "iri"
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSubject",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
         "type" : "iri"
       } ]
     },
@@ -5667,7 +5667,7 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital70",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital69",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
@@ -5687,12 +5687,12 @@
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital50",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital70",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital69",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital50",
         "type" : "iri"
       } ],
       "involves" : [ {
@@ -5742,12 +5742,12 @@
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Compliance",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Controller",
         "type" : "iri"
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Controller",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Compliance",
         "type" : "iri"
       } ]
     },
@@ -5773,12 +5773,12 @@
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Processor",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
         "type" : "iri"
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Processor",
         "type" : "iri"
       } ]
     },
@@ -5810,17 +5810,17 @@
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProcessingIsUnlawful",
-        "type" : "iri"
-      }, {
-        "identifier" : "involves",
-        "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSubject",
         "type" : "iri"
       }, {
         "identifier" : "involves",
         "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Processing",
+        "type" : "iri"
+      }, {
+        "identifier" : "involves",
+        "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProcessingIsUnlawful",
         "type" : "iri"
       }, {
         "identifier" : "involves",
@@ -6034,17 +6034,17 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article30",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital82",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article30-2",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article30",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
@@ -6116,12 +6116,12 @@
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSecurity",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
         "type" : "iri"
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSecurity",
         "type" : "iri"
       }, {
         "identifier" : "involves",
@@ -6147,17 +6147,17 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital40",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital32",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article6-1",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital40",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
@@ -6184,12 +6184,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article12-2",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital59",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital59",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article12-2",
         "type" : "iri"
       } ]
     },
@@ -6344,7 +6344,7 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article6-3",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital45",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
@@ -6354,7 +6354,7 @@
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital45",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article6-3",
         "type" : "iri"
       } ]
     },
@@ -6476,12 +6476,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article25",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital78",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital78",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article25",
         "type" : "iri"
       } ]
     },
@@ -6502,12 +6502,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article32",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital83",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article28-1",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article32",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
@@ -6522,13 +6522,13 @@
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital83",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article28-1",
         "type" : "iri"
       } ],
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#SecurityOfPersonalData",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
         "type" : "iri"
       }, {
         "identifier" : "involves",
@@ -6538,7 +6538,7 @@
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#SecurityOfPersonalData",
         "type" : "iri"
       } ]
     },
@@ -6559,17 +6559,17 @@
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Controller",
-        "type" : "iri"
-      }, {
-        "identifier" : "involves",
-        "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
         "type" : "iri"
       }, {
         "identifier" : "involves",
         "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Processing",
+        "type" : "iri"
+      }, {
+        "identifier" : "involves",
+        "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Controller",
         "type" : "iri"
       } ]
     },
@@ -6590,12 +6590,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital85",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article5-2",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article5-2",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital85",
         "type" : "iri"
       } ],
       "involves" : [ {
@@ -6685,27 +6685,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital156",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article32",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital29",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article24-1",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article25-1",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital71",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
@@ -6715,7 +6700,7 @@
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article28",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital29",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
@@ -6725,23 +6710,33 @@
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article28",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital71",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article25-2",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital156",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article25-1",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article24-1",
         "type" : "iri"
       } ],
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Processing",
-        "type" : "iri"
-      }, {
-        "identifier" : "involves",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProtectionAgainstAccidentalLoss",
         "type" : "iri"
       }, {
         "identifier" : "involves",
@@ -6751,17 +6746,22 @@
       }, {
         "identifier" : "involves",
         "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSecurity",
+        "type" : "iri"
+      }, {
+        "identifier" : "involves",
+        "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Processing",
+        "type" : "iri"
+      }, {
+        "identifier" : "involves",
+        "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProtectionAgainstDamage",
         "type" : "iri"
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProtectionAgainstAccidentalLoss",
-        "type" : "iri"
-      }, {
-        "identifier" : "involves",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSecurity",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
         "type" : "iri"
       } ]
     },
@@ -6809,15 +6809,20 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article15",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital63",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital63",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article15",
         "type" : "iri"
       } ],
       "involves" : [ {
+        "identifier" : "involves",
+        "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
+        "type" : "iri"
+      }, {
         "identifier" : "involves",
         "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProvideCopyOfPersonalData",
@@ -6826,11 +6831,6 @@
         "identifier" : "involves",
         "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Processing",
-        "type" : "iri"
-      }, {
-        "identifier" : "involves",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
         "type" : "iri"
       }, {
         "identifier" : "involves",
@@ -6857,12 +6857,12 @@
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSecurity",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
         "type" : "iri"
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSecurity",
         "type" : "iri"
       } ]
     },
@@ -6902,23 +6902,18 @@
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article20",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital68",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital68",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article20",
         "type" : "iri"
       } ],
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSubject",
-        "type" : "iri"
-      }, {
-        "identifier" : "involves",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProvideCopyOfPersonalData",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ShouldBeStructured",
         "type" : "iri"
       }, {
         "identifier" : "involves",
@@ -6933,22 +6928,27 @@
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ShouldSupportReuse",
-        "type" : "iri"
-      }, {
-        "identifier" : "involves",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ShouldBeStructured",
-        "type" : "iri"
-      }, {
-        "identifier" : "involves",
-        "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PersonalData",
         "type" : "iri"
       }, {
         "identifier" : "involves",
         "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ShouldBeCommonlyUsedFormat",
+        "type" : "iri"
+      }, {
+        "identifier" : "involves",
+        "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ProvideCopyOfPersonalData",
+        "type" : "iri"
+      }, {
+        "identifier" : "involves",
+        "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#ShouldSupportReuse",
+        "type" : "iri"
+      }, {
+        "identifier" : "involves",
+        "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSubject",
         "type" : "iri"
       } ]
     },
@@ -7002,12 +7002,12 @@
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#LawfulBasisForProcessing",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Processing",
         "type" : "iri"
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Compliance",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#LawfulBasisForProcessing",
         "type" : "iri"
       }, {
         "identifier" : "involves",
@@ -7017,7 +7017,7 @@
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Processing",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Compliance",
         "type" : "iri"
       } ]
     },
@@ -7081,12 +7081,12 @@
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataBreach",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSubject",
         "type" : "iri"
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSubject",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataBreach",
         "type" : "iri"
       } ]
     },
@@ -7156,12 +7156,12 @@
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PurposeOfNewProcessing",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Processing",
         "type" : "iri"
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Processing",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#PurposeOfNewProcessing",
         "type" : "iri"
       } ]
     },
@@ -7189,7 +7189,7 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital87",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital73",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
@@ -7199,7 +7199,7 @@
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital88",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital87",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
@@ -7209,18 +7209,18 @@
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital73",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital88",
         "type" : "iri"
       } ],
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSubject",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataBreach",
         "type" : "iri"
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataBreach",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DataSubject",
         "type" : "iri"
       } ]
     },
@@ -7253,12 +7253,12 @@
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#GivenConsent",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DemonstratingConsent",
         "type" : "iri"
       }, {
         "identifier" : "involves",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#DemonstratingConsent",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#GivenConsent",
         "type" : "iri"
       } ]
     },
@@ -7358,12 +7358,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital32",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article6-1-a",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#article6-1-a",
+        "value" : "http://purl.org/adaptcentre/openscience/resources/GDPRtEXT#recital32",
         "type" : "iri"
       } ],
       "involves" : [ {
@@ -7390,17 +7390,17 @@
       "involves" : [ {
         "identifier" : "involves",
         "language" : "undefined",
+        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Rights",
+        "type" : "iri"
+      }, {
+        "identifier" : "involves",
+        "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Processor",
         "type" : "iri"
       }, {
         "identifier" : "involves",
         "language" : "undefined",
         "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Controller",
-        "type" : "iri"
-      }, {
-        "identifier" : "involves",
-        "language" : "undefined",
-        "value" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#Rights",
         "type" : "iri"
       } ]
     },
@@ -8250,187 +8250,187 @@
   "propertyAttribute" : [ {
     "range" : "2",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "0"
   }, {
     "range" : "5",
     "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "3"
   }, {
     "range" : "2",
     "domain" : "7",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "6"
   }, {
     "range" : "5",
     "domain" : "9",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "8"
   }, {
     "range" : "2",
     "domain" : "11",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "10"
   }, {
     "range" : "5",
     "domain" : "13",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "12"
   }, {
     "range" : "2",
     "domain" : "17",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "16"
   }, {
     "range" : "5",
     "domain" : "19",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "18"
   }, {
     "range" : "2",
     "domain" : "21",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "20"
   }, {
     "range" : "5",
     "domain" : "23",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "22"
   }, {
     "range" : "2",
     "domain" : "25",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "24"
   }, {
     "range" : "5",
     "domain" : "27",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "26"
   }, {
     "range" : "2",
     "domain" : "29",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "28"
   }, {
     "range" : "5",
     "domain" : "31",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "30"
   }, {
     "range" : "2",
     "domain" : "33",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "32"
   }, {
     "range" : "50",
     "domain" : "49",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "48"
   }, {
     "range" : "2",
     "domain" : "52",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "51"
   }, {
     "range" : "5",
     "domain" : "54",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "53"
   }, {
     "range" : "2",
     "domain" : "56",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "55"
   }, {
     "range" : "5",
     "domain" : "58",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "57"
   }, {
     "range" : "61",
     "domain" : "60",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "59"
   }, {
     "range" : "64",
     "domain" : "63",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "62"
   }, {
     "range" : "61",
     "domain" : "66",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "65"
   }, {
     "range" : "50",
     "domain" : "61",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "67"
   }, {
     "range" : "61",
     "domain" : "69",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "68"
   }, {
     "range" : "50",
     "domain" : "71",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "70"
   }, {
     "range" : "61",
     "domain" : "75",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "74"
   }, {
     "range" : "50",
     "domain" : "45",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "76"
   }, {
     "range" : "61",
     "domain" : "79",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "78"
   }, {
     "range" : "50",
     "domain" : "81",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "80"
   }, {
     "range" : "61",
     "domain" : "83",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "82"
   }, {
     "range" : "50",
     "domain" : "85",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "84"
   }, {
     "range" : "88",
     "domain" : "87",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "86"
   }, {
     "range" : "50",
     "domain" : "90",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "89"
   }, {
     "range" : "2",
     "domain" : "92",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "91"
   }, {
     "range" : "50",
     "domain" : "47",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "93"
   }, {
     "range" : "2",
     "domain" : "73",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "94"
   }, {
     "iri" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#isPartOfArticle",
@@ -8450,32 +8450,32 @@
   }, {
     "range" : "64",
     "domain" : "108",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "107"
   }, {
     "range" : "110",
     "domain" : "50",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "109"
   }, {
     "range" : "64",
     "domain" : "112",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "111"
   }, {
     "range" : "73",
     "domain" : "114",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "113"
   }, {
     "range" : "73",
     "domain" : "117",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "116"
   }, {
     "range" : "100",
     "domain" : "99",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "118"
   }, {
     "iri" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#isPartOfChapter",
@@ -8495,12 +8495,12 @@
   }, {
     "range" : "100",
     "domain" : "102",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "120"
   }, {
     "range" : "45",
     "domain" : "44",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "121"
   }, {
     "iri" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#hasChapter",
@@ -8520,562 +8520,562 @@
   }, {
     "range" : "45",
     "domain" : "127",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "126"
   }, {
     "range" : "45",
     "domain" : "129",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "128"
   }, {
     "range" : "45",
     "domain" : "131",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "130"
   }, {
     "range" : "45",
     "domain" : "133",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "132"
   }, {
     "range" : "73",
     "domain" : "72",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "141"
   }, {
     "range" : "146",
     "domain" : "145",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "144"
   }, {
     "range" : "146",
     "domain" : "148",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "147"
   }, {
     "range" : "146",
     "domain" : "150",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "149"
   }, {
     "range" : "146",
     "domain" : "152",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "151"
   }, {
     "range" : "146",
     "domain" : "154",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "153"
   }, {
     "range" : "146",
     "domain" : "157",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "156"
   }, {
     "range" : "160",
     "domain" : "159",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "158"
   }, {
     "range" : "160",
     "domain" : "162",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "161"
   }, {
     "range" : "160",
     "domain" : "125",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "163"
   }, {
     "range" : "165",
     "domain" : "58",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "164"
   }, {
     "range" : "47",
     "domain" : "173",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "172"
   }, {
     "range" : "176",
     "domain" : "175",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "174"
   }, {
     "range" : "176",
     "domain" : "178",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "177"
   }, {
     "range" : "176",
     "domain" : "180",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "179"
   }, {
     "range" : "47",
     "domain" : "188",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "187"
   }, {
     "range" : "47",
     "domain" : "190",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "189"
   }, {
     "range" : "47",
     "domain" : "192",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "191"
   }, {
     "range" : "47",
     "domain" : "194",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "193"
   }, {
     "range" : "47",
     "domain" : "46",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "195"
   }, {
     "range" : "47",
     "domain" : "197",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "196"
   }, {
     "range" : "47",
     "domain" : "183",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "198"
   }, {
     "range" : "47",
     "domain" : "200",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "199"
   }, {
     "range" : "47",
     "domain" : "202",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "201"
   }, {
     "range" : "47",
     "domain" : "204",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "203"
   }, {
     "range" : "47",
     "domain" : "139",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "209"
   }, {
     "range" : "220",
     "domain" : "219",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "218"
   }, {
     "range" : "220",
     "domain" : "222",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "221"
   }, {
     "range" : "220",
     "domain" : "31",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "223"
   }, {
     "range" : "47",
     "domain" : "229",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "228"
   }, {
     "range" : "47",
     "domain" : "138",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "230"
   }, {
     "range" : "220",
     "domain" : "232",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "231"
   }, {
     "range" : "220",
     "domain" : "178",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "233"
   }, {
     "range" : "220",
     "domain" : "235",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "234"
   }, {
     "range" : "220",
     "domain" : "237",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "236"
   }, {
     "range" : "220",
     "domain" : "239",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "238"
   }, {
     "range" : "220",
     "domain" : "241",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "240"
   }, {
     "range" : "43",
     "domain" : "42",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "255"
   }, {
     "range" : "43",
     "domain" : "257",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "256"
   }, {
     "range" : "43",
     "domain" : "259",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "258"
   }, {
     "range" : "43",
     "domain" : "262",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "261"
   }, {
     "range" : "138",
     "domain" : "217",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "263"
   }, {
     "range" : "265",
     "domain" : "239",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "264"
   }, {
     "range" : "138",
     "domain" : "267",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "266"
   }, {
     "range" : "265",
     "domain" : "241",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "268"
   }, {
     "range" : "138",
     "domain" : "137",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "269"
   }, {
     "range" : "265",
     "domain" : "222",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "270"
   }, {
     "range" : "170",
     "domain" : "169",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "275"
   }, {
     "range" : "43",
     "domain" : "277",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "276"
   }, {
     "range" : "43",
     "domain" : "279",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "278"
   }, {
     "range" : "43",
     "domain" : "281",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "280"
   }, {
     "range" : "265",
     "domain" : "284",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "283"
   }, {
     "range" : "138",
     "domain" : "286",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "285"
   }, {
     "range" : "265",
     "domain" : "235",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "287"
   }, {
     "range" : "138",
     "domain" : "142",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "289"
   }, {
     "range" : "265",
     "domain" : "237",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "290"
   }, {
     "range" : "138",
     "domain" : "168",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "291"
   }, {
     "range" : "265",
     "domain" : "293",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "292"
   }, {
     "range" : "162",
     "domain" : "173",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "294"
   }, {
     "range" : "162",
     "domain" : "64",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "295"
   }, {
     "range" : "162",
     "domain" : "297",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "296"
   }, {
     "range" : "171",
     "domain" : "298",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "299"
   }, {
     "range" : "171",
     "domain" : "301",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "300"
   }, {
     "range" : "171",
     "domain" : "303",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "302"
   }, {
     "range" : "171",
     "domain" : "305",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "304"
   }, {
     "range" : "185",
     "domain" : "184",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "306"
   }, {
     "range" : "166",
     "domain" : "167",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "307"
   }, {
     "range" : "284",
     "domain" : "219",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "308"
   }, {
     "range" : "169",
     "domain" : "171",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "309"
   }, {
     "range" : "200",
     "domain" : "311",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "310"
   }, {
     "range" : "134",
     "domain" : "136",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "312"
   }, {
     "range" : "200",
     "domain" : "314",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "313"
   }, {
     "range" : "81",
     "domain" : "316",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "315"
   }, {
     "range" : "81",
     "domain" : "171",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "317"
   }, {
     "range" : "85",
     "domain" : "125",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "318"
   }, {
     "range" : "81",
     "domain" : "323",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "322"
   }, {
     "range" : "81",
     "domain" : "143",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "324"
   }, {
     "range" : "81",
     "domain" : "326",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "325"
   }, {
     "range" : "81",
     "domain" : "328",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "327"
   }, {
     "range" : "250",
     "domain" : "330",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "329"
   }, {
     "range" : "250",
     "domain" : "332",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "331"
   }, {
     "range" : "250",
     "domain" : "282",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "333"
   }, {
     "range" : "242",
     "domain" : "243",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "334"
   }, {
     "range" : "242",
     "domain" : "88",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "335"
   }, {
     "range" : "250",
     "domain" : "337",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "336"
   }, {
     "range" : "242",
     "domain" : "244",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "338"
   }, {
     "range" : "87",
     "domain" : "225",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "339"
   }, {
     "range" : "87",
     "domain" : "224",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "340"
   }, {
     "range" : "87",
     "domain" : "227",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "341"
   }, {
     "range" : "87",
     "domain" : "226",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "342"
   }, {
     "range" : "104",
     "domain" : "216",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "343"
   }, {
     "range" : "104",
     "domain" : "215",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "344"
   }, {
     "range" : "104",
     "domain" : "103",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "346"
   }, {
     "range" : "211",
     "domain" : "212",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "347"
   }, {
     "range" : "180",
     "domain" : "210",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "348"
   }, {
     "range" : "104",
     "domain" : "115",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "349"
   }, {
     "range" : "211",
     "domain" : "213",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "350"
   }, {
     "range" : "205",
     "domain" : "206",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "351"
   }, {
     "range" : "162",
     "domain" : "288",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "352"
   }, {
     "range" : "205",
     "domain" : "208",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "353"
   }, {
     "range" : "205",
     "domain" : "207",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "356"
   }, {
     "range" : "106",
     "domain" : "166",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "357"
   }, {
     "range" : "106",
     "domain" : "359",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "358"
   }, {
     "range" : "106",
     "domain" : "361",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "360"
   }, {
     "range" : "106",
     "domain" : "363",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "362"
   }, {
     "range" : "182",
     "domain" : "365",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "364"
   }, {
     "range" : "182",
     "domain" : "181",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "366"
   }, {
     "range" : "182",
     "domain" : "205",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "367"
   }, {
     "iri" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#hasSection",
@@ -9110,52 +9110,52 @@
   }, {
     "range" : "90",
     "domain" : "253",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "370"
   }, {
     "range" : "90",
     "domain" : "252",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "371"
   }, {
     "range" : "90",
     "domain" : "169",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "372"
   }, {
     "range" : "90",
     "domain" : "254",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "373"
   }, {
     "range" : "90",
     "domain" : "245",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "374"
   }, {
     "range" : "90",
     "domain" : "250",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "375"
   }, {
     "range" : "90",
     "domain" : "251",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "376"
   }, {
     "range" : "90",
     "domain" : "98",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "377"
   }, {
     "range" : "90",
     "domain" : "249",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "380"
   }, {
     "range" : "90",
     "domain" : "248",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "381"
   }, {
     "iri" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#hasRecital",
@@ -9175,112 +9175,112 @@
   }, {
     "range" : "90",
     "domain" : "95",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "383"
   }, {
     "range" : "90",
     "domain" : "246",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "384"
   }, {
     "range" : "250",
     "domain" : "386",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "385"
   }, {
     "range" : "90",
     "domain" : "155",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "387"
   }, {
     "range" : "90",
     "domain" : "247",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "388"
   }, {
     "range" : "110",
     "domain" : "220",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "389"
   }, {
     "range" : "110",
     "domain" : "391",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "390"
   }, {
     "range" : "110",
     "domain" : "182",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "392"
   }, {
     "range" : "110",
     "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "393"
   }, {
     "range" : "110",
     "domain" : "242",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "394"
   }, {
     "range" : "110",
     "domain" : "43",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "395"
   }, {
     "range" : "110",
     "domain" : "170",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "396"
   }, {
     "range" : "110",
     "domain" : "106",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "398"
   }, {
     "range" : "15",
     "domain" : "140",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "399"
   }, {
     "range" : "110",
     "domain" : "378",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "400"
   }, {
     "range" : "110",
     "domain" : "402",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "401"
   }, {
     "range" : "58",
     "domain" : "273",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "403"
   }, {
     "range" : "58",
     "domain" : "272",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "404"
   }, {
     "range" : "15",
     "domain" : "406",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "405"
   }, {
     "range" : "15",
     "domain" : "14",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "407"
   }, {
     "range" : "58",
     "domain" : "101",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "408"
   }, {
     "range" : "58",
     "domain" : "271",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "409"
   }, {
     "iri" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#isPartOfPoint",
@@ -9300,42 +9300,42 @@
   }, {
     "range" : "106",
     "domain" : "379",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "414"
   }, {
     "range" : "106",
     "domain" : "397",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "415"
   }, {
     "range" : "106",
     "domain" : "186",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "416"
   }, {
     "range" : "106",
     "domain" : "105",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "417"
   }, {
     "range" : "106",
     "domain" : "214",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "418"
   }, {
     "range" : "110",
     "domain" : "135",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "420"
   }, {
     "range" : "110",
     "domain" : "176",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "421"
   }, {
     "range" : "110",
     "domain" : "160",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "422"
   }, {
     "iri" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#hasSubPoint",
@@ -9361,62 +9361,62 @@
     },
     "domain" : "427",
     "subproperty" : [ "410", "119", "428", "96" ],
-    "attributes" : [ "external", "object", "transitive" ],
+    "attributes" : [ "external", "transitive", "object" ],
     "id" : "97"
   }, {
     "range" : "71",
     "domain" : "430",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "429"
   }, {
     "range" : "71",
     "domain" : "260",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "431"
   }, {
     "range" : "361",
     "domain" : "419",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "432"
   }, {
     "range" : "49",
     "domain" : "274",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "433"
   }, {
     "range" : "49",
     "domain" : "354",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "434"
   }, {
     "range" : "49",
     "domain" : "345",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "435"
   }, {
     "range" : "49",
     "domain" : "355",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "436"
   }, {
     "range" : "146",
     "domain" : "412",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "437"
   }, {
     "range" : "146",
     "domain" : "439",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "438"
   }, {
     "range" : "146",
     "domain" : "425",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "440"
   }, {
     "range" : "71",
     "domain" : "442",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "441"
   }, {
     "iri" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#isPartOfSection",
@@ -9436,87 +9436,87 @@
   }, {
     "range" : "135",
     "domain" : "426",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "443"
   }, {
     "range" : "71",
     "domain" : "202",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "444"
   }, {
     "range" : "71",
     "domain" : "185",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "445"
   }, {
     "range" : "71",
     "domain" : "204",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "446"
   }, {
     "range" : "71",
     "domain" : "139",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "447"
   }, {
     "range" : "71",
     "domain" : "413",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "449"
   }, {
     "range" : "71",
     "domain" : "138",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "450"
   }, {
     "range" : "71",
     "domain" : "162",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "451"
   }, {
     "range" : "71",
     "domain" : "321",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "452"
   }, {
     "range" : "135",
     "domain" : "134",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "453"
   }, {
     "range" : "135",
     "domain" : "15",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "454"
   }, {
     "range" : "176",
     "domain" : "49",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "455"
   }, {
     "range" : "135",
     "domain" : "165",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "456"
   }, {
     "range" : "135",
     "domain" : "411",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "457"
   }, {
     "range" : "135",
     "domain" : "104",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "458"
   }, {
     "range" : "135",
     "domain" : "448",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "459"
   }, {
     "range" : "135",
     "domain" : "146",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "460"
   }, {
     "iri" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#hasArticle",
@@ -9536,27 +9536,27 @@
   }, {
     "range" : "135",
     "domain" : "100",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "462"
   }, {
     "range" : "135",
     "domain" : "424",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "463"
   }, {
     "range" : "176",
     "domain" : "202",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "464"
   }, {
     "range" : "176",
     "domain" : "162",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "465"
   }, {
     "range" : "176",
     "domain" : "321",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "466"
   }, {
     "iri" : "http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#hasPoint",
@@ -9576,37 +9576,37 @@
   }, {
     "range" : "176",
     "domain" : "159",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "468"
   }, {
     "range" : "176",
     "domain" : "211",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "469"
   }, {
     "range" : "176",
     "domain" : "5",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "470"
   }, {
     "range" : "176",
     "domain" : "265",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "471"
   }, {
     "range" : "176",
     "domain" : "125",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "472"
   }, {
     "range" : "176",
     "domain" : "319",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "473"
   }, {
     "range" : "176",
     "domain" : "320",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "474"
   }, {
     "iri" : "http://data.europa.eu/eli/ontology#has_part",
@@ -9617,52 +9617,52 @@
     },
     "domain" : "427",
     "subproperty" : [ "423", "122", "382", "368", "467", "369", "461" ],
-    "attributes" : [ "external", "object", "transitive" ],
+    "attributes" : [ "external", "transitive", "object" ],
     "id" : "124"
   }, {
     "range" : "34",
     "domain" : "36",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "475"
   }, {
     "range" : "34",
     "domain" : "37",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "476"
   }, {
     "range" : "34",
     "domain" : "38",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "477"
   }, {
     "range" : "34",
     "domain" : "39",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "478"
   }, {
     "range" : "34",
     "domain" : "40",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "479"
   }, {
     "range" : "34",
     "domain" : "41",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "480"
   }, {
     "range" : "4",
     "domain" : "77",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "481"
   }, {
     "range" : "11",
     "domain" : "72",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "482"
   }, {
     "range" : "34",
     "domain" : "35",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "483"
   } ]
 }

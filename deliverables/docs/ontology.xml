@@ -3454,16 +3454,16 @@
 
 
     <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:Description rdf:nodeID="_:genid1">
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TEST</rdfs:comment>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TEST2</rdfs:comment>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">An ontology for representing provenance traces pertainining to GDPR compliance. It uses concepts from GDPRtEXT along with extending PROV and P-Plan.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:nodeID="_:genid2">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TEST</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TEST2</rdfs:comment>
     </rdf:Description>
-    <rdf:Description>
-        <rdfs:comment xml:lang="en">An ontology for representing provenance traces pertainining to GDPR compliance. It uses concepts from GDPRtEXT along with extending PROV and P-Plan.</rdfs:comment>
+    <rdf:Description rdf:nodeID="_:genid3">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TEST</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TEST2</rdfs:comment>
     </rdf:Description>
 </rdf:RDF>
 
