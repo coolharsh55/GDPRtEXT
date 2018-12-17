@@ -7,7 +7,7 @@
 	 prov:wasAttributedTo <http://purl.org/adaptcentre/people/HJP>;
 	 dc:creator <http://purl.org/adaptcentre/people/HJP>;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
-	 prov:specializationOf <http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT>;
+	 prov:specializationOf <https://w3id.org/GDPRtEXT>;
 	 prov:wasRevisionOf <https://openscience.adaptcentre.ie/ontologies/v/GDPRtEXT/gdpr_v0.5.owl>;
 	 prov:wasGeneratedAt "2018-07-31";
 .

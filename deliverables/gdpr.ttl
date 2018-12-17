@@ -1,4 +1,4 @@
-@prefix GDPRtEXT: <http://purl.org/adaptcentre/openscience/ontologies/GDPRtEXT#> .
+@prefix GDPRtEXT: <https://w3id.org/GDPRtEXT#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix eli: <http://data.europa.eu/eli/ontology#> .
 @prefix gdpr: <http://purl.org/adaptcentre//openscience/resources/GDPRtEXT#> .
