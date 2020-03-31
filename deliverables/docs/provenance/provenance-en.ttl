@@ -1,14 +1,12 @@
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-<https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/v/gdpr_v0.6.owl> a prov:Entity;
+<https://w3id.org/GDPRtEXT/v/0.7> a prov:Entity;
 	 dc:title "GDPRtEXT";
-	 prov:wasAttributedTo :agent0;
-	 prov:wasAttributedTo <http://purl.org/adaptcentre/people/HJP>;
-	 dc:creator <http://purl.org/adaptcentre/people/HJP>;
+	 prov:wasAttributedTo <https://harshp.com/i/me#HJP>;
+	 dc:creator <https://harshp.com/i/me#HJP>;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
 	 prov:specializationOf <https://w3id.org/GDPRtEXT>;
-	 prov:wasRevisionOf <https://openscience.adaptcentre.ie/ontologies/v/GDPRtEXT/gdpr_v0.5.owl>;
-	 prov:wasGeneratedAt "2018-07-31";
+	 prov:wasRevisionOf <https://w3id.org/GDPRtEXT/v/0.6>;
+	 prov:wasGeneratedAt "2020-03-31";
 .
-:agent0 a prov:Agent; foaf:name "Harshvardhan J. Pandit".
